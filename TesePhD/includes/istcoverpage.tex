@@ -1,0 +1,64 @@
+%----------------------------------------------------------------------------------------
+%	COVER PAGE
+%----------------------------------------------------------------------------------------
+
+% ====================================== Font Sizes
+\def\FontXL{% 18 pt normal
+  \usefont{T1}{cmr}{m}{n}\fontsize{19.28pt}{18pt}\selectfont}
+% \usefont{T1}{pvh}{m}{n}\fontsize{16pt}{16pt}\selectfont}
+\def\FontL{% 16 pt normal
+  \usefont{T1}{cmr}{m}{n}\fontsize{17.28pt}{16pt}\selectfont}
+% \usefont{T1}{pvh}{m}{n}\fontsize{16pt}{16pt}\selectfont}
+\def\FontM{% 14 pt normal
+  \usefont{T1}{cmr}{m}{n}\fontsize{14pt}{14pt}\selectfont}
+% \usefont{T1}{phv}{m}{n}\fontsize{14pt}{14pt}\selectfont}
+\def\FontS{% 12 pt normal
+  \usefont{T1}{cmr}{m}{n}\fontsize{12pt}{12pt}\selectfont}
+% \usefont{T1}{phv}{m}{n}\fontsize{12pt}{12pt}\selectfont}
+\def\FontT{% 10 pt normal
+  \fontsize{10pt}{10pt}\selectfont}
+
+\newcommand*{\titleGP}{\begingroup % Create the command for including the title page in the document
+
+% ====================================== Logo
+%\noindent \includegraphics[width=5cm]{includes/LogoIST.pdf}
+%\includegraphics[width=5cm]{includes/LogoIST.pdf}
+
+\begin{tabular}{>{\raggedleft}m{5cm}>{\centering}m{\dimexpr\textwidth - 10cm\relax}>{\raggedright}m{5cm}}
+    \includegraphics[width=\linewidth]{includes/LogoIST.pdf}%
+    &
+    &%
+    \includegraphics[width=\linewidth]{includes/LogoPadova.jpg} %
+ \end{tabular}
+
+% ====================================== Cover information
+\centering % Center all text
+
+{\FontL \textbf{UNIVERSIDADE DE LISBOA}} \\
+\vspace{10pt}
+{\FontL \textbf{INSTITUTO SUPERIOR T\'{E}CNICO}} \\
+\vspace{10pt}
+{\FontM \textbf{Universit\`{a} degli Studi di Padova}} \\
+\vspace{2cm}
+
+{\FontXL \textbf{Stronzada con metallo liquido}} \\
+
+\vspace{2cm}
+{\FontM \textbf{Caterina Cavallini}} \\
+\vspace{2cm}
+{\FontS %
+\begin{tabular}{l}
+\textbf{Supervisors: Doctor Rui Barrocas Gomes} \\
+\textbf{Doctor Alberto Ferro}\\
+\textbf{Co-Supervisors: Doctor Italiano}\\
+\end{tabular} } \\
+\vspace{1.8cm}
+{\FontM Thesis specifically prepared to obtain the Master Degree in} \\
+\vspace{1.8mm}
+{\FontL \textbf{Stronzada Engineering}} \\
+\vspace{1.8cm}
+{\FontM \textbf{Draft}} \\
+\vspace{1.8cm}
+{\FontM \textbf{November 2018}} \\
+
+\endgroup}

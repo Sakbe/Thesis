@@ -1,0 +1,103 @@
+\input{includes/preamble}
+\input{includes/lstdefines}
+\input{includes/istcoverpage}
+\input{includes/others}
+
+\begin{document}
+% cover page
+\thispagestyle{empty} % Removes page numbers
+\titleGP
+
+%\input{includes/tempo_istcoverpage}
+
+
+%page ii%
+\setcounter{page}{3}
+\pagenumbering{roman}
+\include{abs_akw/abstract}
+\newpage
+
+%page iv%
+\include{abs_akw/acknowledgements}
+\newpage
+
+\setcounter{tocdepth}{2}
+\tableofcontents
+\listoffigures
+\listoftables
+\newpage
+\input{lista_abreviaturas}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+\include{lista_variaveis}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+%\newpage
+%\newpage
+%\newpage
+%Hello im here!
+%\printnomenclature[2cm]
+%makeindex main.nlo -s nomencl.ist -o main.nls
+
+%set the page numbers to arabic and start again from 1%
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+\input{ch01_intro/ch01}
+
+\input{ch02_state_of_the_art/ch02}
+
+\input{ch03_spectroscopy/ch03}
+
+\input{ch04_sn_li_lisn/ch04}
+
+\todo{cfac results should come in a different chapter. these should be in the same order as the contextualisation chapter!!!!!}
+
+\input{ch05_isttok_experiments/ch05}
+
+\input{ch06_ftu/ch06}
+
+%Conclusoes
+%\input{conclusion/conclusion}
+
+\pagebreak
+%\chapter{Bibliography}
+
+\nocite{*}
+\bibliographystyle{unsrt}
+%\bibliographystyle{ieeetr}
+%\bibliography{Bibliography}
+\bibliography{Bib/abbr,Bib/mybibfile}
+\addcontentsline{toc}{chapter}{\bibname}
+
+\begin{appendices}
+
+%\chapter{Part List}
+%\pagebreak
+%\include{annex/shoplist}
+\chapter{Demonstrations}
+%\input{annex/langmuir_deriv}
+%\input{annex/paschen_deriv}
+
+%\chapter{Pinout Tables}
+%\input{annex/pinout_tables}
+ 
+% \chapter{dspicnode schematic}
+% \newpage
+% \thispagestyle{empty}
+% \mbox{}
+% \includepdf[pages=-,angle=90]{annex/dsPICnode_v2.pdf}
+
+% \chapter{Langmuir auxiliary board schematic}
+% \newpage
+% \thispagestyle{empty}
+% \mbox{}
+% \includepdf[pages=-,angle=90]{annex/Schematic_Prints.pdf}
+
+
+\end{appendices}
+
+\end{document}

@@ -1,0 +1,45 @@
+%% This is the list for the journal names in abbreviations
+%% It must be used in conjunction of the main bib files
+%% The abbreviation can be searched at:
+%% http://www.ams.org/mathscinet/index.html or
+%% http://www.ams.org/msnhtml/serials.pdf
+%% Names of journals not listed there should be given in full.
+
+@string{aas={Ann. Appl. Stat.}}
+@string{jrssb={J. R. Stat. Soc. Ser. B. Stat. Methodol.}}
+@string{anns={Ann. Statist.}}
+@String{statc = {Stat. Comput.}}
+@String{csda = {Comput. Statist. Data Anal.}}
+@String{jecon = {J. Econometrics}}
+@String{jasa = {J. Amer. Statist. Assoc.}}
+@String{sankhyaa = {Sankhy{\=a} Ser. A}}
+@String{statistician = {The Statistician}}
+@String{tpa = {Theory Probab. Appl.}}
+@String{jcgs = {J. Comput. Graph. Statist.}}
+@String{jfin = {J. Finance}}
+
+@String{berber={Ber. Bunsenges Phys. Chem.}}
+
+@String{FusEngDes = {Fus. Eng. Des.}}
+@String{applphyslet = {Appl. Phys. Lett.}}
+@String{jnucmat = {J. Nuc. Mat.}}
+@String{PhysScr = {Phys. Scr}}
+@String{prl = {Phys. Rev. Lett.}}
+@String{nucengdes= {Nuc. Eng. Des.}}
+@String{plafusres= {Plasma Fus. Res.}}
+@String{mettrans= {Met. Trans.}}
+@String{JOptSocAm = {J. Opt. Soc. Am.}}
+@String{JPhysB = {J. Phys. B}}
+@String{prA={Phys. Rev. A}}
+@String{NatStandRefDataSer={Nat. Stand. Ref. Data Ser.}}
+@String{CJPhys = {Can. J.Phys.}}
+@String{JPhysChemRefData={J. Phys. Chem. Ref. Data}}
+
+@String{PPCF = {Plasma Phys. Control. Fus.}}
+
+@String{nucmate= {Nuc. Mat. E.}}
+@String{fusengdes= {Fus. Eng. Des.}}
+@String{hedp ={H. E. Dens. Phys.}}
+@String{jhetrans ={J. Heat Trans.}}
+@String{ transAeroElecSys ={Trans. Aero. Elec. Sys.}}
+@String{ AIAAJ ={Am. Inst. Aeronaut. Astronaut. J."}}
