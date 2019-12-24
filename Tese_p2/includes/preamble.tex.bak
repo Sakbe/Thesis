@@ -1,0 +1,45 @@
+\documentclass[10pt,paper=a4,footinclude=true,headinclude=true,twoside=semi]{scrbook} % KOMA-Script book
+%\documentclass[11pt,a4paper,english]{report}
+%\usepackage[top=2.0cm,left=2.0cm,right=2.0cm,bottom=3.0cm]{geometry}
+\usepackage[linedheaders,parts,pdfspacing,floatperchapter]{classicthesis} % ,manychapters
+%\usepackage[natbib=true,backend=bibtex]{biblatex}
+\usepackage[cmex10]{amsmath}
+\interdisplaylinepenalty=2500
+\usepackage{fixltx2e}
+\usepackage{url}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.pdf,.jpeg,.jpg,.png,.tif}
+\usepackage{epstopdf}
+%\usepackage{graphicx,color}
+%\usepackage[latin9]{inputenc}
+%\usepackage[portuguese]{babel}
+\usepackage{indentfirst} 	  % Fazer tab no inicio de cada paragrafo
+\usepackage{setspace} 		  % Espaçamento entre linhas
+\usepackage[T1]{fontenc}	  % Tipo de letra
+%\usepackage[utf8]{inputenc}
+\usepackage[portuguese, italian, russian, english]{babel}
+
+\usepackage{amsmath, amsthm, amssymb}
+
+\usepackage[siunitx]{circuitikz} % Loading circuitikz with siunitx option
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes,shadows,calc}
+
+
+\usepackage{palatino, url, multicol}
+\usepackage{float}
+\usepackage{wrapfig}
+
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{color}
+\usepackage{pdfpages}
+\usepackage{hyperref} 
+\usepackage{appendix}
+\usepackage{cite}
+\usepackage{listings} % Required for inserting code snippets
+\usepackage[inline]{asymptote}
+\usepackage{tabu}
+\usepackage{multirow}
+\usepackage{gensymb}
+\usepackage{nomencl}
