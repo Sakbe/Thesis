@@ -1,0 +1,1273 @@
+@article{Loureiro_PSI2016,
+title = "Deuterium retention in tin (Sn) and lithium–tin (Li–Sn) samples exposed to {ISTTOK} plasmas ",
+journal = nucmate,
+year = "2016",
+issn = "2352-1791",
+doi = "http://dx.doi.org/10.1016/j.nme.2016.12.026",
+url = "//www.sciencedirect.com/science/article/pii/S2352179116300837",
+author = "J.P.S. Loureiro and H. Fernandes and F.L. Tabarés and G. Mazzitelli and C. Silva and R. Gomes and E. Alves and R. Mateus and T. Pereira and H. Figueiredo and H. Alves"
+}
+
+@article{Loureiro_ISLA2015,
+title = "Behavior of liquid Li-Sn alloy as plasma facing material on {ISTTOK} ",
+journal = fusengdes,
+year = "2017",
+issn = "0920-3796",
+doi = "http://dx.doi.org/10.1016/j.fusengdes.2016.12.031",
+url = "//www.sciencedirect.com/science/article/pii/S0920379616307463",
+author = "J.P.S. Loureiro and F.L. Tabarés and H. Fernandes and C. Silva and R. Gomes and E. Alves and R. Mateus and T. Pereira and H. Alves and H. Figueiredo"
+}
+
+@techreport{FusionRoadmap,
+author="Romanelli, F.",
+title="Fusion Electricity - A roadmap to the realisation of fusion energy",
+institution="European Fusion Development Agreement",
+year="2013",
+isbn="978-3-00-040720-8",
+url="https://www.euro-fusion.org/wpcms/wp-content/uploads/2013/01/JG12.356-web.pdf"
+}
+
+@article{Gomes2008102,
+title = "Interaction of a liquid gallium jet with the tokamak {ISTTOK} edge plasma ",
+journal = FusEngDes,
+volume = "83",
+number = "1",
+pages = "102 - 111",
+year = "2008",
+note = "",
+issn = "0920-3796",
+doi = "http://dx.doi.org/10.1016/j.fusengdes.2007.08.019",
+url = "http://www.sciencedirect.com/science/article/pii/S0920379607004243",
+author = "R.B. Gomes and H. Fernandes and C. Silva and A. Sarakovskis and T. Pereira and J. Figueiredo and B. Carvalho and A. Soares and C. Varandas and O. Lielausis and A. Klyukin and E. Platacis and I. Tale",
+keywords = "Liquid metals",
+keywords = "Plasma-surface interaction",
+keywords = "Gallium",
+keywords = "Liquid metal jet",
+keywords = "Limiter",
+keywords = "Tokamak {ISTTOK} "
+}
+
+
+
+@article{Gomes20112458,
+title = "Hydrogen retention in gallium samples exposed to {ISTTOK} plasmas ",
+journal = FusEngDes,
+volume = "86",
+number = "9–11",
+pages = "2458 - 2461",
+year = "2011",
+note = "Proceedings of the 26th Symposium of Fusion Technology (SOFT-26) ",
+issn = "0920-3796",
+doi = "http://dx.doi.org/10.1016/j.fusengdes.2011.03.055",
+url = "http://www.sciencedirect.com/science/article/pii/S0920379611003280",
+author = "R.B. Gomes and R. Mateus and E. Alves and H. Fernandes and C. Silva and P. Duarte",
+keywords = "Liquid metals",
+keywords = "Plasma–surface interaction",
+keywords = "Gallium",
+keywords = "Hydrogen retention",
+keywords = "Tokamak {ISTTOK} "
+}
+
+@article{NBarradas1997,
+   author = "Barradas, N. P. and Jeynes, C. and Webb, R. P.",
+   title = "Simulated annealing analysis of Rutherford backscattering data",
+   journal = applphyslet,
+   year = "1997",
+   volume = "71",
+   number = "2", 
+   pages = "291-293",
+   url = "http://scitation.aip.org/content/aip/journal/apl/71/2/10.1063/1.119524",
+   doi = "http://dx.doi.org/10.1063/1.119524" 
+}
+
+@article{Allain200133,
+title = "D, {He} and {Li} sputtering of liquid eutectic {Sn–Li} ",
+journal = jnucmat,
+volume = "290–293",
+number = "",
+pages = "33 - 37",
+year = "2001",
+note = "14th Int. Conf. on Plasma-Surface Interactions in Controlled Fusion Devices ",
+issn = "0022-3115",
+doi = "http://dx.doi.org/10.1016/S0022-3115(00)00504-3",
+url = "http://www.sciencedirect.com/science/article/pii/S0022311500005043",
+author = "J.P. Allain and D.N. Ruzic and M.R. Hendricks",
+keywords = "Liquid metal",
+keywords = "Plasma–material interaction",
+keywords = "Sputtering "
+}
+
+@misc{nds.iaea,
+  howpublished = {\url{https://www-nds.iaea.org/exfor/exfor.html}},
+  note = {Accessed: 2016-05-10}
+}
+
+@misc{LundtADB,
+  title = {Periodic Table linked to ToRI data of known isotopes for each element},
+  howpublished = {\url{http://nucleardata.nuclear.lu.se/toi/perchart.htm}},
+  note = {Accessed: 2017-11-10}
+}
+
+
+  	
+@article{Tabares2016,
+  author={F. L. Tabar\'{e}s},
+  title={Present status of liquid metal research for a fusion reactor},
+  journal={Plasma Physics and Controlled Fusion},
+  volume={58},
+  number={1},
+  pages={014014},
+  url={http://stacks.iop.org/0741-3335/58/i=1/a=014014},
+  year={2016}
+}
+
+
+@article{Oyarzabal20151173,
+title = "Laboratory experiments of uptake and release of hydrogen isotopes in liquid lithium ",
+journal = jnucmat,
+volume = "463",
+number = "",
+pages = "1173 - 1176",
+year = "2015",
+note = "Proceedings of the 21st International Conference on Plasma-Surface Interactions in Controlled Fusion Devices Kanazawa, Japan May 26-30, 2014 ",
+issn = "0022-3115",
+doi = "http://dx.doi.org/10.1016/j.jnucmat.2014.10.088",
+url = "http://www.sciencedirect.com/science/article/pii/S0022311514007727",
+author = "E. Oyarzabal and A.B. {Martin-Rojo} and F.L. Tabar\'{e}s"
+}
+
+@article{MartinRojo20142915,
+title = "Laboratory studies of H retention and LiH formation in liquid lithium ",
+journal = FusEngDes,
+volume = "89",
+number = "12",
+pages = "2915 - 2918",
+year = "2014",
+note = "",
+issn = "0920-3796",
+doi = "http://dx.doi.org/10.1016/j.fusengdes.2014.07.015",
+url = "http://www.sciencedirect.com/science/article/pii/S0920379614005225",
+author = "A.B. Martín-Rojo and E. Oyarzabal and F.L. Tabar\'{e}s",
+keywords = "Lithium",
+keywords = "Liquid metals",
+keywords = "Fusion reactor",
+keywords = "Tritium retention",
+keywords = "Isotope exchange "
+}
+
+@article{Mazzitelli20151152,
+title = "Experiments on {FTU} with an actively water cooled liquid lithium limiter ",
+journal = jnucmat,
+volume = "463",
+number = "",
+pages = "1152 - 1155",
+year = "2015",
+note = "Proceedings of the 21st International Conference on Plasma-Surface Interactions in Controlled Fusion Devices Kanazawa, Japan May 26-30, 2014 ",
+issn = "0022-3115",
+doi = "http://dx.doi.org/10.1016/j.jnucmat.2014.12.050",
+url = "http://www.sciencedirect.com/science/article/pii/S0022311514009921",
+author = "G. Mazzitelli and M.L. Apicella and G. Apruzzese and F. Crescenzi and F. Iannone and G. Maddaluno and V. Pericoli-Ridolfini and S. Roccella and M. Reale and B. Viola and I. Lyublinski and A. Vertkov"
+}
+
+@article{Majeski2004121,
+title = "Testing of liquid lithium limiters in {CDX-U} ",
+journal = FusEngDes,
+volume = "72",
+number = "1–3",
+pages = "121 - 132",
+year = "2004",
+note = "Special Issue on Innovative High-Power Density Concepts for Fusion Plasma Chambers ",
+issn = "0920-3796",
+doi = "http://dx.doi.org/10.1016/j.fusengdes.2004.07.002",
+url = "http://www.sciencedirect.com/science/article/pii/S0920379604001127",
+author = "R. Majeski and R. Kaita and M. Boaz and P. Efthimion and T. Gray and B. Jones and D. Hoffman and H. Kugel and J. Menard and T. Munsat and A. Post-Zwicker and J. Spaleta and G. Taylor and J. Timberlake and R. Woolley and L. Zakharov and M. Finkenthal and D. Stutman and G. Antar and R. Doerner and S. Luckhardt and R. Seraydarian and R. Maingi and M. Maiorano and S. Smith and D. Rodgers and V. Soukhanovskii",
+keywords = "Liquid lithium limiters",
+keywords = "Plasma–edge interactions",
+keywords = "CDX-U "
+}
+
+@article {ISTTOK1996,
+author  = "C. A. F. Varandas and J. A. C. Cabral and J. T. Mendonça and M. P. Alonso and P. Amorim and B. B. Carvalho and C. Correia and L. Cupido and M. L. Carvalho and J. M. Dias and H. Fernandes and C. J. Freitas and S. Magalhāes and A. Malaquias and M. E. Manso and A. Praxedes and J. Santana and F. Serra and A. Silva and A. Soares and J. Sousa and W. van Toledo and P. Vaessen and P. Varela and S. Vergamota and B. de Groot",
+title   = "Engineering aspects of the tokamak {ISTTOK}",
+journal = "Fusion Science and Technology",
+year    = "1996",
+number = "1",
+volume  = "29",
+pages   = "105-115",
+url = "http://www.ans.org/pubs/journals/fst/a_30660"
+}
+
+
+@article{Fernandes1998101,
+title = "Engineering aspects of the {ISTTOK} operation in a multicycle alternating flat-top plasma current regime ",
+journal = FusEngDes,
+volume = "43",
+number = "1",
+pages = "101 - 113",
+year = "1998",
+note = "",
+issn = "0920-3796",
+doi = "http://dx.doi.org/10.1016/S0920-3796(98)00263-4",
+url = "http://www.sciencedirect.com/science/article/pii/S0920379698002634",
+author = "H Fernandes and C.A.F Varandas and J.A.C Cabral and H Figueiredo and R Galv{\~{a}}o",
+keywords = "Flat-top plasma current",
+keywords = "ISTTOK operation",
+keywords = "Tokamak "
+}
+
+@article{Carvalho2014576,
+title = "Real-time control for long ohmic alternate current discharges ",
+journal = FusEngDes,
+volume = "89",
+number = "5",
+pages = "576 - 581",
+year = "2014",
+note = "Proceedings of the 9th IAEA Technical Meeting on Control, Data Acquisition, and Remote Participation for Fusion Research ",
+issn = "0920-3796",
+doi = "http://dx.doi.org/10.1016/j.fusengdes.2014.03.029",
+url = "http://www.sciencedirect.com/science/article/pii/S0920379614002087",
+author = "Ivo S. Carvalho and Paulo Duarte and Horácio Fernandes and Daniel F. Valcárcel and Pedro J. Carvalho and Carlos Silva and André S. Duarte and André Neto and Jorge Sousa and António J.N. Batista and Tiago Hekkert and Bernardo B. Carvalho and Rui B. Gomes",
+keywords = "Nuclear fusion",
+keywords = "Control and data acquisition",
+keywords = "ATCA systems",
+keywords = "MARTe framework",
+keywords = "Real-time "
+}
+
+@article{Carvalho2014195,
+title = "{ISTTOK} real-time architecture ",
+journal = FusEngDes,
+volume = "89",
+number = "3",
+pages = "195 - 203",
+year = "2014",
+note = "Design and implementation of real-time systems for magnetic confined fusion devices ",
+issn = "0920-3796",
+doi = "http://dx.doi.org/10.1016/j.fusengdes.2013.12.025",
+url = "http://www.sciencedirect.com/science/article/pii/S0920379613007394",
+author = "Ivo S. Carvalho and Paulo Duarte and Horácio Fernandes and Daniel F. Valcárcel and Pedro J. Carvalho and Carlos Silva and André S. Duarte and André Neto and Jorge Sousa and António J.N. Batista and Tiago Hekkert and Bernardo B. Carvalho",
+keywords = "Nuclear fusion",
+keywords = "Control and data acquisition",
+keywords = "ATCA systems",
+keywords = "MARTe framework",
+keywords = "Real-time "
+}
+
+@article{Loureiro2015,
+title = "Behaviour of liquid {Li-Sn} alloy as plasma facing material on {ISTTOK} ",
+journal = fusengdes,
+year = "2017",
+issn = "0920-3796",
+doi = "http://dx.doi.org/10.1016/j.fusengdes.2016.12.031",
+url = "//www.sciencedirect.com/science/article/pii/S0920379616307463",
+author = "J.P.S. Loureiro and F.L. Tabarés and H. Fernandes and C. Silva and R. Gomes and E. Alves and R. Mateus and T. Pereira and H. Alves and H. Figueiredo"
+}
+
+
+@article {BBPC19900940612,
+author = {Schumacher, Richard and Weiss, Alarich},
+title = {Hydrogen Solubility in the Liquid Alloys Lithium-Indium, Lithium-Lead, and Lithium-Tin},
+journal = berber,
+volume = {94},
+number = {6},
+publisher = {Wiley-VCH Verlag GmbH & Co. KGaA},
+issn = {0005-9021},
+url = {http://dx.doi.org/10.1002/bbpc.19900940612},
+doi = {10.1002/bbpc.19900940612},
+pages = {684--691},
+keywords = {Alloys, Gases in Metals, Hydrogen in Metals, Liquid Metals, Thermodynamics},
+year = {1990}
+}
+
+@misc{Mateck,
+  howpublished = {\url{http://www.mateck.com/}},
+  note = {Accessed: 2016-05-10}
+}
+
+@misc{srim,
+  howpublished = {\url{http://www.srim.org/}},
+  note = {Accessed: 2016-05-10}
+}
+
+  	
+@article{Tanabe2014,
+  author={T Tanabe},
+  title={Review of hydrogen retention in tungsten},
+  journal=PhysScr,
+  volume={2014},
+  number={T159},
+  pages={014044},
+  url={http://stacks.iop.org/1402-4896/2014/i=T159/a=014044},
+  year={2014}
+}
+
+@article{HAASZ1996219,
+title = "Deuterium retention in doped graphites",
+journal = jnucmat,
+volume = "232",
+number = "2",
+pages = "219 - 225",
+year = "1996",
+note = "",
+issn = "0022-3115",
+doi = "http://dx.doi.org/10.1016/S0022-3115(96)00395-9",
+url = "http://www.sciencedirect.com/science/article/pii/S0022311596003959",
+author = "A.A. Haasz and J.W. Davis"
+}
+
+@article{Ogorodnikova2008254,
+title = "Pre-implantation and pre-annealing effects on deuterium retention in tungsten ",
+journal = jnucmat,
+volume = "373",
+number = "1–3",
+pages = "254 - 258",
+year = "2008",
+note = "",
+issn = "0022-3115",
+doi = "http://dx.doi.org/10.1016/j.jnucmat.2007.06.003",
+url = "http://www.sciencedirect.com/science/article/pii/S002231150700829X",
+author = "O.V. Ogorodnikova and J. Roth and M. Mayer"
+}
+
+@article{Causey200291,
+title = "Hydrogen isotope retention and recycling in fusion reactor plasma-facing components ",
+journal = jnucmat,
+volume = "300",
+number = "2–3",
+pages = "91 - 117",
+year = "2002",
+note = "",
+issn = "0022-3115",
+doi = "http://dx.doi.org/10.1016/S0022-3115(01)00732-2",
+url = "http://www.sciencedirect.com/science/article/pii/S0022311501007322",
+author = "Rion A Causey"
+}
+
+@article{TMorgan_PRL,
+  title = {Self-Regulated Plasma Heat Flux Mitigation Due to Liquid Sn Vapor Shielding},
+  author = {van Eden, G. G. and Morgan, T. W. and Aussems, D. U. B. and van den Berg, M. A. and Bystrov, K. and van de Sanden, M. C. M.},
+  journal = prl,
+  volume = {116},
+  issue = {13},
+  pages = {135002},
+  numpages = {5},
+  year = {2016},
+  month = {Apr},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.116.135002},
+  url = {http://link.aps.org/doi/10.1103/PhysRevLett.116.135002}
+}
+
+@article{WEEKS1971363,
+title = "Lead, bismuth, tin and their alloys as nuclear coolants",
+journal = nucengdes,
+volume = "15",
+number = "",
+pages = "363 - 372",
+year = "1971",
+note = "",
+issn = "0029-5493",
+doi = "http://dx.doi.org/10.1016/0029-5493(71)90075-6",
+url = "http://www.sciencedirect.com/science/article/pii/0029549371900756",
+author = "J.R. Weeks"
+}
+
+
+@article{Fukada2005293,
+title = "Hydrogen diffusion in liquid lithium from 500$^{\circ}${C} to 650$^{\circ}${C} ",
+journal = jnucmat,
+volume = "346",
+number = "2–3",
+pages = "293 - 297",
+year = "2005",
+note = "",
+issn = "0022-3115",
+doi = "http://dx.doi.org/10.1016/j.jnucmat.2005.06.021",
+url = "http://www.sciencedirect.com/science/article/pii/S0022311505003478",
+author = "S. Fukada and M. Kinoshita and K. Kuroki and T. Muroga"
+}
+
+@article{MORIYAMA1992190,
+title = "Transport of tritium in liquid lithium",
+journal = jnucmat,
+volume = "191",
+number = "",
+pages = "190 - 193",
+year = "1992",
+note = "",
+issn = "0022-3115",
+doi = "http://dx.doi.org/10.1016/S0022-3115(09)80031-7",
+url = "http://www.sciencedirect.com/science/article/pii/S0022311509800317",
+author = "H. Moriyama and K. Iwasaki and Y. Ito"
+}
+
+@article{BI2016,
+title = "A Study on Hydrogen Transport in Liquid Metals under Steady State Plasma Bombardment",
+journal = plafusres,
+volume = "11",
+number = "2405026",
+year = "2016",
+doi = "10.1585/pfr.11.2405026 ",
+url = "http://www.jspf.or.jp/PFR/PFR_articles/pfr2016/pfr2016_11-2405026.html",
+author = "H. Bi and Y. Hirooka and J. Yagi"
+}
+
+@article{Baldwin200215,
+title = "Recombination of deuterium atoms on the surface of molten Li–LiD ",
+journal = jnucmat,
+volume = "306",
+number = "1",
+pages = "15 - 20",
+year = "2002",
+note = "",
+issn = "0022-3115",
+doi = "http://dx.doi.org/10.1016/S0022-3115(02)01232-1",
+url = "http://www.sciencedirect.com/science/article/pii/S0022311502012321",
+author = "M.J Baldwin and R.P Doerner and R Causey and S.C Luckhardt and R.W Conn"
+}
+
+@Article{Sacris1970,
+author="Sacris, E. M. and Parlee, N. A. D.",
+title="The diffusion of hydrogen in liquid Ni, Cu, Ag, and Sn",
+journal=mettrans,
+year="1970",
+volume="1",
+number="12",
+pages="3377-3382",
+issn="1543-1916",
+doi="10.1007/BF03037867",
+url="http://dx.doi.org/10.1007/BF03037867"
+}
+
+@article{L3936,
+author = {C. M. Brown and S. G. Tilford and Marshall L. Ginter},
+journal = JOptSocAm,
+keywords = {},
+number = {5},
+pages = {607--621},
+publisher = {OSA},
+title = {Absorption spectrum of Sn i between 1580 and 2040 {\AA}},
+volume = {67},
+month = {May},
+year = {1977},
+url = {http://www.osapublishing.org/abstract.cfm?URI=josa-67-5-607},
+doi = {10.1364/JOSA.67.000607}
+}
+
+
+  	
+@article{L18891,
+  author={K Haris and A Kramida and A Tauheed},
+  title={Extended and revised analysis of singly ionized tin: Sn II},
+  journal=PhysScr,
+  volume={89},
+  number={11},
+  pages={115403},
+  url={http://stacks.iop.org/1402-4896/89/i=11/a=115403},
+  year={2014},
+}
+
+
+  	
+@article{L18161,
+  author={K Haris and A Tauheed},
+  title={Revised and extended analysis of doubly ionized tin: Sn III},
+  journal=PhysScr,
+  volume={85},
+  number={5},
+  pages={055301},
+  url={http://stacks.iop.org/1402-4896/85/i=5/a=055301},
+  year={2012},
+}
+	
+
+@article{L3466c99,
+  author={C E Moore},
+  title={Atomic Energy Levels as Derived from the Analysis of Optical Spectra – Molybdenum through Lanthanum and Hafnium through Actinium},
+  journal={Nat. Stand. Ref. Data Ser.},
+  volume={III},
+  number={35},
+  pages={245},
+  year={1971},
+}
+
+
+
+  	
+@article{L11384,
+  author={S S Churilov and Y N Joshi and A N Ryabtsev},
+  title={The 4d 10 1 S 0 -4d 9 (np+n'f) transitions in the Pd I isoelectronic sequence from Cd III to Cs X},
+  journal={Journal of Physics B: Atomic, Molecular and Optical Physics},
+  volume={27},
+  number={22},
+  pages={5485},
+  url={http://stacks.iop.org/0953-4075/27/i=22/a=008},
+  year={1994},
+}
+
+@article{L12261,
+  title = {Ionization energy of $^{6,7}\mathrm{Li}$ determined by triple-resonance laser spectroscopy},
+  author = {Bushaw, B. A. and N\"ortersh\"auser, W. and Drake, G. W. F. and Kluge, H.-J.},
+  journal = prA,
+  volume = {75},
+  issue = {5},
+  pages = {052503},
+  numpages = {8},
+  year = {2007},
+  month = {May},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevA.75.052503},
+  url = {https://link.aps.org/doi/10.1103/PhysRevA.75.052503}
+}
+
+@article{L10054,
+  author = {G. W. Drake},
+  title = {Theoretical energies for the n = 1 and 2 states of the helium isoelectronic sequence up to Z = 100},
+  journal = CJPhys,
+  volume = {66},
+  number = {7},
+  pages = {586-611},
+  year = {1988},
+  doi = {10.1139/p88-100},
+  URL = {https://doi.org/10.1139/p88-100}
+}
+
+@article{L3620c96,
+author = {Glen W. Erickson},
+title = {Energy levels of one‐electron atoms},
+journal = JPhysChemRefData,
+volume = {6},
+number = {3},
+pages = {831-870},
+year = {1977},
+doi = {10.1063/1.555557},
+URL = {https://doi.org/10.1063/1.555557}
+}
+
+@article{HUANG1985503,
+title = "Energy-level scheme and transition probabilities of Si-like ions",
+journal = "Atomic Data and Nuclear Data Tables",
+volume = "32",
+number = "3",
+pages = "503 - 566",
+year = "1985",
+issn = "0092-640X",
+doi = "https://doi.org/10.1016/0092-640X(85)90022-1",
+url = "http://www.sciencedirect.com/science/article/pii/0092640X85900221",
+author = "Keh-Ning Huang"
+}
+
+
+  	
+@article{0953-4075-33-9-307,
+  author={E Charro and I Martín and M A Serna},
+  title={Systematic trends for quartet transitions in the phosphorus sequence},
+  journal={Journal of Physics B: Atomic, Molecular and Optical Physics},
+  volume={33},
+  number={9},
+  pages={1753},
+  url={http://stacks.iop.org/0953-4075/33/i=9/a=307},
+  doi="https://doi.org/10.1088/0953-4075/33/9/307",
+  year={2000}
+}
+
+@article{CHOU199677,
+title = "ENERGY-LEVEL SCHEME AND TRANSITION PROBABILITIES OF S-LIKE IONS",
+journal = "Atomic Data and Nuclear Data Tables",
+volume = "62",
+number = "1",
+pages = "77 - 145",
+year = "1996",
+issn = "0092-640X",
+doi = "https://doi.org/10.1006/adnd.1996.0003",
+url = "http://www.sciencedirect.com/science/article/pii/S0092640X96900030",
+author = "Hsiang-shun Chou and Jieh-Yi Chang and Yun-Hsiung Chang and Keh-Ning Huang"
+}
+
+@article{HUANG1983355,
+title = "Energy-level scheme and transition probabilities of Cl-like ions",
+journal = "Atomic Data and Nuclear Data Tables",
+volume = "28",
+number = "2",
+pages = "355 - 377",
+year = "1983",
+issn = "0092-640X",
+doi = "https://doi.org/10.1016/0092-640X(83)90022-0",
+url = "http://www.sciencedirect.com/science/article/pii/0092640X83900220",
+author = "K.-N. Huang and Y.-K. Kim and K.T. Cheng and J.P. Desclaux"
+}
+
+@article{PhysRevA.16.589,
+  title = {Relativistic oscillator strengths for $E1$ transitions in the argon isoelectronic sequence},
+  author = {Lin, Dong L. and Fielder, W. and Armstrong, Lloyd},
+  journal = {Phys. Rev. A},
+  volume = {16},
+  issue = {2},
+  pages = {589--599},
+  numpages = {0},
+  year = {1977},
+  month = {Aug},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevA.16.589},
+  url = {https://link.aps.org/doi/10.1103/PhysRevA.16.589}
+}
+
+@article{POST1977397,
+title = "Steady-state radiative cooling rates for low-density, high-temperature plasmas",
+journal = "Atomic Data and Nuclear Data Tables",
+volume = "20",
+number = "5",
+pages = "397 - 439",
+year = "1977",
+issn = "0092-640X",
+doi = "https://doi.org/10.1016/0092-640X(77)90026-2",
+url = "http://www.sciencedirect.com/science/article/pii/0092640X77900262",
+author = "D.E. Post and R.V. Jensen and C.B. Tarter and W.H. Grasberger and W.A. Lokke"
+}
+
+  	
+@article{1674-1056-18-1-024,
+  author={Chen Ming-Lun and Yu Xiao-Guang},
+  title={Spectra and oscillator strengths of 3p 6 3d 9 –3p 5 3d 10 and 3p 6 3d 9 –3p 6 3d 8 4p transitions for cobalt-like Sn 23 + ion},
+  journal={Chinese Physics B},
+  volume={18},
+  number={1},
+  pages={157},
+  url={http://stacks.iop.org/1674-1056/18/i=1/a=024},
+  year={2009},
+  doi = "https://doi.org/10.1088/1674-1056/18/1/024"
+}
+
+@article{LIANG2008807,
+title = "Electron impact collision strengths in Sn XXIII",
+journal = "Atomic Data and Nuclear Data Tables",
+volume = "94",
+number = "6",
+pages = "807 - 902",
+year = "2008",
+issn = "0092-640X",
+doi = "https://doi.org/10.1016/j.adt.2008.03.002",
+url = "http://www.sciencedirect.com/science/article/pii/S0092640X08000168",
+author = "Y.Q. Liang and J.Y. Zhong"
+}
+
+@article{BIEMONT1988157,
+title = "Energy levels, wavelengths, and weighted oscillator strengths for n = 3–4 and 4-4 transitions in Cu-like ions (Sr X to Nd XXXII)",
+journal = "Atomic Data and Nuclear Data Tables",
+volume = "39",
+number = "1",
+pages = "157 - 181",
+year = "1988",
+issn = "0092-640X",
+doi = "https://doi.org/10.1016/0092-640X(88)90017-4",
+url = "http://www.sciencedirect.com/science/article/pii/0092640X88900174",
+author = "E. Biemont"
+}
+  	
+@article{0953-4075-43-7-074025,
+  author={U I Safronova and M S Safronova},
+  title={Relativistic many-body calculations of the oscillator strengths, transition rates and polarizabilities in Zn-like ions},
+  journal={Journal of Physics B: Atomic, Molecular and Optical Physics},
+  volume={43},
+  number={7},
+  pages={074025},
+  url={http://stacks.iop.org/0953-4075/43/i=7/a=074025},
+  year={2010},
+  doi="https://doi.org/10.1088/0953-4075/43/7/074025"
+  }
+  
+@article{NAGY2012373,
+title = "Energies, wavelengths, and transition probabilities for Ge-like Kr, Mo, Sn, and Xe ions",
+journal = "Atomic Data and Nuclear Data Tables",
+volume = "98",
+number = "3",
+pages = "373 - 390",
+year = "2012",
+issn = "0092-640X",
+doi = "https://doi.org/10.1016/j.adt.2012.01.001",
+url = "http://www.sciencedirect.com/science/article/pii/S0092640X12000022",
+author = "O. Nagy and Fatma El-Sayed"
+}
+  	
+@article{0953-4075-42-16-165207,
+  author={R D'Arcy and H Ohashi and S Suda and H Tanuma and S Fujioka and H Nishimura and K Nishihara and C Suzuki and T Kato and F Koike and A
+O'Connor and G O'Sullivan},
+  title={Identification of 4d–5p transitions in the spectra of Sn XV–Sn XIX recorded from collisions between Sn ions and He},
+  journal={Journal of Physics B: Atomic, Molecular and Optical Physics},
+  volume={42},
+  number={16},
+  pages={165207},
+  url={http://stacks.iop.org/0953-4075/42/i=16/a=165207},
+  year={2009},
+  doi = "https://doi.org/10.1088/0953-4075/42/16/165207"
+}
+
+@article{refId0,
+	author = {{Charro, E.} and {Mart\'{\i}n, I.}},
+	title = {Relativistic calculations on E1 transitions in
+As-like ions},
+	DOI= "10.1051/aas:1998276",
+	url= "https://doi.org/10.1051/aas:1998276",
+	journal = {Astron. Astrophys. Suppl. Ser.},
+	year = 1998,
+	volume = 131,
+	number = 3,
+	pages = "523-529",
+}
+
+@article{AGGARWAL2016221,
+title = "Radiative rates for E1, E2, M1, and M2 transitions in Br-like ions with 43≤Z≤50",
+journal = "Atomic Data and Nuclear Data Tables",
+volume = "107",
+pages = "221 - 366",
+year = "2016",
+issn = "0092-640X",
+doi = "https://doi.org/10.1016/j.adt.2015.07.003",
+url = "http://www.sciencedirect.com/science/article/pii/S0092640X15000339",
+author = "Kanti M. Aggarwal and Francis P. Keenan",
+keywords = "Br-like ions, Energy levels, Radiative rates, Oscillator strengths, Line strengths, Lifetimes"
+}
+  	
+@article{0953-4075-44-13-135201,
+  author={N R Badnell and A Foster and D C Griffin and D Kilbane and M O'Mullane and H P Summers},
+  title={Dielectronic recombination of heavy species: the tin 4p 6 4d q − 4p 6 4d ( q − 1) 4f + 4p 5 4d ( q + 1) transition arrays for q = 1–10},
+  journal={Journal of Physics B: Atomic, Molecular and Optical Physics},
+  volume={44},
+  number={13},
+  pages={135201},
+  url={http://stacks.iop.org/0953-4075/44/i=13/a=135201},
+  year={2011},
+  doi = "https://doi.org/10.1088/0953-4075/44/13/135201"
+}
+	
+@article{IVANOVA20111,
+title = "Transition probabilities for 5s–5p, 5p–5d, 4f–5d, and 5d–5f transitions in Ag-like ions with Z=50–86",
+journal = "Atomic Data and Nuclear Data Tables",
+volume = "97",
+number = "1",
+pages = "1 - 22",
+year = "2011",
+issn = "0092-640X",
+doi = "https://doi.org/10.1016/j.adt.2010.06.005",
+url = "http://www.sciencedirect.com/science/article/pii/S0092640X10000616",
+author = "E.P. Ivanova"
+}
+ 	
+@article{0953-4075-43-16-165001,
+  author={C Colón and A Alonso-Medina},
+  title={Calculation of oscillator strengths, transition probabilities and radiative lifetimes of levels in Sn III},
+  journal={Journal of Physics B: Atomic, Molecular and Optical Physics},
+  volume={43},
+  number={16},
+  pages={165001},
+  url={http://stacks.iop.org/0953-4075/43/i=16/a=165001},
+  year={2010},
+  doi = "https://doi.org/10.1088/0953-4075/43/16/165001"
+}
+	
+	
+  	
+@article{0953-4075-43-7-074013,
+  author={P Oliver and A Hibbert},
+  title={Accurate configuration-interaction calculation of transitions in Sn II},
+  journal={Journal of Physics B: Atomic, Molecular and Optical Physics},
+  volume={43},
+  number={7},
+  pages={074013},
+  url={http://stacks.iop.org/0953-4075/43/i=7/a=074013},
+  year={2010},
+  doi = "https://doi.org/10.1088/0953-4075/43/7/074013"
+}
+	
+	
+@article{doi:10.1139/p07-197,
+author = {Gu, M F},
+title = {The flexible atomic code},
+journal = {Canadian Journal of Physics},
+volume = {86},
+number = {5},
+pages = {675-689},
+year = {2008},
+doi = {https://doi.org/10.1139/p07-197}
+}
+
+@PROCEEDINGS{lithium-safety-1,
+  author = {Richard Nygren},
+  title = {Lithium Safety and Handling},
+  note = ", in the procedings to 4th International Symposium on Lithium Applications Conference, Granada, Sept. 2015",
+  year = {2015}
+}
+
+@PROCEEDINGS{lithium-safety-2,
+  author = {R Kaita and R Majeski and W Blanchard and D Cai and M Jaworski and T Kozub and H Schneider},
+  title = {Peer Review of Lithium Safety at the Princeton Plasma Physics Laboratory and Implications for Present and Future Lithium Research},
+  note = ", in the procedings to 4th International Symposium on Lithium Applications Conference, Granada, Sept. 2015",
+  year = {2015}
+}
+
+	
+@article{Apicella2007,
+author = {Apicella, M. L. and Mazzitelli, G. and {Pericoli Ridolfini}, V. and Lazarev, V. and Alekseyev, a. and Vertkov, a. and Zag{\'{o}}rski, R.},
+doi = {10.1016/j.jnucmat.2007.01.237},
+issn = {00223115},
+journal = jnucmat,
+keywords = {FTU,Limiter materials,Liquid lithium,Plasma facing components,Wall conditioning},
+month = {jun},
+number = {1-3},
+pages = {1346--1351},
+title = {{First experiments with lithium limiter on FTU}},
+url = {http://linkinghub.elsevier.com/retrieve/pii/S0022311507002711},
+volume = {363-365},
+year = {2007}
+}
+
+@article{Apicella2009,
+author = {Apicella, M. L. and Lazarev, V. and Lyublinski, I. and Mazzitelli, G. and Mirnov, S. and Vertkov, a.},
+doi = {10.1016/j.jnucmat.2008.12.238},
+issn = {00223115},
+journal = jnucmat,
+month = {apr},
+number = {C},
+pages = {821--823},
+publisher = {Elsevier B.V.},
+title = {{Lithium capillary porous system behavior as PFM in FTU tokamak experiments}},
+url = {http://linkinghub.elsevier.com/retrieve/pii/S0022311508009938},
+volume = {386-388},
+year = {2009}
+}
+
+@article{Mazzitelli2011,
+author = {Mazzitelli, G. and Apicella, M. L. and Alexeyev, a.},
+doi = {10.1016/j.fusengdes.2010.11.007},
+issn = {09203796},
+journal = FusEngDes,
+keywords = {Heat load,Impurities,Limiter,Liquid metal,Lithium,Tokamak},
+month = {oct},
+number = {6-8},
+pages = {580--583},
+title = {{Heat loads on FTU liquid lithium limiter}},
+url = {http://linkinghub.elsevier.com/retrieve/pii/S0920379610004515},
+volume = {86},
+year = {2011}
+}
+
+@article{Mazzitelli2010,
+author = {Mazzitelli, G. and Apicella, M. L. and Ridolfini, V. Pericoli and Apruzzese, G. and {De Angelis}, R. and Frigione, D. and Giovannozzi, E. and Gabellieri, L. and Granucci, G. and Mazzotta, C. and Marinucci, M. and Romano, a. and Tudisco, O. and Alekseyev, a. and Ljublinski, I. and Vertkov, a.},
+doi = {10.1016/j.fusengdes.2010.08.038},
+issn = {09203796},
+journal = FusEngDes,
+keywords = {Heat loads,Impurities,Liquid lithium limiter,Tokamak},
+month = {nov},
+number = {6},
+pages = {896--901},
+title = {{Review of FTU results with the liquid lithium limiter}},
+url = {http://linkinghub.elsevier.com/retrieve/pii/S0920379610003868},
+volume = {85},
+year = {2010}
+}
+
+
+@article{Evtikhin2002,
+author = {Evtikhin, V. A. and Lyublinski, I. E. and Vertkov, A. V. and Mirnov, S. V. and Lazarev, V. B. and Petrova, N. P. and Sotnikov, S. M. and Chernobai, A. P. and Khripunov, B. I. and Petrov, V. B. and Prokhorov, D. Yu and Korzhavin, V. M.},
+doi = {10.1088/0741-3335/44/6/322},
+isbn = {0741-3335},
+issn = {07413335},
+journal =PPCF,
+number = {6},
+pages = {955--977},
+title = {{Lithium divertor concept and results of supporting experiments}},
+volume = {44},
+year = {2002}
+}
+
+
+@PROCEEDINGS{MatteoISLA2017_talk,
+  author = {Iafrati, M. and Mazzitelli, G. and Apicella, M. L. and Apruzzese, G. and Ljublinski, I. and Vertkov, a. and Berlov, A. and Loureiro, J. P. S. and {FTU team}},
+  title = {Comparison between liquid lithium and liquid tin limiters in FTU},
+  note = ", in the procedings to 5th International Symposium on Lithium Applications Conference, Moscow, Sept. 2017",
+  year = {2017}
+}
+
+@article{RINDT2016204,
+title = "Conceptual design of a pre-loaded liquid lithium divertor target for NSTX-U",
+journal = FusEngDes,
+volume = "112",
+pages = "204 - 212",
+year = "2016",
+issn = "0920-3796",
+doi = "https://doi.org/10.1016/j.fusengdes.2016.08.020",
+url = "http://www.sciencedirect.com/science/article/pii/S0920379616305555",
+author = "P. Rindt and N.J. Lopes Cardozo and J.A.W. van Dommelen and R. Kaita and M.A. Jaworski",
+keywords = "Fusion, Divertor, Lithium, Capillary, NSTX-U"
+}
+
+@article{Eddington,
+ ISSN = {00963771},
+ URL = {http://www.jstor.org/stable/6491},
+ author = {A. S. Eddington},
+ journal = {The Scientific Monthly},
+ number = {4},
+ pages = {297--303},
+ publisher = {American Association for the Advancement of Science},
+ title = {The Internal Constitution of the Stars},
+ volume = {11},
+ year = {1920}
+}
+
+@Article{Alchagirov2009,
+author="Alchagirov, B. B.
+and Afaunova, L. Kh.
+and Dyshekova, F. F.
+and Mozgovoi, A. G.
+and Taova, T. M.
+and Arkhestov, R. Kh.",
+title="The density and surface tension of liquid lithium at melting temperature",
+journal="High Temperature",
+year="2009",
+month="Apr",
+day="01",
+volume="47",
+number="2",
+pages="287--291",
+issn="1608-3156",
+doi="10.1134/S0018151X09020205",
+url="https://doi.org/10.1134/S0018151X09020205"
+}
+
+@Article{Sangster1998,
+author="Sangster, J.
+and Bale, C.W.",
+title="The Li-Sn (Lithium-Tin) System",
+journal="Journal of Phase Equilibria and Diffusion",
+year="1998",
+month="Jan",
+day="01",
+volume="19",
+number="1",
+pages="70--75",
+issn="1863-7345",
+doi="10.1007/s11669-006-5008-6",
+url="https://doi.org/10.1007/s11669-006-5008-6"
+}
+
+@article{WEN1980376,
+title = "Chemical diffusion in intermediate phases in the lithium-tin system",
+journal = "Journal of Solid State Chemistry",
+volume = "35",
+number = "3",
+pages = "376 - 384",
+year = "1980",
+issn = "0022-4596",
+doi = "https://doi.org/10.1016/0022-4596(80)90535-6",
+url = "http://www.sciencedirect.com/science/article/pii/0022459680905356",
+author = "C.John Wen and Robert A. Huggins"
+}
+
+@Misc{LandoltBornstein2007,
+author="Franke, P.
+and Neusch{\"u}tz, D.",
+editor="Franke, P.
+and Neusch{\"u}tz, D.",
+title="Li-Sn (Lithium - Tin): Datasheet from Landolt-B{\"o}rnstein - Group IV Physical Chemistry {\textperiodcentered} Volume 19B5: ``Binary Systems. Part 5: Binary Systems Supplement 1'' in SpringerMaterials (https://dx.doi.org/10.1007/978-3-540-45280-5{\_}87)",
+publisher="Springer-Verlag Berlin Heidelberg",
+note="accessed 2018-09-30",
+doi="10.1007/978-3-540-45280-5_87",
+url="https://materials.springer.com/lb/docs/sm_lbs_978-3-540-45280-5_87"
+}
+
+@article{BCAllen1967,
+journal = "Transactions of the Metallurgical Society of AIME",
+volume = "239",
+pages = "1026 - 1029",
+year = "1967",
+author = "B.C.Allen"
+}
+
+@book{MASSALSKI,
+author="MASSALSKI, T. B.",
+title="Binary Alloy Phase Diagrams",
+ISBN="087170403X",
+publisher="ASM International, Materials Park, Ohio",
+year="1990"
+}
+
+@article{Morgan2015,
+author = {Morgan, T. W. and {Van Den Bekerom}, D. C M and {De Temmerman}, G.},
+doi = {10.1016/j.jnucmat.2014.11.085},
+issn = {00223115},
+journal = {Journal of Nuclear Materials},
+pages = {1256--1259},
+publisher = {Elsevier B.V.},
+title = {{Interaction of a tin-based capillary porous structure with ITER/DEMO relevant plasma conditions}},
+url = {http://dx.doi.org/10.1016/j.jnucmat.2014.11.085},
+volume = {463},
+year = {2015}
+}
+
+@article{Doerner2001,
+author = {Doerner, R. P. and Baldwin, M. J. and Conn, R. W. and Grossman, A. A. and Luckhardt, S. C. and Seraydarian, R. and Tynan, G. R. and Whyte, D. G.},
+doi = {10.1016/S0022-3115(00)00568-7},
+issn = {00223115},
+journal = {Journal of Nuclear Materials},
+keywords = {chemical erosion,lithium,pisces b,tungsten},
+pages = {166--172},
+title = {{Measurements of erosion mechanisms from solid and liquid materials in PISCES-B}},
+volume = {290-293},
+year = {2001}
+}
+
+
+@article{Krasin2018,
+author = {Krasin, V. P. and Soyustova, S. I.},
+doi = {10.1016/j.jnucmat.2018.04.008},
+issn = {00223115},
+journal = {Journal of Nuclear Materials},
+pages = {193--199},
+title = {{Quantitative evaluation of thermodynamic parameters of Li-Sn alloys related to their use in fusion reactor}},
+volume = {505},
+year = {2018}
+}
+
+
+@article{Schumacher1990,
+author = {Schumacher, Richard and Weiss, Alarich},
+doi = {10.1002/bbpc.19900940612},
+issn = {00059021},
+journal = {Berichte der Bunsengesellschaft/Physical Chemistry Chemical Physics},
+number = {6},
+pages = {684--691},
+title = {{Hydrogen solubility in the liquid alloys lithium-indium, lithium-lead, and lithium-tin}},
+volume = {94},
+year = {1990}
+}
+
+@article{Mattas2000,
+author = {Mattas, R. F. and Allain, J. P. and Bastasz, R. and Brooks, J. N. and Evans, T. and Hassanein, A. and Luckhardt, S. and McCarthy, K. and Mioduszewski, P. and Maingi, R. and Mogahed, E. and Moir, R. and Molokov, S. and Morely, N. and Nygren, R. and Rognlien, T. and Reed, C. and Ruzic, D. and Sviatoslavsky, I. and Sze, D. and Tillack, M. and Ulrickson, M. and Wade, P. M. and Wooley, R. and Wong, C.},
+doi = {10.1016/S0920-3796(00)00385-9},
+isbn = {1630252867},
+issn = {09203796},
+journal = {Fusion Engineering and Design},
+pages = {127--134},
+title = {{ALPS - advanced limiter-divertor plasma-facing systems}},
+volume = {49-50},
+year = {2000}
+}
+
+
+@techreport{Majeski2010,
+     title = {{Liquid Metal Walls, Lithium, And Low Recycling Boundary Conditions In Tokamaks}},
+     author = {R. Majeski},
+     year = {2010},
+     institution = {Princeton Plasma Physics Laboratory}
+}
+
+
+
+@phdthesis{GomesPhD2009,
+    title    = {{Interaction of a liquid gallium jet with the tokamak ISTTOK edge plasma}},
+    school   = {Universidade T\'{e}cnica de Lisboa, Instit\'{u}to Superior T\'{e}cnico},
+    author   =  {Gomes, Rui Barrocas},
+    year     = {2009}
+}
+
+@article{Kaita2005,
+author = {Kaita, R. and Majeski, R. and Boaz, M. and Efthimion, P. and Gettelfinger, G. and Gray, T. and Hoffman, D. and Jardin, S. and Kugel, H. and Marfuta, P. and Munsat, T. and Neumeyer, C. and Raftopoulos, S. and Soukhanovskii, V. and Spaleta, J. and Taylor, G. and Timberlake, J. and Woolley, R. and Zakharov, L. and Finkenthal, M. and Stutman, D. and Delgado-Aparicio, L. and Seraydarian, R. P. and Antar, G. and Doerner, R. and Luckhardt, S. and Baldwin, M. and Conn, R. W. and Maingi, R. and Menon, M. and Causey, R. and Buchenauer, D. and Ulrickson, M. and Jones, B. and Rodgers, D.},
+doi = {10.1016/j.jnucmat.2004.10.019},
+issn = {00223115},
+journal = {Journal of Nuclear Materials},
+keywords = {Liquid metal,Lithium,Particle control,Recycling,Wall pumping},
+number = {1-3 SPEC. ISS.},
+pages = {872--876},
+title = {{Effects of large area liquid lithium limiters on spherical torus plasmas}},
+volume = {337-339},
+year = {2005}
+}
+
+@article{Nygren2016,
+author = {Nygren, R. E. and Taba\'{e}s, F. L.},
+doi = {10.1016/j.nme.2016.08.008},
+issn = {23521791},
+journal = {Nuclear Materials and Energy},
+keywords = {Divertor,First wall,Fusion technology,Liquid surface,Plasma facing components,Plasma facing materials},
+pages = {6--21},
+publisher = {Elsevier Ltd},
+title = {{Liquid surfaces for fusion plasma facing components—A critical review. Part I: Physics and PSI}},
+volume = {9},
+year = {2016}
+}
+
+@article{Vodyanyuk1988,
+    author = {Vodyanyuk, V. O.},
+    journal = {Sov. J.Plasma Phys},
+    year = {1988},
+    volume = {14},
+    number = {370},
+    pages = {759--764},
+}
+
+
+@Article{Christofilos1989,
+author="Christofilos, N. C.",
+title="Design for a high power-density Astron reactor",
+journal="Journal of Fusion Energy",
+year="1989",
+month="Jun",
+day="01",
+volume="8",
+number="1",
+pages="97--105",
+issn="1572-9591",
+doi="10.1007/BF01050784",
+url="https://doi.org/10.1007/BF01050784"
+}
+
+@techreport{UWMAK1,
+     title = {{UWMAK-I, a wisconsin toroidal fusion reactor design - report UWFDM-68}},
+     author = {B. Badger and M. A. Abdou and R. W. Boom and R. G. Brown and E. T. Cheng and R. W. Conn and J. M. Donhowe},
+     year = {1973},
+     institution = {Fusion technology institue, University of Wisconsin},
+	 url = {http://fti.neep.wisc.edu/pdf/fdm68.pdf}
+}
+
+@techreport{UWMAK2,
+     title = {{UWMAK-II, A Conceptual D-T Fueled, Helium Cooled Tokamak Fusion Power Reactor - report UWFDM-112}},
+     author = {B. Badger and M. A. Abdou and R. W. Boom and E. T. Cheng and R. W. Conn and J. M. Donhowe},
+     year = {1975},
+     institution = {Fusion technology institue, University of Wisconsin},
+	 url = {http://fti.neep.wisc.edu/pdf/fdm112.pdf}
+}
+
+@article{CHUNG20053,
+title = "FLYCHK: Generalized population kinetics and spectral model for rapid spectroscopic analysis for all elements",
+journal = hedp,
+volume = "1",
+number = "1",
+pages = "3 - 12",
+year = "2005",
+issn = "1574-1818",
+doi = "https://doi.org/10.1016/j.hedp.2005.07.001",
+url = "http://www.sciencedirect.com/science/article/pii/S1574181805000029",
+author = "H.-K. Chung and M.H. Chen and W.L. Morgan and Y. Ralchenko and R.W. Lee",
+keywords = "Collisional–radiative modeling, Hydrogenic model, Non-LTE kinetics, Plasma spectroscopy"
+}
+
+
+@Misc{NIST_ASD,
+author = {A.~Kramida and {Yu.~Ralchenko} and J.~Reader and {and NIST ASD Team}},
+HOWPUBLISHED = {{NIST Atomic Spectra Database (ver. 5.5.6), [Online]. Available: {\tt{https://physics.nist.gov/asd}} [2018, July 17]. National Institute of Standards and Technology, Gaithersburg, MD.}},
+year = {2018},
+}
+
+@article{HTT,
+title = "Heat Transfer",
+journal = jhetrans,
+year = "2010",
+doi = "https://doi.org/10.1115/1.3246887",
+author = "Lienhard, J. H."
+}
+
+
+@ARTICLE{oldeld,
+author={M. L. G. Oldfield and T. V. Jones and D. L. Schultz},
+journal=transAeroElecSys,
+title={On-Line Computer for Transient Turbine Cascade Instrumentation},
+year={1978},
+volume={AES-14},
+number={5},
+pages={738-749},
+keywords={Turbines;Instruments;Blades;Surface resistance;Data acquisition;Testing;Engines;Temperature;Resistance heating;Heat transfer},
+doi={10.1109/TAES.1978.308624},
+ISSN={0018-9251},
+month={Sept}
+}
+
+
+
+@Article{CandF,
+author={Cook, W. J. and Felderman, E. J.},
+title={Reduction of data from thin-film heat-transfer gages: A concise numerical technique.},
+journal=AIAAJ,
+year={1966},
+publisher={American Institute of Aeronautics and Astronautics},
+volume={4},
+number={3},
+pages={561-562},
+issn={0001-1452},
+doi={10.2514/3.3486},
+url={https://doi.org/10.2514/3.3486}
+}
+
+@article{MatteoEPS_2017,
+title = {Comparison between liquid lithium and liquid tin limiters in {FTU}},
+year = {2017},
+note = {, O5.132 in the procedings from 44th EPS Conference on Plasma Physics in Belfast June 2017 (to appear in Plasma Phys. and Controlled Fus.)},
+author = {M. Iafrati and G. Mazzitelli and M. L. Apicella and G. M. Apruzzese and J. P. S. Loureiro and I. Lyublinski and A. Vertkov and A. Berlov and G. Maddaluno and F. Crescenzi and A. Mancini and {FTU team}},
+url={http://ocs.ciemat.es/EPS2017PAP/pdf/O5.132.pdf}
+}
+
+@article{Coventry2004,
+author = {Coventry, M. D. and Allain, J. P. and Ruzic, D. N.},
+doi = {10.1016/j.jnucmat.2004.06.009},
+issn = {00223115},
+journal = jnucmat,
+number = {1},
+pages = {115--120},
+title = {{Temperature dependence of liquid Sn sputtering by low-energy He + and D + bombardment}},
+volume = {335},
+year = {2004}
+}
+
+@article{Coventry2003,
+author = {Coventry, M. D. and Allain, J. P. and Ruzic, D. N.},
+doi = {10.1016/S0022-3115(02)01369-7},
+issn = {00223115},
+journal = jnucmat,
+keywords = {Divertor material,Ion-beam irradiation,Liquid-metal sputtering,Plasma-material interaction,Tin sputtering},
+number = {SUPPL.},
+pages = {636--640},
+title = {{D+, He+ and H+ sputtering of solid and liquid phase tin}},
+volume = {313-316},
+year = {2003}
+}
+
+@article{Snchez2009,
+author = {S{\'{a}}anchez, J. and Acedo, M. and Alonso, A. and Alonso, J. and Alvarez, P. and Ascas{\'{i}}bar, E. and Baciero, A. and Balb{\'{i}}n, R. and Barrera, L. and Blanco, E. and Botija, J. and {De Bustos}, A. and {De La Cal}, E. and Calvo, I. and Cappa, A. and Carmona, J. M. and Carralero, D. and Carrasco, R. and Carreras, B. A. and Castej{\'{o}}n, F. and Castro, R. and Cataln, G. and Chmyga, A. A. and Chamorro, M. and Eliseev, L. and Esteban, L. and Estrada, T. and Fernndez, A. and Fernndez-Gaviln, R. and Ferreira, J. A. and Fontdecaba, J. M. and Fuentes, C. and Garc{\'{i}}a, L. and Garc{\'{i}}a-Cort{\'{e}}s, I. and Garc{\'{i}}a-G{\'{o}}mez, R. and Garc{\'{i}}a-Reg{\~{a}}a, J. M. and Guasp, J. and Guimarais, L. and Happel, T. and Hernanz, J. and Herranz, J. and Hidalgo, C. and Jim{\'{e}}nez, J. A. and Jim{\'{e}}nez-Denche, A. and Jim{\'{e}}nez-G{\'{o}}mez, R. and Jim{\'{e}}nez-Rey, D. and Kirpitchev, I. and Komarov, A. D. and Kozachok, A. S. and Krupnik, L. and Lapayese, F. and Liniers, M. and L{\'{o}}pez-Bruna, D. and L{\'{o}}pez-Fraguas, A. and L{\'{o}}pez-Rzola, J. and L{\'{o}}pez-Snchez, A. and Lysenko, S. and Marcon, G. and Mart{\'{i}}n, F. and Maurin, V. and McCarthy, K. J. and Medina, F. and Medrano, M. and Melnikov, A. V. and M{\'{e}}ndez, P. and {Van Milligen}, B. and Mirones, E. and Nedzelskiy, I. S. and Ochando, M. and Olivares, J. and {De Pablos}, J. L. and Pacios, L. and Pastor, I. and Pedrosa, M. A. and {De La Pẽa}, A. and Pereira, A. and P{\'{e}}rez, G. and P{\'{e}}rez-Risco, D. and Petrov, A. and Petrov, S. and Portas, A. and Pretty, D. and Rapisarda, D. and Ratt, G. and Reynolds, J. M. and Rinc{\'{o}}n, E. and R{\'{i}}os, L. and Rodr{\'{i}}guez, C. and Romero, J. A. and Ros, A. and Salas, A. and Snchez, M. and Snchez, E. and Snchez-Sarabia, E. and Sarksian, K. and Sebastin, J. A. and Silva, C. and Schchepetov, S. and Skvortsova, N. and Solano, E. R. and Soleto, A. and Tabar{\'{e}}s, F. and Tafalla, D. and Taranc{\'{o}}n, A. and Taschev, Yu and Tera, J. and Tolkachev, A. and Tribaldos, V. and Vargas, V. I. and Vega, J. and Velasco, G. and Velasco, J. L. and Weber, M. and Wolfers, G. and Zurro, B.},
+doi = {10.1088/0029-5515/49/10/104018},
+isbn = {0029-5515},
+issn = {00295515},
+journal = {Nuclear Fusion},
+number = {10},
+title = {{Confinement transitions in TJ-II under Li-coated wall conditions}},
+volume = {49},
+year = {2009}
+}
+
+@article{Tabares2010,
+abstract = {The Spanish stellarator TJ-II has been operated under lithium wall conditions for two years so far. Important changes in plasma parameters and, in particular, on particle recycling have been recorded with respect to the normal, boronized wall conditions previously prevailing. The specific effects that the new recycling scenario could have on the improved plasma parameters, and in particular to the global energy balance of electrons and protons are addressed in the present work. In addition, the possible increase in ion energies impinging on the walls should be mirrored by the incoming flux of sputtered lithium atoms. However, a strong decrease of the corresponding sputtering yield is recorded. This effect is analyzed in terms of possible material mixing effects among others. {\textcopyright} 2010 WILEY-VCH Verlag GmbH {\&} Co. KGaA, Weinheim.},
+author = {Tabar{\'{e}}s, F. L. and Ochando, M. and Tafalla, D. and Medina, F. and McCarthy, K. and Fontdecaba, J. M. and Liniers, M. and Guasp, J. and Ascas{\'{i}}bar, E. and Estrada, T. and Pastor, I.},
+doi = {10.1002/ctpp.200900046},
+file = {:C$\backslash$:/Users/Jo{\~{a}}o/Dropbox/Doutoramento/Artigos - Biblioteca/TJ-II/Tabar-s{\_}et{\_}al-2010-Contributions{\_}to{\_}Plasma{\_}Physics.pdf:pdf},
+issn = {08631042},
+journal = {Contributions to Plasma Physics},
+keywords = {Electron beam,Pre-sheath,Sheath,Space charge limited electron emission},
+number = {6-7},
+pages = {610--615},
+title = {{Energy and particle balance studies under full boron and lithium-coated walls in TJ-II}},
+volume = {50},
+year = {2010}
+}
+
+@article{Ascasibar2010,
+abstract = {This paper is an extension of global plasma confinement in electron-cyclotron operation to neutral beam heated plasmas in TJ-II. The reported NBI plasmas have been obtained under lithium-coated wall conditions. The plasma operation exhibits a substantially better density control and improved confinement as compared to similar boron-coated wall discharges heated by NBI. Regression analyses of energy confinement time yield a scaling law indicating degradation with power with an exponent of $\alpha$P = 0.8. The scaling shows an improvement with density with exponent $\alpha$n = 0.5. The dependencies on plasma radius and rotational transform have not been resolved so far because the -still incomplete- NBI database suffers from a high correlation between these two parameters. {\textcopyright} 2010 WILEY-VCH Verlag GmbH {\&} Co. KGaA, Weinheim.},
+author = {Ascas{\'{i}}bar, E. and Estrada, T. and Liniers, M. and Ochando, M. A. and Tabar{\'{e}}s, F. L. and Tafalla, D. and Guasp, J. and Jim{\'{e}}nez-G{\'{o}}mez, R. and Castej{\'{o}}n, F. and L{\'{o}}pez-Bruna, D. and L{\'{o}}pez-Fraguas, A. and Pastor, I. and Cappa, A. and Fuentes, C. and Fontdecaba, J. M.},
+doi = {10.1002/ctpp.200900032},
+file = {:C$\backslash$:/Users/Jo{\~{a}}o/Dropbox/Doutoramento/Artigos - Biblioteca/TJ-II/Ascas-bar{\_}et{\_}al-2010-Contributions{\_}to{\_}Plasma{\_}Physics.pdf:pdf},
+issn = {08631042},
+journal = {Contributions to Plasma Physics},
+keywords = {Magnetic confinement,Stellarators},
+number = {6-7},
+pages = {594--599},
+title = {{Global energy confinement studies in TJ-II NBI plasmas}},
+volume = {50},
+year = {2010}
+}

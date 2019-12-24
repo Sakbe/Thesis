@@ -1,0 +1,74 @@
+\chapter{Introduction}
+
+
+\section{Contextualization}
+
+The development of humanity has been closely related to energy and to the manners of harnessing it in its many forms. 
+\todo{possibly include graph with energy growth predictions}
+
+
+\begin{table}
+\centering
+\caption{Comparison of the energy density from different power sources}
+\label{tab:comparison_energy}
+\begin{tabular}{lr}
+\toprule
+  Energy Density [MJ/kg]\\ 
+\hline
+\rule[-1ex]{0pt}{3ex} Fusion & 335000 \\  
+\rule[-1ex]{0pt}{3ex} Fission & 87600\\  
+\rule[-1ex]{0pt}{3ex} Coal & 27.8  \\ 
+\rule[-1ex]{0pt}{3ex} Hydroelectric & 4.9$\times 10^{-4}$ \\ 
+\hline
+\end{tabular}  
+\end{table}
+
+
+\subsection{Fusion Energy}
+Not all the reactions of nuclear fusion are of interest to energy production. The mass of a nucleus is not the sum of the masses of the protons and neutrons that constitute it, i.e. $m \neq Z m_p + (A-Z) m_n$. Where $Z$ is the atomic number, $A$ is the mass number, $m_p$ and $m_n$ are respectively the free masses of proton and neutron. The difference corresponds to a binding energy $E_B$, which is the energy that should be supplied to a nucleus to decompose it in its nucleons. $E_B = (m - Z m_p + (A-Z) m_n) c^2$. To produce energy, the reactions of particular interest are those whose rest energy of the resulting nucleus is lower than the rest energy of the reacting nuclei. In such cases, a quantity of energy is released resulting from the difference in binding energy between the final and initial states. Image \ref{fig:Binding_Energies} shows the normalisation of the binding energy of the nucleon mass as a function of the mass numbers of elements. The steep increase for the light elements motivates the choice of reagents where nuclear fusion is favourable. 
+
+\nomenclature[V]{$Z$}{atomic number, nuclear charge}
+\nomenclature[V]{$A$}{mass number}
+\nomenclature[V]{$m_p$}{mass of proton}
+\nomenclature[V]{$m_n$}{mass of neutron}
+\nomenclature[V]{$E_B$}{binding energy}
+\nomenclature[V]{$c$}{speed of light in vacuum}
+
+
+\begin{figure}[H]
+		\centering
+		%\includegraphics[width=0.8\textwidth]{ch01_intro/Binding_Energies.png}                
+		\caption{Average binding energy (in MeV) per nucleon as function of the atomic mass number (A) for most common isotopes. The sudden increase of binding energy in the low atomic mass side manifests itself as a release of energy in the balance of a fusion reaction.}
+		\label{fig:Binding_Energies}
+\end{figure}
+
+
+Upon deciding the underlying mechanism by energy will be produced the following subject to address if the choice of fusion reaction.  There are a plethora of energy-producing fusion reactions between the low atomic mass nuclei, and some of most relevant are detailed below, on table \ref{tab:nuc_react}:
+
+\begin{table}[h!]
+\centering
+\tabulinesep=1.2mm
+\caption{Relevant nuclear reactions}
+\label{tab:nuc_react}
+\begin{tabu}{p{0.24\linewidth}p{0.24\linewidth}p{65pt}}
+\toprule
+ Designation & Reaction & Released energy (MeV)\\ \hline
+ Deuterium - Deuterium & $^2_1H + ^2_1H \rightarrow ^3_2He + ^1_0n$ & 3.27\\ 
+ & $^2_1H + ^2_1H \rightarrow ^3_1H + ^1_1H$ & 4.04\\ \hline
+ Deuterium - Tritium & $^2_1H + ^3_1H \rightarrow ^4_2He + ^1_0n$ & 17.59\\ \hline
+ Deuterium - Helium-3 & $^2_1H + ^3_2H \rightarrow ^4_2He + ^1_1H$ & 11.33\\ \hline 
+ Tritium - Tritium & $^3_1H + ^3_1H \rightarrow ^4_2He +2\,\, ^1_0n$ & 18.35\\ \hline 
+\end{tabu}
+\end{table}
+
+Since there are several possibilities with different advantages however not all of them have the same probability of occurrence.  Each of these reactions will have a reaction rate or cross-section which is dependent on the conditions of the reagents, particularly their energy. Figure \ref{fig:Fusion_CrossSections} show the cross-section of several fusion reactions. It becomes clear from that figure that for a large energy interval the fusion reaction that holds most potential is the Deuterium-Tritium fusion, or D-T. 
+
+\nomenclature[A]{D-T}{Deuterium-Tritium (fusion reaction)}
+
+\begin{figure}[H]
+		\centering
+		%\includegraphics[width=0.6\textwidth]{ch01_intro/Fusion_CrossSections.png}                
+		\caption{Cross-section of several fusion reactions as function of temperature. This figure illustrates how, from several reactions, the most promising for using on a fusion
+reactor is the deuterium with tritium. The cross-section has a peak at $\approx$100 keV. \todo{from ‘The physics of inertial fusion’ by Atzeni and Meyer-ter-Vehn, Oxford Science Publications}}
+		\label{fig:Fusion_CrossSections}
+\end{figure}

@@ -1,0 +1,40 @@
+%% This is the list for the full name of journals
+
+@string{aas={The Annals of Applied Statistics}}
+@string{jrssb={Journal of the Royal Statistical Society. Series B. Statistical Methodology}}
+@string{anns={The Annals of Statistics}}
+@String{statc = {Statistics and Computing}}
+@String{csda = {Computational Statistics \& Data Analysis}}
+@String{jecon = {Journal of Econometrics}}
+@String{jasa = {Journal of the American Statistical Association}}
+@String{sankhyaa = {Sankhy{\=a} (Statistics). The Indian Journal of Statistics. Series A }}
+@String{statistician = {Journal of the Royal Statistical Society. Series D. The Statistician}}
+@String{tpa = {Theory of Probability and its Applications}}
+@String{jcgs = {Journal of Computational and Graphical Statistics}}
+@String{jfin = {The Journal of Finance}}
+
+@String{berber={Berichte der Bunsengesellschaft für physikalische Chemie}}
+
+@String{FusEngDes = {Fusion Engineering and Design}}
+@String{applphyslet = {Applied Physics Letters}}
+@String{jnucmat = {Journal of Nuclear Materials}}
+@String{PhysScr = {Physica Scripta}}
+@String{prl = {Physical Review Letters}}
+@String{nucengdes= {Nuclear Engineering and Design}}
+@String{plafusres= {Plasma and Fusion Research}}
+@String{mettrans= {Metallurgical Transactions}}
+@String{JOptSocAm = {Journal of the Optical Society of America}}
+@String{JPhysB = {Journal of Physics B: Atomic, Molecular and Optical Physics}}
+@String{prA={Physical Review A}}
+@String{NatStandRefDataSer={National Standards Reference Data Series}}
+@String{CJPhys = {Canadian Journal of Physics}}
+@String{JPhysChemRefData={Journal of Physical and Chemical Reference Data}}
+
+@String{PPCF = {Plasma Physics and Controlled Fusion}}
+
+@String{nucmate= {Nuclear Materials and Energy}}
+@String{fusengdes= {Fusion Engineering and Design}}
+@String{hedp ={High Energy Density Physics}}
+@String{jhetrans ={Journal of Heat Transfer}}
+@String{ transAeroElecSys ={IEEE Transactions on Aerospace and Electronic Systems}}
+@String{ AIAAJ ={American Institute of Aeronautics and Astronautics Journal}}
