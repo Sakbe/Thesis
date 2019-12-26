@@ -242,12 +242,6 @@ B.~A. Bushaw, W.~N\"ortersh\"auser, G.~W.~F. Drake, and H.-J. Kluge.
   triple-resonance laser spectroscopy.
 \newblock {\em Phys. Rev. A}, 75:052503, May 2007.
 
-\bibitem{L10054}
-G.~W. Drake.
-\newblock Theoretical energies for the n = 1 and 2 states of the helium
-  isoelectronic sequence up to z = 100.
-\newblock {\em Can. J.Phys.}, 66(7):586--611, 1988.
-
 \bibitem{L3620c96}
 Glen~W. Erickson.
 \newblock Energy levels of one‐electron atoms.
@@ -329,18 +323,6 @@ R~D'Arcy, H~Ohashi, S~Suda, H~Tanuma, S~Fujioka, H~Nishimura, K~Nishihara,
 \newblock Relativistic calculations on e1 transitions in as-like ions.
 \newblock {\em Astron. Astrophys. Suppl. Ser.}, 131(3):523--529, 1998.
 
-\bibitem{AGGARWAL2016221}
-Kanti~M. Aggarwal and Francis~P. Keenan.
-\newblock Radiative rates for e1, e2, m1, and m2 transitions in br-like ions
-  with 43≤z≤50.
-\newblock {\em Atomic Data and Nuclear Data Tables}, 107:221 -- 366, 2016.
-
-\bibitem{0953-4075-44-13-135201}
-N~R Badnell, A~Foster, D~C Griffin, D~Kilbane, M~O'Mullane, and H~P Summers.
-\newblock Dielectronic recombination of heavy species: the tin 4p 6 4d q − 4p
-  6 4d ( q − 1) 4f + 4p 5 4d ( q + 1) transition arrays for q = 1–10.
-\newblock {\em Journal of Physics B: Atomic, Molecular and Optical Physics},
-  44(13):135201, 2011.
 
 \bibitem{IVANOVA20111}
 E.P. Ivanova.
@@ -560,12 +542,6 @@ H.-K. Chung, M.H. Chen, W.L. Morgan, Y.~Ralchenko, and R.W. Lee.
   spectroscopic analysis for all elements.
 \newblock {\em H. E. Dens. Phys.}, 1(1):3 -- 12, 2005.
 
-\bibitem{NIST_ASD}
-A.~Kramida, {Yu.~Ralchenko}, J.~Reader, and {and NIST ASD Team}.
-\newblock {NIST Atomic Spectra Database (ver. 5.5.6), [Online]. Available:
-  {{https://physics.nist.gov/asd}} [2018, July 17]. National Institute of
-  Standards and Technology, Gaithersburg, MD.}, 2018.
-
 \bibitem{HTT}
 J.~H. Lienhard.
 \newblock Heat transfer.
@@ -619,7 +595,7 @@ J.~S{\'{a}}anchez, M.~Acedo, A.~Alonso, J.~Alonso, P.~Alvarez,
   S.~Lysenko, G.~Marcon, F.~Mart{\'{i}}n, V.~Maurin, K.~J. McCarthy, F.~Medina,
   M.~Medrano, A.~V. Melnikov, P.~M{\'{e}}ndez, B.~{Van Milligen}, E.~Mirones,
   I.~S. Nedzelskiy, M.~Ochando, J.~Olivares, J.~L. {De Pablos}, L.~Pacios,
-  I.~Pastor, M.~A. Pedrosa, A.~{De La Pẽa}, A.~Pereira, G.~P{\'{e}}rez,
+  I.~Pastor, M.~A. Pedrosa, A.~{De La Pea}, A.~Pereira, G.~P{\'{e}}rez,
   D.~P{\'{e}}rez-Risco, A.~Petrov, S.~Petrov, A.~Portas, D.~Pretty,
   D.~Rapisarda, G.~Ratt, J.~M. Reynolds, E.~Rinc{\'{o}}n, L.~R{\'{i}}os,
   C.~Rodr{\'{i}}guez, J.~A. Romero, A.~Ros, A.~Salas, M.~Snchez, E.~Snchez,
