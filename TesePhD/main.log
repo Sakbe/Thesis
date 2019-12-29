@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.25)  29 DEC 2019 08:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.25)  29 DEC 2019 17:51
 entering extended mode
 **./main.tex
 (main.tex
@@ -2374,11 +2374,11 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 102.
  ) 
 Here is how much of TeX's memory you used:
- 56322 strings out of 492483
- 1234268 string characters out of 3130528
- 1582828 words of memory out of 3000000
+ 56320 strings out of 492483
+ 1234258 string characters out of 3130528
+ 1575828 words of memory out of 3000000
  59529 multiletter control sequences out of 15000+200000
- 576551 words of font info for 117 fonts, out of 3000000 for 9000
+ 575951 words of font info for 115 fonts, out of 3000000 for 9000
  1149 hyphenation exceptions out of 8191
  76i,12n,92p,10180b,992s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc} <C:\Users\Dom\AppDa
@@ -2388,17 +2388,15 @@ om\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:
 .pk> <C:\Users\Dom\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
 ecbx1440.pk> <C:\Users\Dom\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec
 /dpi600\ecbx1728.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb><C:/Users/Dom/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/mathpazo/fplmr.p
-fb><C:/Users/Dom/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/mathpazo/fplmri.
-pfb><C:/Users/Dom/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/fpl/fplrc8a.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/Dom/
-AppData/Roaming/MiKTeX/2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/Dom/Ap
-pData/Roaming/MiKTeX/2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/Dom/AppD
-ata/Roaming/MiKTeX/2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (44 pages, 486913 bytes).
+/cmsy10.pfb><C:/Users/Dom/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/mathpaz
+o/fplmri.pfb><C:/Users/Dom/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/fpl/fp
+lrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/U
+sers/Dom/AppData/Roaming/MiKTeX/2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Use
+rs/Dom/AppData/Roaming/MiKTeX/2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users
+/Dom/AppData/Roaming/MiKTeX/2.9/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (44 pages, 475391 bytes).
 PDF statistics:
- 767 PDF objects out of 1000 (max. 8388607)
+ 759 PDF objects out of 1000 (max. 8388607)
  198 named destinations out of 1000 (max. 500000)
  21895 words of extra memory for PDF output out of 24883 (max. 10000000)
 
