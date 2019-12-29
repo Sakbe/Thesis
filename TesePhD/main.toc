@@ -36,5 +36,5 @@
 \contentsline {section}{\numberline {5.2}PID control implementation}{11}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Multiple-Input Multiple-Output control implementation}{11}{section.5.3}%
 \contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Conclusions}}{13}{chapter.6}%
-\contentsline {chapter}{Bibliography}{23}{chapter*.20}%
-\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Demonstrations}}{25}{Appendix.1.A}%
+\contentsline {chapter}{Bibliography}{15}{chapter*.20}%
+\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Demonstrations}}{17}{Appendix.1.A}%

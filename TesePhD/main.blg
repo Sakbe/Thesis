@@ -1,54 +1,8 @@
-This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
-The top-level auxiliary file: main.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
 A level-1 auxiliary file: abs_akw/abstract.aux
 A level-1 auxiliary file: abs_akw/acknowledgements.aux
 A level-1 auxiliary file: lista_variaveis.aux
-The style file: unsrt.bst
-Database file #1: Bib/abbr.bib
-Database file #2: Bib/mybibfile.bib
-Warning--empty title in BCAllen1967
-Warning--empty title in Vodyanyuk1988
-Warning--empty journal in MatteoEPS_2017
-You've used 100 entries,
-            1791 wiz_defined-function locations,
-            1138 strings with 27067 characters,
-and the built_in function-call counts, 26636 in all, are:
-= -- 1961
-> -- 1970
-< -- 0
-+ -- 699
-- -- 599
-* -- 2409
-:= -- 4595
-add.period$ -- 299
-call.type$ -- 100
-change.case$ -- 93
-chr.to.int$ -- 0
-cite$ -- 103
-duplicate$ -- 856
-empty$ -- 2230
-format.name$ -- 599
-if$ -- 5547
-int.to.chr$ -- 0
-int.to.str$ -- 100
-missing$ -- 87
-newline$ -- 502
-num.names$ -- 93
-pop$ -- 169
-preamble$ -- 1
-purify$ -- 0
-quote$ -- 0
-skip$ -- 316
-stack$ -- 0
-substring$ -- 1833
-swap$ -- 95
-text.length$ -- 0
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 0
-warning$ -- 3
-while$ -- 195
-width$ -- 103
-write$ -- 1079
-(There were 3 warnings)
+The style file: ieeetr.bst
+Database file #1: Bib/BiblioD.bib
+Warning--can't use both volume and number fields in Neto2011
+(There was 1 warning)
