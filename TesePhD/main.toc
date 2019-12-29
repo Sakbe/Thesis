@@ -10,13 +10,14 @@
 \contentsline {section}{\numberline {1.3}Thesis outline}{3}{section.1.3}%
 \contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {Plasma Control Systems}}{5}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Overview of control systems}{5}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}DIII-D Plasma Control System}{5}{subsection.2.1.1}%
 \contentsline {section}{\numberline {2.2}MARTe framework}{5}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}MARTe architecture }{5}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Hardware containers}{5}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}MARTe 2.0}{5}{subsection.2.2.3}%
-\contentsline {section}{\numberline {2.3}Equilibrium and control algorithms}{5}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}PID control}{5}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Multiple-Input Multiple-Output control}{5}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.2.1}MARTe architecture }{6}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Hardware containers}{6}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}MARTe 2.0}{6}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Equilibrium and control algorithms}{6}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}PID control}{6}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Multiple-Input Multiple-Output control}{6}{subsection.2.3.2}%
 \contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {JT60-SA control design}}{7}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Machine description}{7}{section.3.1}%
 \contentsline {section}{\numberline {3.2}CREATE tools}{7}{section.3.2}%

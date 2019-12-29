@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.25)  29 DEC 2019 18:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.25)  29 DEC 2019 20:02
 entering extended mode
 **./main.tex
 (main.tex
@@ -2313,12 +2313,21 @@ Class scrbook Warning: \float@addtolists detected!
 
 ]
 chapter 2.
-) (Chp3/Chap3.tex [5] [6
+) (Chp3/Chap3.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [5]
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 1.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 1.
 
-]
+[6]
 chapter 3.
-) (Chp4/Chap4.tex [7] [8
+) (Chp4/Chap4.tex [7
+
+
+] [8
 
 
 ]
@@ -2362,11 +2371,11 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 103.
  ) 
 Here is how much of TeX's memory you used:
- 56075 strings out of 492483
- 1230547 string characters out of 3130528
+ 56248 strings out of 492483
+ 1233950 string characters out of 3130528
  1574828 words of memory out of 3000000
- 59398 multiletter control sequences out of 15000+200000
- 574832 words of font info for 111 fonts, out of 3000000 for 9000
+ 59538 multiletter control sequences out of 15000+200000
+ 591437 words of font info for 152 fonts, out of 3000000 for 9000
  1149 hyphenation exceptions out of 8191
  76i,12n,92p,10180b,992s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc} <C:\Users\Dom\AppDa
@@ -2376,15 +2385,15 @@ om\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:
 .pk> <C:\Users\Dom\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
 ecbx1440.pk> <C:\Users\Dom\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec
 /dpi600\ecbx1728.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb><C:/Users/Dom/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/mathpaz
-o/fplmri.pfb><C:/Users/Dom/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/fpl/fp
-lrc8a.pfb><C:/Users/Dom/AppData/Roaming/MiKTeX/2.9/fonts/type1/urw/palatino/upl
-b8a.pfb><C:/Users/Dom/AppData/Roaming/MiKTeX/2.9/fonts/type1/urw/palatino/uplr8
-a.pfb><C:/Users/Dom/AppData/Roaming/MiKTeX/2.9/fonts/type1/urw/palatino/uplri8a
-.pfb>
-Output written on main.pdf (36 pages, 421705 bytes).
+/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb><C:/Users/Dom/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/mathpazo/fplmri.
+pfb><C:/Users/Dom/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/fpl/fplrc8a.pfb
+><C:/Users/Dom/AppData/Roaming/MiKTeX/2.9/fonts/type1/urw/palatino/uplb8a.pfb><
+C:/Users/Dom/AppData/Roaming/MiKTeX/2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:
+/Users/Dom/AppData/Roaming/MiKTeX/2.9/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (36 pages, 431497 bytes).
 PDF statistics:
- 598 PDF objects out of 1000 (max. 8388607)
- 92 named destinations out of 1000 (max. 500000)
- 21383 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 608 PDF objects out of 1000 (max. 8388607)
+ 94 named destinations out of 1000 (max. 500000)
+ 38287 words of extra memory for PDF output out of 42996 (max. 10000000)
 

@@ -11,4 +11,10 @@ A.~C. Neto, D.~Alves, L.~Boncagni, P.~J. Carvalho, D.~F. Valc{\'{a}}rcel,
   R.~Vitelli, and L.~Zabeo, ``{A survey of recent MARTe based systems},'' in
   {\em IEEE Transactions on Nuclear Science}, vol.~58, pp.~1482--1489, 2011.
 
+\bibitem{DIIDcontrol}
+J.~R. {Ferron}, A.~{Kellman}, E.~{McKee}, T.~{Osborne}, P.~{Petrach}, T.~S.
+  {Taylor}, J.~{Wight}, and E.~{Lazarus}, ``An advanced plasma control system
+  for the diii-d tokamak,'' in {\em [Proceedings] The 14th IEEE/NPSS Symposium
+  Fusion Engineering}, pp.~761--764 vol.2, Sep. 1991.
+
 \end{thebibliography}
