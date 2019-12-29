@@ -4,37 +4,37 @@
 \babel@toc {english}{}
 \babel@toc {italian}{}
 \babel@toc {english}{}
-\contentsline {chapter}{\numberline {1}\spacedlowsmallcaps {Introduction}}{3}{chapter.1}
-\contentsline {section}{\numberline {1.1}Tokamak plasma control}{3}{section.1.1}
-\contentsline {section}{\numberline {1.2}Behind the plasma current}{3}{section.1.2}
-\contentsline {section}{\numberline {1.3}Thesis outline}{3}{section.1.3}
-\contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {Plasma Control Systems}}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}Overview of control systems}{5}{section.2.1}
-\contentsline {section}{\numberline {2.2}MARTe framework}{5}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}MARTe architecture }{5}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Hardware containers}{5}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}MARTe 2.0}{5}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Equilibrium and control algorithms}{5}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}PID control}{5}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Multiple-Input Multiple-Output control}{5}{subsection.2.3.2}
-\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {JT60-SA control design}}{7}{chapter.3}
-\contentsline {section}{\numberline {3.1}Machine description}{7}{section.3.1}
-\contentsline {section}{\numberline {3.2}CREATE tools}{7}{section.3.2}
-\contentsline {section}{\numberline {3.3}Controller designs}{7}{section.3.3}
-\contentsline {section}{\numberline {3.4}QST tools implementation}{7}{section.3.4}
-\contentsline {section}{\numberline {3.5}Simulation results}{7}{section.3.5}
-\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {ISTTOK }}{9}{chapter.4}
-\contentsline {section}{\numberline {4.1}Machine description}{9}{section.4.1}
-\contentsline {section}{\numberline {4.2}Diagnostics and Actuators}{9}{section.4.2}
-\contentsline {section}{\numberline {4.3}ATCA-MIMO-ISOL boards}{9}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Hardware layout}{9}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Real-time integration software}{9}{subsection.4.3.2}
-\contentsline {section}{\numberline {4.4}Retrieving the contribution of plasma current }{9}{section.4.4}
-\contentsline {section}{\numberline {4.5}Plasma centroid position determination}{9}{section.4.5}
-\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {ISTTOK results }}{11}{chapter.5}
-\contentsline {section}{\numberline {5.1}General Application Modules implementations}{11}{section.5.1}
-\contentsline {section}{\numberline {5.2}PID control implementation}{11}{section.5.2}
-\contentsline {section}{\numberline {5.3}Multiple-Input Multiple-Output control implementation}{11}{section.5.3}
-\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Conclusions}}{13}{chapter.6}
-\contentsline {chapter}{Bibliography}{23}{chapter*.10}
-\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Demonstrations}}{25}{Appendix.1.A}
+\contentsline {chapter}{\numberline {1}\spacedlowsmallcaps {Introduction}}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Tokamak plasma control}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Behind the plasma current}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Thesis outline}{3}{section.1.3}%
+\contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {Plasma Control Systems}}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Overview of control systems}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}MARTe framework}{5}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}MARTe architecture }{5}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Hardware containers}{5}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}MARTe 2.0}{5}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Equilibrium and control algorithms}{5}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}PID control}{5}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Multiple-Input Multiple-Output control}{5}{subsection.2.3.2}%
+\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {JT60-SA control design}}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Machine description}{7}{section.3.1}%
+\contentsline {section}{\numberline {3.2}CREATE tools}{7}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Controller designs}{7}{section.3.3}%
+\contentsline {section}{\numberline {3.4}QST tools implementation}{7}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Simulation results}{7}{section.3.5}%
+\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {ISTTOK }}{9}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Machine description}{9}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Diagnostics and Actuators}{9}{section.4.2}%
+\contentsline {section}{\numberline {4.3}ATCA-MIMO-ISOL boards}{9}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Hardware layout}{9}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Real-time integration software}{9}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Retrieving the contribution of plasma current }{9}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Plasma centroid position determination}{9}{section.4.5}%
+\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {ISTTOK results }}{11}{chapter.5}%
+\contentsline {section}{\numberline {5.1}General Application Modules implementations}{11}{section.5.1}%
+\contentsline {section}{\numberline {5.2}PID control implementation}{11}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Multiple-Input Multiple-Output control implementation}{11}{section.5.3}%
+\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Conclusions}}{13}{chapter.6}%
+\contentsline {chapter}{Bibliography}{23}{chapter*.20}%
+\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Demonstrations}}{25}{Appendix.1.A}%
