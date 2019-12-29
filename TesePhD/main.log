@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.25)  29 DEC 2019 20:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.25)  29 DEC 2019 21:32
 entering extended mode
 **./main.tex
 (main.tex
@@ -2230,7 +2230,10 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
 ]
 Package tocbasic Info: character protrusion at toc deactivated on input line 25
 .
- (main.toc [11])
+ (main.toc
+Underfull \vbox (badness 1009) has occurred while \output is active []
+
+ [11])
 \tf@toc=\write8
 \openout8 = `main.toc'.
 
@@ -2391,9 +2394,9 @@ pfb><C:/Users/Dom/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/fpl/fplrc8a.pfb
 ><C:/Users/Dom/AppData/Roaming/MiKTeX/2.9/fonts/type1/urw/palatino/uplb8a.pfb><
 C:/Users/Dom/AppData/Roaming/MiKTeX/2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:
 /Users/Dom/AppData/Roaming/MiKTeX/2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (36 pages, 431497 bytes).
+Output written on main.pdf (36 pages, 430776 bytes).
 PDF statistics:
- 608 PDF objects out of 1000 (max. 8388607)
+ 609 PDF objects out of 1000 (max. 8388607)
  94 named destinations out of 1000 (max. 500000)
  38287 words of extra memory for PDF output out of 42996 (max. 10000000)
 
