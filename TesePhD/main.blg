@@ -1,8 +1,51 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
 A level-1 auxiliary file: abs_akw/abstract.aux
 A level-1 auxiliary file: abs_akw/acknowledgements.aux
 A level-1 auxiliary file: lista_variaveis.aux
 The style file: ieeetr.bst
 Database file #1: Bib/BiblioD.bib
 Warning--can't use both volume and number fields in Neto2011
+You've used 4 entries,
+            1876 wiz_defined-function locations,
+            512 strings with 4577 characters,
+and the built_in function-call counts, 1447 in all, are:
+= -- 121
+> -- 85
+< -- 0
++ -- 30
+- -- 26
+* -- 117
+:= -- 215
+add.period$ -- 5
+call.type$ -- 4
+change.case$ -- 3
+chr.to.int$ -- 0
+cite$ -- 5
+duplicate$ -- 65
+empty$ -- 128
+format.name$ -- 26
+if$ -- 337
+int.to.chr$ -- 0
+int.to.str$ -- 4
+missing$ -- 5
+newline$ -- 16
+num.names$ -- 4
+pop$ -- 21
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 43
+stack$ -- 0
+substring$ -- 102
+swap$ -- 27
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 12
+width$ -- 5
+write$ -- 39
 (There was 1 warning)
