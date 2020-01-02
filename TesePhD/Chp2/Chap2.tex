@@ -14,17 +14,25 @@ Early documentation regarding the PCS in DIII-D\footnote{DIII-D is a D-shape tok
 	\caption{\label{DIII1991} DIII-D digital PCS in 1991 ~\cite{DIIDcontrol}.  }
 \end{figure}
 
-Blablabla 
+Blablabla
 
-\subsection{Syst\'eme de Contr\^ole Distribu\'e}
-
-The TCV distributed control system uses a modular network of real time PC nodes liken by a real time network to provide feedback control over all of the actuator systems. Each node consists of a Linux PC either embedded on a Compact-PCI module or as a desktop computer with Intel CPU. A real time CPU-only node is dedicated to the real time equilibrium reconstruction and fast Fourier transforms for MHD detection.  \cite{TCVcntrl}
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=0.65\textwidth]{Chp2/TCVcntrl.png}
-	\caption{\label{TCVcontrol} TCV SCD. Real-time network nodes connection. The nodes configurations
-		are shown together with the typical diagnostic and actuator systems to which they are connected  ~\cite{TCVcntrl}.  }
+	\includegraphics[width=0.65\textwidth]{Chp2/DIIIDPCSnew.PNG}
+	\caption{\label{DIIInew}  ~\cite{DIIIDnew}.  }
+\end{figure}
+
+
+\subsection{Syst\'eme de Contr\^ole Distribu\'e}
+
+The TCV\footnote{The Tokamak à configuration variable (TCV) is  a medium size tokamak localized in Laussane,Switzerland. It is characterized by a highly elongated, rectangular vacuum vessel.} distributed control system uses a modular network of real time PC nodes liken by a real time network to provide feedback control over all of the actuator systems. Each node consists of a Linux PC either embedded on a Compact-PCI module or as a desktop computer with Intel CPU. A fiber optic ring network links the reflective memory (RFM) network cards in each node  \cite{TCVcntrl}.  The design of the diagnostic signal processing and control algorithms is performed in Matlab-Simulink software.  During the real-time execution  C/C++  code is generated from the Simulink and compiled  into a Linux shared library and distributed to target nodes  providing the input/output interface to the control algorithm code  ~\cite{TCVcntrl1}. Figure ~\ref{TCVcontrol} depicts the TCV SCD layout with the connectivity to diagnostics and actuators.
+
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.65\textwidth]{Chp2/TCVcntrl1.png}
+	\caption{\label{TCVcontrol} TCV SCD. Real-time network nodes connection. The nodes configurations 	are shown together with the typical diagnostic and actuator systems to which they are connected  ~\cite{TCVcntrl1}.  }
 \end{figure}
 
 \section{MARTe framework}

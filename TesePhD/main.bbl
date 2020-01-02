@@ -6,6 +6,12 @@ J.~R. {Ferron}, A.~{Kellman}, E.~{McKee}, T.~{Osborne}, P.~{Petrach}, T.~S.
   for the diii-d tokamak,'' in {\em [Proceedings] The 14th IEEE/NPSS Symposium
   Fusion Engineering}, pp.~761--764 vol.2, Sep. 1991.
 
+\bibitem{TCVcntrl1}
+H.~Anand, C.~Galperti, S.~Coda, B.~P. Duval, F.~Felici, T.~Blanken,
+  E.~Maljaars, J.~M. Moret, O.~Sauter, T.~P. Goodman, and D.~Kim,
+  ``{Distributed digital real-time control system for the TCV tokamak and its
+  applications},'' {\em Nuclear Fusion}, vol.~57, no.~5, 2017.
+
 \bibitem{PCS_2018}
 A.~A.~K. {Valerij A. Belyakov}, {\em {Fundamentals of Magnetic Thermonuclear
   Reactor Design}}.
@@ -22,5 +28,11 @@ A.~C. Neto, D.~Alves, L.~Boncagni, P.~J. Carvalho, D.~F. Valc{\'{a}}rcel,
   A.~Barbalace, G.~{De Tommasi}, H.~Fernandes, F.~Sartori, E.~Vitale,
   R.~Vitelli, and L.~Zabeo, ``{A survey of recent MARTe based systems},'' in
   {\em IEEE Transactions on Nuclear Science}, vol.~58, pp.~1482--1489, 2011.
+
+\bibitem{DIIIDnew}
+M.~Margo, B.~Penaflor, H.~Shen, J.~Ferron, D.~Piglowski, P.~Nguyen, J.~Rauch,
+  M.~Clement, A.~Battey, and C.~Rea, ``{Current State of DIII-D Plasma Control
+  System},'' {\em Fusion Engineering and Design}, vol.~150, no.~October 2019,
+  2020.
 
 \end{thebibliography}
