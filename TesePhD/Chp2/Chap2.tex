@@ -5,8 +5,8 @@ The control of  plasma position, shape and current among other parameters is one
 
 \subsection{DIII-D Plasma Control System}  
 
-Early documentation regarding the PCS in DIII-D\footnote{DIII-D is a D-shape tokamak operated by General Atomics in San Diego, California. } reefers to digitalization of analog signals transmitted to a high speed processor executing a shape control algorithm and then writing the result to a digital to analog converter for driving the controlled systems . The real-time computer used allowed to performed operations with vectors and matrices required for the plasma shape control algorithm \cite{DIIDcontrol}. Figure ~\ref{DIII1991} shows the block diagram of the DIII-D PCS 30 years ago.
-\hfil
+The DIII-D-like PCS is use in various fusion research facilities such as EAST(China), K-STAR (South Korea) and MAST (UK). Early documentation regarding the PCS in DIII-D\footnote{DIII-D is a D-shape tokamak operated by General Atomics in San Diego, California. } reefers to digitalization of analog signals transmitted to a high speed processor executing a shape control algorithm and then writing the result to a digital to analog converter for driving the controlled systems . The real-time computer used allowed to performed operations with vectors and matrices required for the plasma shape control algorithm \cite{DIIDcontrol}. Figure ~\ref{DIII1991} shows the block diagram of the DIII-D PCS 30 years ago.
+\smallskip
 
 \begin{figure}[htbp]
 	\centering
@@ -14,17 +14,25 @@ Early documentation regarding the PCS in DIII-D\footnote{DIII-D is a D-shape tok
 	\caption{\label{DIII1991} DIII-D digital PCS in 1991 ~\cite{DIIDcontrol}.  }
 \end{figure}
 
-Blablabla 
+In recent years the DIII-D PCS had extensive software and hardware upgrades. The PCS actual software consists of an infrastructure library core which provides all the routines that are necessary for implementing a basic and generic control system. The current  PCS hardware configuration uses a collection of  Intel Linux based multi-processor computers running in parallel to perform the real-time analysis and feedback control ~\cite{DIIID2013}. New digitizers have been added to the real-time network to increase the number of signals acquired an to control hardware on real-time, several real-time control algorithms were added and real-time data was added to external entities such as web server.~\cite{DIIIDnew}. In the current version of the PCS, a Myricom\footnote{Myricom networks also called Myrnet are high speed networking systems used to interconnect machines to form computer clusters. } network has been replaced with a 40 Gb/sec InfiniBand\footnote{Is a network architecture from Mellanox designed to support I/O connectivity  and  reliability, availability, and serviceability Internet requirements ~\cite{MellanoxTechnologies2003}.  } network based on the Mellanox Connect-X 3\footnote{The Connect-X from the Mellanox company are Ethernet network interface cards with PCI Express.} hardware set. Figure ~\ref{DIIInew} shows the currently overall networking diagram of DIII-D PCS .
 
-\subsection{Syst\'eme de Contr\^ole Distribu\'e}
-
-The TCV distributed control system uses a modular network of real time PC nodes liken by a real time network to provide feedback control over all of the actuator systems. Each node consists of a Linux PC either embedded on a Compact-PCI module or as a desktop computer with Intel CPU. A real time CPU-only node is dedicated to the real time equilibrium reconstruction and fast Fourier transforms for MHD detection.  \cite{TCVcntrl}
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=0.65\textwidth]{Chp2/TCVcntrl.png}
-	\caption{\label{TCVcontrol} TCV SCD. Real-time network nodes connection. The nodes configurations
-		are shown together with the typical diagnostic and actuator systems to which they are connected  ~\cite{TCVcntrl}.  }
+	\includegraphics[width=0.65\textwidth]{Chp2/DIIIDPCSnew.PNG}
+	\caption{\label{DIIInew} Actual DIII-D PCS real-time systems ~\cite{DIIIDnew}.  }
+\end{figure}
+
+
+\subsection{Syst\'eme de Contr\^ole Distribu\'e}
+
+The TCV\footnote{The Tokamak \'a configuration variable (TCV) is  a medium size tokamak localized in Laussane,Switzerland. It is characterized by a highly elongated, rectangular vacuum vessel.} distributed control system uses a modular network of real time PC nodes liken by a real time network to provide feedback control over all of the actuator systems. Each node consists of a Linux PC either embedded on a Compact-PCI module or as a desktop computer with Intel CPU. A fiber optic ring network links the reflective memory (RFM) network cards in each node  \cite{TCVcntrl}.  The design of the diagnostic signal processing and control algorithms is performed in Matlab-Simulink software.  During the real-time execution  C/C++  code is generated from the Simulink and compiled  into a Linux shared library and distributed to target nodes  providing the input/output interface to the control algorithm code  ~\cite{TCVcntrl1}. Figure ~\ref{TCVcontrol} depicts the TCV SCD layout with the connectivity to diagnostics and actuators.
+
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.65\textwidth]{Chp2/TCVcntrl1.png}
+	\caption{\label{TCVcontrol} TCV SCD. Real-time network nodes connection. The nodes configurations 	are shown together with the typical diagnostic and actuator systems to which they are connected  ~\cite{TCVcntrl1}.  }
 \end{figure}
 
 \section{MARTe framework}
