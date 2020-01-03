@@ -11,14 +11,14 @@
 \contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {Plasma Control Systems}}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}Overview of control systems}{5}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}DIII-D Plasma Control System}{5}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Syst\'eme de Contr\^ole Distribu\'e}{5}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.2}Syst\'eme de Contr\^ole Distribu\'e}{7}{subsection.2.1.2}
 \contentsline {section}{\numberline {2.2}MARTe framework}{7}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}MARTe architecture }{7}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Hardware containers}{7}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}MARTe 2.0}{7}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Equilibrium and control algorithms}{7}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}PID control}{7}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Multiple-Input Multiple-Output control}{7}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.2.1}MARTe architecture }{8}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Hardware containers}{8}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}MARTe 2.0}{8}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}Equilibrium and control algorithms}{8}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}PID control}{8}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Multiple-Input Multiple-Output control}{8}{subsection.2.3.2}
 \contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {JT60-SA control design}}{9}{chapter.3}
 \contentsline {section}{\numberline {3.1}Machine description}{9}{section.3.1}
 \contentsline {section}{\numberline {3.2}CREATE tools}{9}{section.3.2}
@@ -40,5 +40,5 @@
 \contentsline {section}{\numberline {5.2}Results}{13}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}PID control and LQR control results}{13}{subsection.5.2.1}
 \contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Conclusions}}{15}{chapter.6}
-\contentsline {chapter}{Bibliography}{17}{chapter*.12}
+\contentsline {chapter}{Bibliography}{17}{chapter*.13}
 \contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Demonstrations}}{19}{Appendix.1.A}
