@@ -52,4 +52,11 @@ Andr{\'{e}}~C. Neto, Diogo Alves, Luca Boncagni, Pedro~J. Carvalho, Daniel~F.
 \newblock In {\em IEEE Transactions on Nuclear Science}, volume~58, pages
   1482--1489, 2011.
 
+\bibitem{MARTe2}
+Andre~C. Neto, Filippo Sartori, Riccardo Vitelli, Llorenc Capella, Giuseppe
+  Ferro, Ivan Herrero, and Hector Novella.
+\newblock {An agile quality assurance framework for the development of fusion
+  real-Time applications}.
+\newblock In {\em 2016 IEEE-NPSS Real Time Conference, RT 2016}, 2016.
+
 \end{thebibliography}

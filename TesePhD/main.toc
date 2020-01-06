@@ -4,41 +4,41 @@
 \babel@toc {english}{}
 \babel@toc {italian}{}
 \babel@toc {english}{}
-\contentsline {chapter}{\numberline {1}\spacedlowsmallcaps {Introduction}}{3}{chapter.1}
-\contentsline {section}{\numberline {1.1}Tokamak plasma control}{3}{section.1.1}
-\contentsline {section}{\numberline {1.2}Behind the plasma current}{3}{section.1.2}
-\contentsline {section}{\numberline {1.3}Thesis outline}{3}{section.1.3}
-\contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {Plasma Control Systems}}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}Overview of control systems}{5}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}DIII-D Plasma Control System}{5}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Syst\'eme de Contr\^ole Distribu\'e}{7}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}MARTe framework}{7}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}MARTe architecture }{8}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Hardware containers}{8}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}MARTe 2.0}{8}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Equilibrium and control algorithms}{8}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}PID control}{8}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Multiple-Input Multiple-Output control}{8}{subsection.2.3.2}
-\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {JT60-SA control design}}{9}{chapter.3}
-\contentsline {section}{\numberline {3.1}Machine description}{9}{section.3.1}
-\contentsline {section}{\numberline {3.2}CREATE tools}{9}{section.3.2}
-\contentsline {section}{\numberline {3.3}Controller designs}{9}{section.3.3}
-\contentsline {section}{\numberline {3.4}QST tools implementation}{9}{section.3.4}
-\contentsline {section}{\numberline {3.5}Simulation results}{9}{section.3.5}
-\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {ISTTOK }}{11}{chapter.4}
-\contentsline {section}{\numberline {4.1}Machine description}{11}{section.4.1}
-\contentsline {section}{\numberline {4.2}Diagnostics and Actuators}{11}{section.4.2}
-\contentsline {section}{\numberline {4.3}ATCA-MIMO-ISOL boards}{11}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Hardware layout}{11}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Real-time integration software}{11}{subsection.4.3.2}
-\contentsline {section}{\numberline {4.4}Plasma current magnetic field }{11}{section.4.4}
-\contentsline {section}{\numberline {4.5}Plasma centroid position determination}{11}{section.4.5}
-\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {ISTTOK results }}{13}{chapter.5}
-\contentsline {section}{\numberline {5.1}Implementation of the General Application Modules }{13}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}PID control implementation}{13}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Multiple-Input Multiple-Output control implementation}{13}{subsection.5.1.2}
-\contentsline {section}{\numberline {5.2}Results}{13}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}PID control and LQR control results}{13}{subsection.5.2.1}
-\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Conclusions}}{15}{chapter.6}
-\contentsline {chapter}{Bibliography}{17}{chapter*.13}
-\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Demonstrations}}{19}{Appendix.1.A}
+\contentsline {chapter}{\numberline {1}\spacedlowsmallcaps {Introduction}}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Tokamak plasma control}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Behind the plasma current}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Thesis outline}{3}{section.1.3}%
+\contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {Plasma Control Systems}}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Overview of control systems}{5}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}DIII-D Plasma Control System}{5}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Syst\'eme de Contr\^ole Distribu\'e}{7}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}MARTe framework}{7}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}MARTe architecture }{8}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Hardware containers}{8}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}MARTe 2.0}{8}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Equilibrium and control algorithms}{8}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}PID control}{8}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Multiple-Input Multiple-Output control}{8}{subsection.2.3.2}%
+\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {JT60-SA control design}}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Machine description}{9}{section.3.1}%
+\contentsline {section}{\numberline {3.2}CREATE tools}{9}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Controller designs}{9}{section.3.3}%
+\contentsline {section}{\numberline {3.4}QST tools implementation}{9}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Simulation results}{9}{section.3.5}%
+\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {ISTTOK }}{11}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Machine description}{11}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Diagnostics and Actuators}{11}{section.4.2}%
+\contentsline {section}{\numberline {4.3}ATCA-MIMO-ISOL boards}{11}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Hardware layout}{11}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Real-time integration software}{11}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Plasma current magnetic field }{11}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Plasma centroid position determination}{11}{section.4.5}%
+\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {ISTTOK results }}{13}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Implementation of the General Application Modules }{13}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}PID control implementation}{13}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Multiple-Input Multiple-Output control implementation}{13}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Results}{13}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}PID control and LQR control results}{13}{subsection.5.2.1}%
+\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Conclusions}}{15}{chapter.6}%
+\contentsline {chapter}{Bibliography}{17}{chapter*.23}%
+\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Demonstrations}}{19}{Appendix.1.A}%
