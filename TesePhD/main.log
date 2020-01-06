@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.20)  3 JAN 2020 16:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.20)  8 JAN 2020 18:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1949,16 +1949,16 @@ Class scrbook Warning: \float@addtolists detected!
 
 ]
 chapter 2.
-<Chp2/DIIDPCS_old.PNG, id=378, 525.162pt x 387.849pt>
-File: Chp2/DIIDPCS_old.PNG Graphic file (type png)
-<use Chp2/DIIDPCS_old.PNG>
-Package pdftex.def Info: Chp2/DIIDPCS_old.PNG  used on input line 13.
-(pdftex.def)             Requested size: 294.44724pt x 217.46027pt.
+<Chp2/DIIDPCS_old.png, id=378, 899.36pt x 663.47874pt>
+File: Chp2/DIIDPCS_old.png Graphic file (type png)
+<use Chp2/DIIDPCS_old.png>
+Package pdftex.def Info: Chp2/DIIDPCS_old.png  used on input line 13.
+(pdftex.def)             Requested size: 294.44724pt x 217.21747pt.
 
 Underfull \vbox (badness 6428) has occurred while \output is active []
 
  [5]
-<Chp2/DIIIDPCSnew.PNG, id=396, 590.205pt x 347.49825pt>
+<Chp2/DIIIDPCSnew.PNG, id=395, 590.205pt x 347.49825pt>
 File: Chp2/DIIIDPCSnew.PNG Graphic file (type png)
 <use Chp2/DIIIDPCSnew.PNG>
 Package pdftex.def Info: Chp2/DIIIDPCSnew.PNG  used on input line 22.
@@ -1970,16 +1970,16 @@ LaTeX Font Info:    Font shape `U/msa/m/n' will be
 (Font)              scaled to size 5.21004pt on input line 30.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 5.21004pt on input line 30.
- [6 <./Chp2/DIIDPCS_old.PNG> <./Chp2/DIIIDPCSnew.PNG>]
-<Chp2/TCVcntrl1.png, id=414, 798.5835pt x 442.0515pt>
+ [6 <./Chp2/DIIDPCS_old.png> <./Chp2/DIIIDPCSnew.PNG>]
+<Chp2/TCVcntrl1.png, id=413, 798.5835pt x 442.0515pt>
 File: Chp2/TCVcntrl1.png Graphic file (type png)
 <use Chp2/TCVcntrl1.png>
 Package pdftex.def Info: Chp2/TCVcntrl1.png  used on input line 34.
 (pdftex.def)             Requested size: 294.44724pt x 162.9899pt.
-) (./Chp3/Chap3.tex
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7 <./Chp2/TCVcntrl1.png>] [8]
+ [7 <./Chp2/TCVcntrl1.png>]) (./Chp3/Chap3.tex [8]
 chapter 3.
 ) (./Chp4/Chap4.tex [9
 
@@ -2006,12 +2006,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 (./main.bbl [16
 
 
-]) [17] [18
+] [17]) [18]
+chapter A.
+[19
 
 
 ]
-chapter A.
-[19]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 111.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 111.
  (./main.aux (./abs_akw/abstract.aux) (./abs_akw/acknowledgements.aux)
@@ -2028,10 +2028,10 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 111.
  ) 
 Here is how much of TeX's memory you used:
- 47745 strings out of 492982
- 1022659 string characters out of 6134895
- 1290046 words of memory out of 5000000
- 50378 multiletter control sequences out of 15000+600000
+ 47751 strings out of 492982
+ 1022720 string characters out of 6134895
+ 1291134 words of memory out of 5000000
+ 50381 multiletter control sequences out of 15000+600000
  591233 words of font info for 152 fonts, out of 8000000 for 9000
  1149 hyphenation exceptions out of 8191
  75i,13n,82p,10402b,954s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2062,10 +2062,10 @@ fb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (38 pages, 1168400 bytes).
+Output written on main.pdf (38 pages, 1215768 bytes).
 PDF statistics:
- 545 PDF objects out of 1000 (max. 8388607)
- 447 compressed objects within 5 object streams
- 102 named destinations out of 1000 (max. 500000)
+ 551 PDF objects out of 1000 (max. 8388607)
+ 454 compressed objects within 5 object streams
+ 105 named destinations out of 1000 (max. 500000)
  39350 words of extra memory for PDF output out of 42996 (max. 10000000)
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{PCS_2018}
 Andrej A.~Kavin {Valerij A. Belyakov}.
@@ -44,6 +44,14 @@ H.~Anand, C.~Galperti, S.~Coda, B.~P. Duval, F.~Felici, T.~Blanken,
   its applications}.
 \newblock {\em Nuclear Fusion}, 57(5), 2017.
 
+\bibitem{Neto2010}
+A.~C. {Neto}, F.~{Sartori}, F.~{Piccolo}, R.~{Vitelli}, G.~{De Tommasi},
+  L.~{Zabeo}, A.~{Barbalace}, H.~{Fernandes}, D.~F. {Valcarcel}, and A.~J.~N.
+  {Batista}.
+\newblock Marte: A multiplatform real-time framework.
+\newblock {\em IEEE Transactions on Nuclear Science}, 57(2):479--486, April
+  2010.
+
 \bibitem{Neto2011}
 Andr{\'{e}}~C. Neto, Diogo Alves, Luca Boncagni, Pedro~J. Carvalho, Daniel~F.
   Valc{\'{a}}rcel, Antonio Barbalace, Gianmaria {De Tommasi}, Hor{\'{a}}cio
@@ -51,5 +59,20 @@ Andr{\'{e}}~C. Neto, Diogo Alves, Luca Boncagni, Pedro~J. Carvalho, Daniel~F.
 \newblock {A survey of recent MARTe based systems}.
 \newblock In {\em IEEE Transactions on Nuclear Science}, volume~58, pages
   1482--1489, 2011.
+
+\bibitem{MARTe2}
+Andre~C. Neto, Filippo Sartori, Riccardo Vitelli, Llorenc Capella, Giuseppe
+  Ferro, Ivan Herrero, and Hector Novella.
+\newblock {An agile quality assurance framework for the development of fusion
+  real-Time applications}.
+\newblock In {\em 2016 IEEE-NPSS Real Time Conference, RT 2016}, 2016.
+
+\bibitem{Raptor}
+Chiara Piron, Gabriele Manduchi, Paolo Bettini, Federico Felici, Claudio
+  Finotti, Paolo Franz, Ondrej Kudlacek, Giuseppe Marchiori, Lionello Marrelli,
+  J.~M. Moret, Paolo Piovesan, Olivier Sauter, and Cesare Taliercio.
+\newblock {Integration of the state observer RAPTOR in the real-time MARTe
+  framework at RFX-mod}.
+\newblock {\em Fusion Engineering and Design}, 123:616--619, 2017.
 
 \end{thebibliography}
