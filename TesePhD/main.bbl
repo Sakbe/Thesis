@@ -52,6 +52,12 @@ A.~C. {Neto}, F.~{Sartori}, F.~{Piccolo}, R.~{Vitelli}, G.~{De Tommasi},
 \newblock {\em IEEE Transactions on Nuclear Science}, 57(2):479--486, April
   2010.
 
+\bibitem{JETRT}
+G.~{De Tommasi}, F.~Piccolo, A.~Pironti, and F.~Sartori.
+\newblock {A flexible software for real-time control in nuclear fusion
+  experiments}.
+\newblock {\em Control Engineering Practice}, 14(11):1387--1393, 2006.
+
 \bibitem{Neto2011}
 Andr{\'{e}}~C. Neto, Diogo Alves, Luca Boncagni, Pedro~J. Carvalho, Daniel~F.
   Valc{\'{a}}rcel, Antonio Barbalace, Gianmaria {De Tommasi}, Hor{\'{a}}cio
