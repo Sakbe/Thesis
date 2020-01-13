@@ -66,6 +66,18 @@ Andr{\'{e}}~C. Neto, Diogo Alves, Luca Boncagni, Pedro~J. Carvalho, Daniel~F.
 \newblock In {\em IEEE Transactions on Nuclear Science}, volume~58, pages
   1482--1489, 2011.
 
+\bibitem{MARTe2011}
+A~Neto, D~Alves, B~B Carvalho, P~J Carvalho, H~Fernandes, D~F Valc, G~De
+  Tommasi, Associazione Euratom-enea create, Via Claudio, P~Mccullen,
+  A~Stephen, Euratom-ccfe~Fusion Association, Culham~Science Centre, Abingdon
+  Ox, United Kingdom, R~Vitelli, Tor Vergata, Via Politecnico, L~Zabeo, and
+  Iter Organisation.
+\newblock {Marte Framework : a Middleware for Real-Time Applications
+  Development}.
+\newblock In {\em 13th International Conference on Accelerator and Large
+  Experimental Physics Control Systems}, number~11, pages 1277--1280, Grenoble,
+  France, 2011.
+
 \bibitem{MARTe2}
 Andre~C. Neto, Filippo Sartori, Riccardo Vitelli, Llorenc Capella, Giuseppe
   Ferro, Ivan Herrero, and Hector Novella.
