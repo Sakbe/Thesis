@@ -15,8 +15,8 @@
 \contentsline {section}{\numberline {2.2}MARTe framework}{7}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}MARTe architecture }{8}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Hardware containers}{8}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}MARTe 2.0}{8}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Equilibrium and control algorithms}{8}{section.2.3}
+\contentsline {subsection}{\numberline {2.2.3}MARTe 2.0}{9}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}Equilibrium and control algorithms}{9}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}PID control}{9}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Multiple-Input Multiple-Output control}{9}{subsection.2.3.2}
 \contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {JT60-SA control design}}{11}{chapter.3}

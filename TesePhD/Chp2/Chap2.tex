@@ -36,20 +36,22 @@ The TCV\footnote{The Tokamak \'a configuration variable (TCV) is  a medium size 
 \end{figure}
 
 \section{MARTe framework}
-Regardless the nature of a real-time system the design of it is usually related to the specific requirements it has, commonly this implies to have customized hardware and software which causes a lack in modularity and portability. When systems become bigger is convenient to provide a common library containing shareable functionalities and which also allows for modular implementations. In order to deal with this the MARTe framework was designed about a decade ago. MARTe was developed in order to standardize general real-time control systems for the execution of control algorithms and is based on a multiplatform $C^{++}$ library ~\cite{Neto2010}.  Previous implementations for a  software framework similar to MARTe were developed some years before for the JET tokamak. JETRT was a software framework used to develop real-time control and data acquisition systems which laid the foundation for current MARTe framework ~\cite{JETRT}. 
+Regardless the nature of a real-time system the design of it is usually related to the specific requirements it has, commonly this implies to have customized hardware and software which causes a lack in modularity and portability. When systems become bigger is convenient to provide a common library containing shareable functionalities and which also allows for modular implementations. In order to deal with this the MARTe framework was designed about a decade ago. MARTe was developed in order to standardize general real-time control systems for the execution of control algorithms and is based on a multiplatform $C^{++}$ library ~\cite{Neto2010}.  Previous implementations for a  software framework similar to MARTe were developed some years before for the JET tokamak. JETRT was a software framework used to develop real-time control and data acquisition systems which laid the foundation for current MARTe framework ~\cite{JETRT}. MARTe is currently used in several tokamaks such as JET, FTU, COMPASS and ISTTOK. 
 
 \subsection{MARTe architecture }
-The unitary MARTe component is the Generic Application Module (GAM), each of the C++ programmed GAMs usually performs an specific task of the control system, the collection of interconnecting GAMs builds MARTe.  \cite{Neto2011} 
+The unitary MARTe component is the Generic Application Module (GAM), each of the C++ programmed GAMs usually performs an specific task of the control system, the collection of interconnecting GAMs builds MARTe  \cite{Neto2011}. The GAMs  have an entry point to receive data driven configuration and a set of input and output channels to interface with other GAMs. The Dynamic Data Buffer (DDB) is a generic memory data bus where each GAM receives and produce data using DDB named channels. Usually each GAM is associated with a special function of the system like processing data of an specific diagnostic or perform some  control algorithm. MARTe hardware data interface and synchronization for inputs and outputs is performed using a special GAM called IOGAM  .
+
 
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.35\textwidth]{Chp2/GAMs.png}
 	\caption{\label{GAMs} Example of a set of GAMs connected to the DDB. Timing and hardware GAMs provide the I/O interface to the exterior, whereas a generic waveform GAM inputs the reference for a PID controller. Finally, the output is sent to a DAC and the data is stored for analysis by a collection GAM.  It should be noticed that the reference generation and the controller GAM are not aware of the changes in the data providers and data consumers.  \cite{MARTe2011}}
+	
 \end{figure}
 
 \subsection{Hardware containers}
 
-The MARTe hardware cnontainers 
+The MARTe hardware containers 
 
 
 \subsection{MARTe 2.0}
