@@ -1,11 +1,41 @@
 \chapter{ISTTOK  results }
 
 \section{Implementation of the General Application Modules }
+
 \subsection{PID control implementation}
+
+\subsection{Kalman filter implementation}
+
 \subsection{Multiple-Input Multiple-Output control implementation}
 
 \section{Results}
 \subsection{PID control and LQR control results}
+
+This section addresses obteined the experimental results in ISTTOK's plasma discharges.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\textwidth]{Chp5/PIDvsMIMO_564_559_2.eps}
+	\label{564_559}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\textwidth]{Chp5/PIDvsMIMO_564_559_curr_2.eps}
+	\label{564_559curr}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\textwidth]{Chp5/PIDvsMIMO_341_324_2.eps}
+	\label{341_342}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\textwidth]{Chp5/PIDvsMIMO_341_324_curr_2.eps}
+	\label{341_342_curr}
+\end{figure}
 
 
 \begin{center}
@@ -69,11 +99,10 @@
 		\hline
 		MIMO LQR & 48350 & (13.9320,	14.4940) & (13.2, -5.6)&$\approx -4 kA$  \\[1ex]
 		\hline
+		\caption{Centroid position RMSE comparison between PID and MIMO-LQR controlled discharges for different set points and plasma current scenarios.}
 	\end{longtable}
+\label{TableControl}
+
 \end{center}
 
 
-\begin{figure}
-	\centering
-	\includegraphics[width=0.7\textwidth]{Chp5/PIDvsMIMO_340_338_2.eps}
-\end{figure}
