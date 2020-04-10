@@ -1,6 +1,9 @@
 \chapter{JT60-SA control design}
 
 \section{Machine description}
+
+JT60-SA is an under-construction tokamak in Naka, Japan.
+
 \begin{figure}
 	\centering
 	\includegraphics[width=0.80\textwidth]{Chp3/JT60SA.png}
@@ -9,12 +12,19 @@
 \end{figure}
 
 \section{CREATE tools}
+Consorzio di Ricerca per l' Energia, l' Automazione e le Tecnologie dell' Elettromagnetismo (CREATE)
+
 \section{Controller design}
 \subsection{eXtreme Shape Controller}
 \section{QST tools implementation}
 \subsection{CCS}
 \subsection{QST magnetic controller (FBC)}
+
+
+The QST magnetic controller FBC uses the PF coils signals to control the plasma current $I_p$ and the FPPC coils signals for plasma position control.
+
 QST magnetic controller calculates command values of active coil ccurrents/voltages from some information
+
 \begin{equation}
 I_{PF\_ref}(t+\Delta t) = I_{PF}(t_0)+M^\dagger_{PF}\left[G_{SP}\delta\Psi_s(t)+G_{SI}\int_{t_0}^{t}\delta\Psi_s(t)dt+G_{XP}\delta\Psi_X(t)+G_{XI}\int_{t0}^{t}\delta\Psi_x(t)dt\right]
 \end{equation}
