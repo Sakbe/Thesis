@@ -2,33 +2,47 @@
 
 \section{Machine description}
 
-JT60-SA is an under-construction tokamak in Naka, Japan whose principal purpose is  the contribution to early realization of fusion energy by supporting the exploitation and resolving key physics  for ITER reactor.Figure ~\ref{JT60schm}  ~\ref{JT60coils} 
-
+JT60-SA is an under-construction superconductive tokamak located at one of the facilities from the National Institutes for Quantum and Radiological Science and Technology (QST)  at  Naka, Japan whose principal purpose is  the contribution to early realization of fusion energy by supporting the exploitation and resolving key physics for ITER reactor. Figure ~\ref{JT60schm} shows the overall general configuration and the most remarkable elements of the machine. The JT-60SA  vacuum chamber will have a major radius of 2.96 m and a minor radius of 1.18 m with an overall plasma volume of 132 $m^3$ ~\cite{Spears2014} .
+\smallskip
 \begin{figure}
 	\centering
 	\includegraphics[width=0.80\textwidth]{Chp3/JT60SA.png}
 	
-	\caption{\label{JT60schm}JT60-SA tokamak configuration}
+	\caption{\label{JT60schm}JT60-SA tokamak configuration ~\cite{JT60SA:ResearchPlan}.}
 \end{figure}
+
+
+
+The poloidal field coils shown in fig. ~\ref{JT60coils} consist on a set of 10 external superconductive coils and 2 in-vessel coils (FPPC1 and FPPC2). 
 
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.7\textwidth]{Chp3/JT60Coils.png}
+	\includegraphics[width=0.6\textwidth]{Chp3/JT60Coils.png}
 
 	\caption{	\label{JT60coils}JT-60SA poloidal cross-section and layout of the Poloidal Field coils system ~\cite{NCruz}.}
 \end{figure}
 
 
-\section{CREATE tools}
+This chapter will address two different approaches for the Last Closed Flux Surface (LCFS) reconstruction an the controllers for plasma current, shape and position on  JT60-SA in order to achieve and maintain the desired operational scenario. 
+
+\section{CREATE magnetic reconstruction tools}
 Consorzio di Ricerca per l' Energia, l' Automazione e le Tecnologie dell' Elettromagnetismo (CREATE)
 
 \section{Controller design}
-\subsection{eXtreme Shape Controller}
-\section{QST tools implementation}
-\subsection{CCS}
+The JET (Joint European Torus) tokamak was the first machine where around 2005 a new model based plasma current and shape controller was set up and tested  with the existing active circuits and control hardware. The novelty controller was the eXtreme Shape Controller (XSC) and its aim was to improve  the performance of the back then present controller to allow the control of extremely shaped plasmas with higher values of elongation and triangularity. ~\cite{Albanese2005} 
+ 
+
+\section{QST reconstruction and control implementation}
+
+Along with the CREATE tools given for the reconstruction of the LCFS and the XSC for  plasma shape control. A reconstruction code and controller provided by the QST team were tested and compared.
+
+\subsection{Cauchy Condition Surface reconstruction  method }
+The QST Cauchy Condition Surface (CCS) method for the reconstruction of the magnetic last closed flux surface calculates controlled variables for plasma position and shape control such as the poloidal magnetic flux at control points on an isoflux scheme  ~\cite{CCS} . The CCS method allows 19 geometrical 
+
 \subsection{QST magnetic controller (FBC)}
 
+~\cite{FBC}
 
 The QST magnetic controller FBC uses the PF coils signals to control the plasma current $I_p$ and the FPPC coils signals for plasma position control.
 
@@ -50,3 +64,4 @@ I_{FPPC\_ref}(t+\Delta t)=I_{FPPC}(t_0)+ M^\dagger_{FPPC}\left[G_{FP}\delta \Psi
 \subsection{ELM}
 \subsection{Compound ELM}
 \subsection{Minor Disruption}
+\subsection{Shape reference change}
