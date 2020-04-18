@@ -8,7 +8,7 @@ JT60-SA is an under-construction superconductive tokamak located at one of the f
 	\centering
 	\includegraphics[width=0.80\textwidth]{Chp3/JT60SA.png}
 	
-	\caption{\label{JT60schm}JT60-SA tokamak configuration ~\cite{JT60SA:ResearchPlan}.}
+	\caption{\label{JT60schm}JT60-SA tokamak configuration and its main elements ~\cite{JT60SA:ResearchPlan}.}
 \end{figure}
 
 
@@ -40,13 +40,12 @@ The JET (Joint European Torus) tokamak was the first machine where around 2005 a
 Along with the CREATE tools presented above  for the reconstruction of the LCFS and the XSC for plasma shape control, a reconstruction code and controller provided by the QST team were tested and compared. This section will briefly describe these two methods and its limitations.  
 
 \subsection{Cauchy Condition Surface reconstruction  method }
-The QST Cauchy Condition Surface (CCS) method for the reconstruction of the magnetic last closed flux surface calculates controlled variables for plasma position and shape control such as the poloidal magnetic flux at control points on an isoflux scheme  ~\cite{CCS} . The CCS method allows a selection up to 19 geometrical control points and . 
+The QST Cauchy Condition Surface (CCS) method for the reconstruction of the magnetic last closed flux surface calculates controlled variables for plasma position and shape control such as the poloidal magnetic flux at control points on an isoflux scheme  ~\cite{CCS} . The CCS method allows a selection up to 19 geometrical control points and its input parameters are the current in the PF coils, the measurements in the magnetic field and flux sensors and the plasma current. The output signals from the CCS reconstruction method are the magnetic fluxes at the X-point an the selected control points. 
 
 \subsection{QST magnetic controller (FBC)}
 
-~\cite{FBC}
 
-The QST magnetic controller FBC uses the PF coils signals to control the plasma current $I_p$ and the FPPC coils signals for plasma position control.
+The QST magnetic controller FBC uses the PF coils signals to control the plasma current $I_p$ and the FPPC coils signals for plasma position control ~\cite{FBC}.
 
 QST magnetic controller calculates command values of active coil ccurrents/voltages from some information
 
@@ -77,7 +76,7 @@ I_{FPPC\_ref}(t+\Delta t)=I_{FPPC}(t_0)+ M^\dagger_{FPPC}\left[G_{FP}\delta \Psi
 
 \begin{figure}
 	\centering
-	\includegraphics[width=1\textwidth]{Chp3/JT60SchemeFBC.png}
+	\includegraphics[width=1.05\textwidth]{Chp3/JT60SchemeFBCnew.png}
 	\caption{	\label{JT60FBCcheme}JT-60SA }
 \end{figure}
 
@@ -91,27 +90,43 @@ I_{FPPC\_ref}(t+\Delta t)=I_{FPPC}(t_0)+ M^\dagger_{FPPC}\left[G_{FP}\delta \Psi
 % Please add the following required packages to your document preamble:
 % \usepackage[table,xcdraw]{xcolor}
 % If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
-% Please add the following required packages to your document preamble:
-% \usepackage[table,xcdraw]{xcolor}
-% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
 \begin{table}[]
 	\centering
-	\begin{tabular}{|l|c|c|c|c|c|c|}
+	\begin{tabular}{|l|c|c|c|c|c|c|l|l|}
 		\hline
-		\rowcolor{color2}
-		\multicolumn{7}{|c|}{\textbf{Minor disruption steady state error}}                                                                                                                   \\ \hline
-		\rowcolor{color1}
-		Controller                                                            & \multicolumn{4}{c|}{eXtreme Shape Controller}          & \multicolumn{2}{l|}{QST Controller}                 \\ \hline
-		\rowcolor{color3}
-		\begin{tabular}[c]{@{}l@{}}LCFS reconstruction \\ method\end{tabular} & \multicolumn{2}{c|}{CCS} & \multicolumn{2}{c|}{CREATE} & \multicolumn{2}{c|}{CCS}                            \\ \hline
-		& Rx mm       & Zx mm      & Rx mm        & Zx mm        & Rx mm                    & Zx mm                    \\ \hline
-		6 points                                                              & -4.92           & 20.9          & -3.57            & 28.8            & xxx                        & xxx                        \\ \hline
-		8 points                                                              & 17.44           & 21.56          & 17.81            & 29.04            & xxx                        & xxx                        \\ \hline
-		19 points                                                             & -5.54           & 16.78          & -4.42           & 24.41            & \cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} \\ \hline
+			\rowcolor{color2}
+		\multicolumn{9}{|c|}{\textbf{Minor disruption steady state error}}                                                                                                                                                                         \\ \hline
+			\rowcolor{color1}
+		Controller                                                            & \multicolumn{4}{c|}{eXtreme Shape Controller}          & \multicolumn{4}{c|}{QST Controller}                                                                       \\ \hline
+			\rowcolor{color3}
+		\begin{tabular}[c]{@{}l@{}}LCFS reconstruction \\ method\end{tabular} & \multicolumn{2}{c|}{CCS} & \multicolumn{2}{c|}{CREATE} & \multicolumn{2}{c|}{CCS}                            & \multicolumn{2}{c|}{CREATE}                         \\ \hline
+		& Rx mm       & Zx mm      & Rx mm        & Zx mm        & Rx mm                    & Zx mm                    & Rx mm                    & Zx mm                    \\ \hline
+		6 points                                                              & 1           & 5          & 5            & 6            & 1                        & 2                        & 1                        & 2                        \\ \hline
+		8 points                                                              & 3           & 2          & 4            & 5            & 4                        & 4                        & 4                        & 4                        \\ \hline
+		19 points                                                             & 4           & 4          & 65           & 6            & \cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} \\ \hline
 	\end{tabular}
-\caption{Table }
+\caption{X-point steady state error for a given JT60-SA scenario in the presence of a minor disruption. The XSC and  QST controller were used in different simulations for the shape control along  with two reconstruction methods for the LCFS. }
 \end{table}
 
+
+%\begin{table}[]
+%	\centering
+%	\begin{tabular}{|l|c|c|c|c|c|c|}
+%		\hline
+%		\rowcolor{color2}
+%		\multicolumn{7}{|c|}{\textbf{Minor disruption steady state error}}                                                                                                                   \\ \hline
+%		\rowcolor{color1}
+%		Controller                                                            & \multicolumn{4}{c|}{eXtreme Shape Controller}          & \multicolumn{2}{l|}{QST Controller}                 \\ \hline
+%		\rowcolor{color3}
+%		\begin{tabular}[c]{@{}l@{}}LCFS reconstruction \\ method\end{tabular} & \multicolumn{2}{c|}{CCS} & \multicolumn{2}{c|}{CREATE} & \multicolumn{2}{c|}{CCS}                            \\ \hline
+%		& Rx mm       & Zx mm      & Rx mm        & Zx mm        & Rx mm                    & Zx mm                    \\ \hline
+%		6 points                                                              & -4.92           & 20.9          & -3.57            & 28.8            & xxx                        & xxx                        \\ \hline
+%		8 points                                                              & 17.44           & 21.56          & 17.81            & 29.04            & xxx                        & xxx                        \\ \hline
+%		19 points                                                             & -5.54           & 16.78          & -4.42           & 24.41            & \cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} \\ \hline
+%	\end{tabular}
+%\caption{Table }
+%\end{table}
+%
 
 
 \subsection{Shape reference change}
