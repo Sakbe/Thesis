@@ -11,12 +11,8 @@ JT60-SA is an under-construction superconductive tokamak located at one of the f
 	\caption{\label{JT60schm}JT60-SA tokamak configuration and its main elements ~\cite{JT60SA:ResearchPlan}.}
 \end{figure}
 
-
-
-The poloidal field coils shown in fig. ~\ref{JT60coils} consist of two sets of superconductive coils: the Equilibrium Field Coils (EF1–6) made
-
- 10 external superconductive coils and 2 in-vessel coils (FPPC1 and FPPC2). 
-
+The poloidal field coils shown in fig. ~\ref{JT60coils} consist of two sets of superconductive coils: the Equilibrium Field Coils (EF1–6) and the Central Solenoid (consisting of four independent coils, named CS1–4). Furthermore, two in-vessel Fast Plasma Position copper Coils (FPPC1–2) will also be installed ~\cite{NCruz}.
+\smallskip
 
 \begin{figure}
 	\centering
@@ -25,15 +21,17 @@ The poloidal field coils shown in fig. ~\ref{JT60coils} consist of two sets of s
 	\caption{	\label{JT60coils}JT-60SA poloidal cross-section and layout of the Poloidal Field coils system ~\cite{NCruz}.}
 \end{figure}
 
-
 This chapter will address two different approaches for the Last Closed Flux Surface (LCFS) reconstruction an for the  plasma current, shape and position controllers on  JT60-SA in order to achieve and maintain the desired operational scenario given certain equilibrium. 
 
+\subsection{Scenario 2}
+
 \section{CREATE magnetic reconstruction tools}
-Consorzio di Ricerca per l' Energia, l' Automazione e le Tecnologie dell' Elettromagnetismo (CREATE)
+CREATE (Consorzio di Ricerca per l' Energia, l' Automazione e le Tecnologie dell' Elettromagnetismo )
 
 \section{Controller design}
 The JET (Joint European Torus) tokamak was the first machine where around 2005 a new model based plasma current and shape controller was set up and tested  with the existing active circuits and control hardware. The novelty controller was the eXtreme Shape Controller (XSC) and its aim was to improve  the performance of the back then present controller to allow the control of extremely shaped plasmas with higher values of elongation and triangularity ~\cite{Albanese2005} . 
  
+ The XSC algorithm can be used either to implement a gap-based control strategy, or an isoflux one, as it has been proposed in .
 
 \section{QST reconstruction and control implementation}
 
@@ -92,20 +90,20 @@ I_{FPPC\_ref}(t+\Delta t)=I_{FPPC}(t_0)+ M^\dagger_{FPPC}\left[G_{FP}\delta \Psi
 % If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
 \begin{table}[]
 	\centering
-	\begin{tabular}{|l|c|c|c|c|c|c|l|l|}
+	\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
 		\hline
 			\rowcolor{color2}
-		\multicolumn{9}{|c|}{\textbf{Minor disruption steady state error}}                                                                                                                                                                         \\ \hline
+		\multicolumn{9}{|c|}{\textbf{Minor disruption steady state X-point error}}                                                                                                                                                                         \\ \hline
 			\rowcolor{color1}
 		Controller                                                            & \multicolumn{4}{c|}{eXtreme Shape Controller}          & \multicolumn{4}{c|}{QST Controller}                                                                       \\ \hline
 			\rowcolor{color3}
 		\begin{tabular}[c]{@{}l@{}}LCFS reconstruction \\ method\end{tabular} & \multicolumn{2}{c|}{CCS} & \multicolumn{2}{c|}{CREATE} & \multicolumn{2}{c|}{CCS}                            & \multicolumn{2}{c|}{CREATE}                         \\ \hline
 		& Rx mm       & Zx mm      & Rx mm        & Zx mm        & Rx mm                    & Zx mm                    & Rx mm                    & Zx mm                    \\ \hline
-		6 points                                                              & 1           & 5          & 5            & 6            & 1                        & 2                        & 1                        & 2                        \\ \hline
-		8 points                                                              & 3           & 2          & 4            & 5            & 4                        & 4                        & 4                        & 4                        \\ \hline
-		19 points                                                             & 4           & 4          & 65           & 6            & \cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} \\ \hline
+		6 points       &                                                       -4.92           & 20.9          & -3.57            & 28.8              & -2.70                        & -0.105                        & -2.24                        &   0.369                      \\ \hline
+		8 points                                                              &17.44           & 21.56          & 17.81            & 29.04           &   47.08                      &     -46.56                     & 57.61                       &           -41.42              \\ \hline
+		19 points                                                             &-5.54           & 16.78          & -4.42           & 24.41             & \cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} \\ \hline
 	\end{tabular}
-\caption{X-point steady state error for a given JT60-SA scenario in the presence of a minor disruption. The XSC and  QST controller were used in different simulations for the shape control along  with two reconstruction methods for the LCFS. }
+\caption{X-point position steady state error for a given JT60-SA scenario in the presence of a minor disruption. The XSC and  QST controller were used in different simulations for the shape control along  with two reconstruction methods for the LCFS. }
 \end{table}
 
 
@@ -130,3 +128,4 @@ I_{FPPC\_ref}(t+\Delta t)=I_{FPPC}(t_0)+ M^\dagger_{FPPC}\left[G_{FP}\delta \Psi
 
 
 \subsection{Shape reference change}
+
