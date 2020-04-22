@@ -6,32 +6,52 @@ JT60-SA is an under-construction superconductive tokamak located at one of the f
 \smallskip
 \begin{figure}
 	\centering
-	\includegraphics[width=0.80\textwidth]{Chp3/JT60SA.png}
+	\includegraphics[width=0.75\textwidth]{Chp3/JT60SA.png}
 	
 	\caption{\label{JT60schm}JT60-SA tokamak configuration and its main elements ~\cite{JT60SA:ResearchPlan}.}
 \end{figure}
 
-The poloidal field coils shown in fig. ~\ref{JT60coils} consist of two sets of superconductive coils: the Equilibrium Field Coils (EF1–6) and the Central Solenoid (consisting of four independent coils, named CS1–4). Furthermore, two in-vessel Fast Plasma Position copper Coils (FPPC1–2) will also be installed ~\cite{NCruz}.
+The Poloidal Field(PF) coils shown in JT60-SA cross-section from fig. ~\ref{JT60coils} consist of two sets of superconductive coils: the Equilibrium Field Coils (EF1–6) and the Central Solenoid (consisting of four independent coils, named CS1–4). Furthermore, two in-vessel Fast Plasma Position copper Coils (FPPC1–2) will also be installed ~\cite{NCruz}.The total of 12 PF coils have independent power sources with certain saturation value for the control of the plasma current, position and shape.   
 \smallskip
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.6\textwidth]{Chp3/JT60Coils.png}
+	\includegraphics[width=0.55\textwidth]{Chp3/JT60Coils.png}
 
 	\caption{	\label{JT60coils}JT-60SA poloidal cross-section and layout of the Poloidal Field coils system ~\cite{NCruz}.}
 \end{figure}
 
-This chapter will address two different approaches for the Last Closed Flux Surface (LCFS) reconstruction an for the  plasma current, shape and position controllers on  JT60-SA in order to achieve and maintain the desired operational scenario given certain equilibrium. 
+JT-60SA shall be capable of investigating different design scenarios. As refereed  in 
+~\cite{JT60SA:PID} it exists a set of 6 reference scenarios, additional ones, including some with a shorter repetition rate will be defined in future. For the control study in this section all simulations will be built based on the Scenario~2 characteristics. In particular, Scenario~2 refers to a~5.5 MA inductive lower single null discharge, whose reference shape at \emph{Start of Flattop}~(SOF) is shown in Fig.~\ref{SOF}.\smallskip
+\begin{figure}
+	\centering
+	\includegraphics[width=0.55\textwidth]{Chp3/scenario2_SOF.eps}
+	
+	\caption{Poloidal cross-section of the JT-60SA plasma at the Start of the Flat Top~(SOF) for reference Scenario~2. At SOF, the nominal plasma current is~5.5~MA, while the nominal values for poloidal beta~$\beta_p$ and internal inductance~$l_i$ are~0.53 and~0.85, respectively.	\label{SOF}}
+\end{figure}
 
-\subsection{Scenario 2}
+
+
+This chapter will address two different approaches for the Last Closed Flux Surface (LCFS) reconstruction an for the  plasma current, shape and position controllers on  JT60-SA in order to achieve and maintain the desired operational scenario given the plasma equilibrium in the SOF .
+
+
 
 \section{CREATE magnetic reconstruction tools}
 CREATE (Consorzio di Ricerca per l' Energia, l' Automazione e le Tecnologie dell' Elettromagnetismo )
 
+
+
+
 \section{Controller design}
 The JET (Joint European Torus) tokamak was the first machine where around 2005 a new model based plasma current and shape controller was set up and tested  with the existing active circuits and control hardware. The novelty controller was the eXtreme Shape Controller (XSC) and its aim was to improve  the performance of the back then present controller to allow the control of extremely shaped plasmas with higher values of elongation and triangularity ~\cite{Albanese2005} . 
  
- The XSC algorithm can be used either to implement a gap-based control strategy, or an isoflux one, as it has been proposed in .
+ The XSC algorithm can be used either to implement a gap-based control strategy, or an isoflux one, as it has been proposed in ~\cite{NCruz}.
+
+
+
+
+
+
 
 \section{QST reconstruction and control implementation}
 
@@ -39,6 +59,13 @@ Along with the CREATE tools presented above  for the reconstruction of the LCFS 
 
 \subsection{Cauchy Condition Surface reconstruction  method }
 The QST Cauchy Condition Surface (CCS) method for the reconstruction of the magnetic last closed flux surface calculates controlled variables for plasma position and shape control such as the poloidal magnetic flux at control points on an isoflux scheme  ~\cite{CCS} . The CCS method allows a selection up to 19 geometrical control points and its input parameters are the current in the PF coils, the measurements in the magnetic field and flux sensors and the plasma current. The output signals from the CCS reconstruction method are the magnetic fluxes at the X-point an the selected control points. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.75\textwidth]{Chp3/sensors_plots_newDirection.eps}
+	\caption{SOF equilibrium reconstructed from CREATE-NL and the CCS code along with the  magnetic field and flux sensors locations	\label{JT60sensors} }
+\end{figure}
+
 
 \subsection{QST magnetic controller (FBC)}
 
@@ -61,9 +88,11 @@ I_{FPPC\_ref}(t+\Delta t)=I_{FPPC}(t_0)+ M^\dagger_{FPPC}\left[G_{FP}\delta \Psi
 
 
 
+
+
 \section{Simulation results}	
 
- The simulations for  the JT60-SA CREATE model ,the XSC, the CCS reconstruction method and the QST controller  were programmed on top of  \textsc{Matlab} and \textsc{Simulink} blocks.
+ The simulations for  the JT60-SA CREATE-NL model ,the XSC, the CCS reconstruction method and the QST controller  were programmed on top of  \textsc{Matlab} and \textsc{Simulink} blocks. This  section will address in detail the outcome of the control simulations 
  
  
 \begin{figure}
@@ -78,12 +107,37 @@ I_{FPPC\_ref}(t+\Delta t)=I_{FPPC}(t_0)+ M^\dagger_{FPPC}\left[G_{FP}\delta \Psi
 	\caption{	\label{JT60FBCcheme}JT-60SA }
 \end{figure}
 
+\subsection{Disturbances}
+
+\subsection{Gap-based XSC}
 
 
-\subsection{Urano}
-\subsection{ELM}
-\subsection{Compound ELM}
-\subsection{Minor Disruption}
+\begin{figure}
+	\centering
+	\begin{subfigure}[b]{0.32\textwidth}
+		\includegraphics[width=\textwidth] {Chp3/Ref_20gaps_8gaps_minor_2.eps}  
+		\caption{Poloidal cross-section of JT-60SA.\label{figure:minor_big} }
+	\end{subfigure}
+	~
+	%	~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+	%(or a blank line to force the subfigure onto a new line)
+	\begin{subfigure}[b]{0.32\textwidth}
+		\includegraphics[width=\textwidth]{Chp3/zoom_Ref_20gaps_8gaps_minor_top_2.eps} 
+		\caption{Detailed view of the plasma top region.\label{figure:minor_big}}
+	\end{subfigure}
+	~
+	\begin{subfigure}[b]{0.32\textwidth}
+		\includegraphics[width=\textwidth]{Chp3/zoom_Ref_20gaps_8gaps_minor_strike_2.eps} 
+		\caption{Detailed view of the plasma divertor region. \label{figure:minor_strike}}
+	\end{subfigure}
+	
+	
+	\caption{ Comparison of the shape controller performance in the presence of Disturbance~\#3 (minor disruption). The two cases of 8 and 20 gaps are considered.}
+\end{figure}
+
+\subsection{Isoflux XSC and QST controller }
+
+
 
 % Please add the following required packages to your document preamble:
 % \usepackage[table,xcdraw]{xcolor}
@@ -126,6 +180,23 @@ I_{FPPC\_ref}(t+\Delta t)=I_{FPPC}(t_0)+ M^\dagger_{FPPC}\left[G_{FP}\delta \Psi
 %\end{table}
 %
 
+
+\begin{table}[]
+	\centering
+	\begin{tabular}{|l|c|c|c|c|}
+		\hline
+		\rowcolor{color2}
+		\multicolumn{5}{|c|}{\textbf{Minor disruption flux RMSE steady state  Wb/2$\pi$}}                                                                 \\ \hline
+			\rowcolor{color1}
+		Controller                 & \multicolumn{2}{c|}{eXtreme Shape Controller} & \multicolumn{2}{c|}{QST Controller}                 \\ \hline
+		LCFS reconstruction method & CCS                   & CREATE                & CCS                      & CREATE                   \\ \hline
+		6 points                   & 0.0121                & 0.0139                & 0.0000259                & 0.0000228                \\ \hline
+		8 points                   & 0.0152                & 0.0170                & 0.0000104                & 0.0000124                \\ \hline
+		19 points                  & 0.0069                & 0.0088                & \cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} \\ \hline
+	\end{tabular}
+	\caption{}
+	\label{tab:my-table}
+\end{table}
 
 \subsection{Shape reference change}
 
