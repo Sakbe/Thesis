@@ -116,6 +116,18 @@ JT-60SA Team.
 \newblock Technical report, 2017.
 \newblock https://users.jt60sa.org/?uid=222UJY.
 
+\bibitem{Albanese:CREATENLnew}
+R.~Albanese, R.~Ambrosino, and M.~Mattei.
+\newblock {CREATE-NL+: A robust control-oriented free boundary dynamic plasma
+  equilibrium solver}.
+\newblock {\em Fus. Eng. Des.}, 96--97:664--667, Oct. 2015.
+
+\bibitem{Albanese:CREATEL}
+R.~Albanese and F.~Villone.
+\newblock {The linearized CREATE-L plasma response model for the control of
+  current, position and shape in tokamaks}.
+\newblock {\em Nucl. Fus.}, 38(5):723--738, May 1998.
+
 \bibitem{Albanese2005}
 R.~Albanese, G.~Ambrosino, M.~Ariola, A.~Cenedese, F.~Crisanti, G.~{De
   Tommasi}, M.~Mattei, F.~Piccolo, A.~Pironti, F.~Sartori, and F.~Villone.
@@ -133,5 +145,16 @@ H.~Urano et~al. Y.~Miyata.
 \newblock Documents on inputs, outputs and control scheme of the qst magnetic
   controller.
 \newblock Technical report, 2018.
+
+\bibitem{miyata2013study}
+Y.~Miyata et~al.
+\newblock {Study of JT-60SA Operation Scenario using a Plasma Equilibrium
+  Control Simulator}.
+\newblock {\em Plasma and Fus. Res.}, 8:2405109--2405109, 2013.
+
+\bibitem{Miyata:2014}
+Y.~Miyata, T.~Suzuki, S.~Ide, and H.~Urano.
+\newblock {Study of Plasma Equilibrium Control for JT-60SA using MECS}.
+\newblock {\em Plasma and Fus. Res.}, 9:3403045--5, 2014.
 
 \end{thebibliography}

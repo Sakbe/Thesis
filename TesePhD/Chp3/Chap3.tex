@@ -4,14 +4,15 @@
 
 JT60-SA is an under-construction superconductive tokamak located at one of the facilities from the National Institutes for Quantum and Radiological Science and Technology (QST)  at  Naka, Japan whose principal purpose is  the contribution to early realization of fusion energy by supporting the exploitation and resolving key physics for ITER reactor. Figure ~\ref{JT60schm} shows the overall general configuration and the most remarkable elements of the machine. The JT-60SA  vacuum chamber will have a major radius of 2.96 m and a minor radius of 1.18 m with an overall plasma volume of 132 $m^3$ ~\cite{Spears2014} .
 \smallskip
-\begin{figure}
+
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=0.75\textwidth]{Chp3/JT60SA.png}
 	
 	\caption{\label{JT60schm}JT60-SA tokamak configuration and its main elements ~\cite{JT60SA:ResearchPlan}.}
 \end{figure}
 
-The Poloidal Field(PF) coils shown in JT60-SA cross-section from fig. ~\ref{JT60coils} consist of two sets of superconductive coils: the Equilibrium Field Coils (EF1–6) and the Central Solenoid (consisting of four independent coils, named CS1–4). Furthermore, two in-vessel Fast Plasma Position copper Coils (FPPC1–2) will also be installed ~\cite{NCruz}.The total of 12 PF coils have independent power sources with certain saturation value for the control of the plasma current, position and shape.   
+The Poloidal Field (PF) coils shown in JT60-SA cross-section from figure ~\ref{JT60coils} consist of two sets of superconductive coils: the Equilibrium Field Coils (EF1–6) and the Central Solenoid (consisting of four independent coils, named CS1–4). Furthermore, two in-vessel Fast Plasma Position copper Coils (FPPC1–2) will also be installed ~\cite{NCruz}.The total of 12 PF coils have independent power sources value for the control of the plasma current, position and shape.   
 \smallskip
 
 \begin{figure}
@@ -22,30 +23,48 @@ The Poloidal Field(PF) coils shown in JT60-SA cross-section from fig. ~\ref{JT60
 \end{figure}
 
 JT-60SA shall be capable of investigating different design scenarios. As refereed  in 
-~\cite{JT60SA:PID} it exists a set of 6 reference scenarios, additional ones, including some with a shorter repetition rate will be defined in future. For the control study in this section all simulations will be built based on the Scenario~2 characteristics. In particular, Scenario~2 refers to a~5.5 MA inductive lower single null discharge, whose reference shape at \emph{Start of Flattop}~(SOF) is shown in Fig.~\ref{SOF}.\smallskip
-\begin{figure}
+~\cite{JT60SA:PID} it exists a set of 6 reference scenarios, additional ones, including some with a shorter repetition rate will be defined in future. For the control study in this section all simulations will be built based on the Scenario~2 characteristics. In particular, Scenario~2 refers to a~5.5 MA inductive lower single null discharge.The Scenario~2 its divided in 5 time snapshots with different equilibrium each one starting at  t=-40~s until t= 177.96~s. The different Last Closed Flux Surfaces (LCFS) for each time window are shown in figure~\ref{Scen2}, the time sequence starts at the X-point formation (XPF)	 followed by the Start of Heating(SOH), the Start of Flattop (SOF), End of Flattop (EOF), End Of Cooling(EOC) and finishing with the End of Currents in the PF coils (EOC). In this section reconstruction methods and control algorithms will be based on the \emph{Start of Flattop}~(SOF) equilibrium shown in figure~\ref{SOF}.\smallskip
+
+\begin{figure}[h]
 	\centering
-	\includegraphics[width=0.55\textwidth]{Chp3/scenario2_SOF.eps}
+	\includegraphics[width=0.99\textwidth]{Chp3/scenario2SnapShots.png}
+	
+	\caption{LCFS Equilibria corresponding to the different Scenario~2 snapshots:  X-point formation (XPF), Start of Heating(SOH), the Start of Flattop (SOF), End of Flattop (EOF), End Of Cooling(EOC) and  End of Currents in the PF coils (EOC). \label{Scen2}}
+\end{figure}
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{Chp3/scenario2_SOF.eps}
 	
 	\caption{Poloidal cross-section of the JT-60SA plasma at the Start of the Flat Top~(SOF) for reference Scenario~2. At SOF, the nominal plasma current is~5.5~MA, while the nominal values for poloidal beta~$\beta_p$ and internal inductance~$l_i$ are~0.53 and~0.85, respectively.	\label{SOF}}
 \end{figure}
 
 
 
-This chapter will address two different approaches for the Last Closed Flux Surface (LCFS) reconstruction an for the  plasma current, shape and position controllers on  JT60-SA in order to achieve and maintain the desired operational scenario given the plasma equilibrium in the SOF .
+This chapter will address two different approaches for the LCFS reconstruction along  with different plasma current, shape and position controllers on  JT60-SA in order to achieve and maintain the desired operational scenario given the plasma equilibrium in the SOF while the performance of the controllers is compared .
 
 
 
 \section{CREATE magnetic reconstruction tools}
-CREATE (Consorzio di Ricerca per l' Energia, l' Automazione e le Tecnologie dell' Elettromagnetismo )
+
+CREATE-NL (Consorzio di Ricerca per l' Energia, l' Automazione e le Tecnologie dell' Elettromagnetismo) is a finite elements method (FEM\footnote{It is well known that many physical and engineering systems are expressed in terms of partial differential equations which cannot be solved via analytical methods. One of the most recurrent techniques is numerical discretization to approximate the solution of the partial differential equations, the FEM is commonly used to solve these approximations in two or three space variables, in this particular case for a numerical solution of the well-known Grad-Shafranov equation. }) solver implemented on \textsc{Matlab}. It deals with the free boundary dynamic plasma equilibrium problem i.e. the MHD (Magneto Hydro Dynamics) time evolution of 2D axisymmetric plasmas in tokamaks, including eddy currents in the passive structures, and feedback control laws for current, position and shape control ~\cite{Albanese:CREATENLnew}.
+\smallskip
+
+Using the CREATE codes~\cite{Albanese:CREATEL,Albanese:CREATENLnew} it is possible to retrieve a linearized model that describes the plasma magnetic behaviour around that equilibrium\footnote{Reference  ~\cite[Sec.~3]{NCruz} can be consulted for more details about the use of the CREATE equilibrium codes to retrieve plasma linearized models.}.It shoudl be noted that CREATE-NL equilibrium solver has been validated on several tokamaks such as JET and EAST.
+\smallskip
+
+A JT60-SA CREATE-NL electromagnetic linear model around the equilibrium from the Scenario~2-~SOF  for the plasma-circuit response has been used for  designing  the controller presented in next section.
 
 
 
 
 \section{Controller design}
+
 The JET (Joint European Torus) tokamak was the first machine where around 2005 a new model based plasma current and shape controller was set up and tested  with the existing active circuits and control hardware. The novelty controller was the eXtreme Shape Controller (XSC) and its aim was to improve  the performance of the back then present controller to allow the control of extremely shaped plasmas with higher values of elongation and triangularity ~\cite{Albanese2005} . 
+ \smallskip
  
- The XSC algorithm can be used either to implement a gap-based control strategy, or an isoflux one, as it has been proposed in ~\cite{NCruz}.
+ The XSC algorithm can be used either to implement a gap-based control strategy, or an isoflux one, as it has been proposed in ~\cite{NCruz}. In this work the two cotnrolled strategies were carried out.
 
 
 
@@ -109,7 +128,32 @@ I_{FPPC\_ref}(t+\Delta t)=I_{FPPC}(t_0)+ M^\dagger_{FPPC}\left[G_{FP}\delta \Psi
 
 \subsection{Disturbances}
 
+
 \subsection{Gap-based XSC}
+
+
+
+\begin{figure}
+	\centering
+	\begin{subfigure}[b]{0.32\textwidth}
+		\includegraphics[width=\textwidth] {Chp3/20_gaps.eps}  
+		\caption{The~20 gaps used to assess the performance of plasma shape controller.	\label{figure:20_gaps} }
+	\end{subfigure}
+	~
+	\begin{subfigure}[b]{0.32\textwidth}
+		\includegraphics[width=\textwidth]{Chp3/8_gaps.eps} 
+		\caption{The~8 control segments by the isoflux controller proposed in~\cite{miyata2013study}.\label{figure:8_gaps}}
+	\end{subfigure}
+	~
+	\begin{subfigure}[b]{0.32\textwidth}
+		\includegraphics[width=\textwidth]{Chp3/6_gaps.eps} 
+		\caption{ The~6 control segments used by the isoflux controller proposed in~\cite{Miyata:2014}. \label{figure:6_gaps}}
+	\end{subfigure}
+	
+\caption{Different choices for the set of controlled gaps used for gap controller.} \label{figure:gapChoices}
+\end{figure}
+
+
 
 
 \begin{figure}
