@@ -135,6 +135,29 @@ R.~Albanese, G.~Ambrosino, M.~Ariola, A.~Cenedese, F.~Crisanti, G.~{De
   in JET}.
 \newblock {\em Fusion Engineering and Design}, 74(1-4):627--632, 2005.
 
+\bibitem{anand2017novel}
+H.~Anand et~al.
+\newblock {A novel plasma position and shape controller for advanced
+  configuration development on the TCV tokamak}.
+\newblock {\em Nucl. Fus.}, 57(12):126026, 2017.
+
+\bibitem{de2016recent}
+E.~{de~la~Luna} et~al.
+\newblock {Recent Results on High-Triangularity H-Mode Studies in JET-ILW}.
+\newblock In {\em 26th IAEA Fusion Energy Conference}, Kyoto, Japan, October
+  2016.
+
+\bibitem{Ambrosino:TCST2008}
+G.~Ambrosino et~al.
+\newblock {Design and Implementation of an Output Regulation Controller for the
+  JET Tokamak}.
+\newblock {\em IEEE Trans. Control Syst. Tech.}, 16(6):1101--1111, Nov. 2008.
+
+\bibitem{Ariola:XSC}
+M.~Ariola and A.~Pironti.
+\newblock {The design of the eXtreme Shape Controller for the JET tokamak}.
+\newblock {\em IEEE Control Sys. Mag.}, 25(5):65--75, Oct. 2005.
+
 \bibitem{CCS}
 H.~Urano et~al. Y.~Miyata.
 \newblock Documents on inputs, outputs of ccs(cauchy condition surface) method.
