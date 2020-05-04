@@ -169,6 +169,24 @@ H.~Urano et~al. Y.~Miyata.
   controller.
 \newblock Technical report, 2018.
 
+\bibitem{de2014shape}
+G.~{De Tommasi} et~al.
+\newblock {Shape Control with the eXtreme Shape Controller During Plasma
+  Current Ramp-Up and Ramp-Down at the JET Tokamak}.
+\newblock {\em J. Fus. Energy}, 33(2):149--157, 2014.
+
+\bibitem{urano2015development}
+H.~Urano et~al.
+\newblock {Development of operation scenarios for plasma breakdown and current
+  ramp-up phases in JT-60SA tokamak}.
+\newblock {\em Fus. Eng. Des.}, 100:345--356, 2015.
+
+\bibitem{Meyer2017}
+H.~Meyer et~al.
+\newblock {Overview of progress in European medium sized tokamaks towards an
+  integrated plasma-edge/wall solution}.
+\newblock {\em Nuclear Fusion}, 57, 2017.
+
 \bibitem{miyata2013study}
 Y.~Miyata et~al.
 \newblock {Study of JT-60SA Operation Scenario using a Plasma Equilibrium
