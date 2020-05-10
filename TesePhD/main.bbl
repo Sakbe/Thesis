@@ -78,12 +78,30 @@ A~Neto, D~Alves, B~B Carvalho, P~J Carvalho, H~Fernandes, D~F Valc, G~De
   Experimental Physics Control Systems}, number~11, pages 1277--1280, Grenoble,
   France, 2011.
 
+\bibitem{SQA}
+Yash Gupta.
+\newblock {\em {Software Quality Assurance}}, volume~6.
+\newblock 1989.
+
 \bibitem{MARTe2}
 Andre~C. Neto, Filippo Sartori, Riccardo Vitelli, Llorenc Capella, Giuseppe
   Ferro, Ivan Herrero, and Hector Novella.
 \newblock {An agile quality assurance framework for the development of fusion
   real-Time applications}.
 \newblock In {\em 2016 IEEE-NPSS Real Time Conference, RT 2016}, 2016.
+
+\bibitem{MARTe2PMP}
+I.~{Neto, A. Herrero}.
+
+\bibitem{MARTe2Code}
+I.~{Neto, A. Herrero}.
+\newblock {D4 MARTe Coding Standard}.
+\newblock {\em F4E Internal Document}, (July):1--4, 2018.
+
+\bibitem{MARTe2QAP}
+I.~{Neto, A. Herrero}.
+\newblock {MARTe Quality Assurance Plan}.
+\newblock {\em F4E Internal Document}, (July):1--4, 2018.
 
 \bibitem{Raptor}
 Chiara Piron, Gabriele Manduchi, Paolo Bettini, Federico Felici, Claudio

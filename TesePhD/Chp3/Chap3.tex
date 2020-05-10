@@ -2,7 +2,7 @@
 
 \section{Machine description}
 
-JT60-SA is an under-construction superconductive tokamak located at one of the facilities from the National Institutes for Quantum and Radiological Science and Technology (QST)  at  Naka, Japan whose principal purpose is  the contribution to early realization of fusion energy by supporting the exploitation and resolving key physics for the ITER reactor. Figure ~\ref{JT60schm} shows the overall general configuration and the most remarkable elements of the machine. The JT-60SA  vacuum chamber will have a major radius of 2.96~ m and a minor radius of 1.18~ m with an overall plasma volume of 132~ $m^3$ ~\cite{Spears2014} .
+JT60-SA is an under-construction superconductive tokamak located at one of the facilities from the National Institutes for Quantum and Radiological Science and Technology (QST)  at  Naka, Japan whose principal purpose is  the contribution to early realization of fusion energy by supporting the exploitation and resolving key physics for the ITER reactor. Figure ~\ref{JT60schm} shows the overall general configuration and the most remarkable elements of the machine. The JT-60SA  vacuum chamber will have a major radius of 2.96~ m and a Minor radius of 1.18~ m with an overall plasma volume of 132~ $m^3$ ~\cite{Spears2014} .
 \smallskip
 
 \begin{figure}[h]
@@ -113,7 +113,7 @@ For the development of this work both approaches of the XSC strategy were studie
 
 Along with the CREATE tools presented on last section for the reconstruction of the LCFS and the XSC for plasma shape control, a reconstruction code and controller provided by the QST team were implemented, tested and compared. This section will briefly describe these two methods and its limitations.  
 
-\subsection{Cauchy Condition Surface reconstruction  method }
+\subsection{Cauchy Condition Surface (CCS) reconstruction  method }
 The QST Cauchy Condition Surface (CCS) method for the reconstruction of the magnetic last closed flux surface (LCFS) calculates controlled variables for plasma position and shape control such as the poloidal magnetic flux at control points on an isoflux scheme  ~\cite{CCS} . The CCS method allows a selection up to 19 geometrical points for dexcribing the LCFS and its input parameters are the current in the PF coils, the measurements in the magnetic field and flux sensors and the plasma current. The output signals from the CCS reconstruction method are the magnetic fluxes at the X-point and at the selected geometrical points. 
 
 \begin{figure}
@@ -123,7 +123,7 @@ The QST Cauchy Condition Surface (CCS) method for the reconstruction of the magn
 \end{figure}
 
 
-\subsection{QST magnetic controller (FBC)}
+\subsection{QST magnetic controller }
 
 
 The QST magnetic controller  uses the PF coils signals to control the plasma current $I_p$, position and shape, and the FPPC coils signals for plasma position control. The PF coil currents $I_{PF-ref}$ are calculated using an isoflux control approach using proportional-integral(PI) feedback controllers   ~\cite{FBC}. The controller calculates $I_{PF-ref}$ reducing $\delta\Psi_s$ and $\delta\Psi_x$ according to:
@@ -213,7 +213,7 @@ As far as plasma magnetic control is concerned, the JT60-SA linearized model dis
 
 
 	
-	\item \textbf{Disturbance \#3} describes an instantaneous drop in~$l_i$ of~$0.2~(l_{i_{eq}}-0.5)$ without recovery, simultaneous with a drop on~$\beta_p$ of~$0.2~\beta_{p_{eq}}$ followed by a recovery exponential time of~1~s~\cite[p.~34]{JT60SA:PID}, which are typical of a so called \emph{minor disruption}. The correspondent time traces for both~$\beta_p$ and~$l_i$ are reported in figure~\ref{MnrDisrp}.
+	\item \textbf{Disturbance \#3} describes an instantaneous drop in~$l_i$ of~$0.2~(l_{i_{eq}}-0.5)$ without recovery, simultaneous with a drop on~$\beta_p$ of~$0.2~\beta_{p_{eq}}$ followed by a recovery exponential time of~1~s~\cite[p.~34]{JT60SA:PID}, which are typical of a so called \emph{Minor disruption}. The correspondent time traces for both~$\beta_p$ and~$l_i$ are reported in figure~\ref{MnrDisrp}.
 \end{itemize}
 
 
@@ -233,7 +233,7 @@ As far as plasma magnetic control is concerned, the JT60-SA linearized model dis
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.5\textwidth]{Chp3/Dist_3_minor.eps}
-	\caption{Poloidal beta and internal inductance time traces for Disturbance~\#3 that models the behavior of these variables due to the presence of a minor disruption as defined in~\cite{JT60SA:PID}.	\label{MnrDisrp} }
+	\caption{Poloidal beta and internal inductance time traces for Disturbance~\#3 that models the behavior of these variables due to the presence of a Minor disruption as defined in~\cite{JT60SA:PID}.	\label{MnrDisrp} }
 \end{figure}
 
 
@@ -296,12 +296,12 @@ It turns out that, according to this preliminary analysis, the rejection of the 
 
 
 
-For the other two considered cases, at steady-state, the selection of~85 and~20 gaps have a considerable better~RMSE in comparison with the selection of~8 and~6 gaps. As outlined in Table~\ref{gapTable}, the worst case corresponds to the selection of~8 gaps with the presence of Disturbance~\#3 (minor disruption) during the flattop. As an example, figure~\ref{figure:minor} shows a comparison of the steady-state shape obtained for the~8 and~20 gaps options when the Minor disruption in considered. Figure~\ref{figure:RMSE} shows the~RMSE time traces for this disturbance and it can be noticed that the~20 gaps option gives better results with respect to the~8 and~6 gaps cases also during the transient, and not just in steady-state.  In particular, in the~6 and~8 gaps cases, being the number of controlled gaps less than the number of the actuators available for plasma shape control, the steady-state error on the controlled gaps is practically zero. However, not being these two sets of gaps \emph{well representative} of the whole plasma boundary, minimizing the error on such sets does not minimize the error on the whole boundary, as shown in figure~\ref{figure:RMSE}.\smallskip
+For the other two considered cases, at steady-state, the selection of~85 and~20 gaps have a considerable better~RMSE in comparison with the selection of~8 and~6 gaps. As outlined in Table~\ref{gapTable}, the worst case corresponds to the selection of~8 gaps with the presence of Disturbance~\#3 (Minor disruption) during the flattop. As an example, figure~\ref{figure:minor} shows a comparison of the steady-state shape obtained for the~8 and~20 gaps options when the Minor disruption in considered. Figure~\ref{figure:RMSE} shows the~RMSE time traces for this disturbance and it can be noticed that the~20 gaps option gives better results with respect to the~8 and~6 gaps cases also during the transient, and not just in steady-state.  In particular, in the~6 and~8 gaps cases, being the number of controlled gaps less than the number of the actuators available for plasma shape control, the steady-state error on the controlled gaps is practically zero. However, not being these two sets of gaps \emph{well representative} of the whole plasma boundary, minimizing the error on such sets does not minimize the error on the whole boundary, as shown in figure~\ref{figure:RMSE}.\smallskip
 
 \begin{figure}[!thb]
 	\begin{center}
 		\includegraphics[width=8.5cm]{Chp3/RMSE_minor.eps}
-	\end{center}\caption{RMSE time traces for the different gaps selections in the presence of Disturbance~\#3 (minor disruption). For all the considered cases, the RMSE is computed on the set of~85 gaps shown in Fig.~\ref{figure:85_gaps}.}\label{figure:RMSE}
+	\end{center}\caption{RMSE time traces for the different gaps selections in the presence of Disturbance~\#3 (Minor disruption). For all the considered cases, the RMSE is computed on the set of~85 gaps shown in Fig.~\ref{figure:85_gaps}.}\label{figure:RMSE}
 \end{figure}
 
 It should be also noticed that the~6 gaps option considered in~\cite{Miyata:2014} gives better performance than the set of~8 gaps chosen in~\cite{miyata2013study}. Indeed, with the latter set, there is a worse control of the plasma top region, as shown in figure ~\ref{figure:minor_top}. Moreover, for the two options with~85 and~20 equally spaced gaps there is no practical difference between the reference shape and the one attained at steady-state. The fact that there is no practical improvement in controlling 85 gaps rather than 20, can be better understood recalling that~$\bar{n}<n_{PF}$ singular values are used to compute the control matrix as the pseudo-inverse~$C^\dag$ in~\eqref{equation:XSC_new}. In particular, only the singular values that are greater than the~5\% of the greatest one are used to compute~$C^\dag$. \smallskip
@@ -327,7 +327,7 @@ It should be also noticed that the~6 gaps option considered in~\cite{Miyata:2014
 	\end{subfigure}
 	
 	
-	\caption{ Comparison of the shape controller performance in the presence of Disturbance~\#3 (minor disruption). The two cases of 8 and 20 gaps are considered.}
+	\caption{ Comparison of the shape controller performance in the presence of Disturbance~\#3 (Minor disruption). The two cases of 8 and 20 gaps are considered.}
 	\label{figure:minor}
 \end{figure}
 
@@ -377,13 +377,13 @@ Figure~\ref{compFBC_XSC_ss} compares the steady-state LCFS's for the same distur
 	\centering
 		\begin{subfigure}[b]{0.32\textwidth}
 		\includegraphics[height=8.75cm] {Chp3/Results_iso/8_gaps_mnr_disrp_equilVsLCFS.eps}  
-		\caption{Comparison between the reference shape (i.e., the shape at the considered equilibrium) and the LCFS reconstructed by the  CCS code at steady-state in the presence of the minor disruption  using the XSC for the plasma shape, when 8 control segments are considered.
+		\caption{Comparison between the reference shape (i.e., the shape at the considered equilibrium) and the LCFS reconstructed by the  CCS code at steady-state in the presence of the Minor disruption  using the XSC for the plasma shape, when 8 control segments are considered.
 		\label{XSC_isoflux_ss} }
 			\end{subfigure}
 	\hspace{2 cm}
 				\begin{subfigure}[b]{0.32\textwidth}
 			\includegraphics[height=8.75cm] {Chp3/Results_iso/8_gaps_mnr_disrp_equilVsLCFS_FBC.eps}  
-			\caption{Comparison between the reference shape (i.e., the shape at the considered equilibrium) and the LCFS reconstructed by the CCS code at steady-state in the presence of a minor disruption using the QST controller for the plasma shape and current and 8 control segments . 
+			\caption{Comparison between the reference shape (i.e., the shape at the considered equilibrium) and the LCFS reconstructed by the CCS code at steady-state in the presence of a Minor disruption using the QST controller for the plasma shape and current and 8 control segments . 
 				\label{FBS_isoflux_ss} }
 		\end{subfigure}
 		
@@ -462,7 +462,7 @@ Figure~\ref{XpointFluxes} shows the time traces comparing the flux at the X-poin
 In order to summarize all the results from the tested cases, tables~\ref{CCS_urano_Xpoint_error} , ~\ref{CCS_cmpELM_Xpoint_error} and ~\ref{CCS_mnr_Xpoint_error} outline the control points fluxes RMSE  and tables ~\ref{CCS_urano_Xpoint_error}, ~\ref{CCS_cmpELM_Xpoint_error} and ~\ref{CCS_mnr_Xpoint_error} present the X-point radial and vertical position errors in steady-state, these tables summarize results for all the different number of control points  with the three different disturbances. Some of the main aspects that are  possible to conclude from the tables results are :
 
 \begin{enumerate}[label=(\alph*)]
-	\item  For all disturbances the 8 control points selection has the biggest fluxes and X-point position steady-state errors and the cases with 19 control points the lesser ones.
+	\item  For all disturbances the 8 control points selection has the biggest fluxes and X-point position steady-state errors while the cases with 19 control points the lesser ones.
 	\item Disturbance $\#2$ (Compound ELM ) results present the lesser flux RMSE values in comparison with the other two disturbances. See table~\ref{fluxRMSE_cmpELM_table}.
 	\item The simulations using the  QST controller present practically a flux RMSE equal to zero in steady-state for all disturbances while the XSC does not.
 	\item For all the scenarios  the vertical XSC X-point error is  at least $~\%30$ greater  than the radial position error, while for the QST control the vertical position error tends to be around $~\%50$ lesser than the radial position.
