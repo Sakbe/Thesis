@@ -55,7 +55,7 @@ The MARTe hardware containers
 
 
 \subsection{MARTe 2.0}
-Software Quality Assurance (QA)\footnote{SQA is a set of activities or processes that define and assess the adequacy of software processes to provide evidence that establishes confidence that the software processes are appropriate for and produce software products of suitable quality for their intended purposes~\cite[Chapter 5.1]{SQA}.} processes are being applied to the development of a new version of the MARTe framework also  called MARTe 2.0. The main objective is to provide a QA certifiable environment from where it is possible to develop, with less effort, certifiable applications. The  MARTe QA version can be easily adapted to the development of many types of software which are common in the fusion community, in particular for software related to control and data acquisition systems that is to be shared among different teams  ~\cite{MARTe2}. MARTe 2.0 will be the result of reduction exercise of the core framework based on the lessons learned from MARTe. This version will incorporate and implement an integral quality assurance process for the development of the framework (e.g. unit tests and coding standard) ~\cite{MARTe2PMP}. 
+Software Quality Assurance (QA)\footnote{Software QA is a set of activities or processes that define and assess the adequacy of software processes to provide evidence that establishes confidence that the software processes are appropriate for and produce software products of suitable quality for their intended purposes~\cite[Chapter 5.1]{SQA}.} processes are being applied to the development of a new version of the MARTe framework also  called MARTe 2.0. The main objective is to provide a QA certifiable environment from where it is possible to develop, with less effort, certifiable applications. The  MARTe QA version can be easily adapted to the development of many types of software which are common in the fusion community, in particular for software related to control and data acquisition systems that is to be shared among different teams  ~\cite{MARTe2}. MARTe 2.0 will be the result of reduction exercise of the core framework based on the lessons learned from MARTe. This version will incorporate and implement an integral quality assurance process for the development of the framework (e.g. unit tests and coding standard) ~\cite{MARTe2PMP}. 
 \smallskip
 
 In order to develop robust code and to avoid common errors and pitfalls, a controlled subset of the C++ language must be defined for the MARTe framework. This subset will be defined by means of a list of coding rules, which will address all dangerous aspects of the C++ language for critical systems. Thus, the C++ version used on MARTe will be defined by the standard ISO/IEC 14882:2003 aka as C++03, while the coding rules will be those defined by the standard MISRA C++:2008 ~\cite{MARTe2Code}. The MARTe project manager is responsible for appointing a quality office (QO) for the quality assurance (QA) process. The QO will guarantee that the QA activities are executed accordingly to the software development process, it will also conduct independent reviews and audit all data and processes involving the development, production and maintenance of MARTe deliverables ~\cite{MARTe2QAP}. The overall advantage of the new MARTe version is that the common faced difficulties of distributing and maintaining a software without  the continuous support of the original developers will be overcome following a complete QA system.
@@ -63,9 +63,28 @@ In order to develop robust code and to avoid common errors and pitfalls, a contr
 
 
 \section{Equilibrium and control algorithms} 
-The RAPTOR (RApid Plasma Transport simulatOR) code is a model-based control-oriented code that predicts tokamak plasma profile evolution on real-time. \cite{Raptor}
+
+Tokamak equilibrium codes are used for retrieving information about plasma current, shape and position and pressures profiles among other parameters. Usually these codes use as input data as the machine geometry, the PF coils currents and the flux and magnetic field diagnostics measurements. The importance of these codes is that since some of the parameters necessary for an accurate feedback control are not directly measured from the diagnostics,  these data has to be fitted on real-time somehow to the Grad-Shafranov equilibrium model~\cite{Shafranov1971}. In this section some of the most implemented and reported codes for tokamak plasma equilibrium reconstruction will be briefly  described, as well as some of the most common real-time control techniques. 
+\smallskip 
+
+The RAPTOR (RApid Plasma Transport simulatOR)  is a model-based control-oriented code that predicts tokamak plasma profile evolution on real-time, it predicts the evolutions of several parameters, thanks to its accurate yet simplified physics model \cite{Raptor}. RAPTOR performs a discratization of the PDE  Figure ~\ref{RaptorMARTe} scheme shows  the integration of the RAPTOR code on top of the MARTe framework. One of the main RAPTOR features is that  while the plasma is evolving RAPTOR has full knowledge of the plasma profiles and the avaibale real-time diagnostic data can be included in a natural way to improve the accuracy of the estimate, in control engineering this approach is known as dynamic state observer and is used to estimate poorly ~\cite{RAPTOR2011}.  ~\cite{RAPTOR2014}
+\smallskip
+
+
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.55\textwidth]{Chp2/raptorMARTe.png}
+	\caption{\label{RaptorMARTe} Skectch of the integration of the state observer RAPTOR in the RFX-mod real-time control system based on the MARTe framework.
+		experimental \cite{Raptor}}
+	
+\end{figure}
+
+The EFIT (Equilibrium Fitting) code is used to efficiently reconstruct the current profile parameters, the plasma shape  and a current density profile satisfying the MHD equilibrium constraint  based on a Picard iteration\footnote{Picard iterations is a method based on  successive approximations to obtained a set of conditions under which an initial value problem has a unique solution.} approach which approximately conserves the external magnetic measurements ~\cite{EFIT1985}. EFIT has served as the de-facto standard technique to infer equilibrium from experimental diagnostics and there have been many different code implementations of this technique, all EFIT versions  are able to solve the MHD force balance and most experiment-specific customizations are made for the addition of experimental constraints peculiar to the experiment being modelled~\cite{EFIT2013}.
 
 \subsection{State-Space models}
+
+
 
 \subsection{PID control}
 

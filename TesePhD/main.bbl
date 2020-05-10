@@ -103,6 +103,11 @@ I.~{Neto, A. Herrero}.
 \newblock {MARTe Quality Assurance Plan}.
 \newblock {\em F4E Internal Document}, (July):1--4, 2018.
 
+\bibitem{Shafranov1971}
+V.~D. Shafranov and V.~S. Mukhovatov.
+\newblock {Plasma Equilibrium in a Tokamak}.
+\newblock {\em Nuclear Fusion}, 11(6):605--633, 1971.
+
 \bibitem{Raptor}
 Chiara Piron, Gabriele Manduchi, Paolo Bettini, Federico Felici, Claudio
   Finotti, Paolo Franz, Ondrej Kudlacek, Giuseppe Marchiori, Lionello Marrelli,
@@ -110,6 +115,32 @@ Chiara Piron, Gabriele Manduchi, Paolo Bettini, Federico Felici, Claudio
 \newblock {Integration of the state observer RAPTOR in the real-time MARTe
   framework at RFX-mod}.
 \newblock {\em Fusion Engineering and Design}, 123:616--619, 2017.
+
+\bibitem{RAPTOR2011}
+F.~Felici, O.~Sauter, S.~Coda, B.~P. Duval, T.~P. Goodman, J.~M. Moret, and
+  J.~I. Paley.
+\newblock {Real-time physics-model-based simulation of the current density
+  profile in tokamak plasmas}.
+\newblock {\em Nuclear Fusion}, 51(8), 2011.
+
+\bibitem{RAPTOR2014}
+Federico Felici, Marco {De Baar}, and Maarten Steinbuch.
+\newblock {A dynamic state observer for real-time reconstruction of the tokamak
+  plasma profile state and disturbances}.
+\newblock {\em Proceedings of the American Control Conference}, pages
+  4816--4823, 2014.
+
+\bibitem{EFIT1985}
+L.~L. Lao, H.~St John, R.~D. Stambaugh, A.~G. Kellman, and W.~Pfeiffer.
+\newblock {Reconstruction of current profile parameters and plasma shapes in
+  tokamaks}.
+\newblock {\em Nuclear Fusion}, 25(11):1611--1622, 1985.
+
+\bibitem{EFIT2013}
+M.~Fitzgerald, L.~C. Appel, and M.~J. Hole.
+\newblock {EFIT tokamak equilibria with toroidal flow and anisotropic pressure
+  using the two-temperature guiding-centre plasma}.
+\newblock {\em Nuclear Fusion}, 53(11), 2013.
 
 \bibitem{Spears2014}
 William~R. Spears.
