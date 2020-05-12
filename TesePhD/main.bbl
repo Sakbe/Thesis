@@ -108,6 +108,25 @@ V.~D. Shafranov and V.~S. Mukhovatov.
 \newblock {Plasma Equilibrium in a Tokamak}.
 \newblock {\em Nuclear Fusion}, 11(6):605--633, 1971.
 
+\bibitem{EFIT1985}
+L.~L. Lao, H.~St John, R.~D. Stambaugh, A.~G. Kellman, and W.~Pfeiffer.
+\newblock {Reconstruction of current profile parameters and plasma shapes in
+  tokamaks}.
+\newblock {\em Nuclear Fusion}, 25(11):1611--1622, 1985.
+
+\bibitem{EFIT2013}
+M.~Fitzgerald, L.~C. Appel, and M.~J. Hole.
+\newblock {EFIT tokamak equilibria with toroidal flow and anisotropic pressure
+  using the two-temperature guiding-centre plasma}.
+\newblock {\em Nuclear Fusion}, 53(11), 2013.
+
+\bibitem{rtEFIT}
+D~Mueller, D~A Gates, J~E Menard, J~R Ferron, and S~A Sabbagh.
+\newblock {Real-time Equilibrium Reconstruction and Isoflux Control of Plasma
+  Shape and Position in the National Spherical Torus Experiment ( NSTX ) by
+  PRINCETON PLASMA PHYSICS LABORATO}.
+\newblock Technical Report August, 2004.
+
 \bibitem{Raptor}
 Chiara Piron, Gabriele Manduchi, Paolo Bettini, Federico Felici, Claudio
   Finotti, Paolo Franz, Ondrej Kudlacek, Giuseppe Marchiori, Lionello Marrelli,
@@ -130,17 +149,22 @@ Federico Felici, Marco {De Baar}, and Maarten Steinbuch.
 \newblock {\em Proceedings of the American Control Conference}, pages
   4816--4823, 2014.
 
-\bibitem{EFIT1985}
-L.~L. Lao, H.~St John, R.~D. Stambaugh, A.~G. Kellman, and W.~Pfeiffer.
-\newblock {Reconstruction of current profile parameters and plasma shapes in
-  tokamaks}.
-\newblock {\em Nuclear Fusion}, 25(11):1611--1622, 1985.
+\bibitem{xloc}
+D.~P. O'Brien, J.~J. Ellis, and J.~Lingertat.
+\newblock {Local expansion method for fast plasma boundary identification in
+  JET}.
+\newblock {\em Nuclear Fusion}, 33(3):467--474, 1993.
 
-\bibitem{EFIT2013}
-M.~Fitzgerald, L.~C. Appel, and M.~J. Hole.
-\newblock {EFIT tokamak equilibria with toroidal flow and anisotropic pressure
-  using the two-temperature guiding-centre plasma}.
-\newblock {\em Nuclear Fusion}, 53(11), 2013.
+\bibitem{equinox}
+D.~MAZON, J.~BLUM, C.~BOULBE, B.~FAUGERAS, M.~BARUZZO, A.~BOBOC, S.~BREMOND,
+  M.~BRIX, P.~{DE VRIES}, S.~SHARAPOV, L.~ZABEO, and {JET-EFDA Contributors}.
+\newblock {Equinox: a Real-Time Equilibrium Code and Its Validation At Jet}.
+\newblock (June):327--332, 2010.
+
+\bibitem{PirontiBook}
+A.~Pironti and M.~Ariola.
+\newblock {\em {Magnetic Control of Tokamak Plasma}}.
+\newblock Springer, $2^\mathrm{nd}$ edition, 2016.
 
 \bibitem{Spears2014}
 William~R. Spears.
