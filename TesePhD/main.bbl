@@ -5,6 +5,11 @@ Andrej A.~Kavin {Valerij A. Belyakov}.
 \newblock {\em {Fundamentals of Magnetic Thermonuclear Reactor Design}}.
 \newblock Elsevier, 2018.
 
+\bibitem{densityControl}
+F.~Janky, M.~Hron, J.~Havlicek, M.~Varavin, F.~Zacek, J.~Seidl, and R.~Panek.
+\newblock {Plasma density control in real-time on the COMPASS tokamak}.
+\newblock {\em Fusion Engineering and Design}, 96-97:637--640, 2015.
+
 \bibitem{DIIDcontrol}
 J.~R. {Ferron}, A.~{Kellman}, E.~{McKee}, T.~{Osborne}, P.~{Petrach}, T.~S.
   {Taylor}, J.~{Wight}, and E.~{Lazarus}.
@@ -91,7 +96,9 @@ Andre~C. Neto, Filippo Sartori, Riccardo Vitelli, Llorenc Capella, Giuseppe
 \newblock In {\em 2016 IEEE-NPSS Real Time Conference, RT 2016}, 2016.
 
 \bibitem{MARTe2PMP}
-I.~{Neto, A. Herrero}.
+I.~Neto, A.~Herrero.
+\newblock {D4 MARTe Project Managment Plan}.
+\newblock {\em F4E Internal Document}, (July):1--4, 2018.
 
 \bibitem{MARTe2Code}
 I.~{Neto, A. Herrero}.
@@ -161,10 +168,31 @@ D.~MAZON, J.~BLUM, C.~BOULBE, B.~FAUGERAS, M.~BARUZZO, A.~BOBOC, S.~BREMOND,
 \newblock {Equinox: a Real-Time Equilibrium Code and Its Validation At Jet}.
 \newblock (June):327--332, 2010.
 
-\bibitem{PirontiBook}
-A.~Pironti and M.~Ariola.
-\newblock {\em {Magnetic Control of Tokamak Plasma}}.
-\newblock Springer, $2^\mathrm{nd}$ edition, 2016.
+\bibitem{Albanese:CREATEL}
+R.~Albanese and F.~Villone.
+\newblock {The linearized CREATE-L plasma response model for the control of
+  current, position and shape in tokamaks}.
+\newblock {\em Nucl. Fus.}, 38(5):723--738, May 1998.
+
+\bibitem{Golnaraghi2010}
+Farid Golnaraghi and Benjamin~C Kuo.
+\newblock {\em {Automatic Control Systems}}.
+\newblock Pearson, $9^\mathrm{nd}$ edition, 2010.
+
+\bibitem{Kailath1980}
+T.~Kailath.
+\newblock {\em {Linear Systems}}.
+\newblock Prentice Hall, Englewood Cliffs, 1980.
+
+\bibitem{Nise}
+Norman Nise.
+\newblock {\em {Control Systems Engineering}}.
+\newblock John Wiley $\&$ Sons, Inc., 6 edition, 2011.
+
+\bibitem{Ogata2009}
+Katsuhiko Ogata.
+\newblock {\em {Modern Control Engineering}}.
+\newblock Prentice Hall, 5 edition, 2009.
 
 \bibitem{Spears2014}
 William~R. Spears.
@@ -194,12 +222,6 @@ R.~Albanese, R.~Ambrosino, and M.~Mattei.
 \newblock {CREATE-NL+: A robust control-oriented free boundary dynamic plasma
   equilibrium solver}.
 \newblock {\em Fus. Eng. Des.}, 96--97:664--667, Oct. 2015.
-
-\bibitem{Albanese:CREATEL}
-R.~Albanese and F.~Villone.
-\newblock {The linearized CREATE-L plasma response model for the control of
-  current, position and shape in tokamaks}.
-\newblock {\em Nucl. Fus.}, 38(5):723--738, May 1998.
 
 \bibitem{Albanese2005}
 R.~Albanese, G.~Ambrosino, M.~Ariola, A.~Cenedese, F.~Crisanti, G.~{De
