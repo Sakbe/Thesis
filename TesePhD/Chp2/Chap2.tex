@@ -260,20 +260,37 @@ A PID controller improves the steady-state error and the transient response. Fig
 
 \subsection{Multiple-Input Multiple-Output control}
 
-This subsection will discuss the pole-place method and the linear quadratic optimal regulator (LQR) for control systems in state-space already discussed in subsection~\ref{SS_subsec}.  State feedback controllers basically relocate the eigenvalues of the given system through a state-feedback multiplication by a constant matrix $K$.
+This subsection will discuss the pole-place method and the linear quadratic optimal regulator (LQR) for control systems in state-space already discussed in subsection~\ref{SS_subsec}.  State feedback controllers basically relocate the eigenvalues of the given system through a state-feedback multiplication by a constant gain matrix $K$.
  \smallskip
  
- The concept of pole should be introduced as it will be utilize for the definitions of the MIMO control methods. The poles $p_i$ of state-space system are the eigenvalues $\lambda_i(A),~i=1,..,n$ of the system matrix $A$. Poles are important for establishing the stability of a system, for continuous systems a linear dynamic system  $	\dot{x}(t)~=Ax(t)+Bu(t)$ is stable if and only if all poles are in the open left half plane (LHP), that is $\mathbb{R}e~{\lambda_i(A)}<~0, \forall i$. Eigenvalues in the right half plane(RHP) with  $\mathbb{R}e~{\lambda_i(A)}\geq~0$ give raise to unstable modes since for this case $e^{\lambda_i(A)~t}$ is unbounded as $t\rightarrow~\infty$,  eigenvalues in the open LHP give raise to stable modes where $\mathbb{R}e~{\lambda_i(A)} \rightarrow 0$ as $t\rightarrow~\infty$.
+ The concept of pole should be introduced as it will be utilize for the definitions of the MIMO control methods. The poles $p_i$ of state-space system are the eigenvalues $\lambda_i(A),~i=1,..,n$ of the system matrix $A$. Poles are important for establishing the stability of a system, for continuous systems a linear dynamic system  $	\dot{x}(t)~=Ax(t)+Bu(t)$ is stable if and only if all poles are in the open left half plane (LHP), that is $\mathbb{R}e~{\lambda_i(A)}<~0, \forall i$. Eigenvalues in the right half plane(RHP) with  $\mathbb{R}e~{\lambda_i(A)}\geq~0$ give raise to unstable modes since for this case $e^{\lambda_i(A)~t}$ is unbounded as $t\rightarrow~\infty$,  eigenvalues in the open LHP give raise to stable modes where $\mathbb{R}e~{\lambda_i(A)} \rightarrow 0$ as $t\rightarrow~\infty$~\cite[Chapter~4]{Skogestad}.
 \smallskip
 
-The first control MIMO method to be addressed  is the pole-placement method
+Consider the system:
+
+\begin{align} 
+	\dot{x}(t)~=Ax(t)+Bu(t)\\
+y(t)=Cx(t) \nonumber
+\label{SS_eq}
+\end{align}
+
+where it is assumed that $D=0$. In state feedback, the input $u(t)$ is given by:
+
+\begin{equation}
+	u(t)=r-Kx(t) = r-[k_1~ k_2~\cdots ~k_n] x(t)=r-\sum_{i=1}^{n}~k_ix_i
+\end{equation}
+
+The first control MIMO algorithm to be addressed  is the pole-placement method which consists in placing the closed-loop system poles in certain location by means of state feedback through an appropriate state feedback gain matrix $K$.
 
 Consider the system:
 \begin{equation}
 	\dot{x}(t)~=Ax(t)+Bu(t)
 \end{equation} 
 
-that has an initial condition $x(t_0)=x_0\neq 0$. Therefore $x(t) \neq 0~,t\geq ~t_0$ and the regulator problem is to applay a 
-\subsection{Kalman filtering}
+that has an initial condition $x(t_0)=x_0\neq 0$. Therefore $x(t) \neq 0~,t\geq ~t_0$ and the regulator problem is to apply a 
+
+
+
+\subsection{Observers and Kalman filters}
 
 Kalman filters
