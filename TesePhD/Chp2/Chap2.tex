@@ -95,7 +95,7 @@ This section will summarize  some systems dynamics and control  concepts which w
 \smallskip
 
 \subsection{State-Space models}
-
+\label{SS_subsec}
 State-space models will be crucial for the overall development of the work presented on this thesis whether they will be use to describe a tokamak linear model for plasma position and  shape control or use to model some other relevant variables.  The first concepts  to be summarized on this section are the state variable and state equation definitions (\cite[Chapter~10]{Golnaraghi2010}, ~\cite[Chapter~2]{Kailath1980}).   \smallskip
 
 Let the $n$ state equations of $nth$-order dynamic system be represented as:
@@ -195,41 +195,85 @@ y(t)=Cx(t)+Du(t)+Hw(t)
   where $A$ is the state matrix, $B$ is the input matrix, $C$ is the output matrix,$D$ is the feed-forward matrix and  $E$ and $H$ are disturbances matrices.
  \smallskip
  
+State-space dynamics can describe Multiple-Input Multiple-Output (MIMO) models where a number of inputs $n_{~inputs}>~1$ can relate through the dynamics  matrices of the system to a number of outputs $n_{~outputs}>~1$. Given the physical conditions of the systems that will be analyzed and controlled on this work MIMO models will show several times.
+
+
 \subsection{PID control}
 
 This subsection will shortly address the Proportional-Integral-Derivative (PID) control  concepts. PID controllers are now at days the most common ones in industrial applications and they are use several times through all this work. The PID controller has three parameters; proportional gain, integral gain, and derivative gain, they have proved through the years to provide a suitable control for a variety of systems despite not being optimal always. The usefulness of PID controls lies in their general applicability to most control systems. In particular, when the mathematical model of the plant is not known and therefore analytical design methods cannot be used, PID controls prove to be most useful.  
 \smallskip
 
+The closed-loop systems compensate the disturbances by measuring the output
+response, feeding that measurement back through a feedback path, and comparing
+that response to a reference or set point. If there is any difference between
+the two signals, the system drives the plant, via the actuating signal, to make a
+correction. If there is no difference, the system does not drive the plant, since the
+plant’s response is already the desired set point ~\cite[Chapter ~1]{Nise}. Closed-loop systems also focus on achieving the stability as a system must be stable in order to produce the proper transient and steady-state response~\cite[Chapter ~3]{Nise}, thus if the closed-loop system poles are in the left half of the plane the feed-back system will be stable.
+\smallskip
 
-Systems that feed the error forward to the plant are called proportional control systems. Systems that feed the integral of the error to the plant are called integral control systems. Finally, systems that feed the derivative of the error to the plant are called derivative control systems~\cite{Nise}. A PID controller consists on a feedback control loop where the current, previous and future error signal which originates from the difference between the output of the system and a given set point, is multiplied by the proportional, integral and derivative gains  and then sum converting this signal into the system input, the effects on the feedback loop from each one of the gains will be described. When the model of the system plant is known is possible to apply designing techniques for the PID gains like the Ziegler-Nichols method, when is not the case analytical or even intuition arising from the physics and numerics of the problem. An only  proportional controller   relates the output of the system to the input by a proportional constant and it results in a steady-state error or offset, such error may be eliminated with integral control action, see figure ~\ref{propGain}.
+Systems that feed the error forward to the plant are called proportional control systems. Systems that feed the integral of the error to the plant are called integral control systems. Finally, systems that feed the derivative of the error to the plant are called derivative control systems~\cite[Chapter ~9]{Nise}. A PID controller consists on a feedback control loop where the current, previous and future error signal which originates from the difference between the output of the system and a given set point, is multiplied by the proportional, integral and derivative gains  and then sum converting this signal into the system input, the effects on the feedback loop from each one of the gains will be described. When the model of the system plant is known is possible to apply designing techniques for the PID gains like the Ziegler-Nichols method, when is not the case analytical or even intuition arising from the physics and numerics of the problem should be applied. Figure ~\ref{PID_scheme} shows the block scheme of a PID controller with a system plant $G(s)$ on the Laplace domain.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.505\textwidth]{Chp2/PID_scheme.png}
+	\caption{ Plant and PID controller block scheme on Laplace domain ~\cite[Chapter~ 9]{Nise}. \label{PID_scheme}}
+\end{figure}
+
+ An only  proportional controller   relates the output of the system to the input by a proportional constant, and even though it performs a first approach to follow the  set point and stabilizes,  it results in a steady-state error or offset, such error may be eliminated with integral control action, see figure ~\ref{propGain}.
 \smallskip
 
 \begin{figure}[h]
 	\centering
 		\includegraphics[width=0.505\textwidth]{Chp2/propgain.png}
-	\caption{ Plant with a proportional (P) control  scheme and its response to a unit-step. The offset or error between the steady-sate response is also pointed out~\cite[Chapter~ 5]{Ogata2009}. \label{propGain}}
+	\caption{ Plant with a proportional (P) control  scheme on the Laplace domain and its response to a unit-step. The offset or error between the steady-sate response is also pointed out~\cite[Chapter~ 5]{Ogata2009}. \label{propGain}}
 \end{figure}
 
 
-The integral gain produces a signal that is proportional to the time integral of the error system, the offset or steady-state error can be eliminated by the integral action, the integral term also tends to produce and oscillatory response. This is an  important improvement over the proportional control alone, which gives offset.
+The integral gain produces a signal that is proportional to the time integral of the error system, the offset or steady-state error can be eliminated by the sum of an integral action, the integral term also tends to produce and oscillatory response. This is an  important improvement over the proportional control alone, which gives an offset. Since the PI controller is also a low-pass filter, it helps filtering out the high-frequency noise  ~\cite[Chapter ~9]{Golnaraghi2010}, ~\cite[Chapter~ 5]{Ogata2009}. Figure ~\ref{PI} shows the block scheme of a PI controller and its response to a unitary step.
 \smallskip
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.505\textwidth]{Chp2/PI_Dcomp.png}
+	\caption{  Plant scheme of   a plant with  a proportional-integral (PI) control   on the Laplace domain. Bottom graph corresponds to a step response to closed-loop systems with D and a PI controller ~\cite[Chapter~ 9]{Nise}, a visible improvement on the state-state error with the PI control is observable.  \label{PI}}
+\end{figure}
 
-The derivative gain added to a proportional controller gives a more sensitive controller which responds to the rate of change of the error and can produce a significant correction before the magnitude of the error becomes to large. In general, derivative control anticipates the actuating error, adds damping  and tends to increase the system stability, figure~\ref{propderGain} depicts the scheme and system response with a PD controller.
+The derivative gain added to a proportional controller gives a more sensitive controller which responds to the rate of change of the error and can produce a significant correction before the magnitude of the error becomes to large. In general, derivative control anticipates the actuating error, adds damping  and tends to increase the system stability, figure~\ref{propderGain} depicts the scheme and system response with a PD controller. The PD control uses the error derivative ~$de(t)/dt$ which allows the control to anticipate the error direction, it initiates an early corrective action which means an improvement on the transient response   ~\cite[Chapter ~9]{Golnaraghi2010},~\cite[Chapter ~9]{Nise}. Normally in linear systems when the slope of $e(t)$ is large overshoots may occur, when using a PD controller it also corrects the overshoot. 
 \smallskip
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.505\textwidth]{Chp2/propderivgain.png}
-	\caption{ The top scheme shows a PD controller for a  plant that is only modeled as an inertial load, on the graph below is shown the system response where it is possible to observe an offset reduction as compared with the P controller ~\cite[Chapter~ 5]{Ogata2009}. \label{propderGain}}
+	\caption{ The top scheme shows a PD controller for a  plant that is only modeled as an inertial load, on the graph below is shown the system response where it is possible to observe an offset reduction and a controlled transient as compared with the P controller ~\cite[Chapter~ 5]{Ogata2009}. \label{propderGain}}
 \end{figure}
 
+A PID controller improves the steady-state error and the transient response. Figure ~\ref{PID} shows the response time traces  of the same system with a PID, PD and D controllers to a unit step.
+\smallskip
 
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.505\textwidth]{Chp2/PID_comp.png}
+	\caption{ Step response to closed-loop systems with D,PD and PID controllers ~\cite[Chapter~ 9]{Nise}. \label{PID}}
+\end{figure}
 
 \subsection{Multiple-Input Multiple-Output control}
 
-Multiple-Input Multiple-Output (MIMO)
+This subsection will discuss the pole-place method and the linear quadratic optimal regulator (LQR) for control systems in state-space already discussed in subsection~\ref{SS_subsec}.  State feedback controllers basically relocate the eigenvalues of the given system through a state-feedback multiplication by a constant matrix $K$.
+ \smallskip
+ 
+ The concept of pole should be introduced as it will be utilize for the definitions of the MIMO control methods. The poles $p_i$ of state-space system are the eigenvalues $\lambda_i(A),~i=1,..,n$ of the system matrix $A$. Poles are important for establishing the stability of a system, for continuous systems a linear dynamic system  $	\dot{x}(t)~=Ax(t)+Bu(t)$ is stable if and only if all poles are in the open left half plane (LHP), that is $\mathbb{R}e~{\lambda_i(A)}<~0, \forall i$. Eigenvalues in the right half plane(RHP) with  $\mathbb{R}e~{\lambda_i(A)}\geq~0$ give raise to unstable modes since for this case $e^{\lambda_i(A)~t}$ is unbounded as $t\rightarrow~\infty$,  eigenvalues in the open LHP give raise to stable modes where $\mathbb{R}e~{\lambda_i(A)} \rightarrow 0$ as $t\rightarrow~\infty$.
+\smallskip
 
+The first control MIMO method to be addressed  is the pole-placement method
+
+Consider the system:
+\begin{equation}
+	\dot{x}(t)~=Ax(t)+Bu(t)
+\end{equation} 
+
+that has an initial condition $x(t_0)=x_0\neq 0$. Therefore $x(t) \neq 0~,t\geq ~t_0$ and the regulator problem is to applay a 
 \subsection{Kalman filtering}
 
-Kalman 
+Kalman filters
