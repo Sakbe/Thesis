@@ -49,10 +49,48 @@ The unitary MARTe component is the Generic Application Module (GAM), each of the
 	
 \end{figure}
 
-\subsection{Hardware containers}
+\subsection{MARTe hardware containers}
 
-The MARTe hardware containers 
+This section will describe the  hardware used altogether with the MARTe framework for the overall plasma control in different devices, specially the case for the JET, COMPASS and ISTTOK tokamaks. Devices with the MARTe framework base their hardware on the  Advanced Telecommunications Computing Architecture (ATCA) standard, which is the most promising architecture to substantially enhance the performance and capability of existing standard systems as it is designed to handle tasks such as event building, feature extraction and high-level trigger processing ~\cite{ATCA2010}.\smallskip
 
+At JET the data acquisition system is based on the PICMG 3.0 ATCA standard  and contains six data acquisition cards. Each board comprises 32 18-bit resolution analog-to-digital converters (ADC) acquiring at 2 Msamples/s. The cards are connected to the controller computer using the Peripheral Component Interconnect Express (PCIe) point-to-point links through the ATCA backplane ~\cite{Neto2010},~\cite{ATCA2006}. Data synchronization is performed in the master board, which is guaranteed by the firmware to be the latest to have data available. Once new data is available, it is collected and a new MARTe cycle starts. The CPU core isolation scheme allows to protect the real-time environment from spurious and undesired interrupt sources. Figure ~\ref{ATCa_JET} depicts a roughly JET scheme of the acquisition boards and its connection to the MARTe framework.  \smallskip
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.55\textwidth]{Chp2/ATCA_JET.png}
+	\caption{\label{ATCa_JET}  JET ATCA hardware. The acquisition boards map in the controller computer memory a set of four buffers, the selected one is consecutively cycled every $50~ \mu s$  by the firmware. The first value written is the header and contains the absolute time since the last trigger, followed by the acquired  values of the ADCs, and finally by the footer containing the same value as the header. ~\cite{Neto2010}}
+	
+\end{figure}
+
+
+
+The hardware used in the ISTTOK real-time system is also  based on the ATCA standard while the old architecture was based on the Peripheral Component Interconnect (PCI) standard. The ATCA acquisition boards are composed by 32  ADC modules connected to a Virtex-4 Field-programmable gate array (FPGA) that manages the data path from the ADC to the PCIe bus.  Since ISTTOK has a noisy environment and the selected ADCs were able to acquire data at 2 Msample/s, it was decided to implement an additional digital filter in the FPGA to filter each ADC sample with a finite impulse response (FIR) filter ~\cite{ISTTOK_RT}. Figure ~\ref{PCIe} shows a photograph of an ATCA board, each board contains 512 MBytes of DDR memory and an FPGA, which performs digital signal processing and includes a PCI Express communications interface, this boards are developed at the IPFN(Instituto de Plasmas e Fus\~ao Nuclear) where the ISTTOK tokamak is also located. Figure ~\ref{Tomog} shows an schematic example of how a tomography system installed at ISTTOK is connected to the ATCA boards.  \smallskip 
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{Chp2/PCIboard.png}
+	\caption{\label{PCIe}  ATCA control board with 32 ADCs developed and assembled  at the IPFN. \cite{ATCA2010}}
+	
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.55\textwidth]{Chp2/Tomogr.png}
+	\caption{\label{Tomog}  The ISTTOK tomography system has 30 acquisition channels connected by an Input-Output ATCA card and sent to MARTe framework.  \cite{Ivo_tomo}}
+	
+\end{figure}
+
+For the Compass Tokamak, currently being installed in Prague, Czech Republic, its whole control and data acquisition system is being redesigned and built from scratch, based also on the ATCA standard. In total 14 ATCA  boards (developed at IPFN) will be used with 32 ADCs each one. In order to guarantee real-time execution of the control codes a framework based on Linux and the Real-Time Application Interface (RTAI) will be used. This will explore the features provided by the new multi-core technologies \cite{ATCA2010}. Figure  ~\ref{Compass} shows an schematic of the new COMPASS system.
+\smallskip
+
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.55\textwidth]{Chp2/COMPASS_ATCA.png}
+	\caption{\label{Compass} Schematic of COMPASS tokamak control and data acquisition
+		system,  two ATCA systems are responsible for the fast control of the device and for the data acquisition. \cite{ATCA2010}}
+	
+\end{figure}
 
 \subsection{MARTe 2.0}
 Software Quality Assurance (QA)\footnote{Software QA is a set of activities or processes that define and assess the adequacy of software processes to provide evidence that establishes confidence that the software processes are appropriate for and produce software products of suitable quality for their intended purposes~\cite[Chapter 5.1]{SQA}.} processes are being applied to the development of a new version of the MARTe framework also  called MARTe 2.0. The  main objective is to provide a QA certifiable environment from where it is possible to develop, with less effort, certifiable applications. The  MARTe QA version can be easily adapted to the development of many types of software which are common in the fusion community, in particular for software related to control and data acquisition systems that is to be shared among different teams  ~\cite{MARTe2}. MARTe 2.0 will be the result of reduction exercise of the core framework based on the lessons learned from MARTe. This version will incorporate and implement an integral quality assurance process for the development of the framework (e.g. unit tests and coding standard) ~\cite{MARTe2PMP}. 
@@ -75,12 +113,6 @@ The EFIT (Equilibrium Fitting) code is used to efficiently reconstruct the curre
 The RAPTOR (RApid Plasma Transport simulatOR)  is a model-based control-oriented code that predicts tokamak plasma profile evolution on real-time, it predicts the evolutions of several parameters, thanks to its accurate yet simplified physics model \cite{Raptor}. The physical model of the plant is derived from a spatially discretized partial differential equation (PDE), yielding a nonlinear set of ordinary differential equations (ODEs) for which the derivatives are evaluated analytically by the RAPTOR code. One of the main RAPTOR features is that  while the plasma is evolving RAPTOR has full knowledge of the plasma profiles and the available real-time diagnostic data can be included in a natural way to improve the accuracy of the estimation, in control engineering this approach is known as dynamic state observer and is used to estimate unmeasured or  poorly states of a dynamical system ~\cite{RAPTOR2011}. This dynamic state observer consists on an extended Kalman filter which estimates an augmented state consisting of physical states and random-walk disturbances  ~\cite{RAPTOR2014}. The concepts of  states-space systems and Kalman filtering will be addressed in the next subsections.  Figure ~\ref{RaptorMARTe} scheme shows  the carries out  integration of the RAPTOR code on top of the MARTe framework at the Italian tokamak RFX-mod.
 \smallskip
 
-For the case of JET  a  boundary reconstruction package called XLOC has been used to localized the X-point position and plasma boundary ~\cite{xloc}.  A newer code relying on XLOC  called Equinox was designed and implemented in C++ using a finite element method and a non linear fixed point algorithm associated to a least  square optimization procedure to reconstruct the plasma equilibrium in less than 50ms for the real-system~\cite{equinox}. 
-\smallskip
-
-
-The CREATE  codes (CREATE-L~\cite{Albanese:CREATEL} and CREATE-NL~\cite{Albanese:CREATENL}) are  equilibrium solvers that will be widely described in next chapter  and its application for the plasma control shape and  position in JT60-SA tokamak.
- 
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.505\textwidth]{Chp2/raptorMARTe.png}
@@ -88,6 +120,14 @@ The CREATE  codes (CREATE-L~\cite{Albanese:CREATEL} and CREATE-NL~\cite{Albanese
 		experimental \cite{Raptor}}
 	
 \end{figure}
+
+For the case of JET  a  boundary reconstruction package called XLOC has been used to localized the X-point position and plasma boundary ~\cite{xloc}.  A newer code relying on XLOC  called Equinox was designed and implemented in C++ using a finite element method and a non linear fixed point algorithm associated to a least  square optimization procedure to reconstruct the plasma equilibrium in less than 50ms for the real-system~\cite{equinox}. 
+\smallskip
+
+
+The CREATE  codes (CREATE-L~\cite{Albanese:CREATEL} and CREATE-NL~\cite{Albanese:CREATENL}) are  equilibrium solvers that will be widely described in next chapter as well as their application to plasma shape and position control design for the JT60-SA tokamak.
+ 
+
 
 \section{Control Techniques and State-Space models}
 

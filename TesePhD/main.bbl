@@ -83,6 +83,35 @@ A~Neto, D~Alves, B~B Carvalho, P~J Carvalho, H~Fernandes, D~F Valc, G~De
   Experimental Physics Control Systems}, number~11, pages 1277--1280, Grenoble,
   France, 2011.
 
+\bibitem{ATCA2010}
+B.~Gon{\c{c}}alves, J.~Sousa, A.~Batista, R.~Pereira, M.~Correia, A.~Neto,
+  B.~Carvalho, H.~Fernandes, and C.~A.F. Varandas.
+\newblock {ATCA advanced control and data acquisition systems for fusion
+  experiments}.
+\newblock {\em IEEE Transactions on Nuclear Science}, 57(4 PART 2):2147--2154,
+  2010.
+
+\bibitem{ATCA2006}
+A.~J.N. Batista, J.~Sousa, and C.~A.F. Varandas.
+\newblock {ATCA digital controller hardware for vertical stabilization of
+  plasmas in tokamaks}.
+\newblock {\em Review of Scientific Instruments}, 77(10):1--4, 2006.
+
+\bibitem{ISTTOK_RT}
+Ivo~S. Carvalho, Paulo Duarte, Hor{\'{a}}cio Fernandes, Daniel~F.
+  Valc{\'{a}}rcel, Pedro~J. Carvalho, Carlos Silva, Andr{\'{e}}~S. Duarte,
+  Andr{\'{e}} Neto, Jorge Sousa, Ant{\'{o}}nio~J.N. Batista, Tiago Hekkert, and
+  Bernardo~B. Carvalho.
+\newblock {ISTTOK real-time architecture}.
+\newblock {\em Fusion Engineering and Design}, 89(3):195--203, 2014.
+
+\bibitem{Ivo_tomo}
+P.~J. Carvalho, B.~B. Carvalho, A.~Neto, R.~Coelho, H.~Fernandes, J.~Sousa,
+  C.~Varandas, E.~Ch{\'{a}}vez-Alarc{\'{o}}n, and J.~J.E.
+  Herrera-Vel{\'{a}}zquez.
+\newblock {Real-time plasma control based on the ISTTOK tomography diagnostic}.
+\newblock {\em Review of Scientific Instruments}, 79(10):1--4, 2008.
+
 \bibitem{SQA}
 Yash Gupta.
 \newblock {\em {Software Quality Assurance}}, volume~6.
@@ -237,6 +266,13 @@ R.~Albanese, R.~Ambrosino, and M.~Mattei.
 \newblock {CREATE-NL+: A robust control-oriented free boundary dynamic plasma
   equilibrium solver}.
 \newblock {\em Fus. Eng. Des.}, 96--97:664--667, Oct. 2015.
+
+\bibitem{DeTommasi2007}
+Gianmaria {De Tommasi}, Raffaele Albanese, Giuseppe Ambrosino, Marco Ariola,
+  Massimiliano Mattei, Alfredo Pironti, Filippo Sartori, and Fabio Villone.
+\newblock {XSC tools: A software suite for tokamak plasma shape control design
+  and validation}.
+\newblock {\em IEEE Transactions on Plasma Science}, 35(3):709--723, 2007.
 
 \bibitem{Albanese2005}
 R.~Albanese, G.~Ambrosino, M.~Ariola, A.~Cenedese, F.~Crisanti, G.~{De
