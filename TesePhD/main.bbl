@@ -174,6 +174,12 @@ R.~Albanese and F.~Villone.
   current, position and shape in tokamaks}.
 \newblock {\em Nucl. Fus.}, 38(5):723--738, May 1998.
 
+\bibitem{Albanese:CREATENL}
+R.~Albanese, G.~Calabrograve, M.~Mattei, and F.~Villone.
+\newblock {Plasma response models for current, shape and position control at
+  JET}.
+\newblock {\em Fus. Eng. Des.}, 66--68:715--718, 2003.
+
 \bibitem{Golnaraghi2010}
 Farid Golnaraghi and Benjamin~C Kuo.
 \newblock {\em {Automatic Control Systems}}.
@@ -183,6 +189,11 @@ Farid Golnaraghi and Benjamin~C Kuo.
 T.~Kailath.
 \newblock {\em {Linear Systems}}.
 \newblock Prentice Hall, Englewood Cliffs, 1980.
+
+\bibitem{Chen1999}
+Chi-Tsong Chen.
+\newblock {\em {Linear System Theory And Design}}.
+\newblock Oxford University Press, 3 edition, 1999.
 
 \bibitem{Nise}
 Norman Nise.
