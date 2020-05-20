@@ -349,4 +349,49 @@ C.~A.F. Varandas.
 \newblock {Engineering aspects of the tokamak isttok}.
 \newblock {\em Fusion Technology}, 29(1):105--115, 1996.
 
+\bibitem{density}
+Guerra Tiago.
+\newblock {Real-Time measurement of the plasma electron density at ISTTOK}.
+\newblock Master's thesis, Universidade Tecnica de Lisboa, Lisbon,Portugal,
+  2008.
+
+\bibitem{Fernandes1998}
+H~Fernandes, C~A~F Varandas, J~A~C Cabral, H~Figueiredo, and R~Galv{\~{a}}o.
+\newblock {Engineering aspects of the ISTTOK operation in a multicycle
+  alternating flat-top plasma current regime}.
+\newblock {\em Fusion Engineering and Design}, 43(1):101--113, 1998.
+
+\bibitem{Carvalho2015}
+{ISTTOK real-time control assisted by electric probes}.
+\newblock {\em Journal of Physics: Conference Series}, 591(1):12008, 2015.
+
+\bibitem{IvoPID}
+Ivo~S. Carvalho, Paulo Duarte, Hor{\'{a}}cio Fernandes, Daniel~F.
+  Valc{\'{a}}rcel, Pedro~J. Carvalho, Carlos Silva, Andr{\'{e}}~S. Duarte,
+  Andr{\'{e}} Neto, Jorge Sousa, Ant{\'{o}}nio J~N Batista, Tiago Hekkert, and
+  Bernardo~B. Carvalho.
+\newblock {\em Fusion Engineering and Design}.
+
+\bibitem{Ivo}
+{I.~S.} Carvalho.
+\newblock {\em Real-time control for long ohmic alternate current discharges}.
+\newblock PhD thesis, Universidade de Lisboa, 2013.
+
+\bibitem{Ivo2}
+{I.~S.} Carvalho, P.~Duarte, H.~Fernandes, {D.~F.} Valc{\'a}rcel, {P.~J.}
+  Carvalho, C.~Silva, {A.~S.} Duarte, A.~Neto, J.~Sousa, {A.~J.~N.} Batista,
+  and {B.~B.} Carvalho.
+\newblock {ISTTOK control system upgrade}.
+\newblock {\em Fusion Engineering and Design}, 88(6):1122--1126, 2013.
+
+\bibitem{Batista2010}
+{ATCA control system hardware for the plasma vertical stabilization in the JET
+  tokamak}.
+\newblock {\em IEEE Transactions on Nuclear Science}, 57(2 PART 1):583--588,
+  2010.
+
+\bibitem{Spuig2003}
+{An analog integrator for thousand second long pulses in Tore Supra}.
+\newblock {\em Fusion Engineering and Design}, 66-68:953--957, 2003.
+
 \end{thebibliography}
