@@ -394,4 +394,10 @@ Ivo~S. Carvalho, Paulo Duarte, Hor{\'{a}}cio Fernandes, Daniel~F.
 {An analog integrator for thousand second long pulses in Tore Supra}.
 \newblock {\em Fusion Engineering and Design}, 66-68:953--957, 2003.
 
+\bibitem{Werner2008}
+Andreas Werner, Michael Endler, Joachim Geiger, and Ralf Koenig.
+\newblock {W7-X magnetic diagnostics: Rogowski coil performance for very long
+  pulses}.
+\newblock {\em Review of Scientific Instruments}, 79(10):1--5, 2008.
+
 \end{thebibliography}
