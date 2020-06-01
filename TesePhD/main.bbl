@@ -238,10 +238,21 @@ Katsuhiko Ogata.
 Sigurd Skogestad and Ian Postlethwaite.
 \newblock 2 edition.
 
+\bibitem{Ljung1987}
+L.~Ljung.
+\newblock {\em {System Identification Theory for User}}.
+\newblock 1987.
+
 \bibitem{Toolbox}
 L.~Ljung.
 \newblock {\em {System identification toolbox: User's guide}}.
 \newblock MathWorks, 2017.
+
+\bibitem{McKelvey1995}
+T~McKelvey.
+\newblock {\em {Identification of State-Space Models from Time and Frequency
+  Data}}.
+\newblock PhD thesis, Linkoping University, 1995.
 
 \bibitem{Spears2014}
 William~R. Spears.
