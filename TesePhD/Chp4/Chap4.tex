@@ -33,7 +33,7 @@ One of the main characteristics from ISTTOK  is that due to the flexibility of t
 
 
 
-
+\subsection{ISTTOK AC plasma current}
 
 
 \section{Diagnostics and Actuators}
@@ -258,4 +258,48 @@ The problems of the plasma position and shape reconstruction based on magnetic f
 
 The procedures described in last sections allowed for the cleaning of the signals and for the compensation of the effect of the external fluxes in the measurements. In this section it is described the method for obtaining a vertical and horizontal centroid position in ISTTOK using the processed signals described in the past section.  The plasma centroid position  is a geometrical center for the current distribution. In ~\cite{Pironti1995} and ~\cite{Swain1982}  the current centroid is evaluated  by substituting the plasma with a small number of arbitrary filaments in arbitrary fixed positions since the reconstruction is not sensitive to these parameters. These filaments are used to approximate the effect of the plasma current distribution on the magnetic measurements; hence each of them is assumed to carry a certain amount of current. It should be noted that the individual filamentary current values obtained with this approach possess no physical meaning, while the total current, and the centroid position $(r_0,z_0)$ correspond to the actual current and position of the centroid.\smallskip
 
-The following work reconstructs a multi-filament model using the corrected magnetic measurements as input. This approach follows the guideline described in ~\cite[Chapter~3]{PirontiBook}. The method is based on the fact that an optimal solution based on toroidal harmonics is typically close to the MHD equilibrium calculation for the centroid position ~\cite[Chapter~3]{PirontiBook}.
+The following work reconstructs a multi-filament model using the corrected magnetic measurements as input. This approach follows the guideline described in ~\cite[Chapter~3]{PirontiBook}. The method is based on the fact that an optimal solution based on toroidal harmonics is typically close to the MHD equilibrium calculation for the centroid position ~\cite[Chapter~3]{PirontiBook}. ISTTOK does not possess a Grad-Shafranov solver since it  has a very limited set of magnetic field and flux probes and due to the cycle time on MARTe, it is necessary to select a method such as a multi-filament model for a reliable centroid reconstruction.  The first step consists in the generation of  matrixes that are used to estimate the filamentary currents on real-time. The setup of the current filaments was designed by setting the number of filaments and their distance from the centre of the chamber. The values of the currents flowing in each filament were determined by inverting a discretized version of the Biot Savart\textquotesingle s equation: $ \Vec{dB}=\frac{\mu_0}{4\pi}\frac{I\Vec{dl}\times \hat{r}}{r^2} \,$ . The numerical inversion is done by computing the pseudo-inverse matrix through Singular Value Decomposition (SVD), resulting in  $\, i_{p,f}=M^{\dagger}_{fp}f_p$ where $f_{p}$ is the  magnetic probes measurements data vector, $i_{p,f}$ are the  filamentary currents best fitting the measurements and $M^{\dagger}_{fp}$ is the pseudoinverse of the fixed matrix whose $ij$-element gives the contribution to the measurement  $i$ of a unitary current in the filament $j$. The definitive geometry for ISTTOK has 12 degrees of freedom, as there are 12 static filaments at the distance of 5.5 cm from the centre of the chamber. Fig.~\ref{filaments} shows the geometry  which was chosen  after  empiric  analysis  of  the  measurements  optimization  and comparison  of  the  plasma  current  with  the  sum  of  the  filaments.
+
+%(the degree of freedom is the value of the current)
+
+
+
+\begin{figure}
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\textwidth]{Chp4/filaments_crossSection.eps}       
+		\caption{\label{filaments}}
+	\end{subfigure}
+	~
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\textwidth]{Chp4/Magnetic_probes_SVD.eps} 
+		\caption{\label{fig:SVDmagn} }
+	\end{subfigure}
+	
+	\caption{Fig.~\ref{filaments}:  ISTTOK Poloidal Cross Section with depiction of the radial and poloidal positions of the selected filaments for the plasma modelling and the magnetic probes. Fig.~\ref{fig:SVDmagn}: Comparison between magnetic probes measurements (blue line) and reconstructed values (orange line) during a plasma current positive Flat-top. }
+	
+\end{figure}
+
+
+Afterwards it is possible to evaluate the results by comparing the magnetic measurements with the ones obtained using the filamentary currents, as in Fig.~\ref{fig:SVDmagn}; another estimation of the results is the total current in the filaments, which is approximately  equal to the total current calculated by the sum from the magnetic probes measurements (Ampere's Law) as shown in Fig.~\ref{sumIfil} . Finally, is possible to reconstruct the position of the current centroid with a weighted average of the 12 filaments currents as in eqs.~\ref{eq:CentroidPos} where $\mu$ is the respective filament number.
+
+\begin{subequations}\label{eq:CentroidPos}
+	\begin{align}
+	%\label{eq:centroid_radial}
+	r_0= & \sqrt{\frac{\sum_{k=1}^\mu \, i_{p,f_k}\, r^2_{p,f_k}}{\sum_{k=1}^\mu\, i_{p,f_k}}}
+	\\[11pt]
+	%\label{eq:centroid_vertical}
+	z_0= & \frac{\sum_{k=1}^\mu\, i_{p,f_k}\, z_{p,f_k}}{\sum_{k=1}^\mu\, i_{p,f_k}}
+	\end{align}
+\end{subequations}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[,clip,width=.55\textwidth]{Chp4/Ip_sumfil.eps}
+	\caption{\label{sumIfil}Comparison between the plasma current signal computed with Ampere's law  and with the  filamentary currents sum.   }
+\end{figure}
+
+
+\section{Real-time MARTe implementations for the plasma position reconstruction}
+Real-Time control in ISTTOK relies on the execution of  Generic Application Modules (GAM) executed on MARTe \cite{Marte}. Algorithms for the subtraction of the magnetic contributions of the PF coils from the magnetic probes signals and for the reconstruction of the current centroid position were implemented in C++ language in  an specific ISTTOK GAM .
+
+\label{implemnt}

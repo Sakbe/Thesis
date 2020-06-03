@@ -55,9 +55,11 @@ Early efforts in finding a real-time equilibrium solver for ISTTOK were performe
 
 
 
-\subsubsection{Root-locus}
+\subsubsection{Pole-zeros map}
 
-The concept of pole and zero 
+The concept of pole was introduces in section ~\ref{MIMO_sec} and zero 
+
+
 %% Positives
 \begin{figure}
 	\centering
@@ -128,7 +130,9 @@ In order to reconstruct the states vector $x$ two Kalman filters ware implemente
 
 \subsection{Multiple-Input Multiple-Output control implementation}
 	
-
+The full-state estimate from the Kalman filter is generally used in conjunction with the
+full-state feedback control law from LQR, resulting in optimal sensor-based feedback.Combining the LQR full-state feedback with the Kalman fitler full-state estimator results in the linear-quadratic Gaussian (LQG) controller ~\cite[Chapter~8]{DataDriven2019}. Under this principle 
+\smallskip
 
 
 
