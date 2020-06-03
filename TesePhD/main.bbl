@@ -1,5 +1,15 @@
 \begin{thebibliography}{10}
 
+\bibitem{Freidberg2007}
+Jeffrey~P. Freidberg.
+\newblock {\em {Plasma physics and fusion energy}}.
+\newblock 2007.
+
+\bibitem{Miyamoto2011}
+K.~Miyamoto.
+\newblock {\em {Fundamentals of Plasma Physics and Controlled Fusion}}.
+\newblock Group, Taylor and Francis, 3 edition, 2011.
+
 \bibitem{PCS_2018}
 Andrej A.~Kavin {Valerij A. Belyakov}.
 \newblock {\em {Fundamentals of Magnetic Thermonuclear Reactor Design}}.
@@ -243,16 +253,16 @@ L.~Ljung.
 \newblock {\em {System Identification Theory for User}}.
 \newblock 1987.
 
-\bibitem{Toolbox}
-L.~Ljung.
-\newblock {\em {System identification toolbox: User's guide}}.
-\newblock MathWorks, 2017.
-
 \bibitem{McKelvey1995}
 T~McKelvey.
 \newblock {\em {Identification of State-Space Models from Time and Frequency
   Data}}.
 \newblock PhD thesis, Linkoping University, 1995.
+
+\bibitem{Toolbox}
+L.~Ljung.
+\newblock {\em {System identification toolbox: User's guide}}.
+\newblock MathWorks, 2017.
 
 \bibitem{Spears2014}
 William~R. Spears.
@@ -388,11 +398,6 @@ Ivo~S. Carvalho, Paulo Duarte, Hor{\'{a}}cio Fernandes, Daniel~F.
   Bernardo~B. Carvalho.
 \newblock {\em Fusion Engineering and Design}.
 
-\bibitem{Ivo}
-{I.~S.} Carvalho.
-\newblock {\em Real-time control for long ohmic alternate current discharges}.
-\newblock PhD thesis, Universidade de Lisboa, 2013.
-
 \bibitem{Ivo2}
 {I.~S.} Carvalho, P.~Duarte, H.~Fernandes, {D.~F.} Valc{\'a}rcel, {P.~J.}
   Carvalho, C.~Silva, {A.~S.} Duarte, A.~Neto, J.~Sousa, {A.~J.~N.} Batista,
@@ -415,5 +420,17 @@ Andreas Werner, Michael Endler, Joachim Geiger, and Ralf Koenig.
 \newblock {W7-X magnetic diagnostics: Rogowski coil performance for very long
   pulses}.
 \newblock {\em Review of Scientific Instruments}, 79(10):1--5, 2008.
+
+\bibitem{Pironti1995}
+A~Pironti, F~Amato, and Napoli Federico.
+\newblock {On-Line Plasma Shape Identification for use in control systems}.
+\newblock {\em Proceedings of International Conference on Control
+  Applications}, pages 1--2, 1995.
+
+\bibitem{Swain1982}
+D.~W. Swain and G.~H. Neilson.
+\newblock {An efficient technique for magnetic analysis of non-circular
+  high-beta tokamak equilibria}.
+\newblock {\em Nuclear Fusion}, 22(8):1015--1030, 1982.
 
 \end{thebibliography}
