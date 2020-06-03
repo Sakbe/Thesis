@@ -251,7 +251,7 @@ State-space dynamics can describe Multiple-Input Multiple-Output (MIMO) models w
 
 
 \subsection{PID control}
-
+\label{PID_sec}
 This subsection will shortly address the Proportional-Integral-Derivative (PID) control  concepts. PID controllers are now at days the most common ones in industrial applications and they are use several times through all this work. The PID controller has three parameters; proportional gain, integral gain, and derivative gain, they have proved through the years to provide a suitable control for a variety of systems despite not being optimal always. The usefulness of PID controls lies in their general applicability to most control systems. In particular, when the mathematical model of the plant is not known and therefore analytical design methods cannot be used, PID controls prove to be most useful.  
 \smallskip
 
@@ -538,7 +538,7 @@ Z^N~= \{y[k],u[k]|k=1,...,N\},
  
  where $|\cdot|$ is the Euclidian $l_2-norm$. The prediction error is the vector
  \begin{equation}
- \varepsilon8(t,\theta)~=y[k]-\hat{y}[k|\theta]
+ \varepsilon(t,\theta)~=y[k]-\hat{y}[k|\theta]
  \end{equation}
  with the predictor $\hat{y}(t|\theta)$ given by the equation ~\ref{predictor}. The minimizing parameter vector is defined by:
  \begin{equation}

@@ -1,39 +1,25 @@
-\chapter{ISTTOK  results }
+\chapter{ISTTOK control implementations and results }
 
-This chapter describes the latest implementations in ISTTOK MARTe framework followed by the presentation of the obtained results for control of the current centroid position.
+This chapter describes the latest implementations in ISTTOK's  MARTe framework followed by the presentation of the obtained results for control of the current centroid position.
 
 \section{Implementation of the General Application Modules }
 
-General Application Modules (GAM) 
+As mentioned in previous sections, ISTTOK operates on top of the MARTe framework who in turn is basically constructed by a set of General Application Modules (GAM).  figure ~\ref{GAMsDiags}
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.9\textwidth]{Chp5/GAMsDiagram.png}
-	\label{GAMsDiag}
-	\caption{ISTTOK MARTe overall control position  scheme}
+	\includegraphics[width=0.9\textwidth]{Chp5/GAMsDiagram.png}	
+	\caption{ISTTOK MARTe overall control position  scheme. \label{GAMsDiags}}
 \end{figure}
 
 \subsection{PID control implementation}
 
-Proportional-Integrative-Derivative
+The concept of the Proportional-Integrative-Derivative controller was deeply addressed in section ~\ref{PID_sec}. For many years, ISTTOK control relied on the principle that due to Lorentz force law, the control strategy could simply be driven by the principle that an external vertical field  generates an horizontal force and a horizontal external field generates a vertical force. \smallskip  
 
 \subsection{Data-driven state-space model retrieving }
 
-Early efforts in finding a real-time equilibrium solver for ISTTOK were performed in the last years. Due to the geometrical conditions it was never retrieve a 
+Early efforts in finding a real-time equilibrium solver for ISTTOK were performed in the last years. Due to the geometrical conditions a working theoretical model  was never retrieved.  a  ~\ref{SimResp_pos} and figure ~\ref{SimResp_neg}
 
-\begin{figure}
-	 \begin{subfigure}[b]{0.55\textwidth}
-		\includegraphics[width=\textwidth]{Chp5/SimResp_338.eps}  
-		\caption{\label{cvcv} }
-	\end{subfigure}
-	~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
-	%(or a blank line to force the subfigure onto a new line)
-	\begin{subfigure}[b]{0.55\textwidth}
-		\includegraphics[width=\textwidth]{Chp5/SimResp_345.eps}        
-		\caption{\label{vcvc}}
-		   \end{subfigure}
-	   \caption{Fig. }
-\end{figure}
 
 
 \begin{figure}
@@ -47,9 +33,31 @@ Early efforts in finding a real-time equilibrium solver for ISTTOK were performe
 		\includegraphics[width=\textwidth]{Chp5/SimResp_541.eps}        
 		\caption{\label{SimResp541}}
 	\end{subfigure}
-	\caption{Fig. }
+	\caption{$I_p~\approx 4~kA$ \label{SimResp_pos}}
 \end{figure}
 
+
+\begin{figure}
+	\begin{subfigure}[b]{0.55\textwidth}
+		\includegraphics[width=\textwidth]{Chp5/SimResp_338.eps}  
+		\caption{\label{SimResp338} }
+	\end{subfigure}
+	~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+	%(or a blank line to force the subfigure onto a new line)
+	\begin{subfigure}[b]{0.55\textwidth}
+		\includegraphics[width=\textwidth]{Chp5/SimResp_345.eps}        
+		\caption{\label{SimResp345}}
+	\end{subfigure}
+	\caption{$I_p~\approx -4~kA$  \label{SimResp_neg}}
+\end{figure}
+
+
+
+
+
+\subsubsection{Root-locus}
+
+The concept of pole and zero 
 %% Positives
 \begin{figure}
 	\centering
@@ -105,7 +113,7 @@ Early efforts in finding a real-time equilibrium solver for ISTTOK were performe
 
 
 \subsection{Kalman filter implementation}
-In order to reconstruct the states vector $x$ a Kalman filter was implemented for plasma current positive and negative.\smallskip
+In order to reconstruct the states vector $x$ two Kalman filters ware implemented.  for plasma current positive and negative.\smallskip
 \begin{figure}
 	\centering
 	\includegraphics[width=0.85\textwidth]{Chp5/Kalman_comp_pos.eps}

@@ -3,7 +3,7 @@
 \bibitem{Freidberg2007}
 Jeffrey~P. Freidberg.
 \newblock {\em {Plasma physics and fusion energy}}.
-\newblock 2007.
+\newblock Cambridge University Press, 2007.
 
 \bibitem{Miyamoto2011}
 K.~Miyamoto.
@@ -432,5 +432,10 @@ D.~W. Swain and G.~H. Neilson.
 \newblock {An efficient technique for magnetic analysis of non-circular
   high-beta tokamak equilibria}.
 \newblock {\em Nuclear Fusion}, 22(8):1015--1030, 1982.
+
+\bibitem{PirontiBook}
+A.~Pironti and M.~Ariola.
+\newblock {\em {Magnetic Control of Tokamak Plasma}}.
+\newblock Springer, $2^\mathrm{nd}$ edition, 2016.
 
 \end{thebibliography}
