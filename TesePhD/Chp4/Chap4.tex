@@ -28,12 +28,15 @@ Figure ~\ref{VV_IST} corresponds to a section of the ISTTOK vacuum vessel, it is
 \end{figure}
 
 
-One of the main characteristics from ISTTOK  is that due to the flexibility of the power supplies it is possible  to perform  AC  discharges  which  allow the fast reversal of the plasma current while maintaining a finite plasma density between consecutive flat tops  ~\cite{density}. The current inversions make it possible to achieve a much longer plasma duration in comparison to single mode operation, which is limited by the saturation of the iron core magnetization,the plasma duration is of approximately 1 s with positive and negative flaptops of $\approx 25~ms$ (~\cite{Fernandes1998}, ~\cite{Carvalho2015}~).
-
 
 
 
 \subsection{ISTTOK AC plasma current}
+
+
+The STOR-M tokamak was the first device to demonstrate an alternation in the plasma current even though the control position for negative cycles was not very successful ~\cite{Mitarai1996}, afterwards in JET, plasma current reversal was implemented as a necessity to demonstrate the feasibility of AC operation in conditions which can be considered relevant to a reactor achieving plasma current of 2~MA in each direction along with modifications in the PF coils powers supplies control systems ~\cite{Tubbing1992}.\smallskip
+
+One of the main characteristics from ISTTOK  is that due to the flexibility of the power supplies it is possible  to perform  AC  discharges  which  allow the fast reversal of the plasma current while maintaining a finite plasma density between consecutive flat tops  ~\cite{density}. The current inversions make it possible to achieve a much longer plasma duration in comparison to single mode operation, which is limited by the saturation of the iron core magnetization,the plasma duration is of approximately 1 s with positive and negative flaptops of $\approx 25~ms$ (~\cite{Fernandes1998}, ~\cite{Carvalho2015}~). An AC plasma current also accounts for  an inversion in the direction of the poloidal magnetic field, from the equation ~\ref{force_balance} is possible to see that a change of sing in the poloidal field $B_\theta$ while the toroidal field $B_{\phi}$ remains the same only implies a change of sign in the required vertical field for achieving toroidal force balance. ISTTOK has dwell time in between positive and negative cycles of $\approx 1~ms$.\smallskip
 
 
 \section{Diagnostics and Actuators}
@@ -233,7 +236,7 @@ Performing plasma-less discharges in ISTTOK by applying different step functions
  The modelling process was done using the \textit{System Identification Toolbox} from \textsc{Matlab} \cite[Chapters~2,3]{Toolbox}, the equations and algorithms used for retrieving the model parameters have already been described  in section ~\ref{data_drivenSec}. Each magnetic probe possess a set of three state-space models associated to the magnetic contribution from the vertical, horizontal and primary PF coils. The extraction of magnetic measurements related only with the plasma  are used to calculate and accurate reconstruction of the centroid position. \smallskip
 
 
-Figure~\ref{fig:44480} and \ref{fig:44632} show the results obtained in one of the magnetic probes during the modelling process and the accuracy of the models for estimating the effect of plasma-less fluxes during a discharge. The signals shown in figure~\ref{fig:44480} were used as source information for calculating the state-space models while the figure ~\ref{fig:44632} depicts the accuracy of the applied models in a vacuum discharge.
+Figure~\ref{fig:44480} and \ref{fig:44632} show the results obtained in one of the magnetic probes during the modeling process and the accuracy of the models for estimating the effect of plasma-less fluxes during a discharge. The signals shown in figure~\ref{fig:44480} were used as source information for calculating the state-space models while the figure ~\ref{fig:44632} depicts the accuracy of the applied models in a vacuum discharge.
 
 \begin{figure}
 	\begin{subfigure}[b]{0.47\textwidth}
@@ -300,6 +303,55 @@ Afterwards it is possible to evaluate the results by comparing the magnetic meas
 
 
 \section{Real-time MARTe implementations for the plasma position reconstruction}
-Real-Time control in ISTTOK relies on the execution of  Generic Application Modules (GAM) executed on MARTe \cite{Marte}. Algorithms for the subtraction of the magnetic contributions of the PF coils from the magnetic probes signals and for the reconstruction of the current centroid position were implemented in C++ language in  an specific ISTTOK GAM .
+Real-Time control in ISTTOK relies on the execution of  Generic Application Modules (GAM) executed on MARTe ~\cite{Neto2010}. Algorithms for the subtraction of the magnetic contributions of the PF coils from the magnetic probes signals and for the reconstruction of the current centroid position were implemented in C++ language in  an specific ISTTOK GAM .
 
 \label{implemnt}
+
+
+\subsection{Poloidal magnetic external contributions subtraction}
+
+Figure \ref{GAM_fluxes} compares the time response in one of the magnetic probes to the one reconstructed by the state-space models. During this plasma-less discharge positive and negative  current step functions waveforms  were applied at different starting times on the PF coils. In figure \ref{GAM_extfluxes} are shown the signals related to the  external fluxes subtraction on real-time  from a magnetic probe signal during a plasma current flat-top.\smallskip
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[,clip,width=.66\textwidth]{Chp4/GAM_compar_mirn3.eps}
+	
+	\caption{\label{GAM_fluxes} Real-Time reconstruction of the external fluxes contribution to the magnetic probes, this plot corresponds to the time trace of the magnetic probe $\#~3$.  }
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[,clip,width=.66\textwidth]{Chp4/ext_flux.eps}
+	
+	\caption{\label{GAM_extfluxes} Real-Time reconstruction during a plasma flat-top of the external fluxes  and its subtraction from the  magnetic probe signal.  }
+\end{figure}
+\subsection{Plasma current and  centroid position reconstruction}
+
+In addition to the centroid position, the plasma current is also estimated in ISTTOK from the magnetic probes measurements and  programmed on top of MARTe as a discretization of Ampere's law (see eqs.~\ref{Ip})
+\begin{subequations}
+	\label{Ip}
+	\begin{align}
+	\oint_S{B \cdot dl}=&\mu_0 \,I_{plasma} \quad ,
+	\\[5pt]
+	\frac{2\pi r_{probe}}{N} \enspace \sum^{N=12}_{N=1} B_{probes_i}  =&\mu_0 \,I_{plasma} \quad .
+	\end{align}
+\end{subequations}
+Figure ~\ref{mirnv1} depicts a comparison between the plasma current contribution to the magnetic Probe \# 1 and the reconstruction of it through the relation $ f_p=M_{fp}\,i_{p,f}$. Figure~\ref{RealTimePos} shows the horizontal and vertical positions and plasma current waveforms calculated on real-time during an AC  discharge. Due to the actual controller settings in the tokamak the radial position takes more time to reach the set point than the vertical position whose response is faster. Currently ISTTOK current centroid position reconstruction on real-time is performed based on the multi-filamentary model described on the previous section. \smallskip
+
+In figure \ref{RealTimePos} is possible to compare  plasma current and position from two discharges. In the first one the control signals are based on a  centroid position reconstructed by Langmuir probes and in the second discharge the centroid  position is computed by the multi-filament model using magnetic probes. It is possible to observe  successful inversions of plasma current when the centroid is computed by the multi-filament model in comparison with the absence of plasma current inversions when computing the centroid using the Langmuir probe signals. The plasma current inversion success percentage using algorithm reconstruction assisted by  Langmuir probes in ISTTOK is $\sim 80\%$  and assisted by magnetic probes is $\sim 99.8\%$. \smallskip
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1.1\textwidth]{Chp4/Mirnv1_comparsion.eps}
+	\caption{\label{mirnv1} Comparison of the magnetic probe \# 1 signal without the contribution of the external fluxes and its real-Time SVD reconstruction over the course of an AC Plasma discharge }
+\end{figure}
+
+
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=.9\textwidth]{Chp4/Ip_R0_z0.eps}
+	\caption{\label{RealTimePos}  Real-time reconstruction of the  vertical and horizontal current centroid position and plasma current  assisted by the magnetic probes signal acquisition and post-processing of two plasma discharges. Left column shows the resulting signals when the discharge control feedback is performed using Langmuir probes and right column shows when using Magnetic probes signals. Negative plasma cycles are lost when using Langmuir probes signals.    }
+\end{figure}
+
+During the realization of the work corresponding to this chapter a comprehensive analysis and processing of the ISTTOK magnetic diagnostics was done in order to obtain a reliable reconstruction of the centroid position.  With the presented corrections on the numerically hardware integrated magnetic signals in ISTTOK, it is now possible to reliably control the plasma position while varying key parameters these results are presented in the next chapter.
