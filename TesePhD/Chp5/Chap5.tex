@@ -1,24 +1,29 @@
 \chapter{ISTTOK control implementations and results }
 
-This chapter describes the latest implementations in ISTTOK's  MARTe framework followed by the presentation of the obtained results for control of the current centroid position.
+Using the multi-filament centroid position reconstruction currently available in real-time for all the discharges, is possible to foray into control techniques and its real-time implementation. This chapter describes the latest implementations in ISTTOK's  MARTe framework followed by the presentation of the obtained results for control of the vertical and radial current centroid position.
 
 \section{Implementation of the General Application Modules }
 
-As mentioned in previous sections, ISTTOK operates on top of the MARTe framework who in turn is basically constructed by a set of General Application Modules (GAM).  figure ~\ref{GAMsDiags}
+As mentioned in previous sections, ISTTOK operates on top of the MARTe framework who in turn is basically constructed by a set of General Application Modules (GAM) as described in chapter 2. The control of the plasma current centroid position is achieved by means of several GAMs working altogether,  figure ~\ref{GAMsDiags} depicts a scheme of how the control loop works. It starts by acquiring  the signals from the magnetic probes and processing them in the "Magnetics" GAM where the radial and vertical centroid position are computed for every MARTe cycle. The "Controller" GAM selects the controller to be used for the centroid position based on the retrieved data from a GUI "Discharge Configurator" the tokamak operator has already configured before the discharge starts. Depending on the controller selection there is a "PID" GAM and a "LQR" GAM , based on the control algorithms studied in Chapter 2.4. After the "PID" GAM or the "LQR" GAM computed the required  inputs of the system these values are sent back to the "Controller" GAM which then sends them as command signals to the power supplies of the PF coils.
 
-\begin{figure}
+\begin{figure}[h]
 	\centering
-	\includegraphics[width=0.9\textwidth]{Chp5/GAMsDiagram.png}	
+	\includegraphics[width=0.95\textwidth]{Chp5/GAMsDiagram.png}	
 	\caption{ISTTOK MARTe overall control position  scheme. \label{GAMsDiags}}
 \end{figure}
 
 \subsection{PID control implementation}
 
-The concept of the Proportional-Integrative-Derivative controller was deeply addressed in section ~\ref{PID_sec}. For many years, ISTTOK control relied on the principle that due to Lorentz force law, the control strategy could simply be driven by the principle that an external vertical field  generates an horizontal force and a horizontal external field generates a vertical force. \smallskip  
+Early tokamaks used sets of poloidal field coils symmetrically placed with respect to the tokamak equatorial plane to guarantee mutually independent vertical and horizontal movement of the plasma~\cite[Chapter~1]{PirontiBook}.   For many years, ISTTOK control relied on the principle that due to Lorentz force law, the control strategy could simply be driven by the principle that an external vertical field  generates an horizontal force and a horizontal external field generates a vertical force. \smallskip  
+
+The concept of the Proportional-Integrative-Derivative controller was deeply addressed in section ~\ref{PID_sec}.\smallskip
 
 \subsection{Data-driven state-space model retrieving }
+Data-driven dynamical systems is a rapidly evolving field, data are abundant, while physical laws or governing equations remain elusive even in classical fields, such as optics and turbulence, where governing equations do exist, researchers are increasingly turning toward data-driven analysis~\cite[Chapter~7]{DataDriven2019}.\smallskip
 
-Early efforts in finding a real-time equilibrium solver for ISTTOK were performed in the last years. Due to the geometrical conditions a working theoretical model  was never retrieved.  a  ~\ref{SimResp_pos} and figure ~\ref{SimResp_neg}
+Early efforts in finding a theoretical model for ISTTOK magnetic control were performed during  the last years. Since ISTTOK PF coils are not axisymmetric a working theoretical model  was never successfully retrieved. This fact made necessary to find a novel form to implement a model-based magnetic control on ISTTOK real-time MARTe platform.    
+
+~\ref{SimResp_pos} and figure ~\ref{SimResp_neg}
 
 
 
@@ -57,8 +62,8 @@ Early efforts in finding a real-time equilibrium solver for ISTTOK were performe
 
 \subsubsection{Pole-zeros map}
 
-The concept of pole was introduces in section ~\ref{MIMO_sec} and zero 
-
+Along with the  concept of pole introduced in section ~\ref{MIMO_sec}, the concept of a zero 
+The locations of the zeros have no role in determining the system stability
 
 \begin{figure}
 	\centering
@@ -66,6 +71,8 @@ The concept of pole was introduces in section ~\ref{MIMO_sec} and zero
 	
 	\caption{~\cite[Chapter~8]{DataDriven2019}\label{PoleZeroMap}.}
 \end{figure}
+
+Pole-zero cancellation of stables poles will not cause any serious problem in the overall system.
 
 %% Positives
 \begin{figure}
@@ -244,5 +251,6 @@ This section addresses the obtained the experimental results in ISTTOK's plasma 
 \label{TableControl}
 
 \end{center}
+
 
 
