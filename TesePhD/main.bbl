@@ -266,6 +266,11 @@ Katsuhiko Ogata.
 Sigurd Skogestad and Ian Postlethwaite.
 \newblock 2 edition.
 
+\bibitem{Hippe2009}
+Peter Hippe and Joachim Deutscher.
+\newblock {\em {Design of Observer-based Compensators}}.
+\newblock 2009.
+
 \bibitem{Ljung1987}
 L.~Ljung.
 \newblock {\em {System Identification Theory for User}}.
@@ -393,6 +398,19 @@ C.~A.F. Varandas.
 \newblock {Engineering aspects of the tokamak isttok}.
 \newblock {\em Fusion Technology}, 29(1):105--115, 1996.
 
+\bibitem{Mitarai1996}
+O.~Mitarai, Chijin Xiao, Liyan Zhang, D.~McColl, Wei Zhang, G.~Conway,
+  A.~Hirose, and H.~M. Skarsgard.
+\newblock {Alternating current plasma operation in the STOR-M tokamak}.
+\newblock {\em Nuclear Fusion}, 36(10):1335--1343, 1996.
+
+\bibitem{Tubbing1992}
+B.~J.D. Tubbing, N.~A.C. Gottardi, B.~J. Green, J.~A. How, M.~Huart, R.~Konig,
+  C.~G. Lowry, P.~J. Lomas, P.~Noll, J.~J. O'Rourke, P.~H. Rebut, D.~Stork,
+  A.~Tanga, A.~Taroni, and D.~J. Ward.
+\newblock {AC plasma current operation in the JET tokamak}.
+\newblock {\em Nuclear Fusion}, 32(6):967--972, 1992.
+
 \bibitem{density}
 Guerra Tiago.
 \newblock {Real-Time measurement of the plasma electron density at ISTTOK}.
@@ -408,19 +426,6 @@ H~Fernandes, C~A~F Varandas, J~A~C Cabral, H~Figueiredo, and R~Galv{\~{a}}o.
 \bibitem{Carvalho2015}
 {ISTTOK real-time control assisted by electric probes}.
 \newblock {\em Journal of Physics: Conference Series}, 591(1):12008, 2015.
-
-\bibitem{Mitarai1996}
-O.~Mitarai, Chijin Xiao, Liyan Zhang, D.~McColl, Wei Zhang, G.~Conway,
-  A.~Hirose, and H.~M. Skarsgard.
-\newblock {Alternating current plasma operation in the STOR-M tokamak}.
-\newblock {\em Nuclear Fusion}, 36(10):1335--1343, 1996.
-
-\bibitem{Tubbing1992}
-B.~J.D. Tubbing, N.~A.C. Gottardi, B.~J. Green, J.~A. How, M.~Huart, R.~Konig,
-  C.~G. Lowry, P.~J. Lomas, P.~Noll, J.~J. O'Rourke, P.~H. Rebut, D.~Stork,
-  A.~Tanga, A.~Taroni, and D.~J. Ward.
-\newblock {AC plasma current operation in the JET tokamak}.
-\newblock {\em Nuclear Fusion}, 32(6):967--972, 1992.
 
 \bibitem{IvoPID}
 Ivo~S. Carvalho, Paulo Duarte, Hor{\'{a}}cio Fernandes, Daniel~F.
@@ -464,10 +469,45 @@ D.~W. Swain and G.~H. Neilson.
   high-beta tokamak equilibria}.
 \newblock {\em Nuclear Fusion}, 22(8):1015--1030, 1982.
 
+\bibitem{Hippe2011}
+Peter Hippe.
+\newblock {\em {Windup in Control Its Effects and Their Prevention}}.
+\newblock Springer, 2011.
+
+\bibitem{Vrancic1996}
+Damir Vrancic and Raymond Hanus.
+\newblock {Anti-Windup, Bumpless, and Conditioned Transfer Techniques for PID
+  Controllers}.
+\newblock {\em IEEE Control Systems}, 16(4):48--57, 1996.
+
+\bibitem{Yu2011}
+Hao Yu, Tiantian Xie, and Bogdan Wilamowski.
+\newblock {\em {Practical PID Control}}.
+\newblock 2011.
+
 \bibitem{DataDriven2019}
 Steven~L. Brunton and J.~Nathan Kutz.
 \newblock {\em {Data-Driven Science and Engineering: Machine Learning, Dynamicl
   Systems, and Control}}.
 \newblock Cambridge University Press, 2019.
+
+\bibitem{Mele2018}
+A.~Mele, G.~{De Tommasi}, A.~Pironti, and B.~J. Xiao.
+\newblock {Shape reconstruction and eddy currents estimation via Kalman Filter
+  at the EAST tokamak}.
+\newblock {\em 45th EPS Conference on Plasma Physics, EPS 2018},
+  2018-July:417--420, 2018.
+
+\bibitem{Franklin1998}
+F.~Franklin.
+\newblock {\em {Digital Control of Synamic Systems}}.
+\newblock Ellis-Kagle Press, 3 edition, 1998.
+
+\bibitem{Trimpe2014}
+Sebastian Trimpe, Alexander Millane, Simon Doessegger, and Raffaello D'Andrea.
+\newblock {A self-tuning LQR approach demonstrated on an inverted pendulum}.
+\newblock In {\em Proceedings of the 19th World Congress The International
+  Federation of Automatic Control}, volume~19, pages 11281--11287, Cape Town,
+  2014. IFAC.
 
 \end{thebibliography}

@@ -442,7 +442,7 @@ Through the observer gain matrix $K_{obs}$ is possible to retrieve an estimated 
 	\caption{ Scheme of a state-space model plant and its observer or state estimator. \label{plant_obser}}
 \end{figure}
 
-Kalman filters have the structure of an ordinary state estimator but they take into account the process and measurement noise($\omega_d\,,\omega_n$) from the inputs signals. In Kalman filters the optimal choice of $K_{obs}$, which minimizes  the covariance $E{[x-x_{est}]^T~[x-x_{est}]}$, is given by~\cite[Chapter~9]{Skogestad}:  
+Kalman filters have the structure of an ordinary state estimator but they take into account the process and measurement noise($\omega_d\,,\omega_n$) from the inputs signals. In Kalman filters the optimal choice of $K_{obs}$, which minimizes  the covariance $E{[x-x_{est}]^T~[x-x_{est}]}$, is given by(~\cite[Chapter~9]{Skogestad},~\cite[Chapter~8]{Hippe2009}):  
 
 \begin{equation}
 K_{obs}=Y~C^T~V^{-1}
@@ -488,6 +488,7 @@ A_d=e^{AT}\qquad B_d=\left(\int_{0}^{T} e^{A\tau}d\tau\right)B \qquad C_d=C \qqu
 
 
 \subsubsection{Discrete state-space model identification}
+\label{Disc_SS_ident}
 For system identification purposes it is often desirable to use parametric models, i.e. , a set of models is described by a number of real-valued parameters collected in a parameter  vector $\theta\in \mathbb{R}^d$ to be determined. A particular model is then represented by a value of the d-dimensional unknown parameters vector $\theta$ ~\cite[Chapter~2]{McKelvey1995}. Let's write the state-space model structure considering the discrete disturbances $w[k]$ in the form:
 
 \begin{equation}
