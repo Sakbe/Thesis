@@ -510,4 +510,9 @@ Sebastian Trimpe, Alexander Millane, Simon Doessegger, and Raffaello D'Andrea.
   Federation of Automatic Control}, volume~19, pages 11281--11287, Cape Town,
   2014. IFAC.
 
+\bibitem{Uren2011}
+Kenny Uren and George Van.
+\newblock {\em {Predictive PID Control of Non-Minimum Phase Systems}}.
+\newblock INTECH, 2011.
+
 \end{thebibliography}
