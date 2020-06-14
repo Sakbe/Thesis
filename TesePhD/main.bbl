@@ -491,6 +491,12 @@ Steven~L. Brunton and J.~Nathan Kutz.
   Systems, and Control}}.
 \newblock Cambridge University Press, 2019.
 
+\bibitem{Bendtsen2005}
+J.~D. Bendtsen, J.~Stoustrup, and K.~Trangbaek.
+\newblock {Bumpless transfer between observer-based gain scheduled
+  controllers}.
+\newblock {\em International Journal of Control}, 78(7):491--504, 2005.
+
 \bibitem{Mele2018}
 A.~Mele, G.~{De Tommasi}, A.~Pironti, and B.~J. Xiao.
 \newblock {Shape reconstruction and eddy currents estimation via Kalman Filter
