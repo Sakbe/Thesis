@@ -23,7 +23,7 @@ The PID equations are digitally implemented in the "PID" GAM as ~\cite[Chapter~1
 	u[k]=K_p~e[k]+ K_i~T_s\sum_{i=1}^{k}e[i]+\frac{K_d}{T_s}(e[k]-e[k-1])
 \end{equation}
 
-where $u[k]$ is the controlled output signal, for ISTTOK it corresponds to the vertical and horizontal PF coils currents,$K_p,~K_d$ and $K_i$ are the PID gains and $e[k]$ is error variable which in this case is  the vertical or horizontal plasma centroid position minus a given set point programmed by the operator in the "Discharge configurator".
+where $u[k]$ is the controlled output signal, for ISTTOK it corresponds to the vertical and horizontal PF coils currents,$K_p,~K_d$ and $K_i$ are the PID gains and $e[k]$ is error variable which in this case is  the vertical or horizontal plasma centroid position minus a given set point programmed by the operator in the "Discharge configurator".  Since no theoretical decoupled model or SISO dynamics are established in ISTTOK the PID gains were selected empirically based in the performance of the controller with different selection of gains in several ISTTOK discharges.
 
 \subsection{Data-driven state-space model retrieving }
 
