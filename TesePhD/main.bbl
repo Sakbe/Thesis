@@ -521,4 +521,15 @@ Kenny Uren and George Van.
 \newblock {\em {Predictive PID Control of Non-Minimum Phase Systems}}.
 \newblock INTECH, 2011.
 
+\bibitem{Paluszek2020}
+M.~Paluszek and S.~Thomas.
+\newblock {\em {Practical MATLAB Deep Learning: A project-Based Approach}}.
+\newblock Apress, 2020.
+
+\bibitem{Ahn2007}
+Hyo~Sung Ahn, Yang~Quan Chen, and Kevin~L. Moore.
+\newblock {Iterative learning control: Brief survey and categorization}.
+\newblock {\em IEEE Transactions on Systems, Man and Cybernetics Part C:
+  Applications and Reviews}, 37(6):1099--1121, 2007.
+
 \end{thebibliography}
