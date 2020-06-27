@@ -1,11 +1,17 @@
 \chapter*{Abstract}
-Active feedback magnetic control for fusion plasmas is one of the main engineering tasks to be solved in magnetically  confined devices like tokamaks. One of the main objectives when using magnetic control in a tokamak is to control the plasma position and shape. This is done by means of the Poloidal Field (PF) coils and through the diagnostics which reconstruct the plasma position and last closed flux surface (LCFS).
+Active feedback magnetic control for fusion plasmas is one of the main engineering tasks to be solved in magnetically  confined devices like tokamaks. One of the main objectives when using magnetic control in a tokamak is to control the plasma position and shape, whether is for steering the plasma position to a given set point or rejecting disturbances which may occur and maintain the plasma shape in a certain equilibrium. This is done by means of varying the voltages and currents of the  Poloidal Field (PF) coils and through the diagnostics which after processing their signals make possible to reconstruct the plasma current, plasma position and last closed flux surface (LCFS).
 \smallskip
 
-This thesis presents an overall overview of control systems used in tokamaks along with a the asssments and upgrade done in two tokamaks: JT60-SA (Japan) and ISTTOK (Portugal).
-\vfill
+This thesis presents an overall overview of control systems and some of the main control engineering concepts used in tokamaks along with  the assessments and upgrades performed for two tokamaks: JT60-SA (Japan) and ISTTOK (Portugal). These two devices rely in the active control of the PF coils to control the plasma shape and position. JT60-SA is an under construction superconductive tokamak that will become the largest one built so far and will start operating in late 2020. ISTTOK is a large aspect ratio tokamak operating for 30 years and it is characterized by its AC operation mode and flexibility. \smallskip
 
-\textbf{Keywords:Real-time control, plasma current, plasma current centroid position, state-space model, PID control, shape controller, magnetic probe, PF coil, Kalman filter.} 
+The JT60-SA work done in this thesis consists in a series of simulations testing two different shape controllers and LCFS methods in the presence of several disturbances and change of the reference plasma shape along with the comparison of results between both controllers and LCFS reconstructions. The implementation of these controllers is possible by using a given theoretical equilibrium in the form of a linear state-space model for the simulation of the overall magnetic  tokamak behavior.\smallskip
+
+ The work developed in ISTTOK consisted in the application of several physics concepts and computational tools in order to have a novel optimal controller and plasma position reconstruction implemented on real-time by means of the upgraded hardware which allowed to numerically integrate the magnetic probes signals before its data-base acquisition takes place. \smallskip
+ 
+ Along with presenting the achieved control assessments for both devices in this thesis, one of the main objectives  is also that the simulation work done for JT60-SA can be confirmed in an experimental sense in ISTTOK. \smallskip
+
+
+\textbf{Keywords:Real-time control, plasma current, plasma current centroid position, state-space model, optimal control, shape control, magnetic probe, PF coil, last closed flux surface, numerical integration.} 
 
 \pagebreak
 \begin{otherlanguage}{portuguese}
