@@ -1,18 +1,18 @@
-\chapter{JT60-SA control design}
+\chapter{JT-60SA control design}
 
 \section{Machine description}
 
-JT60-SA is a superconductive tokamak located at one of the facilities from the National Institutes for Quantum and Radiological Science and Technology (QST)  at  Naka, Japan whose principal purpose is  the contribution to early realization of fusion energy by supporting the exploitation and resolving key physics for the ITER reactor.  JT60-SA construction has been successfully completed by the end of March 2020 and its first plasma is expected for late 2020. Figure ~\ref{JT60schm} shows the overall general configuration and the most remarkable elements of the machine. The JT-60SA  vacuum chamber will have a major radius of 2.96~ m and a Minor radius of 1.18~ m with an overall plasma volume of 132~ $m^3$ ~\cite{Spears2014} . JT60-SA will become the largest tokamak ever built so far. Appendix ~\ref{JT60_append} contains a set of photos depicting the assembling of some of the JT60-SA components and its overall look during 2018 and 2019. 
+JT-60SA is a superconductive tokamak located at one of the facilities from the National Institutes for Quantum and Radiological Science and Technology (QST)  at  Naka, Japan whose principal purpose is  the contribution to early realization of fusion energy by supporting the exploitation and resolving key physics for the ITER reactor.  JT-60SA construction has been successfully completed by the end of March 2020 and its first plasma is expected for late 2020. Figure ~\ref{JT60schm} shows the overall general configuration and the most remarkable elements of the machine. The JT-60SA  vacuum chamber will have a major radius of 2.96~ m and a Minor radius of 1.18~ m with an overall plasma volume of 132~ $m^3$ ~\cite{Spears2014} . JT-60SA will become the largest tokamak ever built so far. Appendix ~\ref{JT60_append} contains a set of photos depicting the assembling of some of the JT-60SA components and its overall look during 2018 and 2019. 
 \smallskip
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.75\textwidth]{Chp3/JT60SA.png}
 	
-	\caption{\label{JT60schm}JT60-SA tokamak configuration and its main elements ~\cite{JT60SA:ResearchPlan}.}
+	\caption{\label{JT60schm}JT-60SA tokamak configuration and its main elements ~\cite{JT60SA:ResearchPlan}.}
 \end{figure}
 
-The Poloidal Field (PF) coils shown in JT60-SA cross-section from figure ~\ref{JT60coils} consist of two sets of superconductive coils: the Equilibrium Field Coils (EF1–6) and the Central Solenoid (consisting of four independent coils, named CS1–4) which are ex-vessel coils. Furthermore, two in-vessel cooper Fast Plasma Position  Coils (FPPC1–2) will also be installed ~\cite{NCruz}. The total of 12 PF coils have independent power sources for the control of the plasma current, position and shape.   
+The Poloidal Field (PF) coils shown in JT-60SA cross-section from figure ~\ref{JT60coils} consist of two sets of superconductive coils: the Equilibrium Field Coils (EF1–6) and the Central Solenoid (consisting of four independent coils, named CS1–4) which are ex-vessel coils. Furthermore, two in-vessel cooper Fast Plasma Position  Coils (FPPC1–2) will also be installed ~\cite{NCruz}. The total of 12 PF coils have independent power sources for the control of the plasma current, position and shape.   
 \smallskip
 
 \begin{figure}
@@ -42,7 +42,7 @@ JT-60SA shall be capable of investigating different design scenarios. As referee
 
 
 
-This chapter will address two different approaches for the LCFS reconstruction along  with different plasma current, shape and position controllers for JT60-SA in order to achieve and maintain the desired operational scenario given the plasma equilibrium in the SOF while the performance of the controllers is compared .
+This chapter will address two different approaches for the LCFS reconstruction along  with different plasma current, shape and position controllers for JT-60SA in order to achieve and maintain the desired operational scenario given the plasma equilibrium in the SOF while the performance of the controllers is compared .
 
 
 
@@ -51,7 +51,7 @@ This chapter will address two different approaches for the LCFS reconstruction a
 CREATE-NL  is a finite elements method (FEM\footnote{It is well known that many physical and engineering systems are expressed in terms of partial differential equations which cannot be solved via analytical methods. One of the most recurrent techniques is numerical discretization to approximate the solution of the partial differential equations, the FEM is commonly used to solve these approximations in two or three space variables, in this particular case for a numerical solution of the well-known Grad-Shafranov equation. }) solver implemented on \textsc{Matlab}. It deals with the free boundary dynamic plasma equilibrium problem i.e. the MHD (Magneto-Hydro-Dynamics) time evolution of 2D axisymmetric plasmas in tokamaks, including eddy currents in the passive structures, and feedback control laws for current, position and shape control ~\cite{Albanese:CREATENLnew}. CREATE-NL is an upgraded version of the CREATE-L code written in FORTRAN and validated in different tokamaks. Both CREATE-L and CREATE-NL produce linerized models of the plasma in the neighborhood of a certain equilibrium condition. CREATE-NL has more capabilities than CREATE-L due to the possibility of using different plasma profiles shapes,  introducing different outputs in a user friendly way and  running inverse equilibrium calculation~\cite{DeTommasi2007}. 
 \smallskip
 
-Using the CREATE codes~\cite{Albanese:CREATEL,Albanese:CREATENLnew} it is possible to retrieve a linearized state-space model for a reference configuration that describes the plasma magnetic behavior around that equilibrium\footnote{Reference  ~\cite[Sec.~3]{NCruz} can be consulted for more details about the use of the CREATE equilibrium codes to retrieve plasma linearized models.}. It should be noted that CREATE-NL equilibrium solver has been validated on several tokamaks such as JET and EAST. A JT60-SA CREATE-NL electromagnetic linear model around the equilibrium from the Scenario~2-~SOF  for the plasma-circuit response has been used for  designing  the controller presented in next section. 
+Using the CREATE codes~\cite{Albanese:CREATEL,Albanese:CREATENLnew} it is possible to retrieve a linearized state-space model for a reference configuration that describes the plasma magnetic behavior around that equilibrium\footnote{Reference  ~\cite[Sec.~3]{NCruz} can be consulted for more details about the use of the CREATE equilibrium codes to retrieve plasma linearized models.}. It should be noted that CREATE-NL equilibrium solver has been validated on several tokamaks such as JET and EAST. A JT-60SA CREATE-NL electromagnetic linear model around the equilibrium from the Scenario~2-~SOF  for the plasma-circuit response has been used for  designing  the controller presented in next section. 
 \smallskip
 
 
@@ -94,7 +94,7 @@ If the number of controlled plasma shape descriptors~$n_G$ is such that~$n_G~>~n
 \begin{equation}\label{equation:XSC_new}
 \delta I_{PF_{ref}}=C^\dag\delta Y\,.
 \end{equation}
-where the matrix~$C^\dag$ denotes the pseudo-inverse of~$C$\footnote{$C$ ~ is the output matrix from the state-space linearized CREATE model for JT60-SA.} that can be computed via the singular value decomposition (SVD). As a result, the XSC algorithm minimizes the following steady-state performance index
+where the matrix~$C^\dag$ denotes the pseudo-inverse of~$C$\footnote{$C$ ~ is the output matrix from the state-space linearized CREATE model for JT-60SA.} that can be computed via the singular value decomposition (SVD). As a result, the XSC algorithm minimizes the following steady-state performance index
 \begin{equation}\label{equation:XSCcost}
 J_{XSC} = \lim_{t\to +
 	\infty}(\delta Y_{ref}-\delta Y(t))^T(\delta Y_{ref}-\delta Y(t))\,,
@@ -161,7 +161,7 @@ are the respective PD feedback gains for the plasma position control. $ G_{FP} $
 
 \section{Simulation results}	
 
- The simulations for  the JT60-SA CREATE-NL model ,the XSC, the CCS reconstruction method and the QST controller  were programmed on top of  \textsc{Matlab} and \textsc{Simulink} blocks. This  section will address in detail the outcome of the control simulations using a linearized equilibrium given by CREATE-NL for JT60-SA, Scenario~2 at the SOF time frame. The first results to be presented correspond to a  gap-based controller  using the XSC with different tests cases.
+ The simulations for  the JT-60SA CREATE-NL model ,the XSC, the CCS reconstruction method and the QST controller  were programmed on top of  \textsc{Matlab} and \textsc{Simulink} blocks. This  section will address in detail the outcome of the control simulations using a linearized equilibrium given by CREATE-NL for JT-60SA, Scenario~2 at the SOF time frame. The first results to be presented correspond to a  gap-based controller  using the XSC with different tests cases.
  \smallskip
  
  
@@ -188,7 +188,7 @@ Figure ~\ref{JT60FBCcheme} depicts a configuration using the QST controller reci
 \begin{figure}
 	\centering
 	\includegraphics[width=1.05\textwidth]{Chp3/JT60SchemeFBCnew.png}
-	\caption{	\label{JT60FBCcheme} Isoflux control JT-60SA overall scheme with  a block for the  CREATE JT60-SA linearized model, a block for reconstructing  the magnetic fluxes with the CCS method and the QST controller. }
+	\caption{	\label{JT60FBCcheme} Isoflux control JT-60SA overall scheme with  a block for the  CREATE JT-60SA linearized model, a block for reconstructing  the magnetic fluxes with the CCS method and the QST controller. }
 \end{figure}
 
 
@@ -196,7 +196,7 @@ Figure ~\ref{JT60FBCcheme} depicts a configuration using the QST controller reci
 \subsection{Disturbances}
 
 
-As far as plasma magnetic control is concerned, the JT60-SA linearized model disturbances have been modeled as variations of $\beta_p$ and $l_i$. This disturbances should be in principle rejected by the control systems and maintain in the most accurate possible way the plasma equilibrium.  The following set of disturbances have been considered: 
+As far as plasma magnetic control is concerned, the JT-60SA linearized model disturbances have been modeled as variations of $\beta_p$ and $l_i$. This disturbances should be in principle rejected by the control systems and maintain in the most accurate possible way the plasma equilibrium.  The following set of disturbances have been considered: 
 
 \begin{itemize}
 	\item \textbf{Disturbance \#1} refers to the behavior of~$\beta_p$ and~$l_i$ soon after the current flattop is reached, as it was modeled in~\cite{urano2015development} (in this paper we assume that the flattop is reached at~$t\sim 20$~s). As an example, the correspondent time traces are shown in figure~\ref{Urano}\footnote{The time behavior of both~$\beta_p$ and~$l_i$ have been estimated starting from the spatial profiles for both plasma density and temperature envisaged for Scenario 2.}.
@@ -339,7 +339,7 @@ It should be also noticed that the~6 gaps option considered in~\cite{Miyata:2014
 
 \subsection{Isoflux XSC and QST controller }
 
-As mentioned in the previous section, simulations with an isoflux control approach using the CREATE linearized model and the XSC along with the QST reconstruction and control tools were carried out. The same three disturbances (see figure~\ref{Urano},~\ref{cmpELM} and ~\ref{MnrDisrp}) and JT60-SA equilibrium scenario from the simulations in last section were used for these test cases for a different number of control points.  Due to the vast extension of results, this section will focus on analyze the case for 8 control points in the presence of a Minor disruption with the XSC and the QST controller. Figure~\ref{all_points} shows the control points configurations used for carrying out the simulations with an isoflux shape controller as well as the LCFS's reconstructed by CREATE and  the CCS method at steady-state in the presence of a Minor disruption(Disturbance~ $\#3$). 
+As mentioned in the previous section, simulations with an isoflux control approach using the CREATE linearized model and the XSC along with the QST reconstruction and control tools were carried out. The same three disturbances (see figure~\ref{Urano},~\ref{cmpELM} and ~\ref{MnrDisrp}) and JT-60SA equilibrium scenario from the simulations in last section were used for these test cases for a different number of control points.  Due to the vast extension of results, this section will focus on analyze the case for 8 control points in the presence of a Minor disruption with the XSC and the QST controller. Figure~\ref{all_points} shows the control points configurations used for carrying out the simulations with an isoflux shape controller as well as the LCFS's reconstructed by CREATE and  the CCS method at steady-state in the presence of a Minor disruption(Disturbance~ $\#3$). 
 \smallskip
 
 For the control and reconstruction points configurations a selection of 19 equally spaced descriptors was used (see figure~\ref{19gaps_isoflux}),  along with the previous 8 and 6 points configurations used for the gap controller. As mentioned before, the CCS method allows a maximum of 19 points for the fluxes reconstruction and the QST controller a maximum of 10 control points,due to these  limitations the 19 segments scenario is only  feasible using the XSC.
@@ -365,7 +365,7 @@ For the control and reconstruction points configurations a selection of 19 equal
 		\caption{  The~6 control segments used by the isoflux controller proposed in~\cite{Miyata:2014}.    \label{6gaps_isoflux}}
 	\end{subfigure}
 
-\caption{LCFS reconstructed by CREATE and the CCS code  for the JT60-SA scenario~2 SOF equilibrium with a Minor disruption at steady-state for the three considered selection of control segments using the XSC with an isoflux approach.}\label{all_points}
+\caption{LCFS reconstructed by CREATE and the CCS code  for the JT-60SA scenario~2 SOF equilibrium with a Minor disruption at steady-state for the three considered selection of control segments using the XSC with an isoflux approach.}\label{all_points}
 
 \end{figure}
 
@@ -387,7 +387,7 @@ Figure~\ref{compFBC_XSC_ss} compares the steady-state LCFS's for the same distur
 		\end{subfigure}
 		
 
-\caption{ CREATE-NL JT60-SA Scenario~2 - SOF equilibrium compared with the LCFS reconstructed by the CCS method for 8 control points in the presence of a Minor disruption at steady-state using both the XSC and the QST control.  \label{compFBC_XSC_ss}}
+\caption{ CREATE-NL JT-60SA Scenario~2 - SOF equilibrium compared with the LCFS reconstructed by the CCS method for 8 control points in the presence of a Minor disruption at steady-state using both the XSC and the QST control.  \label{compFBC_XSC_ss}}
 \end{figure}
 
 
@@ -409,7 +409,7 @@ Figure~\ref{compFBC_XSC_ss} compares the steady-state LCFS's for the same distur
 	\end{subfigure}
 	
 	
-	\caption{  CREATE-NL JT60-SA Scenario~2 - SOF equilibrium compared with the LCFS reconstructed by the CCS method for 8 control points in the presence of a Minor disruption (Disturbance ~ $\#3$) at the time of maximum deviation for both cases. As shown in figure ~\ref{MnrDisrp}, the disturbance occurs at $t~\sim 20 ~ s$  \label{20secs}}
+	\caption{  CREATE-NL JT-60SA Scenario~2 - SOF equilibrium compared with the LCFS reconstructed by the CCS method for 8 control points in the presence of a Minor disruption (Disturbance ~ $\#3$) at the time of maximum deviation for both cases. As shown in figure ~\ref{MnrDisrp}, the disturbance occurs at $t~\sim 20 ~ s$  \label{20secs}}
 \end{figure}
 
 
@@ -485,7 +485,7 @@ In order to summarize all the results from the tested cases, tables~\ref{CCS_ura
 		8 points                   & 0.0166                & 0.0181                & $\sim 0$                 & $\sim 0$                  \\ \hline
 		19 points                  & 0.0085                & 0.0088                & \cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} \\ \hline
 	\end{tabular}
-	\caption{Steady-state flux RMSE values for the different selection of control points for  the JT60-SA scenario 2, SOF equilibrium in the presence of  Disturbance $\# 1$  at ~$t\sim 20 $~s. }
+	\caption{Steady-state flux RMSE values for the different selection of control points for  the JT-60SA scenario 2, SOF equilibrium in the presence of  Disturbance $\# 1$  at ~$t\sim 20 $~s. }
 	\label{fluxRMS_Urano_table}
 \end{table}
 
@@ -504,7 +504,7 @@ In order to summarize all the results from the tested cases, tables~\ref{CCS_ura
 		8 points                                                              &18.58          & 21.95          & 18.96            & 29.82           &   49.16                      &     -46.52                     & 59.66                       &           -40.92              \\ \hline
 		19 points                                                             &2.62           & 12.84          & 2.375           & 20.51             & \cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} \\ \hline
 	\end{tabular}
-	\caption{X-point position steady state error for  JT60-SA scenario 2, SOF equilibrium in the presence of  Disturbance $\# 1$ at ~$t\sim 20 $~s . The XSC and  QST controller were used in different simulations for the shape control along  with two reconstruction methods for the LCFS. }
+	\caption{X-point position steady state error for  JT-60SA scenario 2, SOF equilibrium in the presence of  Disturbance $\# 1$ at ~$t\sim 20 $~s . The XSC and  QST controller were used in different simulations for the shape control along  with two reconstruction methods for the LCFS. }
 	\label{CCS_urano_Xpoint_error}
 \end{table}
 
@@ -523,7 +523,7 @@ In order to summarize all the results from the tested cases, tables~\ref{CCS_ura
 		8 points                   & 0.0104                & 0.0101                & $\sim 0$                 & $\sim 0$                  \\ \hline
 		19 points                  & 0.0023                & 0.0028                & \cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} \\ \hline
 	\end{tabular}
-	\caption{Steady-state flux RMSE values for the different selection of control points for  the JT60-SA scenario 2, SOF equilibrium in the presence of  Disturbance $\# 2$ (Compound ELM) at ~$t\sim 20 $~s. }
+	\caption{Steady-state flux RMSE values for the different selection of control points for  the JT-60SA scenario 2, SOF equilibrium in the presence of  Disturbance $\# 2$ (Compound ELM) at ~$t\sim 20 $~s. }
 	\label{fluxRMSE_cmpELM_table}
 \end{table}
 
@@ -542,7 +542,7 @@ In order to summarize all the results from the tested cases, tables~\ref{CCS_ura
 		8 points                                                              &15.72          & -8.41          & 16.61            & -3.098           &   50.18                     &     -43.25                     & 54.44                      &           -32.68             \\ \hline
 		19 points                                                             &-0.0007           & 0.0237          & -0.1916          & -4.69             & \cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} \\ \hline
 	\end{tabular}
-	\caption{X-point position steady state error for  JT60-SA scenario 2, SOF equilibrium in the presence of  Disturbance $\# 2$ (Compound ELM) at ~$t\sim 20 $~s . The XSC and  QST controller were used in different simulations for the shape control along  with two reconstruction methods for the LCFS. }
+	\caption{X-point position steady state error for  JT-60SA scenario 2, SOF equilibrium in the presence of  Disturbance $\# 2$ (Compound ELM) at ~$t\sim 20 $~s . The XSC and  QST controller were used in different simulations for the shape control along  with two reconstruction methods for the LCFS. }
 	\label{CCS_cmpELM_Xpoint_error}
 \end{table}
 
@@ -562,7 +562,7 @@ In order to summarize all the results from the tested cases, tables~\ref{CCS_ura
 		8 points                   & 0.0152                & 0.0170                & $\sim 0$                 & $\sim 0$                  \\ \hline
 		19 points                  & 0.0069                & 0.0088                & \cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} \\ \hline
 	\end{tabular}
-	\caption{Steady-state flux RMSE values for the different selection of control points for  the JT60-SA scenario 2, SOF equilibrium in the presence of  Disturbance $\# 3$ (Minor disruption) at ~$t\sim 20 $~s. }
+	\caption{Steady-state flux RMSE values for the different selection of control points for  the JT-60SA scenario 2, SOF equilibrium in the presence of  Disturbance $\# 3$ (Minor disruption) at ~$t\sim 20 $~s. }
 	\label{fluxRMSE_mnr_table}
 \end{table}
 
@@ -585,7 +585,7 @@ In order to summarize all the results from the tested cases, tables~\ref{CCS_ura
 		8 points                                                              &17.44           & 21.56          & 17.81            & 29.04           &   47.08                      &     -46.56                     & 57.61                       &           -41.42              \\ \hline
 		19 points                                                             &-5.54           & 16.78          & -4.42           & 24.41             & \cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} \\ \hline
 	\end{tabular}
-\caption{X-point position steady state error for  JT60-SA scenario 2, SOF equilibrium in the presence of  Disturbance $\# 3$ (Minor disruption) at ~$t\sim 20 $~s . The XSC and  QST controller were used in different simulations for the shape control along  with two reconstruction methods for the LCFS.  }
+\caption{X-point position steady state error for  JT-60SA scenario 2, SOF equilibrium in the presence of  Disturbance $\# 3$ (Minor disruption) at ~$t\sim 20 $~s . The XSC and  QST controller were used in different simulations for the shape control along  with two reconstruction methods for the LCFS.  }
 \label{CCS_mnr_Xpoint_error}
 \end{table}
 
