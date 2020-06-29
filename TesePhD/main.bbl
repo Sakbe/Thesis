@@ -526,6 +526,11 @@ M.~Paluszek and S.~Thomas.
 \newblock {\em {Practical MATLAB Deep Learning: A project-Based Approach}}.
 \newblock Apress, 2020.
 
+\bibitem{MECS}
+Yoshiaki Miyata, Takahiro Suzuki, Shunsuke Ide, and Hajime Urano.
+\newblock {Study of plasma equilibrium control for JT-60SA using MECS}.
+\newblock {\em Plasma and Fusion Research}, 9(SpecialIssue2):1--5, 2014.
+
 \bibitem{Ahn2007}
 Hyo~Sung Ahn, Yang~Quan Chen, and Kevin~L. Moore.
 \newblock {Iterative learning control: Brief survey and categorization}.

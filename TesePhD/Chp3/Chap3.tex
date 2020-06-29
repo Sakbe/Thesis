@@ -46,7 +46,7 @@ This chapter will address two different approaches for the LCFS reconstruction a
 
 
 
-\section{CREATE magnetic reconstruction tools}
+\section{CREATE magnetic modeling tools}
 
 CREATE-NL  is a finite elements method (FEM\footnote{It is well known that many physical and engineering systems are expressed in terms of partial differential equations which cannot be solved via analytical methods. One of the most recurrent techniques is numerical discretization to approximate the solution of the partial differential equations, the FEM is commonly used to solve these approximations in two or three space variables, in this particular case for a numerical solution of the well-known Grad-Shafranov equation. }) solver implemented on \textsc{Matlab}. It deals with the free boundary dynamic plasma equilibrium problem i.e. the MHD (Magneto-Hydro-Dynamics) time evolution of 2D axisymmetric plasmas in tokamaks, including eddy currents in the passive structures, and feedback control laws for current, position and shape control ~\cite{Albanese:CREATENLnew}. CREATE-NL is an upgraded version of the CREATE-L code written in FORTRAN and validated in different tokamaks. Both CREATE-L and CREATE-NL produce linerized models of the plasma in the neighborhood of a certain equilibrium condition. CREATE-NL has more capabilities than CREATE-L due to the possibility of using different plasma profiles shapes,  introducing different outputs in a user friendly way and  running inverse equilibrium calculation~\cite{DeTommasi2007}. 
 \smallskip
@@ -110,8 +110,7 @@ For the development of this work both approaches of the XSC strategy were studie
 
 
 \section{QST reconstruction and control implementation}
-
-Along with the CREATE tools presented on last section for the reconstruction of the LCFS and the XSC for plasma shape control, a reconstruction code and controller provided by the QST team were implemented, tested and compared. This section will briefly describe these two methods and its limitations.  
+Along with the CREATE modeling tools presented on last section, which allow to compute the LCFS and to apply model-based design to compute the XSC, a reconstruction code and controller provided by the QST team were implemented, tested and compared. This section will briefly describe these two methods and its limitations.  
 
 \subsection{Cauchy Condition Surface (CCS) reconstruction  method }
 The QST Cauchy Condition Surface (CCS) method for the reconstruction of the magnetic last closed flux surface (LCFS) calculates controlled variables for plasma position and shape control such as the poloidal magnetic flux at control points on an isoflux scheme  ~\cite{CCS} . The CCS method allows a selection up to 19 geometrical points for dexcribing the LCFS and its input parameters are the current in the PF coils, the measurements in the magnetic field and flux sensors and the plasma current. The output signals from the CCS reconstruction method are the magnetic fluxes at the X-point and at the selected geometrical points. 
