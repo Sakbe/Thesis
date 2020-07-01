@@ -77,6 +77,12 @@ H.~Anand, C.~Galperti, S.~Coda, B.~P. Duval, F.~Felici, T.~Blanken,
   its applications}.
 \newblock {\em Nuclear Fusion}, 57(5), 2017.
 
+\bibitem{NunoPhD}
+N.~Cruz.
+\newblock {\em {Digital Control System for Vertical Stability of the TCV
+  Plasma}}.
+\newblock PhD thesis, Universidade de Lisboa, 2014.
+
 \bibitem{Neto2010}
 A.~C. {Neto}, F.~{Sartori}, F.~{Piccolo}, R.~{Vitelli}, G.~{De Tommasi},
   L.~{Zabeo}, A.~{Barbalace}, H.~{Fernandes}, D.~F. {Valcarcel}, and A.~J.~N.
@@ -141,9 +147,9 @@ P.~J. Carvalho, B.~B. Carvalho, A.~Neto, R.~Coelho, H.~Fernandes, J.~Sousa,
 \newblock {\em Review of Scientific Instruments}, 79(10):1--4, 2008.
 
 \bibitem{SQA}
-Yash Gupta.
-\newblock {\em {Software Quality Assurance}}, volume~6.
-\newblock 1989.
+C.~Laporte and A.~April.
+\newblock {\em {Software Quality Assurance}}.
+\newblock IEEE PRESS, 2018.
 
 \bibitem{MARTe2}
 Andre~C. Neto, Filippo Sartori, Riccardo Vitelli, Llorenc Capella, Giuseppe
@@ -153,19 +159,19 @@ Andre~C. Neto, Filippo Sartori, Riccardo Vitelli, Llorenc Capella, Giuseppe
 \newblock In {\em 2016 IEEE-NPSS Real Time Conference, RT 2016}, 2016.
 
 \bibitem{MARTe2PMP}
-I.~Neto, A.~Herrero.
+A.~Neto and I.~Herror.
 \newblock {D4 MARTe Project Managment Plan}.
-\newblock {\em F4E Internal Document}, (July):1--4, 2018.
+\newblock Technical Report July, 2018.
 
 \bibitem{MARTe2Code}
-I.~{Neto, A. Herrero}.
+A.~Neto and I.~Herror.
 \newblock {D4 MARTe Coding Standard}.
-\newblock {\em F4E Internal Document}, (July):1--4, 2018.
+\newblock Technical Report July, 2018.
 
 \bibitem{MARTe2QAP}
-I.~{Neto, A. Herrero}.
+A.~Neto and I.~Herror.
 \newblock {MARTe Quality Assurance Plan}.
-\newblock {\em F4E Internal Document}, (July):1--4, 2018.
+\newblock Technical Report July, 2018.
 
 \bibitem{Shafranov1971}
 V.~D. Shafranov and V.~S. Mukhovatov.
