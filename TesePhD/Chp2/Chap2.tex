@@ -322,7 +322,6 @@ This subsection will discuss the pole-place method and the linear quadratic opti
 \smallskip
 
 Consider the system:
-
 \begin{align} 
 	\dot{x}(t)~=Ax(t)+Bu(t) 	\label{SS_eq}\\
 y(t)=Cx(t) \nonumber
@@ -336,7 +335,6 @@ where it is assumed that $D=0$. In state feedback, the input $u(t)$ is given by:
 \end{equation}
 
 as shown in figure~\ref{SS_schm}. Each feedback gain $k_i$ is a real constant.This is called the constant gain negative state feedback or in a simpler form \textit{state feedback}~\cite{Chen1999}. Substituting equation ~\ref{SS_eq} into ~\ref{u(t)} its obtained:
-
 \begin{align} 
 \dot{x}(t)~=(A-B~K)x(t)+Br(t) \label{SS_eq_feed} \\
 y(t)=Cx(t) \nonumber
@@ -355,7 +353,6 @@ The first control MIMO algorithm to be addressed  is the pole-placement method w
 \smallskip
 
 Let's consider the system given in equation ~\ref{SS_eq_feed} and the feedback control input from ~\ref{u(t)}, by substituting one on the other the closed-loop system is represented by the equation:
-
 \begin{equation}
 	\dot{x}(t)=(A-BK)x(t) + Br(t)	\quad ,
 \end{equation}
