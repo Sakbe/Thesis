@@ -104,7 +104,7 @@ full-state feedback control law from LQR, resulting in optimal sensor-based feed
 
 
 
-Given the transfer function $H(s)\frac{b(s)}{a(s)}$ the value of $s$ such that $b(s)=0$ are places where $H(s)$ is zero, and the corresponding $s$ locations are called zeros. The  concept of pole  was introduced in section ~\ref{MIMO_sec}.  A Pole-zeros map is a representation in the complex plain n of the poles and zeros location of a system, either is in open-loop or in closed-loop. Since the data-driven models and its controllers are discrete the pole stability is given in a different form as in the continues time case,  figure~\ref{PoleZeroMap} shows the stable location of discrete poles($|\lambda|=1$),  the locations of the zeros have no role in determining the system stability.\smallskip
+Given the transfer function $H(s)\frac{b(s)}{a(s)}$ the value of $s$ such that $b(s)=0$ are places where $H(s)$ is zero, and the corresponding $s$ locations are called zeros. The  concept of pole  was introduced in section ~\ref{MIMO_sec}.  A pole-zeros map is a representation in the complex plain n of the poles and zeros location of a system, either is in open-loop or in closed-loop. Since the data-driven models and its controllers are discrete the pole stability is given in a different form as in the continues time case,  figure~\ref{PoleZeroMap} shows the stable location of discrete poles($|\lambda|=1$),  the locations of the zeros have no role in determining the system stability.\smallskip
 
 
 
@@ -193,7 +193,7 @@ $\bullet$  The model for $I_p\approx~4kA$ in open-loop has one unstable pole for
 
 \section{Plasma current centroid position control results}
 
-This section presents the latest results from the real-time implementation of control algorithms in ISTTOK. The position set points are pre-programmed by the operator in the "Discharge configurator", in the plots presented in this section. The discharges are refereed as $Shot \#$ followed by the ISTTOK's database discharge number.\smallskip
+This section presents the latest results from the real-time implementation of control algorithms in ISTTOK. The position set points  in the plots presented on this section are pre-programmed by the operator in the "Discharge configurator" interface. The discharges are refereed as $Shot \#$ followed by the ISTTOK's database discharge number.\smallskip
 
 In the following plots vertical and horizontal plasma centroid position are compared when they are controlled by a set of 2 PID and by a LQR MIMO controller for different pre-programmed set points. Also the inputs response, vertical and horizontal PF coils currents, are shown and compared.\smallskip
 
