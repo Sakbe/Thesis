@@ -77,7 +77,7 @@ The JET (Joint European Torus) tokamak was the first machine where around 2005 a
 \smallskip
 
 
-The peculiarity of the XSC approach is that it permits to control a number of plasma shape descriptors that is greater than the number of available actuators, i.e. of PF Circuits, this  is basically tackled by using a singular value decomposition (SVD) to identify the principal directions of the algebraic mapping between coil currents and geometrical descriptors ~\cite{Albanese2005}. The XSC control relies on the PFC decoupling controller (more details can be found in~\cite[Section~4.4]{NCruz}), since it is assumed that each~PF coil can be treated as an independent single-input-single-output (SISO) channel whose dynamic response is modeled in the Laplace domain by
+The peculiarity of the XSC approach is that it, this  is basically tackled by using a singular value decomposition (SVD) to identify the principal directions of the algebraic mapping between coil currents and geometrical descriptors ~\cite{Albanese2005}. The XSC control relies on the PFC decoupling controller (more details can be found in~\cite[Section~4.4]{NCruz}), since it is assumed that each~PF coil can be treated as an independent single-input-single-output (SISO) channel whose dynamic response is modeled in the Laplace domain by
 \[
 I_{PF_i}(s) = \frac{I_{PF_{ref\,,i}}(s)}{1+s\tau_{PF}}\,,
 \]
@@ -137,7 +137,7 @@ where $\delta\Psi_s$ is the residual between the  LCFS flux and the control poin
 
 
 
-The coils voltage command values ($V_{coil-com}$) are calculated considering the mutual interactions between the PF coils an the plasma,the actual values of the PF coil currents, $I_p$ and the mutual inductances. On a real plasma experiment, the  mutual inductances between the plasma and the PF coils are unknown due to the difficulty of measuring them directly. Therefore, they are provided by the CCS method. The controller calculates command values of PF coils voltages according to the following equation:
+The coils voltage command values ($V_{coil-com}$) are calculated considering the mutual interactions between the PF coils an the plasma, the actual values of the PF coil currents, $I_p$ and the mutual inductances. On a real plasma experiment, the  mutual inductances between the plasma and the PF coils are unknown due to the difficulty of measuring them directly. Therefore, they are provided by the CCS method. The controller calculates command values of PF coils voltages according to the following equation:
 
 
 
