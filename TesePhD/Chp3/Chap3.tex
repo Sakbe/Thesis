@@ -113,7 +113,7 @@ For the development of this work both approaches of the XSC strategy were studie
 Along with the CREATE modeling tools presented on last section, which allow to compute the LCFS and to apply model-based design to compute the XSC, a reconstruction code and controller provided by the QST team were implemented, tested and compared. This section will briefly describe these two methods and its limitations.  
 
 \subsection{Cauchy Condition Surface (CCS) reconstruction  method }
-The QST Cauchy Condition Surface (CCS) method for the reconstruction of the magnetic last closed flux surface (LCFS) calculates controlled variables for plasma position and shape control such as the poloidal magnetic flux at control points on an isoflux scheme  ~\cite{CCS} . The CCS method allows a selection up to 19 geometrical points for describing the LCFS and its input parameters are the current in the PF coils, the measurements in the magnetic field and flux sensors and the plasma current. The output signals from the CCS reconstruction method are the magnetic fluxes at the X-point and at the selected geometrical points. 
+The QST Cauchy Condition Surface (CCS) method for the reconstruction of the magnetic last closed flux surface (LCFS) calculates controlled variables for plasma position and shape control such as the poloidal magnetic flux at control points on an isoflux scheme  ~\cite{CCS} . The CCS method allows a selection up to 19 geometrical points for describing the LCFS and its input parameters are the currents in the PF coils, the measurements in the magnetic field and flux sensors and the plasma current. The output signals from the CCS reconstruction method are the magnetic fluxes at the X-point and at the selected geometrical points. 
 
 \begin{figure}
 	\centering
@@ -435,7 +435,7 @@ Figure~\ref{XpointFluxes} shows the time traces comparing the flux at the X-poin
 		\caption{ X-point flux compared to the control points fluxes using the QST controller.
 			\label{XpointVScntrlpointsFBC} }
 	\end{subfigure}
-\caption{Comparison between the flux at the X-point and the fluxes in the 8 control points reconstructed by the CCS method, when a Minor disruption is applaied at t=20 ~s using the XSC and the QST controller. It should be notice that QST control has a faster performance to reach the steady-state and less error. } \label{XpointFluxes}
+\caption{Comparison between the flux at the X-point and the fluxes in the 8 control points reconstructed by the CCS method, when a Minor disruption is applied at t=20 ~s using the XSC and the QST controller. It should be notice that QST control has a faster performance to reach the steady-state and less error. } \label{XpointFluxes}
 \end{figure}
 
 
