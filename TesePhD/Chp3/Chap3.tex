@@ -92,7 +92,7 @@ which, at steady-state, implies~ $\delta Y(s) = C \delta I_{PF_{ref}}(s)$.
 
 If the number of controlled plasma shape descriptors~$n_G$ is such that~$n_G~>~n_{PF}$, the XSC computes the additional current references as
 \begin{equation}\label{equation:XSC_new}
-\delta I_{PF_{ref}}=C^\dag\delta Y\,.
+\delta I_{PF_{ref}}(s)=C^\dag\delta Y(s)\,.
 \end{equation}
 where the matrix~$C^\dag$ denotes the pseudo-inverse of~$C$\footnote{$C$ ~ is the output matrix from the state-space linearized CREATE model for JT-60SA.} that can be computed via the singular value decomposition (SVD). As a result, the XSC algorithm minimizes the following steady-state performance index
 \begin{equation}\label{equation:XSCcost}
