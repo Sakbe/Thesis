@@ -83,6 +83,19 @@ N.~Cruz.
   Plasma}}.
 \newblock PhD thesis, Universidade de Lisboa, 2014.
 
+\bibitem{ASDEX2014}
+W.~Treutterer, R.~Cole, K.~L{\"{u}}ddecke, G.~Neu, C.~Rapson, G.~Raupp,
+  D.~Zasche, and T.~Zehetbauer.
+\newblock {ASDEX upgrade discharge control system - A real-time plasma control
+  framework}.
+\newblock {\em Fusion Engineering and Design}, 89(3):146--154, 2014.
+
+\bibitem{ASDEX2011}
+W.~Treutterer, K.~Behler, A.~Buhler, R.~Cole, L.~Giannone, A.~Kagarmanov,
+  K.~L{\"{u}}ddecke, G.~Neu, G.~Raupp, M.reich, D.~Zasche, and T.~Zehetbauer.
+\newblock {Integrated operation of diagnostic and control systems}.
+\newblock {\em Fusion Engineering and Design}, 86(6-8):465--470, 2011.
+
 \bibitem{Neto2010}
 A.~C. {Neto}, F.~{Sartori}, F.~{Piccolo}, R.~{Vitelli}, G.~{De Tommasi},
   L.~{Zabeo}, A.~{Barbalace}, H.~{Fernandes}, D.~F. {Valcarcel}, and A.~J.~N.
@@ -348,6 +361,14 @@ E.~{de~la~Luna} et~al.
 \newblock {Recent Results on High-Triangularity H-Mode Studies in JET-ILW}.
 \newblock In {\em 26th IAEA Fusion Energy Conference}, Kyoto, Japan, October
   2016.
+
+\bibitem{EAST2020}
+R.~Ambrosino, A.~Castaldo, G.~{De Tommasi}, Z.~P. Luo, Y.~Huang, A.~Mele,
+  A.~Pironti, Y.~H. Wang, and B.~J. Xiao.
+\newblock {Model-based MIMO isoflux plasma shape control at the EAST tokamak:
+  Experimental results}.
+\newblock {\em CCTA 2020 - 4th IEEE Conference on Control Technology and
+  Applications}, pages 770--775, 2020.
 
 \bibitem{Ambrosino:TCST2008}
 G.~Ambrosino et~al.

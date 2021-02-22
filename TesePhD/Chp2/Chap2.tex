@@ -1,4 +1,4 @@
-\chapter{Plasma Magnetic Control}
+\chapter{Plasma  Control}
 \label{Chap2}
 
 This chapter summarizes some of the architectures for the Plasma Control Systems (PCS) existing in several tokamaks focused on the  Multi-threaded Application Real-Time executor (MARTe) framework.  The last part of this chapter addresses some basic concepts on state-space representation, linear dynamic systems and different feedback control techniques which will be widely used on the description of the carried out work showed on next chapters. 
@@ -39,8 +39,25 @@ The TCV\footnote{The Tokamak \'a configuration variable (TCV) is  a medium size 
 	\caption{\label{TCVcontrol} TCV SCD. Real-time network nodes connection. The nodes configurations 	are shown together with the typical diagnostic and actuator systems to which they are connected  ~\cite{TCVcntrl1}. This figure is missing the vertical stabilization controller that uses  Digital Signal Processors (DSP) system due to the higher control cycle speed of 5$~ \mu~s$ ~\cite{NunoPhD}. }
 \end{figure}
 
+\subsection{ASDEX Discharge Control System (DCS)}
+
+The implemented control system existing on the ASDEX Upgrade  tokamak, the DCS  based on a modular software framework, supplies the functionality of  real-time diagnostic integration,  multivariable feedback schemes, actuator management,  monitoring and pulse supervision ~\cite{ASDEX2014}.\smallskip
+
+
+ To distribute and parallelise the working load, part of the reconstructed  physical quantities are not computed by DCS but directly by real-time enabled digital diagnostic systems ~\cite{ASDEX2011}.  The DCS offers a user environment in the form of application processes (AP) holding the algorithmic part of control embedded in a framework infrastructure. Making use of the  polymorphic features of C++ the DCS  implements all infrastructure functions in base classes for the blocks, signals and other core component. The main components in DCS can be divided in function elements in the form of processes and DcsObjects, as well as data elements represented by signals, signal groups and parameters.  The hardware deployment of the DCS basically consists of a single-core 1 GHz PC with VxWorks operating system  and a multi-core 3.33 GHz PC running Concurrent Linux ~\cite{ASDEX2014}. Figure ~\ref{ASDEXcontrol} depicts the DCS control system function overview.  The blue boxes indicate the  sensor data sampling and measurement pre-processing, on magenta the control algorithms, the actuators on the red boxes and on the white boxes the references for the actuators and the segment scheduler which allows to select alternative sequences. 
+ 
+ \begin{figure}[htbp]
+ 	\centering
+ 	\includegraphics[width=0.75\textwidth]{Chp2/DCS_IPP.png}
+ 	\caption{DCS control system function overview. The blue boxes indicate the  sensor data sampling and measurement pre-processing, on magenta the control algorithms, the actuators on the red boxes and on the white boxes the references for the actuators and the segment scheduler which allows to select alternative sequences.   ~\cite{ASDEX2014}. \label{ASDEXcontrol}  }
+ \end{figure}
+
 \section{MARTe framework}
-Regardless the nature of a real-time system, the design of it is usually related to the specific requirements it has, commonly this implies to have customized hardware and software which causes a lack in modularity and portability. When systems become bigger is convenient to provide a common library containing shareable functionalities and which also allows for modular implementations. In order to deal with this the MARTe framework was designed about a decade ago. MARTe was developed in order to standardize general real-time control systems for the execution of control algorithms and is based on a multiplatform $C^{++}$ library ~\cite{Neto2010}.  Previous implementations for a  software framework similar to MARTe were developed some years before for the JET tokamak. JETRT was a software framework used to develop real-time control and data acquisition systems which laid the foundation for current MARTe framework ~\cite{JETRT}. MARTe is currently used in several tokamaks such as JET, FTU, COMPASS and ISTTOK. 
+
+Regardless the nature of a real-time system, the design of it is usually related to the specific requirements it has, commonly this implies to have customized hardware and software which causes a lack in modularity and portability. When systems become bigger is convenient to provide a common library containing shareable functionalities and which also allows for modular implementations. In order to deal with this the MARTe framework was designed about a decade ago. MARTe was developed in order to standardize general real-time control systems for the execution of control algorithms and is based on a multiplatform $C^{++}$ library ~\cite{Neto2010},~\cite{JETRT} .  Previous implementations for a  software framework similar to MARTe were developed some years before for the JET tokamak. JETRT was a software framework used to develop real-time control and data acquisition systems which laid the foundation for current MARTe framework ~\cite{JETRT}. MARTe is currently used in several tokamaks such as JET, FTU, COMPASS and ISTTOK. 
+
+  
+
 
 \subsection{MARTe architecture }
 The unitary MARTe component is the Generic Application Module (GAM), each of the C++ programmed GAMs usually performs an specific task of the control system. The collection of interconnecting GAMs builds MARTe  \cite{Neto2011}. The GAMs  have an entry point to receive data driven configuration and a set of input and output channels to interface with other GAMs. The Dynamic Data Buffer (DDB) is a generic memory data bus where each GAM receives and produces data using DDB named channels. Usually each GAM is associated with a special function of the system like processing data of a specific diagnostic or perform some  control algorithm. MARTe hardware data interface and synchronization for inputs and outputs is performed using a special GAM called IOGAM. Figure ~\ref{GAMs} shows and xample of a set of GAMs connected to the DDB. Timing and hardware GAMs provide the I/O interface to the exterior, whereas a generic waveform GAM inputs the reference for a PID controller. Finally, the output is sent to a DAC and the data is stored for analysis by a collection GAM.  It should be noticed that the reference generation and the controller GAM are not aware of the changes in the data providers and data consumers.
