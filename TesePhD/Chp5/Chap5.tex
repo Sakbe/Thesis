@@ -308,6 +308,17 @@ Figure~\ref{564_559} and  ~\ref{341_342} show the time traces of the vertical an
 	
 \end{center}
 
+\section{Remarks on ISTTOK experimental work}
+\begin{enumerate}
+	\item With the implementation of the multi-filament model for the real-time reconstruction of the plasma centroid position, apart from  having a reliably measurement, the plasma current inversions are successfully accomplished, something that was barely happening when having the Langmuir probes for the centroid position reconstruction.\smallskip
+	
+	\item The implementation of the LQR optimal controller and Kalman filters were possible thanks to the data-driven state-space model retrieving.\smallskip
+	
+	\item In general the LQR controller steers the centroid position faster to the given set-points and with less overshoot than the case for the PID controllers, while it requests a noticeable smaller current from the PF coils power supplies during the transient and in steady-state also.
+	
+\end{enumerate}
+
+
 %
 %\begin{center}
 %	\begin{longtable}{||c| c| c| c|c||} 
