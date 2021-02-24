@@ -1,0 +1,110 @@
+Report from
+Prof. Jodo Manuel Rendeiro Cardoso
+Department of Physics
+University of Coimbra
+3004-516 Coimbra
+Portugal
+
+On the thesis entitled
+Tokamak Magnetic Control Simulation: Applications for JT-60SA and ISTTOK Operation
+submitted by
+Lilia Doménica Corona Rivera
+
+Obtention of PhD Degree in Technological physical engineering from the
+Universidade de Lisboa and the Universita Degli Studi di Padova
+
+The candidate Lilia Domenica Rivera proposes several methodologies to address the problem of magnetic control
+on two distinct tokamak machines in the context of fusion energy technology development. Her studies were
+focused on simulations for the magnetic control which is a very important task to accomplish plasma control and
+achieve a stable operation of these devices. The devices addressed in this study are substantially distinct in
+architecture, size and operation made. The candidate address both using different toals and methodologies. The
+two devices are studied in two different chapters where simulation results from the proposed algorithms are
+separately studied. The overall result is not clear on how these two approaches are (or not) related and a synthesis
+subsection would have been relevant to strengthen the thesis underline and detach it from a report like document.
+The presented document is globally quite complete and well written though. The candidate can successfully transmit
+her ideas and has a clear vision of her contribution for the overall development effort on these technologies.
+
+The structure of the thesis is globally adequate. Some minor adjustments could be made to improve readability and
+a few more to correct some frequent typos that still subsist in the present form of the document. A list of these
+typos can be provided to produce either an Errata or a final corrected version of the document. However, these
+minor typos do not compromise the work or its public discussion.
+
+A few remarks can be made on the missing elements of the document, or those that could use a clarification.
+
+A brief introduction with the current stage of fusion devices developments would be advisable in the beginning of
+the Introduction chapter.
+
+ The candidate starts by introducing the plasma control problem on the first page of the
+first chapter. A preamble with the fusion device’s architecture and working principle could have been included here.
+
+This would be impartant to understand how the extent the two studied fusion devices relate, for example.
+
+On chapter 2 the candidate introduces the problem of plasma magnetic control and presents the tools required for
+the implementation of the study. The chapter is globally sound and correct. 
+
+Perhaps a missing link here would be the real-time definition in the context of the fusion devices along with its basic requirements and conditions. 
+This is an important issue when timing of actuators is involved as seems to be the case. 
+
+A timing structure of the control loop would provide a clearer picture.
+
+ Another aspect that is the just mildly addressed relates to the importance of the implementation programming language on the overall system control throughput. This fact is briefly mentioned (p.18) but considering that this work may have future developments, it would be interesting to go a little 
+deeper on this subject. 
+
+As a side note, the subsection 2.1.2 has a slanted French title that may refer to a specific implementation
+of distributed control system, which is not clear. 
+
+Also on chapter 2 a more comprehensive state of the art could have been produced namely for the 2 types of devices analyzed but generically for fusion devices. This would ease the context positioning of the work for third parties and future works. 
+
+Finally, on this chapter, would be interesting to include a section on the tools used to evaluate the performance of the solutions implemented. 
+What were the criteria to validate a control loop (type and parameters) and how to compare between themselves.
+
+
+Chapter 3 is generally clear and well presented. A few minor remarks could be made on the uniformity of the
+nomenclature used. 
+
+For example, equation (3.4) is an example of some imprecision by mixing finite and infinitesimal terms. When presenting the disturbances scenarios, the 
+focus should be put on the scenario term for the physics modelling used, rather than terming them disturbance 1, 2 and 3. It’s not very informative to use these terms and perhaps would be easier to understand the following results if they would be addressed as “minor disruption
+scenario” or alike, for instance.
+
+
+Chapter 4 and 5 are well documented and strongly supported by long term research at several levels. 
+
+There are some extensions of text that require a revision since the density of typos and language errors is too high (for example
+paragraph atter equation 4.3 p.69).
+
+ It’s not entirely clear why the chosen set-points were the ones presented and how that affects the system performance. A more systematic analysis of these items could be more informative and help to draw conclusions on the applicability of the studied algorithms.
+
+Finally, the candidate presents her conclusions and contribution to the scientific community. Concerning the
+conclusions, a very summarized section is presented.
+
+ It would be more interesting to include a more detailed comparative analysis and not just 3 or 4 paragraphs for each of the chapters. 
+
+This evidences that the work is closer to a very good report and less a formal thesis. 
+
+The 3 published works as first author validate the research activities and with the surplus of being presented in 3 different scientific journals (section 6.3.1).
+
+Nevertheless, the work in its current form is sound and an important contribution to the field and | consider that it
+should be presented as is to support the public defense of the candidate’s work.
+
+Coimbra, December 28, 2020
+
+Assinado por: JOAO MANUEL RENDEIRO
+CARDOSO
+
+Num. de Identificagao: 81100085920
+
+Data: 2020.12.28 19:33:12400'00'
+
+CARTAO DE CIDADAO
+eee
+
+Joao Manuel Rendeiro Cardoso
+Assistant Professor
+Department de Physics, University of Coimbra
+
+INSTITUTA STIPERINR TEC TON
+
+Mica BE ke eMIACay EE soe roy
+Bor epteain am A. 1 AS RO2D
+Ruboca__ Pons. Cc .
+

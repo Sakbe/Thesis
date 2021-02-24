@@ -4,7 +4,7 @@ The current chapter is completely  focused on the magnetic control for  the JT-6
 
 \section{Machine description}
 
-JT-60SA is a superconductive tokamak located at one of the facilities from the National Institutes for Quantum and Radiological Science and Technology (QST)  at  Naka, Japan whose principal purpose is  the contribution to early realization of fusion energy by supporting the exploitation and resolving key physics for the ITER reactor.  JT-60SA construction has been successfully completed by the end of March 2020 and its first plasma is expected for late 2020. Figure ~\ref{JT60schm} shows the overall general configuration and the most remarkable elements of the machine. The JT-60SA  vacuum chamber will have a major radius of 2.96~ m and a Minor radius of 1.18~ m with an overall plasma volume of 132~ $m^3$ ~\cite{Spears2014} . JT-60SA will become the largest tokamak ever built so far. Appendix ~\ref{JT60_append} contains a set of photos depicting the assembling of some of the JT-60SA components and its overall look during 2018 and 2019. 
+JT-60SA is a superconductive tokamak located at one of the facilities from the National Institutes for Quantum and Radiological Science and Technology (QST)  at  Naka, Japan whose principal purpose is  the contribution to early realization of fusion energy by supporting the exploitation and resolving key physics for the ITER reactor.  JT-60SA construction has been successfully completed by the end of March 2020 and its first plasma is expected for late 2020. Figure ~\ref{JT60schm} shows the overall general configuration and the most remarkable elements of the machine. The JT-60SA  vacuum chamber will have a major radius of 2.96~ m and a Minor radius of 1.18~ m with an overall plasma volume of 132~ $m^3$ ~\cite{Spears2014}. JT-60SA will become the largest tokamak ever built so far. Appendix ~\ref{JT60_append} contains a set of photos depicting the assembling of some of the JT-60SA components and its overall look during 2018 and 2019. 
 \smallskip
 
 \begin{figure}[h]
@@ -44,7 +44,7 @@ JT-60SA shall be capable of investigating different design scenarios. As referee
 
 
 
-This chapter will address two different approaches for the LCFS reconstruction along  with different plasma current, shape and position controllers for JT-60SA in order to achieve and maintain the desired operational scenario given the plasma equilibrium in the SOF while the performance of the controllers is compared .
+This chapter will address two different approaches for the LCFS reconstruction along  with different plasma current, shape and position controllers for JT-60SA in order to achieve and maintain the desired operational scenario given the plasma equilibrium in the SOF while the performance of the controllers is compared.
 
 
 
@@ -115,7 +115,7 @@ For the development of this work both approaches of the XSC strategy were studie
 Along with the CREATE modeling tools presented on last section, which allow to compute the LCFS and to apply model-based design to compute the XSC, a reconstruction code and controller provided by the QST team were implemented, tested and compared. This section will briefly describe these two methods and its limitations.  
 
 \subsection{Cauchy Condition Surface (CCS) reconstruction  method }
-The QST Cauchy Condition Surface (CCS) method for the reconstruction of the magnetic last closed flux surface (LCFS) calculates controlled variables for plasma position and shape control such as the poloidal magnetic flux at control points on an isoflux scheme  ~\cite{CCS} . The CCS method allows a selection up to 19 geometrical points for describing the LCFS and its input parameters are the currents in the PF coils, the measurements in the magnetic field and flux sensors and the plasma current. The output signals from the CCS reconstruction method are the magnetic fluxes at the X-point and at the selected geometrical points. 
+The QST Cauchy Condition Surface (CCS) method for the reconstruction of the magnetic last closed flux surface (LCFS) calculates controlled variables for plasma position and shape control such as the poloidal magnetic flux at control points on an isoflux scheme  ~\cite{CCS}. The CCS method allows a selection up to 19 geometrical points for describing the LCFS and its input parameters are the currents in the PF coils, the measurements in the magnetic field and flux sensors and the plasma current. The output signals from the CCS reconstruction method are the magnetic fluxes at the X-point and at the selected geometrical points. 
 
 \begin{figure}
 	\centering
@@ -384,7 +384,7 @@ Figure~\ref{compFBC_XSC_ss} compares the steady-state LCFS's for the same distur
 	\hspace{2 cm}
 				\begin{subfigure}[b]{0.32\textwidth}
 			\includegraphics[height=8.75cm] {Chp3/Results_iso/8_gaps_mnr_disrp_equilVsLCFS_FBC.eps}  
-			\caption{Comparison between the reference shape (i.e., the shape at the considered equilibrium) and the LCFS reconstructed by the CCS code at steady-state in the presence of a Minor disruption using the QST controller for the plasma shape and current and 8 control segments . 
+			\caption{Comparison between the reference shape (i.e., the shape at the considered equilibrium) and the LCFS reconstructed by the CCS code at steady-state in the presence of a Minor disruption using the QST controller for the plasma shape and current and 8 control segments. 
 				\label{FBS_isoflux_ss} }
 		\end{subfigure}
 		
@@ -467,7 +467,7 @@ In order to summarize all the results from the tested cases, tables~\ref{CCS_ura
 	\item Disturbance $\#2$ (Compound ELM ) results present the lesser flux RMSE values in comparison with the other two disturbances. See table~\ref{fluxRMSE_cmpELM_table}.
 	\item The simulations using the  QST controller present practically a flux RMSE equal to zero in steady-state for all disturbances while the XSC does not.
 	\item For all the scenarios  the vertical XSC X-point error is  at least $~\%30$ greater  than the radial position error, while for the QST control the vertical position error tends to be around $~\%50$ lesser than the radial position.
-	\item  As mentioned on the previous section and as it can be observe on the scheme in figure~\ref{JT60controlscheme}, the XSC isoflux approach also controls the X-point position, this is  noticeable for all the disturbances with 8 control points, where the vertical and horizontal position error values with the QST controller are at least ~$50 \%$ greater than the ones with the XSC .
+	\item  As mentioned on the previous section and as it can be observe on the scheme in figure~\ref{JT60controlscheme}, the XSC isoflux approach also controls the X-point position, this is  noticeable for all the disturbances with 8 control points, where the vertical and horizontal position error values with the QST controller are at least ~$50 \%$ greater than the ones with the XSC.
 	\item Despite the X-point control dynamics embedded on the XSC, for the 6 control points scenarios, the  radial X-point error positions are  similar between the XSC and the QST control simulations, and the vertical X-point error  using the XSC  is for all disturbances at least 10 times greater than the simulations with the QST controller.
 \end{enumerate}
 
@@ -506,7 +506,7 @@ In order to summarize all the results from the tested cases, tables~\ref{CCS_ura
 		8 points                                                              &18.58          & 21.95          & 18.96            & 29.82           &   49.16                      &     -46.52                     & 59.66                       &           -40.92              \\ \hline
 		19 points                                                             &2.62           & 12.84          & 2.375           & 20.51             & \cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} \\ \hline
 	\end{tabular}
-	\caption{X-point position steady state error for  JT-60SA scenario 2, SOF equilibrium in the presence of  Disturbance $\# 1$ at ~$t\sim 20 $~s . The XSC and  QST controller were used in different simulations for the shape control along  with two reconstruction methods for the LCFS. }
+	\caption{X-point position steady state error for  JT-60SA scenario 2, SOF equilibrium in the presence of  Disturbance $\# 1$ at ~$t\sim 20 $~s. The XSC and  QST controller were used in different simulations for the shape control along  with two reconstruction methods for the LCFS. }
 	\label{CCS_urano_Xpoint_error}
 \end{table}
 
@@ -544,7 +544,7 @@ In order to summarize all the results from the tested cases, tables~\ref{CCS_ura
 		8 points                                                              &15.72          & -8.41          & 16.61            & -3.098           &   50.18                     &     -43.25                     & 54.44                      &           -32.68             \\ \hline
 		19 points                                                             &-0.0007           & 0.0237          & -0.1916          & -4.69             & \cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} \\ \hline
 	\end{tabular}
-	\caption{X-point position steady state error for  JT-60SA scenario 2, SOF equilibrium in the presence of  Disturbance $\# 2$ (Compound ELM) at ~$t\sim 20 $~s . The XSC and  QST controller were used in different simulations for the shape control along  with two reconstruction methods for the LCFS. }
+	\caption{X-point position steady state error for  JT-60SA scenario 2, SOF equilibrium in the presence of  Disturbance $\# 2$ (Compound ELM) at ~$t\sim 20 $~s. The XSC and  QST controller were used in different simulations for the shape control along  with two reconstruction methods for the LCFS. }
 	\label{CCS_cmpELM_Xpoint_error}
 \end{table}
 
@@ -587,7 +587,7 @@ In order to summarize all the results from the tested cases, tables~\ref{CCS_ura
 		8 points                                                              &17.44           & 21.56          & 17.81            & 29.04           &   47.08                      &     -46.56                     & 57.61                       &           -41.42              \\ \hline
 		19 points                                                             &-5.54           & 16.78          & -4.42           & 24.41             & \cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} \\ \hline
 	\end{tabular}
-\caption{X-point position steady state error for  JT-60SA scenario 2, SOF equilibrium in the presence of  Disturbance $\# 3$ (Minor disruption) at ~$t\sim 20 $~s . The XSC and  QST controller were used in different simulations for the shape control along  with two reconstruction methods for the LCFS.  }
+\caption{X-point position steady state error for  JT-60SA scenario 2, SOF equilibrium in the presence of  Disturbance $\# 3$ (Minor disruption) at ~$t\sim 20 $~s. The XSC and  QST controller were used in different simulations for the shape control along  with two reconstruction methods for the LCFS.  }
 \label{CCS_mnr_Xpoint_error}
 \end{table}
 
