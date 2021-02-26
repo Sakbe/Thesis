@@ -152,7 +152,7 @@ The CREATE  codes (CREATE-L~\cite{Albanese:CREATEL} and CREATE-NL~\cite{Albanese
 
 \section{Control Techniques and State-Space models}
 
-This section will summarize  some systems dynamics and control  concepts which will be applied on the next chapters. Applying a feedback control loop to a system  brings a link between the output and input signals , this action corrects the error in between the system output and a desired set-point,  eventually  the objective  of any closed loop controller is to take and maintain  the output signal at a prescribed value. The reduction of the system error is merely one of the many important effects that feedback may have upon a system, that is the reason why this sections will deepen in several control techniques ~\cite[Chapter~1]{Golnaraghi2010}. This section will also delve into the state-space models concepts since it will be a recurrent representation  for several systems presented in next chapters.
+This section will summarize  some systems dynamics and control  concepts which will be applied on the next chapters. Applying a feedback control loop to a system  brings a link between the output and input signals, this action corrects the error in between the system output and a desired set-point,  eventually  the objective  of any closed loop controller is to take and maintain  the output signal at a prescribed value. The reduction of the system error is merely one of the many important effects that feedback may have upon a system, that is the reason why this sections will deepen in several control techniques ~\cite[Chapter~1]{Golnaraghi2010}. This section will also delve into the state-space models concepts since it will be a recurrent representation  for several systems presented in next chapters.
 
 \smallskip
 
@@ -382,7 +382,7 @@ Let's consider the system given in equation ~\ref{SS_eq_feed} and the feedback c
 	|sI-A+BK|=0 \quad.
 \end{equation}
 
- From the canonical representation of equation ~\ref{SS_eq} its obtained (~\cite[Chapter~10]{Golnaraghi2010} , ~\cite[Chapter~4]{Chen1999} ) :
+ From the canonical representation of equation ~\ref{SS_eq} its obtained (~\cite[Chapter~10]{Golnaraghi2010}, ~\cite[Chapter~4]{Chen1999} ) :
  \begin{align}
  A=\begin{bmatrix}
  0& 1& 0 & \cdots & 0\\
@@ -509,7 +509,7 @@ A_d=e^{AT}\qquad B_d=\left(\int_{0}^{T} e^{A\tau}d\tau\right)B \qquad C_d=C \qqu
 
 \subsubsection{Discrete state-space model identification}
 \label{Disc_SS_ident}
-For system identification purposes it is often desirable to use parametric models, i.e. , a set of models is described by a number of real-valued parameters collected in a parameter  vector $\theta\in \mathbb{R}^d$ to be determined. A particular model is then represented by a value of the d-dimensional unknown parameters vector $\theta$ ~\cite[Chapter~2]{McKelvey1995}. Let's write the state-space model structure considering the discrete disturbances $w[k]$ in the form:
+For system identification purposes it is often desirable to use parametric models, i.e., a set of models is described by a number of real-valued parameters collected in a parameter  vector $\theta\in \mathbb{R}^d$ to be determined. A particular model is then represented by a value of the d-dimensional unknown parameters vector $\theta$ ~\cite[Chapter~2]{McKelvey1995}. Let's write the state-space model structure considering the discrete disturbances $w[k]$ in the form:
 
 \begin{equation}
 \mathcal{M}:\quad

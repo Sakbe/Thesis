@@ -34,8 +34,7 @@ A few remarks can be made on the missing elements of the document, or those that
 A brief introduction with the current stage of fusion devices developments would be advisable in the beginning of
 the Introduction chapter.
 
- The candidate starts by introducing the plasma control problem on the first page of the
-first chapter. A preamble with the fusion device’s architecture and working principle could have been included here.
+ The candidate starts by introducing the plasma control problem on the first page of the first chapter. A preamble with the fusion device’s architecture and working principle could have been included here.
 
 This would be impartant to understand how the extent the two studied fusion devices relate, for example.
 
