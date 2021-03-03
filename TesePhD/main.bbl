@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 
 \bibitem{Freidberg2007}
 Jeffrey~P. Freidberg.
@@ -9,6 +9,11 @@ Jeffrey~P. Freidberg.
 Yuntao Song, Weiyue Wu, and Shijun Du.
 \newblock {\em {Tokamak engineering mechanics}}.
 \newblock Springer, Mechanical Engineering Series, 2014.
+
+\bibitem{Wesson2004}
+J.~A. Wesson.
+\newblock {\em {Tokamaks}}.
+\newblock Oxford University Press, Oxford, UK, 3 edition, 2004.
 
 \bibitem{McCracken2005}
 Garry McCracken and Peter Stott.
@@ -37,6 +42,28 @@ J.~B. Lister, Y.~Martin, Centre~De Researchers, Ecole Polytechnique,
 \newblock {The Control of Modern Tokamaks}.
 \newblock In {\em International Conference on Accelerator and Large
   Experimental Physics Control Systems}, Trieste, Italy, 1999.
+
+\bibitem{Choi2018}
+W.~Choi, R.~J. {La Haye}, M.~J. Lanctot, K.~E.J. Olofsson, E.~J. Strait,
+  R.~Sweeney, and F.~A. Volpe.
+\newblock {Feedforward and feedback control of locked mode phase and rotation
+  in DIII-D with application to modulated ECCD experiments}.
+\newblock {\em Nuclear Fusion}, 58, 2018.
+
+\bibitem{Felici2014}
+F.~Felici, H.~B. Le, J.~I. Paley, B.~P. Duval, S.~Coda, J.~M. Moret,
+  A.~Bortolon, L.~Federspiel, T.~P. Goodman, G.~Hommen, A.~Karpushov, F.~Piras,
+  A.~Pitzschke, J.~Romero, G.~Sevillano, O.~Sauter, and W.~Vijvers.
+\newblock {Development of real-time plasma analysis and control algorithms for
+  the TCV tokamak using Simulink}.
+\newblock {\em Fusion Engineering and Design}, 89(3):165--176, 2014.
+
+\bibitem{Valcarcel2010}
+D.~F. Valc{\'{a}}rcel, A.~S. Duarte, A.~Neto, I.~S. Carvalho, B.~B. Carvalho,
+  H.~Fernandes, J.~Sousa, F.~Sartori, F.~Janky, P.~Cahyna, M.~Hron, and
+  R.~P{\'{a}}nek.
+\newblock {Real-time software for the COMPASS tokamak plasma control}.
+\newblock {\em Fusion Engineering and Design}, 85(3-4):470--473, 2010.
 
 \bibitem{PCS_2018}
 A.~Kavin { A. Belyakov}.
