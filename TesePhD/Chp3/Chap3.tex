@@ -4,7 +4,7 @@ The current chapter is completely  focused on the magnetic control for  the JT-6
 
 \section{Machine description}
 
-JT-60SA is a superconductive tokamak located at one of the facilities from the National Institutes for Quantum and Radiological Science and Technology (QST)  at  Naka, Japan whose principal purpose is  the contribution to early realization of fusion energy by supporting the exploitation and resolving key physics for the ITER reactor.  JT-60SA construction has been successfully completed by the end of March 2020 and its first plasma is expected for late 2020. Figure ~\ref{JT60schm} shows the overall general configuration and the most remarkable elements of the machine. The JT-60SA  vacuum chamber will have a major radius of 2.96~ m and a Minor radius of 1.18~ m with an overall plasma volume of 132~ $m^3$ ~\cite{Spears2014}. JT-60SA will become the largest tokamak ever built so far. Appendix ~\ref{JT60_append} contains a set of photos depicting the assembling of some of the JT-60SA components and its overall look during 2018 and 2019. 
+JT-60SA is a superconductive tokamak located at one of the facilities from the National Institutes for Quantum and Radiological Science and Technology (QST)  at  Naka, Japan, whose principal purpose is  the contribution to early realization of fusion energy by supporting the exploitation and resolving key physics for the ITER reactor.  JT-60SA construction has been successfully completed by the end of March 2020 and its first plasma is expected for late 2020. Figure ~\ref{JT60schm} shows the overall general configuration and the most remarkable elements of the machine. The JT-60SA  vacuum chamber will have a major radius of 2.96~ m and a Minor radius of 1.18~ m with an overall plasma volume of 132~ $m^3$ ~\cite{Spears2014}. JT-60SA will become the largest tokamak ever built so far. Appendix ~\ref{JT60_append} contains a set of photos depicting the assembling of some of the JT-60SA components and its overall look during 2018 and 2019. 
 \smallskip
 
 \begin{figure}[h]
@@ -19,7 +19,7 @@ The Poloidal Field (PF) coils shown in JT-60SA cross-section from figure ~\ref{J
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.55\textwidth]{Chp3/JT60Coils.png}
+	\includegraphics[width=0.75\textwidth]{Chp3/JT60Coils.png}
 
 	\caption{	\label{JT60coils}JT-60SA poloidal cross-section and layout of the Poloidal Field coils system ~\cite{NCruz}.}
 \end{figure}
@@ -31,13 +31,13 @@ JT-60SA shall be capable of investigating different design scenarios. As referee
 	\centering
 	\includegraphics[width=0.99\textwidth]{Chp3/scenario2SnapShots.png}
 	
-	\caption{LCFS Equilibria corresponding to the different Scenario~2 snapshots:  X-point formation (XPF), Start of Heating(SOH), the Start of Flattop (SOF), End of Flattop (EOF), End Of Cooling(EOC) and  End of Currents in the PF coils (EOC) ~\cite{JT60SA:PID}. \label{Scen2}}
+	\caption{LCFS Equilibria corresponding to the different Scenario~2 snapshots:  X-point formation (XPF), Start of Heating (SOH), the Start of Flattop (SOF), End of Flattop (EOF), End Of Cooling (EOC) and  End of Currents in the PF coils (EOC) ~\cite{JT60SA:PID}. \label{Scen2}}
 \end{figure}
 
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.5\textwidth]{Chp3/scenario2_SOF.eps}
+	\includegraphics[width=0.6\textwidth]{Chp3/scenario2_SOF.eps}
 	
 	\caption{Poloidal cross-section of the JT-60SA plasma at the Start of the Flat Top~(SOF) for reference Scenario~2. At SOF, the nominal plasma current is ~5.5~MA, while the nominal values for poloidal beta~$\beta_p$ and internal inductance~$l_i$ are~0.53 and~0.85, respectively.	\label{SOF}}
 \end{figure}
@@ -50,7 +50,7 @@ This chapter will address two different approaches for the LCFS reconstruction a
 
 \section{CREATE magnetic modeling tools}
 
-CREATE-NL  is a finite elements method (FEM\footnote{It is well known that many physical and engineering systems are expressed in terms of partial differential equations which cannot be solved via analytical methods. One of the most recurrent techniques is numerical discretization to approximate the solution of the partial differential equations, the FEM is commonly used to solve these approximations in two or three space variables, in this particular case for a numerical solution of the well-known Grad-Shafranov equation. }) solver implemented on \textsc{Matlab}. It deals with the free boundary dynamic plasma equilibrium problem i.e. the MHD (Magneto-Hydro-Dynamics) time evolution of 2D axisymmetric plasmas in tokamaks, including eddy currents in the passive structures, and feedback control laws for current, position and shape control ~\cite{Albanese:CREATENLnew}. CREATE-NL is an upgraded version of the CREATE-L code written in FORTRAN and validated in different tokamaks. Both CREATE-L and CREATE-NL produce linerized models of the plasma in the neighborhood of a certain equilibrium condition. CREATE-NL has more capabilities than CREATE-L due to the possibility of using different plasma profiles shapes,  introducing different outputs in a user friendly way and  running inverse equilibrium calculation~\cite{DeTommasi2007}. 
+CREATE-NL  is a finite elements method (FEM\footnote{It is well known that many physical and engineering systems are expressed in terms of partial differential equations which cannot be solved via analytical methods. One of the most recurrent techniques is numerical discretization to approximate the solution of the partial differential equations, the FEM is commonly used to solve these approximations in two or three space variables, in this particular case for a numerical solution of the well-known Grad-Shafranov equation. }) solver implemented on \textsc{Matlab}. It deals with the free boundary dynamic plasma equilibrium problem i.e. the MHD (Magneto-Hydro-Dynamics) time evolution of 2D axisymmetric plasmas in tokamaks, including eddy currents in the passive structures, and feedback control laws for current, position and shape control ~\cite{Albanese:CREATENLnew}. CREATE-NL is an upgraded version of the CREATE-L code written in FORTRAN and validated in different tokamaks. Both CREATE-L and CREATE-NL produce linearized models of the plasma in the neighborhood of a certain equilibrium condition. CREATE-NL has more capabilities than CREATE-L due to the possibility of using different plasma profiles shapes,  introducing different outputs in a user friendly way and  running inverse equilibrium calculation~\cite{DeTommasi2007}. 
 \smallskip
 
 Using the CREATE codes~\cite{Albanese:CREATEL,Albanese:CREATENLnew} it is possible to retrieve a linearized state-space model for a reference configuration that describes the plasma magnetic behavior around that equilibrium\footnote{Reference  ~\cite[Sec.~3]{NCruz} can be consulted for more details about the use of the CREATE equilibrium codes to retrieve plasma linearized models.}. It should be noted that CREATE-NL equilibrium solver has been validated on several tokamaks such as JET and EAST. A JT-60SA CREATE-NL electromagnetic linear model around the equilibrium from the Scenario~2-~SOF  for the plasma-circuit response has been used for  designing  the controller presented in next section. 
@@ -66,12 +66,12 @@ Using the CREATE codes~\cite{Albanese:CREATEL,Albanese:CREATENLnew} it is possib
 The JET (Joint European Torus) tokamak was the first machine where around 2005 a new model based plasma current and shape controller was set up and tested  with the existing active circuits and control hardware. The novelty controller was the eXtreme Shape Controller (XSC) and its aim was to improve  the performance of the, back then, present controller to allow the control of extremely shaped plasmas with higher values of elongation and triangularity ~\cite{Albanese2005}. More recently this control approach was utilized at TCV ~\cite{anand2017novel}. At JET, the XSC  enabled the control of high triangularity shapes with both strike points in the divertor corner, which has a large impact in the H-mode confinement in the case of the ITER-like wall at JET~\cite{de2016recent}, ~\cite{Albanese2005}.   The XSC approach has been recently validated at the EAST tokamak during the 2019-2020 campaigns where the proposed XSC controller proved to be effective in rejecting the disturbances induced  ~\cite{EAST2020}.
  \smallskip
  
- Usually the controlled shape geometrical descriptors are the distances between the plasma boundary and the vessel at some specific points. These plasma-wall distances are called gaps ~\cite{Ambrosino:TCST2008}. The gaps are segments that can be used to describe the shape of the plasma boundary. Being~$g_i$ the abscissa along the~$i$-th control segment, we assume that~$g_i=0$ at the first wall. \emph{Gap-based} plasma shape control is achieved by controlling to zero the difference $g_{i_{ref}}-g_i$ on a sufficiently large number of gaps, being~$g_{i_ref}$ the value of the abscissa on the~$i$-th control segment for the reference shape. Figure ~\ref{figure:85_gaps} shows a poloidal cross-section of JT-60SA together with a set of 85 gaps used for the assessment of the plasma shape control.
+ Usually the controlled shape geometrical descriptors are the distances between the plasma boundary and the vessel at some specific points. These plasma-wall distances are called gaps ~\cite{Ambrosino:TCST2008}. The gaps are segments that can be used to describe the shape of the plasma boundary. Being~$g_i$ the abscissa along the~$i$-th control segment, we assume that~$g_i=0$ at the first wall. \emph{Gap-based} plasma shape control is achieved by controlling to zero the difference $g_{i_{ref}}-g_i$ on a sufficiently large number of gaps, being~$g_{i_{ref}}$ the value of the abscissa on the~$i$-th control segment for the reference shape. Figure ~\ref{figure:85_gaps} shows a poloidal cross-section of JT-60SA together with a set of 85 gaps used for the assessment of the plasma shape control.
  \smallskip
  
  \begin{figure}[h]
  	\begin{center}
- 		\includegraphics[width=0.45\textwidth]{Chp3/85_gaps_2.eps}
+ 		\includegraphics[width=0.55\textwidth]{Chp3/85_gaps_2.eps}
  	\end{center}\caption{Poloidal cross-section of the JT-60SA plasma at the Start of the Flat Top~(SOF) for reference Scenario~2. At SOF, the nominal plasma current is~5.5~MA, while the nominal values for poloidal beta~$\beta_p$ and internal inductance~$l_i$ are~0.53 and~0.85, respectively. In this figure the~85 gaps used to assess the plasma shape controller performance are shown.}\label{figure:85_gaps}
  \end{figure}
  
@@ -104,7 +104,7 @@ J_{XSC} = \lim_{t\to +
 where~$\delta Y_{ref}$ are constant references for the geometrical descriptors. When the SVD of the~$C$ matrix is used to minimize~\eqref{equation:XSCcost}, it may happen that some singular values (depending on the plasma configuration) are one order of magnitude smaller than the others. This fact implies that minimizing the performance index~\eqref{equation:XSCcost} retaining all the singular values results in a large control effort at the steady-state, that is a large request on some PFC currents which have only a minor effect on the plasma shape. In order to minimize also the control effort, the additional references~\eqref{equation:XSC_new} are generated by using only the~$\bar{n}<n_{PF}$ linear combinations of PF currents which are related to the largest singular values of the~$C$ matrix. This is achieved by using only the~$\bar{n}$ singular values when computing the pseudo-inverse~$C^\dag$.
 \smallskip
 
-Moreover, the PFC current variations given by~\eqref{equation:XSC_new} are summed to the scenario currents and sent to the PFC decoupling controller as references to be tracked. It is worth to remark here that the dynamnic behavior of the XSC is improved by adding a set of proportional-integral-derivative (PID) controllers on each PF coil channel (see~\cite{Ariola:XSC} for a complete description of the XSC control scheme).
+Moreover, the PFC current variations given by~\eqref{equation:XSC_new} are summed to the scenario currents and sent to the PFC decoupling controller as references to be tracked. It is worth to remark here that the dynamic behavior of the XSC is improved by adding a set of proportional-integral-derivative (PID) controllers on each PF coil channel (see~\cite{Ariola:XSC} for a complete description of the XSC control scheme).
 \smallskip
 
 For the development of this work both approaches of the XSC strategy were studied and simulated for a different number of control points: isoflux and gap-based controllers. In addition, a second controller developed by the QST team was implemented in the simulations, the features of this controller will be detailed in the next section.
@@ -119,7 +119,7 @@ The QST Cauchy Condition Surface (CCS) method for the reconstruction of the magn
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.6\textwidth]{Chp3/sensors_plots_newDirection.eps}
+	\includegraphics[width=0.8\textwidth]{Chp3/sensors_plots_newDirection.eps}
 	\caption{SOF equilibrium reconstructed from CREATE-NL and the CCS code along with the  magnetic field and flux sensors locations.	\label{JT60sensors} }
 \end{figure}
 
@@ -127,7 +127,7 @@ The QST Cauchy Condition Surface (CCS) method for the reconstruction of the magn
 \subsection{QST magnetic controller }
 
 
-The QST magnetic controller  uses the PF coils signals to control the plasma current $I_p$, position and shape, and the FPPC coils signals for plasma position control. The PF coil currents $I_{PF-ref}$ are calculated using an isoflux control approach using proportional-integral(PI) feedback controllers   ~\cite{FBC}. The controller calculates $I_{PF-ref}$ reducing $\delta\Psi_s$ and $\delta\Psi_x$ according to:
+The QST magnetic controller  uses the PF coils signals to control the plasma current $I_p$, position and shape, and the FPPC coils signals for plasma position control. The PF coil currents $I_{PF-ref}$ are calculated using an isoflux control approach using proportional-integral (PI) feedback controllers   ~\cite{FBC}. The controller calculates $I_{PF-ref}$ reducing $\delta\Psi_s$ and $\delta\Psi_x$ according to:
 
 
 
@@ -139,7 +139,7 @@ where $\delta\Psi_s$ is the residual between the  LCFS flux and the control poin
 
 
 
-The coils voltage command values ($V_{coil-com}$) are calculated considering the mutual interactions between the PF coils an the plasma, the actual values of the PF coil currents, $I_p$ and the mutual inductances. On a real plasma experiment, the  mutual inductances between the plasma and the PF coils are unknown due to the difficulty of measuring them directly. Therefore, they are provided by the CCS method. The controller calculates command values of PF coils voltages according to the following equation:
+The coils voltage command values ($V_{coil-com}$) are calculated considering the mutual interactions between the PF coils and the plasma, the actual values of the PF coil currents, $I_p$ and the mutual inductances. On a real plasma experiment, the  mutual inductances between the plasma and the PF coils are unknown due to the difficulty of measuring them directly. Therefore, they are provided by the CCS method. The controller calculates command values of PF coils voltages according to the following equation:
 
 
 
@@ -150,7 +150,7 @@ V_{com}=G_{vt}\left[M_{coil}\frac{(I_{coil\_ref}-I_{coil\_meas})}{\Delta t}+ \fr
 where $M_{coil} $ represents the mutual inductances between the coils, $I_{coil\_meas}  $ are the measured coil currents,  $M_{plasma\_now}$ and $ M_{plasma\_ bfr}$ are the mutual inductances between the plasma and the coils at the current and previous time step,$  I_{p\_now} $  and  $ I_{p\_bfr} $ are the measured plasma current at the current and previous time step  and $ G_{vt} $ is the voltage transformer gain.
 \smallskip
 
-On the other hand,the in-vessel FPPC coils currents $ (I_{FPPC\_ref})  $ are calculated with an isoflux control approach which uses proportional-differential (PD) feedback control. In order to reduce  the residual between the LCFS flux and two specified control points ( $ \Psi_{SF} $)  the controller calculates  $ (I_{FPPC\_ref})  $ using:
+On the other hand, the in-vessel FPPC coils currents $ (I_{FPPC\_ref})  $ are calculated with an isoflux control approach which uses proportional-differential (PD) feedback control. In order to reduce  the residual between the LCFS flux and two specified control points ( $ \Psi_{SF} $)  the controller calculates  $ (I_{FPPC\_ref})  $ using:
 
 \begin{equation}
 I_{FPPC\_ref}(t+\Delta t)=I_{FPPC}(t_0)+ M^\dagger_{FPPC}\left[G_{FP}\delta \Psi_{SF}(t) + G_{FD}\frac{d}{dt}\delta\Psi_{SF}(t) \right] ~,
@@ -163,7 +163,7 @@ are the respective PD feedback gains for the plasma position control. $ G_{FP} $
 
 \section{Simulation results}	
 
- The simulations for  the JT-60SA CREATE-NL model,the XSC, the CCS reconstruction method and the QST controller  were programmed on top of  \textsc{Matlab} and \textsc{Simulink} blocks. This  section will address in detail the outcome of the control simulations using a linearized equilibrium given by CREATE-NL for JT-60SA, Scenario~2 at the SOF time frame. The first results to be presented correspond to a  gap-based controller  using the XSC with different tests cases.
+ The simulations for  the JT-60SA CREATE-NL model, the XSC, the CCS reconstruction method and the QST controller  were programmed on top of  \textsc{Matlab} and \textsc{Simulink} blocks. This  section will address in detail the outcome of the control simulations using a linearized equilibrium given by CREATE-NL for JT-60SA, Scenario~2 at the SOF time frame. The first results to be presented correspond to a  gap-based controller  using the XSC with different tests cases.
  \smallskip
  
  
@@ -209,7 +209,7 @@ As far as plasma magnetic control is concerned, the JT-60SA linearized model dis
 %	\item \textbf{Disturbance \#2} refers to the behaviour of ~$\beta_p$  due to the presence of an Edge-Localized Mode~(ELM). As described in~\cite[p.~34]{JT60SA:PID}, during the flattop an instantaneous drop in~$\beta_p$ of ~$0.05~\beta_{p_{eq}}$ is followed by and exponential recovery with a time constant of~0.05~s with a frequency 10~Hz. Note that for this disturbance~$l_i$ does not change.% remains as~$l_{i_{eq}}$, these behaviors are shown in Fig.~\ref{figure:ELM}.
 	
 	\item \textbf{Disturbance \#2} refers to the behaviour of~$\beta_p$ and~$l_i$ when a compound ELM\footnote{A compound ELM is commonly referred as multiple clearly distinguishable
-	crash events causing large energy losses \cite{Meyer2017}.} appears during the flattop.  As described in~\cite[p.~34]{JT60SA:PID}, an instantaneous drop   in~$\beta_p$ of ~$0.05~\beta_{p_{eq}}$ is followed by and exponential recovery with a time constant of~0.05~s with a frequency 10~Hz, $l_i$ is described by an instantaneous drop of~$0.06~(l_{i_{eq}}-0.5)$ followed by and exponential recovery with a time constant of 0.05~s with a frequency 10~Hz. The time traces for~$\beta_p$ and~$l_i$ are described in figure~\ref{cmpELM}.
+	crash events causing large energy losses \cite{Meyer2017}.} appears during the flattop.  As described in~\cite[p.~34]{JT60SA:PID}, an instantaneous drop   in~$\beta_p$ of ~$0.05~\beta_{p_{eq}}$ is followed by an exponential recovery with a time constant of~0.05~s with a frequency 10~Hz, $l_i$ is described by an instantaneous drop of~$0.06~(l_{i_{eq}}-0.5)$ followed by an exponential recovery with a time constant of 0.05~s with a frequency 10~Hz. The time traces for~$\beta_p$ and~$l_i$ are described in figure~\ref{cmpELM}.
 	
 
 
@@ -220,20 +220,20 @@ As far as plasma magnetic control is concerned, the JT-60SA linearized model dis
 
 	\begin{figure}[h]
 	\centering
-	\includegraphics[width=0.5\textwidth]{Chp3/Dist_1_Urano.eps}
+	\includegraphics[width=0.65\textwidth]{Chp3/Dist_1_Urano.eps}
 	\caption{Poloidal beta and internal inductance time traces for Disturbance~\#1 that models the expected disturbance soon after the plasma current flattop is reached (at~$t\sim 20 $~s), according to what has been considered in~\cite{urano2015development}.	\label{Urano} }
 \end{figure}
 
 	\begin{figure}[h]
 	\centering
-	\includegraphics[width=0.5\textwidth]{Chp3/Dist_2_cmp_ELM.eps}
+	\includegraphics[width=0.65\textwidth]{Chp3/Dist_2_cmp_ELM.eps}
 	\caption{Poloidal beta and internal inductance time traces for Disturbance~\#2 that models the behavior of these variables due to the presence of a compound ELM as defined in~\cite{JT60SA:PID}.	\label{cmpELM} }
 \end{figure}
 
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.5\textwidth]{Chp3/Dist_3_minor.eps}
+	\includegraphics[width=0.65\textwidth]{Chp3/Dist_3_minor.eps}
 	\caption{Poloidal beta and internal inductance time traces for Disturbance~\#3 that models the behavior of these variables due to the presence of a Minor disruption as defined in~\cite{JT60SA:PID}.	\label{MnrDisrp} }
 \end{figure}
 
@@ -290,7 +290,7 @@ It turns out that, according to this preliminary analysis, the rejection of the 
 
 \begin{figure}[!thb]
 	\begin{center}
-		\includegraphics[width=8.5cm]{Chp3/RMSE_ELM.eps}
+		\includegraphics[width=9cm]{Chp3/RMSE_ELM.eps}
 	\end{center}\caption{RMSE time traces for the different gaps selections in the presence of Disturbance~\#2 (compound ELMs). For all the considered cases, the RMSE is computed on the set of~85 gaps shown in figure ~\ref{figure:85_gaps}.}\label{figure:RMSE_ELM}
 \end{figure}
 
@@ -310,20 +310,20 @@ It should be also noticed that the~6 gaps option considered in~\cite{Miyata:2014
 
 \begin{figure}[h]
 	\centering
-	\begin{subfigure}[b]{0.32\textwidth}
-		\includegraphics[width=\textwidth] {Chp3/Ref_20gaps_8gaps_minor_2.eps}  
-		\caption{Poloidal cross-section of JT-60SA.\label{figure:minor_big} }
+	\begin{subfigure}[b]{0.33\textwidth}
+		\includegraphics[trim={1.0cm 0cm 1.0cm 0cm},clip,height=10.0cm] {Chp3/Ref_20gaps_8gaps_minor_2.eps}  
+		\caption{Poloidal cross-section of JT-60SA. Comparison between reference  and controlling 8 and 20 gaps.\label{figure:minor_big} }
 	\end{subfigure}
-	~
+	\hspace{2cm}
 	%	~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
 	%(or a blank line to force the subfigure onto a new line)
-	\begin{subfigure}[b]{0.32\textwidth}
-		\includegraphics[width=\textwidth]{Chp3/zoom_Ref_20gaps_8gaps_minor_top_2.eps} 
-		\caption{Detailed view of the plasma top region.\label{figure:minor_top}}
+	\begin{subfigure}[b]{0.33\textwidth}
+		\includegraphics[trim={0.8cm 0cm 1.25cm 0cm},clip,height=10.0cm]{Chp3/zoom_Ref_20gaps_8gaps_minor_top_2.eps} 
+		\caption{Detailed view of the plasma top region. Noticeable difference in relation to the reference. \label{figure:minor_top}}
 	\end{subfigure}
 	~
-	\begin{subfigure}[b]{0.32\textwidth}
-		\includegraphics[width=\textwidth]{Chp3/zoom_Ref_20gaps_8gaps_minor_strike_2.eps} 
+	\begin{subfigure}[b]{0.33\textwidth}
+		\includegraphics[trim={1.0cm 0cm 1.25cm 0cm},clip,height=10.0cm]{Chp3/zoom_Ref_20gaps_8gaps_minor_strike_2.eps} 
 		\caption{Detailed view of the plasma divertor region. \label{figure:minor_strike}}
 	\end{subfigure}
 	
@@ -341,29 +341,29 @@ It should be also noticed that the~6 gaps option considered in~\cite{Miyata:2014
 
 \subsection{Isoflux XSC and QST controller }
 
-As mentioned in the previous section, simulations with an isoflux control approach using the CREATE linearized model and the XSC along with the QST reconstruction and control tools were carried out. The same three disturbances (see figure~\ref{Urano},~\ref{cmpELM} and ~\ref{MnrDisrp}) and JT-60SA equilibrium scenario from the simulations in last section were used for these test cases for a different number of control points.  Due to the vast extension of results, this section will focus on analyze the case for 8 control points in the presence of a Minor disruption with the XSC and the QST controller. Figure~\ref{all_points} shows the control points configurations used for carrying out the simulations with an isoflux shape controller as well as the LCFS's reconstructed by CREATE and  the CCS method at steady-state in the presence of a Minor disruption(Disturbance~ $\#3$). 
+As mentioned in the previous section, simulations with an isoflux control approach using the CREATE linearized model and the XSC along with the QST reconstruction and control tools were carried out. The same three disturbances (see figure~\ref{Urano},~\ref{cmpELM} and ~\ref{MnrDisrp}) and JT-60SA equilibrium scenario from the simulations in last section were used for these test cases for a different number of control points.  Due to the vast extension of results, this section will focus on analyzing the case for 8 control points in the presence of a Minor disruption with the XSC and the QST controller. Figure~\ref{all_points} shows the control points configurations used for carrying out the simulations with an isoflux shape controller as well as the LCFS's reconstructed by CREATE and  the CCS method at steady-state in the presence of a Minor disruption(Disturbance~ $\#3$). 
 \smallskip
 
-For the control and reconstruction points configurations a selection of 19 equally spaced descriptors was used (see figure~\ref{19gaps_isoflux}),  along with the previous 8 and 6 points configurations used for the gap controller. As mentioned before, the CCS method allows a maximum of 19 points for the fluxes reconstruction and the QST controller a maximum of 10 control points,due to these  limitations the 19 segments scenario is only  feasible using the XSC.
+For the control and reconstruction points configurations a selection of 19 equally spaced descriptors was used (see figure~\ref{19gaps_isoflux}),  along with the previous 8 and 6 points configurations used for the gap controller. As mentioned before, the CCS method allows a maximum of 19 points for the fluxes reconstruction and the QST controller a maximum of 10 control points, due to these  limitations the 19 segments scenario is only  feasible using the XSC.
 \smallskip
 
 
 \begin{figure}[h]
 	\centering
 	\begin{subfigure}[b]{0.32\textwidth}
-		\includegraphics[trim={2.3cm 0 2.3cm 0},clip,height=5.75cm] {Chp3/19_gaps_mnr_disrp_SS_comp.eps}  
+		\includegraphics[trim={2.3cm 0cm 2.3cm 0.8cm},clip,height=6.30cm] {Chp3/19_gaps_mnr_disrp_SS_comp.eps}  
 		\caption{The~19 control segments used to assess the performance of plasma shape controller.\label{19gaps_isoflux} }
 	\end{subfigure}
 	~
 	%	~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
 	%(or a blank line to force the subfigure onto a new line)
 	\begin{subfigure}[b]{0.32\textwidth}
-		\includegraphics[trim={2.3cm 0 2.3cm 0},clip,height=5.75cm]{Chp3/8_gaps_mnr_disrp_SS_comp.eps} 
+		\includegraphics[trim={2.3cm 0cm 2.3cm 0.8cm},clip,height=6.30cm]{Chp3/8_gaps_mnr_disrp_SS_comp.eps} 
 		\caption{  The~8 control segments by the isoflux controller proposed in~\cite{miyata2013study}. \label{8gaps_isoflux}}
 	\end{subfigure}
 	~
 	\begin{subfigure}[b]{0.32\textwidth}
-		\includegraphics [trim={2.3cm 0 2.3cm 0},clip,height=5.75cm]  {Chp3/6_gaps_mnr_disrp_SS_comp.eps} 
+		\includegraphics [trim={2.3cm 0cm 2.3cm 0.8cm},clip,height=6.30cm]  {Chp3/6_gaps_mnr_disrp_SS_comp.eps} 
 		\caption{  The~6 control segments used by the isoflux controller proposed in~\cite{Miyata:2014}.    \label{6gaps_isoflux}}
 	\end{subfigure}
 
@@ -376,14 +376,14 @@ Figure~\ref{compFBC_XSC_ss} compares the steady-state LCFS's for the same distur
 
 \begin{figure}[h]
 	\centering
-		\begin{subfigure}[b]{0.32\textwidth}
-		\includegraphics[height=8.75cm] {Chp3/Results_iso/8_gaps_mnr_disrp_equilVsLCFS.eps}  
+		\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[trim={3cm 0cm 0cm 0cm},clip,height=9.5cm] {Chp3/Results_iso/8_gaps_mnr_disrp_equilVsLCFS.eps}  
 		\caption{Comparison between the reference shape (i.e., the shape at the considered equilibrium) and the LCFS reconstructed by the  CCS code at steady-state in the presence of the Minor disruption  using the XSC for the plasma shape, when 8 control segments are considered.
 		\label{XSC_isoflux_ss} }
 			\end{subfigure}
 	\hspace{2 cm}
-				\begin{subfigure}[b]{0.32\textwidth}
-			\includegraphics[height=8.75cm] {Chp3/Results_iso/8_gaps_mnr_disrp_equilVsLCFS_FBC.eps}  
+				\begin{subfigure}[b]{0.4\textwidth}
+			\includegraphics[trim={3cm 0cm 0cm 0cm},clip,height=9.5cm] {Chp3/Results_iso/8_gaps_mnr_disrp_equilVsLCFS_FBC.eps}  
 			\caption{Comparison between the reference shape (i.e., the shape at the considered equilibrium) and the LCFS reconstructed by the CCS code at steady-state in the presence of a Minor disruption using the QST controller for the plasma shape and current and 8 control segments. 
 				\label{FBS_isoflux_ss} }
 		\end{subfigure}
@@ -397,15 +397,15 @@ Figure~\ref{compFBC_XSC_ss} compares the steady-state LCFS's for the same distur
 
 \begin{figure}[h]
 	\centering
-	\begin{subfigure}[b]{0.32\textwidth}
-		\includegraphics[height=8.75cm] {Chp3/Results_iso/8_gaps_mnr_disrp_20.244s.eps}  
+	\begin{subfigure}[b]{0.37\textwidth}
+		\includegraphics[trim={3cm 0cm 0cm 0cm},clip,height=9.750cm] {Chp3/Results_iso/8_gaps_mnr_disrp_20.244s.eps}  
 		\caption{ Maximum deviation in plasma shape at t=20.244~s using the XSC for plasma shape.
 			\label{XSC_20s} }
 	\end{subfigure}
 	%\quad 	\quad \quad \quad \quad
 	\hspace{2 cm}
-	\begin{subfigure}[b]{0.32\textwidth}
-		\includegraphics[height=8.75cm] {Chp3/Results_iso/8_gaps_mnr_disrp_20065sFBC.eps}  
+	\begin{subfigure}[b]{0.37\textwidth}
+		\includegraphics[trim={3cm 0cm 0cm 0cm},clip,height=9.750cm] {Chp3/Results_iso/8_gaps_mnr_disrp_20065sFBC.eps}  
 		\caption{Maximum deviation in plasma shape at t=20.065~s using the QST control for plasma shape.
 			\label{FBC_20s} }
 	\end{subfigure}
@@ -425,15 +425,15 @@ Figure~\ref{XpointFluxes} shows the time traces comparing the flux at the X-poin
 
 \begin{figure}[h]
 	\centering
-	\begin{subfigure}[b]{0.32\textwidth}
-		\includegraphics[height=6cm] {Chp3/Results_iso/8_gaps_XpointVSpoinsFlux_mnr_dsrp.eps}  
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[height=6.5cm] {Chp3/Results_iso/8_gaps_XpointVSpoinsFlux_mnr_dsrp.eps}  
 		\caption{ X-point flux compared to the control points fluxes using the XSC.
 			\label{XpointVScntrlpointsXSC} }
 	\end{subfigure}
 	%\quad 	\quad \quad \quad \quad \qquad
 	\hspace{2 cm}
-	\begin{subfigure}[b]{0.32\textwidth}
-		\includegraphics[height=6cm] {Chp3/Results_iso/8_gaps_Xpoint_flux_comparFBC.eps}  
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[height=6.5cm] {Chp3/Results_iso/8_gaps_Xpoint_flux_comparFBC.eps}  
 		\caption{ X-point flux compared to the control points fluxes using the QST controller.
 			\label{XpointVScntrlpointsFBC} }
 	\end{subfigure}
@@ -443,15 +443,15 @@ Figure~\ref{XpointFluxes} shows the time traces comparing the flux at the X-poin
 
 \begin{figure}[h]
 	\centering
-	\begin{subfigure}[b]{0.32\textwidth}
-		\includegraphics[height=5.5cm] {Chp3/Results_iso/8_gaps_fluxesError_mnr_dsrp.eps}  
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[trim={0cm 0cm 1.0cm 0cm},clip,height=6.50cm] {Chp3/Results_iso/8_gaps_fluxesError_mnr_dsrp.eps}  
 		\caption{Flux errors using the XSC for 8 control points in the presence of a Minor disruption starting at $t=~20$.
 			\label{FluxErrorXSC} }
 	\end{subfigure}
 	%\quad 	\quad \quad \quad \quad \quad
-	\hspace{1 cm }
-	\begin{subfigure}[b]{0.32\textwidth}
-		\includegraphics[height=5.5cm] {Chp3/Results_iso/8_gaps_fluxesError_mnr_dsrpFBC.eps}  
+	\hspace{2.2 cm }
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[trim={0cm 0cm 1.0cm 0cm},clip,height=6.50cm] {Chp3/Results_iso/8_gaps_fluxesError_mnr_dsrpFBC.eps}  
 		\caption{ Flux errors using the QST controller for 8 control points in the presence of a Minor disruption starting  at $t=~20$.
 			\label{FluxErroFBC} }
 	\end{subfigure}
@@ -467,7 +467,7 @@ In order to summarize all the results from the tested cases, tables~\ref{CCS_ura
 	\item Disturbance $\#2$ (Compound ELM ) results present the lesser flux RMSE values in comparison with the other two disturbances. See table~\ref{fluxRMSE_cmpELM_table}.
 	\item The simulations using the  QST controller present practically a flux RMSE equal to zero in steady-state for all disturbances while the XSC does not.
 	\item For all the scenarios  the vertical XSC X-point error is  at least $~\%30$ greater  than the radial position error, while for the QST control the vertical position error tends to be around $~\%50$ lesser than the radial position.
-	\item  As mentioned on the previous section and as it can be observe on the scheme in figure~\ref{JT60controlscheme}, the XSC isoflux approach also controls the X-point position, this is  noticeable for all the disturbances with 8 control points, where the vertical and horizontal position error values with the QST controller are at least ~$50 \%$ greater than the ones with the XSC.
+	\item  As mentioned on the previous section and as it can be observed on the scheme in figure~\ref{JT60controlscheme}, the XSC isoflux approach also controls the X-point position, this is  noticeable for all the disturbances with 8 control points, where the vertical and horizontal position error values with the QST controller are at least ~$50 \%$ greater than the ones with the XSC.
 	\item Despite the X-point control dynamics embedded on the XSC, for the 6 control points scenarios, the  radial X-point error positions are  similar between the XSC and the QST control simulations, and the vertical X-point error  using the XSC  is for all disturbances at least 10 times greater than the simulations with the QST controller.
 \end{enumerate}
 
@@ -598,13 +598,13 @@ In order to summarize all the results from the tested cases, tables~\ref{CCS_ura
 
 \subsection{Shape reference change}
 
-A change in the plasma shape for the Scenario~2 - SOF equilibrium has been also considered. In this test scenario closed-loop simulations  with the  CCS reconstruction method and the isoflux XSC for the plasma shape were performed.   Since the configuration with 8 control points seems to be for all cases the one most challenging due to the error values in steady-state obtained on the past subsection, these selection of control points was used for this simulation. The transition time from the initial shape to the target was set equal to 1.5 ~s.  Figure ~\ref{sqzd} shows the equilibrium LCFS (Scenario~2 -SOF), the desired target shape and the LCFS at steady state reconstructed by the CCS method. It can be noticed that the controller is able to track the required shape with negligible error at steady-state, taking $\sim 6~ s$ to reach to it. Figure~\ref{FluxesSqzd} shows the time traces for the fluxes at the 8 control points compared with the X-point flux and figure~\ref{errorFluxessqzd} shows the correspondent control flux errors.
+A change in the plasma shape for the Scenario~2 - SOF equilibrium has been also considered. In this test scenario closed-loop simulations  with the  CCS reconstruction method and the isoflux XSC for the plasma shape were performed.   Since the configuration with 8 control points seems to be for all cases the one most challenging due to the error values in steady-state obtained on the past subsection, this selection of 8 control points was used for the current shape reference simulation. The transition time from the initial shape to the target was set equal to 1.5 ~s.  Figure ~\ref{sqzd} shows the equilibrium LCFS (Scenario~2 -SOF), the desired target shape and the LCFS at steady state reconstructed by the CCS method. It can be noticed that the controller is able to track the required shape with negligible error at steady-state, taking $\sim 6~ s$ to reach to it. Figure~\ref{FluxesSqzd} shows the time traces for the fluxes at the 8 control points compared with the X-point flux and figure~\ref{errorFluxessqzd} shows the correspondent control flux errors.
 
 
 
 \begin{figure}
 	\begin{center}
-		\includegraphics[width=0.7\textwidth]{Chp3/8gaps_LCFScompar_sqzd.eps}
+		\includegraphics[width=0.9\textwidth]{Chp3/8gaps_LCFScompar_sqzd.eps}
 	\end{center}	
 \caption{XSC isoflux response to a change of shape request. The dashed black shape is the starting shape, while the red one is the target shape. The magenta dashed shape is the LCFS at steady state.  }
 	\label{sqzd}
@@ -614,16 +614,16 @@ A change in the plasma shape for the Scenario~2 - SOF equilibrium has been also 
 
 \begin{figure}
 	\begin{center}
-		\includegraphics[width=0.6\textwidth]{Chp3/8_gaosXpointVSpoinsFlux_sqzd.eps}
+		\includegraphics[width=0.75\textwidth]{Chp3/8_gaosXpointVSpoinsFlux_sqzd.eps}
 	\end{center}	
-	\caption{Comparison between the flux at the X-point and the fluxes a }
+	\caption{Comparison between the flux at the X-point and the fluxes at the selected control points. }
 	\label{FluxesSqzd}
 \end{figure}
 
 
 \begin{figure}
 	\begin{center}
-		\includegraphics[width=0.6\textwidth]{Chp3/8_gaps_fluxesError_sqzd.eps}
+		\includegraphics[width=0.75\textwidth]{Chp3/8_gaps_fluxesError_sqzd.eps}
 	\end{center}	
 	\caption{ Flux control error for the case of 8 control points for a change in the shape reference  between 20 and 21.5 $s $.}
 	\label{errorFluxessqzd}

@@ -16,14 +16,14 @@ Since ISTTOK is and AC tokamak during the transition from negative to positive, 
 
 \subsection{PID control implementation}
 
-Early tokamaks used sets of poloidal field coils symmetrically placed with respect to the tokamak equatorial plane to guarantee mutually independent vertical and horizontal movement of the plasma~\cite[Chapter~1]{PirontiBook}. For many years, ISTTOK control strategy was driven by the principle that an external vertical field  generates an horizontal force and an horizontal external field generates a vertical force due to the Lorentz force law, having thus two separate SISO controllers for the vertical and radial centroid position. The "PID" GAM is responsible for this function, it has two PID  controllers, concept deeply addressed in section ~\ref{PID_sec},   with pre-configuration gains, in addition they have a   anti-windup \footnote{The saturation of actuators or major set point changes are some  of the most frequent non-linearities in control applications and they can cause instabilities in the system, the undesired effect of these events is called windup and typically it produces undesired overshoots resulting from overreaction in the integrator of a PID controller ~\cite[Chapter~1]{Hippe2011}.} and correction for bumpless transfer by adjusting the integral action when the saturation limits are reached and  when the transition from manual to automatic control takes place since these events cause an uncontrolled increment in the integral term  ~\cite[Chapter~3]{Yu2011}, ~\cite{Vrancic1996}. \smallskip  
+Early tokamaks used sets of poloidal field coils symmetrically placed with respect to the tokamak equatorial plane to guarantee mutually independent vertical and horizontal movement of the plasma~\cite[Chapter~1]{PirontiBook}. For many years, ISTTOK control strategy was driven by the principle that an external vertical field  generates an horizontal force and an horizontal external field generates a vertical force due to the Lorentz force law, having thus two separate SISO controllers for the vertical and radial centroid position. The "PID" GAM is responsible for this function, it has two PID  controllers, concept deeply addressed in section ~\ref{PID_sec},   with pre-configuration gains, in addition they have a   anti-windup \footnote{The saturation of actuators or major set point changes are some  of the most frequent non-linearities in control applications and they can cause instabilities in the system, the undesired effect of these events is called windup and typically it produces undesired overshoots resulting from an overreaction in the integrator of a PID controller ~\cite[Chapter~1]{Hippe2011}.} and correction for bumpless transfer by adjusting the integral action when the saturation limits are reached and  when the transition from manual to automatic control takes place since these events cause an uncontrolled increment in the integral term  ~\cite[Chapter~3]{Yu2011}, ~\cite{Vrancic1996}. \smallskip  
 
 The PID equations are digitally implemented in the "PID" GAM as ~\cite[Chapter~1]{Yu2011}: 
 \begin{equation}
 	u[k]=K_p~e[k]+ K_i~T_s\sum_{i=1}^{k}e[i]+\frac{K_d}{T_s}(e[k]-e[k-1])
 \end{equation}
 
-where $u[k]$ is the controlled output signal, for ISTTOK it corresponds to the vertical and horizontal PF coils currents,$K_p,~K_d$ and $K_i$ are the PID gains and $e[k]$ is the error variable which in this case is the difference between the plasma centroid position (vertical or radial) and  a given set point programmed by the operator in the "Discharge configurator".  Since no theoretical decoupled model or SISO dynamics are established in ISTTOK the PID gains were selected empirically based in the performance of the controller with different selection of gains in several ISTTOK discharges.
+\noindent where $u[k]$ is the controlled output signal, for ISTTOK it corresponds to the vertical and horizontal PF coils currents,$K_p,~K_d$ and $K_i$ are the PID gains and $e[k]$ is the error variable which in this case is the difference between the plasma centroid position (vertical or radial) and  a given set point programmed by the operator in the "Discharge configurator".  Since no theoretical decoupled model or SISO dynamics are established in ISTTOK the PID gains were selected empirically based in the performance of the controller with different selection of gains in several ISTTOK discharges.
 
 \subsection{Data-driven state-space model retrieving }
 
@@ -64,7 +64,7 @@ Early efforts in finding a theoretical model for ISTTOK magnetic control were pe
 	\caption{ Model response for two $I_p~\approx -4~kA$ discharges. \label{SimResp_neg}}
 \end{figure}
 
-Since a tokamak is not a linear system, the modeling process was done using data sets where the centroid position was located in a certain region of values in order to approximate the estimated  model to an equilibrium region where a linear model approximation is valid. A local linearized model is typically evaluated in a  set of operating points that capture the key modes of operation. Linear controllers like PID  or LQR  are synthesized for the system in these points ensuring that some relevant performance specifications are met in the vicinity of the operating point in question ~\cite{Bendtsen2005}. The optimal number of states computationally retrieved was  10. The input and output vectors for ISTTOK models are defined as:
+Since a tokamak is not a linear system, the modeling process was done using data sets where the centroid position  was located in a certain region of values in order to approximate the estimated  model to an equilibrium region where a linear model approximation is valid. The set-points selection was based on the observed behaviour of the tokamak during the years, this means an observed region of the vessel where the plasma maintains without disrupting in the middle of the flat-top. Specifically for the  vertical position set-point it was always placed some millimeters away from the center of the chamber on the negative direction, this makes sense since  in general the vertical center of the 3 sets of PF coils has some negative offset. A local linearized model is typically evaluated in a  set of operating points that capture the key modes of operation. Linear controllers like PID  or LQR  are synthesized for the system in these points ensuring that some relevant performance specifications are met in the vicinity of the operating point in question ~\cite{Bendtsen2005}. The optimal number of states computationally retrieved was  10. The input and output vectors for ISTTOK models are defined as:
 \begin{equation}
 \begin{aligned}
 u^T=[R, z]\qquad, \\
@@ -76,17 +76,17 @@ y^T=[I_{vert},I_{hor}]\qquad .
 
 \subsection{Kalman filter implementation}
 
-After retrieving the state-space models for the plasma centroid position, the next goal is to implement a MIMO controller based on them. In order to reconstruct the states vector $x$ two Kalman filters were implemented, one for plasma current positive model and another for the negative model. The Kalman filter matrices were obtained  based on noise vectors from ISTTOK real data calculating  the covariance matrices from the signal vectors ~\cite{Mele2018}.  Figure ~\ref{Kalman_neg} and~\ref{Kalman_pos} correspond to the real-time Kalman filter reconstruction of the vertical and radial plasma centroid position and its comparison with the multi-filament reconstructed  position computed at the "Magnetics" GAM.\smallskip
+After retrieving the state-space models for the plasma centroid position, the next goal is to implement a MIMO controller based on them. In order to reconstruct the states vector  two Kalman filters were implemented, one for plasma current positive model and another for the negative model. The Kalman filter matrices were obtained  based on noise vectors from ISTTOK real data calculating  the covariance matrices from the signal vectors ~\cite{Mele2018}.  Figure ~\ref{Kalman_neg} and~\ref{Kalman_pos} correspond to the real-time Kalman filter reconstruction of the vertical and radial plasma centroid position and its comparison with the multi-filament reconstructed  position computed at the "Magnetics" GAM.\smallskip
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.85\textwidth]{Chp5/Kalman_comp_pos.eps}
+	\includegraphics[width=1.0\textwidth]{Chp5/Kalman_comp_pos.eps}
 	\caption{ Comparison of the real-time Kalman filter retrieved centroid position and the multi-filament reconstruction time trace for $I_p>0$.\label{Kalman_pos}}
 \end{figure}
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.85\textwidth]{Chp5/Kalman_comp_neg.eps}
+	\includegraphics[width=1.0\textwidth]{Chp5/Kalman_comp_neg.eps}
 	\caption{ Comparison of the real-time Kalman filter retrieved centroid position and the multi-filament reconstruction time trace for $I_p<0$\label{Kalman_neg}}
 \end{figure}
 
@@ -95,7 +95,7 @@ After retrieving the state-space models for the plasma centroid position, the ne
 
 
 The full-state estimate from the Kalman filter is generally used in conjunction with the
-full-state feedback control law from LQR, resulting in optimal sensor-based feedback. Combining the LQR full-state feedback with the Kalman filter full-state estimator results in the linear-quadratic Gaussian (LQG) controller ~\cite[Chapter~8]{DataDriven2019}. Under this principle the real-time reconstructed states are multiplied by the control LQR gain $K$ in order to take the  vertical and radial plasma centroid position to a certain set point, this process is computed in the "LQR" GAM. The weight matrices for the discrete LQR controller were empirical tuned in order to have a balance between a fast response and a not so energetically demanding input, several algorithms for a non-empirical calculation of the LQR matrices exist some of them propose a tuning based on experimental data with a gain matrix that can be iterative updated ~\cite[Chapter~9]{Franklin1998}, ~\cite{Trimpe2014}.
+full-state feedback control law from LQR, resulting in optimal sensor-based feedback. Combining the LQR full-state feedback with the Kalman filter full-state estimator results in the linear-quadratic Gaussian (LQG) controller ~\cite[Chapter~8]{DataDriven2019}. Under this principle the real-time reconstructed states are multiplied by the control LQR gain $K$ in order to take the  vertical and radial plasma centroid position to a certain set point, this process is computed in the "LQR" GAM. The weight matrices for the discrete LQR controller were empirical tuned in order to have a balance between a fast response and a not so energetically demanding input, several algorithms for a non-empirical calculation of the LQR matrices exist some of them propose a tuning based on experimental data with a gain matrix that can be iteratively updated ~\cite[Chapter~9]{Franklin1998}, ~\cite{Trimpe2014}.
 \smallskip
 
 
@@ -104,7 +104,7 @@ full-state feedback control law from LQR, resulting in optimal sensor-based feed
 
 
 
-Given the transfer function $H(s)\frac{b(s)}{a(s)}$ the value of $s$ such that $b(s)=0$ are places where $H(s)$ is zero, and the corresponding $s$ locations are called zeros. The  concept of pole  was introduced in section ~\ref{MIMO_sec}.  A pole-zeros map is a representation in the complex plain n of the poles and zeros location of a system, either is in open-loop or in closed-loop. Since the data-driven models and its controllers are discrete the pole stability is given in a different form as in the continues time case,  figure~\ref{PoleZeroMap} shows the stable location of discrete poles($|\lambda|=1$),  the locations of the zeros have no role in determining the system stability.\smallskip
+Given the transfer function $H(s)=\frac{b(s)}{a(s)}$ the value of $s$ such that $b(s)=0$ are places where $H(s)$ is zero, and the corresponding $s$ locations are called zeros. The  concept of pole  was introduced in section ~\ref{MIMO_sec}.  A pole-zeros map is a representation in the complex plain  of the poles and zeros location of a system, either  in open-loop or in closed-loop. Since the data-driven models and its controllers are discrete the pole stability is given in a different form as in the continues time case,  figure~\ref{PoleZeroMap} shows the stable location of discrete poles($|\lambda|=1$),  the locations of the zeros have no role in determining the system stability.\smallskip
 
 
 
@@ -112,7 +112,7 @@ Given the transfer function $H(s)\frac{b(s)}{a(s)}$ the value of $s$ such that $
 	\centering
 	\includegraphics[width=0.7\textwidth]{Chp5/PolesZerosMaps.png}
 	
-	\caption{ The matrix exponential defines a conformal map on the complex plane, mapping stable eigenvalues in the left half plane for continuous systems into eigenvalues inside the unit circle for discrete ~\cite[Chapter~8]{DataDriven2019}\label{PoleZeroMap}.}
+	\caption{ The matrix exponential defines a conformal map on the complex plane, mapping stable eigenvalues in the left half plane for continuous systems into eigenvalues inside the unit circle for discrete systems ~\cite[Chapter~8]{DataDriven2019}\label{PoleZeroMap}.}
 \end{figure}
 
 Pole-zero cancellation of stable poles will not cause any serious problem in the overall system except if the canceled pole is unstable. If a system has at least one pole or zero outside the unitary circumference the system is called Non-minimum phase (~\cite[Chapter~6]{Ogata2009},~\cite[Chapter~2]{Golnaraghi2010}). Non-minimum phase systems can show an inverse response or undershoot, which is an initial response in the opposite direction from the steady states. Figure ~\ref{nonmin} shows the time trace of the response to a unit step of a non-minimum phase system. 
@@ -205,14 +205,14 @@ Figure~\ref{564_559} and  ~\ref{341_342} show the time traces of the vertical an
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.9\textwidth]{Chp5/PIDvsMIMO_341_324_2.eps}
+	\includegraphics[width=1.1\textwidth]{Chp5/PIDvsMIMO_341_324_2.eps}
 	\caption{ Horizontal and vertical plasma centroid position during  $I_p\approx 4kA$  flat-tops, blue time trace corresponds to a PID feedback control and orange time trace to a LQR MIMO feedback control, the dashed black line shows the programmed set point. The green vertical line marks the time  when the  discharge Shot$\# 48324$ switches  from PID to MIMO LQR control.	\label{341_342}}
 \end{figure}
 
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.9\textwidth]{Chp5/PIDvsMIMO_564_559_2.eps}
+	\includegraphics[width=1.1\textwidth]{Chp5/PIDvsMIMO_564_559_2.eps}
 	\caption{ Horizontal and vertical plasma centroid position during  $I_p\approx 4kA$  flat-tops, blue time trace corresponds to a PID feedback control and orange time trace to a LQR MIMO feedback control, the dashed black line shows the programmed set point. \label{564_559}}
 \end{figure}
 
@@ -224,7 +224,7 @@ Figure~\ref{564_559} and  ~\ref{341_342} show the time traces of the vertical an
 
  \begin{figure}[h]
  	\centering
- 	\includegraphics[width=0.9\textwidth]{Chp5/PIDvsMIMO_341_324_curr_2.eps}
+ 	\includegraphics[width=1.1\textwidth]{Chp5/PIDvsMIMO_341_324_curr_2.eps}
  	\caption{ Vertical and Horizontal PF coils currents during  $I_p\approx -4kA$  flat-tops, blue time trace corresponds to a PID feedback control and orange time trace to a LQR MIMO feedback control. The green vertical line marks the time  when the  discharge Shot$\# 48324$ switches the control from PID to MIMO LQR. \label{341_342_curr}}
  \end{figure}
  
@@ -232,7 +232,7 @@ Figure~\ref{564_559} and  ~\ref{341_342} show the time traces of the vertical an
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.9\textwidth]{Chp5/PIDvsMIMO_564_559_curr_2.eps}
+	\includegraphics[width=1.1\textwidth]{Chp5/PIDvsMIMO_564_559_curr_2.eps}
 	\caption{Vertical and Horizontal PF coils currents during  $I_p\approx 4kA$  flat-tops, blue time trace corresponds to a PID feedback control and orange time trace to a LQR MIMO feedback control.\label{564_559curr}}
 \end{figure}
 

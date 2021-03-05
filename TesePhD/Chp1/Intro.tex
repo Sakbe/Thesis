@@ -9,7 +9,7 @@ The tokamak is now at days the most promising configuration for a future nuclear
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.8\textwidth]{Chp1/Tokamak_parts.png}
-	\caption{ ~\cite{McCracken2005} \label{Tkmk_parts}}
+	\caption{ Schematic view of a generic tokamak depicting the principal components  and the magnetic fields existing on it. ~\cite[Chapter~9]{McCracken2005} \label{Tkmk_parts}}
 \end{figure}
 
 \begin{enumerate}
@@ -22,7 +22,8 @@ The tokamak is now at days the most promising configuration for a future nuclear
 	
 \end{enumerate}
 
-The physics and concepts behind these elements which conform the tokamak will be addressed more deeply on this chapter and the next one. The current stage of some of the main actual fusion devices, operating or under construction,  is described on table ~\ref{Tokamak_table}, the principal characteristics of these devices are the plasma current, plasma duration, minor and major radius:
+The physics and concepts behind these elements which conform the tokamak will be addressed more deeply on this chapter and the next one. The current stage of some of the main actual fusion devices, operating or under construction,  is described on table ~\ref{Tokamak_table}, the principal characteristics of these devices are the plasma current, plasma duration, minor and major radius. On figure ~\ref{Tkmk_parts} an schematic view of a generic tokamak is shown.
+
 
 
 
@@ -33,15 +34,16 @@ The physics and concepts behind these elements which conform the tokamak will be
 		\rowcolor{color2}
 		\multicolumn{7}{|c|}{\textbf{Tokamak }}                                                                 \\ \hline
 		\rowcolor{color1}
-		Tokamak  & Country               & Status & \multicolumn{2}{c|}{Radiuses (R,a) m}   & Plasma current MA    & Pulse length s          \\ \hline
+		Tokamak  & Country               & Status & \multicolumn{2}{c|}{Radiuses (R,a) ~ m}   & Plasma current ~ MA    & Pulse length ~ s          \\ \hline
 		EAST                  & China               & Operating  since 2006              &  1.85& 0.45 & 	1.0  &  $\approx$ 1–1000\\ \hline
-		DIII-D                  & USA               & Operating since 1986                      & 	1.67 & 0.67 &  2.0  & $\approx$10 \\ \hline
+		 DIII-D                  & USA               & Operating since 1986                      & 	1.67 & 0.67 &  2.0  & $\approx$10 \\ \hline
+				ASDEX                  & Germany               & Operating since 1991                      & 	1.65 & 0.8 &  2.0  & $\approx$10 \\ \hline
 
 JET                 & UK               & Operating since 1984                & 2.96  & 1.25 & 4.8 & $\approx$10 \\ \hline
 JT60-SA                  & Japan              & 1st plasma\newline programmed for 2021                & $\approx$ 3.0 & $\approx$ 1.18 & 5.5  & $\approx$ 100 \\ \hline
 ITER                  & France               & Under construction                & $\approx$ 6.2 & $\approx$ 2.0 & 15 & $\approx$ 400  \\ \hline
 	\end{tabular}
-	\caption{ Main tokamaks characteristics summary.}
+	\caption{ Main tokamak characteristics summary.}
 	\label{Tokamak_table}
 \end{table}
 
@@ -65,7 +67,7 @@ Magnetic fields are needed to confine the hot plasma and keep it away from the m
 
 \section{Behind the plasma current}
 
-Considering the drift of guiding center of a charged partice in a simple toroidal field in cylindrical coordinates $(R,\varphi,z)$. The component of the magnetic field $B_\varphi$ is the toroidal field and it decreases in the form of 1/R outward. The magnetic lines of force are circles around z axis. Particles in this  torus run fast in the toroidal direction and drift slowly in the $z$ direction as shown in figure~\ref{TDrift}, this drift is called toroidal drift. As a consequence  using only a toroidal component of magnetic field is not sufficient for confining the plasma inside a toroidal device or  tokamak  since particles drift and therefore will cause a loss of confinement ~\cite[Chapter~3]{Miyamoto2011}.\smallskip
+Considering the drift of guiding center of a charged partice in a simple toroidal field in cylindrical coordinates $(R,\varphi,z)$. The component of the magnetic field $B_\varphi$ is the toroidal field and it decreases in the form of 1/R outward. The magnetic lines of force are circles around z axis. Particles in the  torus run fast in the toroidal direction and drift slowly in the $z$ direction as shown in figure~\ref{TDrift}, this  is called toroidal drift. As a consequence  using only a toroidal component of magnetic field is not sufficient for confining the plasma inside a toroidal device or  tokamak  since particles drift and therefore will cause a loss of confinement ~\cite[Chapter~3]{Miyamoto2011}.\smallskip
 
 
 \begin{figure}
@@ -86,7 +88,7 @@ If a current is induced in a toroidal plasma, the component of magnetic field ar
 
  All toroidally confined plasmas experience  outward toroidal forces along the $R$ direction, the first one is called the "hoop force" and is analogous to  the outward expansion force generated by the current flowing in a circular loop of wire, for this case this force corresponds to the toroidal current flowing in the plasma or simply called plasma current $I_p$. The second force is called "1/R force" and its name comes from the 1/R dependence of the toroidal field resulting from the toroidal geometry, the applied toroidal field $B_{\phi a}$,  where $a$ is the minor radius of the tokamak or the distance from the center of the vacuum chamber to the wall. It has a 1/R dependence which follows from integrating Ampere's law around any closed toroidal loop located between the toroidal coils and the plasma. Finally the third one is called "tire tube force" and its existence is related to the difference of plasma pressures created by the toroidal geometry ~\cite[Chapter~11]{Freidberg2007}. \smallskip 
  
-Given these outward toroidal forces, somehow the  toroidal force balance must be established before the plasma hits the walls. An inwardly pointing restoring force is required and it is apply by means of the external PF coils which generate a vertical field in order to compensate the radial forces generated by the tokamak.  By choosing the magnitude and sign of the vertical field correctly, one can produce an inward restoring force to produce toroidal force balance. In order to make an analytic deviation of the toroidal force balance a simple model for the magnetic fields is used. This model consists of a toroidal plasma whose contours of constant pressure are a set of nested concentric circles $p=p(r)$, where $r$ is the minor radius coordinate as shown in figure~\ref{tor_geo}. The simplified version of the pressure and magnetic fields to be used in the determination of the toroidal force balance are:
+Given these outward toroidal forces, somehow the  toroidal force balance must be established before the plasma hits the walls. An inwardly pointing restoring force is required and it is applied by means of the external PF coils which generate a vertical field in order to compensate the radial forces generated by the tokamak.  By choosing the magnitude and sign of the vertical field correctly, one can produce an inward restoring force to produce toroidal force balance. In order to make an analytic derivation of the toroidal force balance a simple model for the magnetic fields is used. This model consists of a toroidal plasma whose contours of constant pressure are a set of nested concentric circles $p=p(r)$, where $r$ is the minor radius coordinate as shown in figure~\ref{tor_geo}. The simplified version of the pressure and magnetic fields to be used in the determination of the toroidal force balance are:
 
 	\begin{equation}
 	\begin{aligned}
@@ -95,7 +97,7 @@ Given these outward toroidal forces, somehow the  toroidal force balance must be
 	\end{aligned}
 	\end{equation}
 	
-where $R_0$ is the tokamak major radius or the distance from the center of the torus to the center of the chamber (see figure ~\ref{tor_geo}) and the magnetic field $B$ is defined in toroidal coordinates ($\phi,\theta,z$) where $B_{\theta}$ is the poloidal field and $B_v$ the external vertical field generated by the PF coils. After substituting the expression for the magnetic field into the general MHD force balance equation or the so-called Grad-Shafranov equation (\cite[Chapter~6]{Miyamoto2011},~\cite[Chapter~11]{Freidberg2007},~\cite[Chpater~2]{Zohm2015}), the expression for the toroidal force balance can be obtained.
+\noindent where $R_0$ is the tokamak major radius or the distance from the center of the torus to the center of the chamber (see figure ~\ref{tor_geo}) and the magnetic field $B$ is defined in toroidal coordinates ($\phi,\theta,z$) where $B_{\theta}$ is the poloidal field and $B_v$ the external vertical field generated by the PF coils. After substituting the expression for the magnetic field into the general MHD force balance equation or the so-called Grad-Shafranov equation (\cite[Chapter~6]{Miyamoto2011},~\cite[Chapter~11]{Freidberg2007},~\cite[Chpater~2]{Zohm2015}), the expression for the toroidal force balance can be obtained.
 \smallskip
 
 \begin{figure}
@@ -106,7 +108,7 @@ where $R_0$ is the tokamak major radius or the distance from the center of the t
 %this is achieved by means of the application of an external vertical field.$
 
 
-The toroidal force balance establishes the forces equation $F_{hoop}+ F_{1/R} + F_{tube}+ F_{v} =0$, where $F_v$ is the force generated by the external vertical field. Thus, the hoop force is given by:
+The toroidal force balance establishes the forces equation: $F_{hoop}+ F_{1/R} + F_{tube}+ F_{v} =0$, where $F_v$ is the force generated by the external vertical field. Thus, the hoop force is given by:
 
 \begin{equation}
 F_{hoop}=2\pi^2a^2(li+le+2)~\frac{B_{\theta a}^2}{2\mu_0}
@@ -127,7 +129,7 @@ and finally the external vertical force is:
 \begin{equation}
 F_v=-2\pi^2a^2\left(\frac{2R_0 B_v B_{\theta a}}{a\mu_0}\right)
 \end{equation}
- where $B_v$ is the external vertical magnetic field. Doing the combination of the 4 forces into the forces equation, the required vertical field for toroidal force balance remains:
+ where $B_v$ is the external vertical magnetic field. Doing the combination of the 4 forces into the forces equation, the required vertical field for toroidal force balance is:
  
  \begin{equation}
  B_v=B_{\theta a} ~\frac{a}{4R_0}\left[ \frac{2\mu_0 \langle p \rangle }{ B_{\theta a}^2} ~+~\frac{ B_{\phi a}^2 - \langle B_{\phi}^2 \rangle }{B_{\theta a}^2 } +li+le+2 \right]
@@ -157,9 +159,9 @@ Tokamaks are devices with an axisymmetric configuration with a large toroidal ma
 
 Typical operation of a tokamak discharge starts with the establishment of a large, steady, toroidal, magnetic field\footnote{Ideally, tokamaks should have superconductive toroidal coils since they do not dissipate power in steady state and require only a small amount of cooling power~\cite[Chapter~5]{Freidberg2007}.}. Next, neutral gas is injected into the vacuum chamber and often pre-ionized. The transformer induces the plasma current $I_p$ which is then ramped up to its maximum value and maintained for the “flat top” portion of the pulse~\cite[Chapter~13]{Freidberg2007}. \smallskip
 
-Data acquisition and storage of signals in tokamaks is vitally important since the collected data us use for modeling the plasma, study instabilities and develop new codes and algorithms. Since currently tokamaks have a plasma pulsed nature of some ~ms or ~s, in the case of bigger devices, it is easy to acquire a large volume of data over short periods and archive it after the plasma discharge or even during the plasma discharge. \smallskip
+Data acquisition and storage of signals in tokamaks is vitally important since the collected data is used for modeling the plasma, studying instabilities and developing new codes and algorithms. Since currently tokamaks have a plasma pulsed nature of some ~ms or ~s, in the case of bigger devices, it is easy to acquire a large volume of data over short periods and archive it after the plasma discharge or even during the plasma discharge. \smallskip
 
-Usually tokamak control tends to refer to the control of the plasma itself, while the supervisory plant control is conventional and normally uses industrial equipment. Control engineering for magnetic confined plasmas  embrace different types of techniques and used for  controlling the  physical variables existing on the device and the plasma. The tokamak control problems can be separated into two major classes: electromagnetic control and plasma kinetic control. Electromagnetic control refers to controlling the magnetic and electric fields and kinetic control refers to controlling particle feed rates and heating to modify the plasma density, temperature, pressure and current density \cite[Chapter~1]{PirontiBook}.  One of the main tasks of control engineering in the field of fusion is to maintain the plasma in certain position and shape in such way that it stays stable, follows set points and rejects possible instabilities which may occur maintaining a constant plasma current. \smallskip
+Usually tokamak control tends to refer to the control of the plasma itself, while the supervisory plant control is conventional and normally uses industrial equipment. Control engineering for magnetic confined plasmas  embrace different types of techniques and is used for  controlling the  physical variables existing on the device and the plasma. The tokamak control problems can be separated into two major classes: electromagnetic control and plasma kinetic control. Electromagnetic control refers to controlling the magnetic and electric fields and kinetic control refers to controlling particle feed rates and heating to modify the plasma density, temperature, pressure and current density \cite[Chapter~1]{PirontiBook}.  One of the main tasks of control engineering in the field of fusion is to maintain the plasma in certain position and shape in such way that it stays stable, follows set points and rejects possible instabilities which may occur maintaining a constant plasma current. \smallskip
 
 Early tokamaks were quite primitive. The desired plasma parameters were obtained as a result of sets of pre-programmed power-supply or gas-valve commands, designed by trial and error, using feed forward control. As  tokamak technology began to develop and the plasma pulses duration became longer, feedback control loops were integrated to control simple parameters~\cite{Lister1999}. It is natural that one of the first parameters to be actively controlled in a tokamak was the plasma position since this would mean maintaining the hot plasma centered inside the vacuum vessel. As already explained in the previous section coupling between the plasma radial position and current control systems depend on the active PF coil system. Initially, research efforts concentrated on the radial position control of circular, vertically stable tokamak plasmas \cite[Chapter~1]{PirontiBook}. By the end of the 1970's, the advantages of forcing the tokamak plasma cross-section to be other than circular  were being proposed on the basis of theoretical studies that showed advantages regarding  an increased energy confinement time  obtained using a vertically elongated cross-section and the first plasmas with such charactersitcs where created. These elongated  plasmas are inherently unstable but this fact contributed to master the shape plasma control \cite[Chapter~1]{PirontiBook}. \smallskip
 
@@ -169,7 +171,7 @@ Early tokamaks were quite primitive. The desired plasma parameters were obtained
 
 The main contributions of this doctoral work  are a long  evaluation and comparison of plasma models and controllers for the  JT-60SA flat-top scenario and  a full experimental  development of the ISTTOK real-time controller and successful operation in AC mode. 
 
-This thesis studies the properties and control applications for two tokamaks: JT-60SA and ISTTOK. These tokamaks possess physical characteristics which vary in big scale between them: the size, ISTTOK has a cross-circular section and JT-60SA is a diverted plasma, the dimension of the magnetic fields and plasma current, ISTTOK has 30 years operating and JT-60SA will start operations in late 2020, etc. Despite these facts there is a relevant reason to join the two machines in a single work: both tokamaks rely on active magnetic control applied to the PF coils in order to control the plasma position and shape. Moreover, both use active magnetic control for the plasma position,and in this work for both tokamaks control and modeling approaches relying in the same concepts are applied.   \smallskip
+This thesis studies the properties and control applications for two tokamaks: JT-60SA and ISTTOK. These tokamaks possess physical characteristics which vary in big scale between them: the size, ISTTOK has a cross-circular section and JT-60SA is a diverted plasma, the dimension of the magnetic fields and plasma current, ISTTOK has 30 years operating and JT-60SA will start operations in late 2020, etc. Despite these facts there is a relevant reason to join the two machines in a single work: both tokamaks rely on active magnetic control applied to the PF coils in order to control the plasma position and shape. Moreover, both use active magnetic control for the plasma position, and in this work for both tokamaks control and modeling approaches relying in the same concepts are applied.   \smallskip
 
 ISTTOK has been used for young researchers training with relevant 
 emphasis in several PhD thesis. The present thesis is one more contribution to this endeavor where the concepts learned and applied to the simulation work of JT-60SA  could be confirmed in a practical sense in ISTTOK. \smallskip
@@ -183,5 +185,7 @@ $\bullet$ Chapter 3 addresses JT-60SA operation, its theoretical modeling and as
 $\bullet$ Chapter 4 presents the overall picture of ISTTOK tokamak: the geometry, the actuators and diagnostics. Following, the novel  implemented  reconstruction of the plasma current centroid position is addressed.\smallskip
 
 $\bullet$ Chapter 5  presents the experimental control results in ISTTOK after the implementation of two different control algorithms in the device. \smallskip
+
+$\bullet$ Chapter 6 contains the conclusions from the carried out work and a list of published articles and oral presentations regarding this thesis.\smallskip
 
 The research done in this work is important and needed because it delves into topics crucial for tokamak operation. It assesses control techniques for what will be the biggest operating tokamak before ITER (JT-60SA) and implements novelty algorithms in a small tokamak that probably would have not  existed on the ISTTOK tokamak without the latest technology advances. The main objectives of this thesis are to encompass the implementation of novel  plasma position and shape controllers for two different devices demonstrating that despite the size or characteristics of a tokamak it relies in the same physics principles and control engineering tools.\smallskip 
