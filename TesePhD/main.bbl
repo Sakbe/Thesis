@@ -212,6 +212,11 @@ A.~Neto and I.~Herror.
 \newblock {D4 MARTe Project Managment Plan}.
 \newblock Technical Report July, 2018.
 
+\bibitem{MISRA2008}
+{\em {MISRA C++: 2008 Guidelines for the use of the C ++ language in critical
+  systems}}.
+\newblock MIRA, 2008.
+
 \bibitem{MARTe2Code}
 A.~Neto and I.~Herror.
 \newblock {D4 MARTe Coding Standard}.
