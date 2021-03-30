@@ -8,6 +8,8 @@
 % \usefont{T1}{pvh}{m}{n}\fontsize{16pt}{16pt}\selectfont}
 \def\FontL{% 16 pt normal
   \usefont{T1}{cmr}{m}{n}\fontsize{17.28pt}{16pt}\selectfont}
+\def\FontSuperb{% 16 pt normal
+	\usefont{T1}{cmr}{m}{n}\fontsize{15.79}{20pt}\selectfont}
 \def\FontNam{% 16 pt normal
 	\usefont{T1}{cmr}{m}{n}\fontsize{19.28pt}{17pt}\selectfont}
 % \usefont{T1}{pvh}{m}{n}\fontsize{16pt}{16pt}\selectfont}
@@ -52,7 +54,7 @@
 \begin{tabular}{l}
 	\FontL
 \textbf{Supervisor: Doctor Hor\'acio João Matos Fernandes} \\
-	\FontL\textbf{Co-Supervisors: Doctor Nuno Sérgio Branco da Cruz}\\
+	\FontL\textbf{Co-Supervisors: Doctor Nuno Sérgio Castelo Branco da Cruz}\\
 	\FontL\textbf{\hspace{4.05cm} Doctor Alfredo Pironti}\\
 \end{tabular} } \\
 \vspace{1.8cm}
@@ -67,11 +69,19 @@
 {\FontM \textbf{2021}} \\
 
 
+%\newpage
+%\thispagestyle{empty}
+%%% blank page 
+%\vspace{25cm}
+
+%\newpage
+
+\clearpage % end title page
+\begingroup
+\pagestyle{empty}
+\null
 \newpage
-\thispagestyle{empty}
-
-
-
+\endgroup
 
 \begin{tabular}{>{\raggedleft}m{5cm}>{\centering}m{\dimexpr\textwidth - 10cm\relax}>{\raggedright}m{5cm}}
 	\includegraphics[width=\linewidth]{includes/LogoIST.pdf}%
@@ -79,6 +89,8 @@
 	&%
 	\includegraphics[width=\linewidth]{includes/LogoPadova.jpg} %
 \end{tabular}
+
+
 
 % ====================================== Cover information
 \centering % Center all text
@@ -97,10 +109,10 @@
 \vspace{0.7cm}
 {\FontS %
 	\begin{tabular}{l}
-		\FontL
+		\FontSuperb
 \textbf{Supervisor: Doctor Hor\'acio João Matos Fernandes} \\
-\FontL\textbf{Co-Supervisors: Doctor Nuno Sérgio Branco da Cruz}\\
-\FontL\textbf{\hspace{4.05cm} Doctor Alfredo Pironti}\\
+\FontSuperb\textbf{Co-Supervisors: Doctor Nuno Sérgio Castelo Branco da Cruz}\\
+\FontSuperb\textbf{\hspace{3.45cm} Doctor Alfredo Pironti}\\
 \end{tabular} } \\
 \vspace{0.5cm}
 {\FontM Thesis approved in public session to obtain the PhD Degree in} \\
