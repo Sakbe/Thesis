@@ -1,0 +1,80 @@
+This is BibTeX, Version 0.99d (MiKTeX 2.9.7400)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: abs_akw/abstract.aux
+A level-1 auxiliary file: abs_akw/acknowledgements.aux
+A level-1 auxiliary file: lista_variaveis.aux
+The style file: unsrt.bst
+Illegal, another \bibstyle command---line 708 of file main.aux
+ : \bibstyle
+ :          {ieeetr}
+I'm skipping whatever remains of this command
+A level-1 auxiliary file: AppCont/AppCont.aux
+A level-1 auxiliary file: AppCont/FBC_CCS.aux
+A level-1 auxiliary file: AppCont/AppIST.aux
+Database file #1: Bib/BiblioD.bib
+You're missing a field name---line 935 of file Bib/BiblioD.bib
+ :   journal = {Fusion Engineering and Design},
+ :                                             ,
+I'm skipping whatever remains of this entry
+Warning--can't use both author and editor fields in Miyamoto2011
+Warning--empty institution in MellanoxTechnologies2003
+Warning--can't use both volume and number fields in Neto2011
+Warning--there's a number but no series in MARTe2011
+Warning--empty institution in MARTe2PMP
+Warning--empty author and editor in MISRA2008
+Warning--empty institution in MARTe2Code
+Warning--empty institution in MARTe2QAP
+Warning--empty institution in rtEFIT
+Warning--empty journal in equinox
+Warning--there's a number but no volume in equinox
+Warning--empty institution in JT60SA:ResearchPlan
+Warning--empty institution in JT60SA:PID
+Warning--empty institution in CCS
+Warning--empty institution in FBC
+Warning--empty title in IvoPID
+Warning--empty year in IvoPID
+Warning--empty publisher in Yu2011
+Warning--can't use both volume and number fields in Trimpe2014
+You've used 101 entries,
+            1791 wiz_defined-function locations,
+            1063 strings with 22556 characters,
+and the built_in function-call counts, 24705 in all, are:
+= -- 1990
+> -- 1591
+< -- 16
++ -- 572
+- -- 471
+* -- 1893
+:= -- 4133
+add.period$ -- 304
+call.type$ -- 101
+change.case$ -- 88
+chr.to.int$ -- 0
+cite$ -- 120
+duplicate$ -- 997
+empty$ -- 2147
+format.name$ -- 471
+if$ -- 5290
+int.to.chr$ -- 0
+int.to.str$ -- 101
+missing$ -- 113
+newline$ -- 508
+num.names$ -- 100
+pop$ -- 307
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 387
+stack$ -- 0
+substring$ -- 1381
+swap$ -- 182
+text.length$ -- 16
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 19
+while$ -- 210
+width$ -- 104
+write$ -- 1092
+(There were 2 error messages)

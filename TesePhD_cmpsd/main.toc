@@ -1,0 +1,80 @@
+\vspace {-\cftbeforepartskip }
+\babel@toc {english}{}
+\babel@toc {portuguese}{}
+\babel@toc {english}{}
+\babel@toc {italian}{}
+\babel@toc {english}{}
+\contentsline {chapter}{Contents}{xi}{chapter*.5}%
+\contentsline {chapter}{List of Figures}{xv}{chapter*.6}%
+\contentsline {chapter}{List of Tables}{xxv}{chapter*.7}%
+\contentsline {chapter}{\numberline {1}\spacedlowsmallcaps {Introduction}}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Magnetic confinement device: the tokamak}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Magnetic fields and the tokamak}{4}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Behind the plasma current}{5}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Plasma control in tokamaks}{9}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Thesis outline}{10}{section.1.5}%
+\contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {Plasma Control}}{13}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Overview of control systems}{13}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}DIII-D Plasma Control System}{14}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Syst\'eme de Contr\^ole Distribu\'e}{15}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}ASDEX Discharge Control System (DCS)}{16}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}MARTe framework}{17}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}MARTe architecture }{17}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}MARTe hardware containers}{17}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}MARTe 2.0}{20}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Plasma equilibrium codes}{22}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Control Techniques and State-Space models}{23}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}State-Space models}{24}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}PID control}{26}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Multiple-Input Multiple-Output control}{29}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Observers and Kalman filters}{32}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.5}Experimental identification of state-space models}{33}{subsection.2.4.5}%
+\contentsline {subsubsection}{State-Space discrete models}{34}{subsection.2.4.5}%
+\contentsline {subsubsection}{Discrete state-space model identification}{34}{equation.2.4.33}%
+\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {JT-60SA control design}}{37}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Machine description}{37}{section.3.1}%
+\contentsline {section}{\numberline {3.2}CREATE magnetic modeling tools}{38}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Controller design}{40}{section.3.3}%
+\contentsline {section}{\numberline {3.4}QST reconstruction and control implementation}{44}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Cauchy Condition Surface (CCS) reconstruction method }{44}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}QST magnetic controller }{44}{subsection.3.4.2}%
+\contentsline {section}{\numberline {3.5}Simulation results}{46}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Disturbances}{47}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Gap-based XSC}{48}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Isoflux XSC and QST controller }{51}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Shape reference change}{54}{subsection.3.5.4}%
+\contentsline {section}{\numberline {3.6}Remarks on JT-60SA simulation work}{55}{section.3.6}%
+\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {ISTTOK }}{63}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Machine description}{63}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}ISTTOK AC plasma current}{66}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Diagnostics and Actuators}{66}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Poloidal Field Coils}{69}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}ISTTOK Hardware }{70}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}ATCA-MIMO-ISOL boards}{70}{subsection.4.3.1}%
+\contentsline {section}{\numberline {4.4}Real-time integration software}{71}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Plasma current magnetic field }{75}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}PF coils state-space model estimation}{75}{subsection.4.5.1}%
+\contentsline {section}{\numberline {4.6}Reconstruction algorithm for the plasma centroid position}{77}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Real-time MARTe implementations for the plasma position reconstruction}{78}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Poloidal magnetic external contributions subtraction}{79}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Plasma current and centroid position reconstruction}{80}{subsection.4.7.2}%
+\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {ISTTOK control implementations and results }}{83}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Implementation of the General Application Modules }{83}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}PID control implementation}{84}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Data-driven state-space model retrieving }{85}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Kalman filter implementation}{87}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4}Multiple-Input Multiple-Output control implementation}{87}{subsection.5.1.4}%
+\contentsline {subsubsection}{Pole-zeros maps}{88}{subsection.5.1.4}%
+\contentsline {section}{\numberline {5.2}Plasma current centroid position control results}{89}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Remarks on ISTTOK experimental work}{101}{section.5.3}%
+\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Conclusions}}{103}{chapter.6}%
+\contentsline {section}{\numberline {6.1}JT-60SA}{103}{section.6.1}%
+\contentsline {section}{\numberline {6.2}ISTTOK}{104}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Publications and Communications at conferences and meetings. }{105}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Publications}{105}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Conferences}{105}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}Meetings}{105}{subsection.6.3.3}%
+\contentsline {chapter}{Bibliography}{107}{chapter*.104}%
+\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Extended Control Results }}{115}{appendix.1.A}%
+\contentsline {chapter}{\numberline {B}\spacedlowsmallcaps {JT-60SA pictures}}{129}{appendix.1.B}%
+\contentsline {chapter}{\numberline {C}\spacedlowsmallcaps {ISTTOK scheme}}{133}{appendix.1.C}%

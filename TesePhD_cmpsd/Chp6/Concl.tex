@@ -1,0 +1,58 @@
+\chapter{Conclusions}
+
+This thesis consists in a deep study of the control algorithms and dynamic systems applied for the magnetic control in two tokamaks: ISTTOK and JT-60SA. Despite the  differences between them is not difficult to find the  linking line of study for both cases which is the active magnetic control. Each tokamak was addressed for different aims and under different scope. The JT-60SA study analyses the behavior of the plasma shape through the use of the CREATE modeling tools with two different controllers: the XSC and the QST control, as well as the comparison of two different methods for the reconstruction of the LCFS: using the fluxes retrieved by the CREATE model and the CCS method, in the presence of different disturbances affecting the plasma. ISTTOK study basically describes step by step the actions taken in order to have a reliable plasma centroid position control implemented on real time, starting with the raw acquisition of magnetic probe signals until  data-driven and theoretical applications of MIMO systems. \smallskip
+
+Novelty techniques must be considered for future control implementations in the field of controlled nuclear fusion  such as machine learning and neuronal networks, this ones being already  used by researchers  attempting to detect disruptions before they happen so that they can be stopped in order to avoid catastrophic wall damage~\cite[Chapter~6]{Paluszek2020}.\smallskip
+
+ This Conclusions chapter is split in two section: one dedicated to JT-60SA and another to ISTTOK, addressing the conclusions  this work brought for each device and possible future work.
+
+\section{JT-60SA}
+
+As mentioned before the big importance of JT-60SA  lies primarily in the fact that it will be the biggest operating tokamak and is the satellite project for ITER. The simulation work presented in Chapter 3 contributes to setup and customize the CREATE control-oriented modeling tools to the case of JT-60SA for a given equilibrium in the presence of different disturbances affecting the plasma. These tools, being control-oriented, are mainly aimed at the fine tuning of the control parameter by means of fast simulation that can be carried out between discharges. In order to possibly use these tools (XSC controller) in the forthcoming JT-60SA operation it was essential to benchmark them against the official QST tools (CCS LCFS reconstruction and QST controller) which are currently envisaged for real-time. The results from the comparison between the CREATE and the QST set of tools are extensible presented and discussed in Chapter 3.\smallskip
+
+ The current simulation tools  considered by the QST team  to perform plasma magnetic control design and validation are based on  non-linear equilibrium codes which cannot be used for  simulations in between discharges ~\cite{MECS}. This fact represents an opportunity for using the CREATE  control-oriented setup based on  linearized state-space models which might  be considered as possible backup tool to support the optimization of the controller gains during the first phase of operation of JT-60SA in late 2020 and early 2021.
+
+
+\section{ISTTOK}
+
+Experimental results presented in Chapter 4 and 5 show that the MARTe framework and the ATCA hardware architecture along with the new numerical integrators provide the adequate tools for developing the ISTTOK tokamak real-time control. The implementation of the centroid position reconstruction based on a multi-filament model demonstrated to be an important assessment for the tokamak operation since  it allowed to have  positive and negative plasma current flat-tops without losing AC transitions for every discharge, in addition the plasma position reconstruction made  possible to reliably control the plasma position, allowing to add a MIMO optimal controller which demonstrated to have an overall better performance than the PID controllers in real-time. \smallskip
+
+
+It is worth to mention how retrieving the plasma magnetic poloidal field from the magnetic probes and obtaining a state-space model linking the plasma centroid position and the PF coils currents required the use of computational tools since the real physical characteristics from ISTTOK currently are not suitable for developing a theoretical model. This is an innovative method for retrieving a magnetic model of the plasma without taking into account the tokamak geometry, but making use of extensive discharge data.\smallskip
+
+Due to its characteristics widely discussed in this work, ISTTOK is a tokamak that might bring  more challenges when it comes to implement the tokamak physics than in other devices but it is also a very flexible machine which allows to test new methods and approaches without risking the tokamak itself.\smallskip
+
+Machine learning is a rapidly developing field that is transforming our ability to describe complex systems from experimental data, rather than theoretical principles for modeling them. As machine learning encompasses a broad range of high-dimensional, possibly nonlinear, optimization techniques, it is natural to apply machine learning to the control of complex systems like a tokamak ~\cite[Chapter~10]{DataDriven2019}. Future work in ISTTOK based on this principles such as the iterative learning control which is an effective control tool for improving the transient response and tracking performance of uncertain dynamic systems that operate repetitively~\cite{Ahn2007}  must be considered for a future upgrade of the plasma centroid position control and also a study of how suitable is to incorporate these novel techniques along with the MARTe framework.
+
+\section{Publications and Communications at conferences and meetings. }
+
+\subsection{Publications}
+\textbullet \, D.Corona,N.Cruz,J.J.E. Herrera, H. Figuereido, B.B. Carvalho, I.S. Carvalho, H. Alves, H. Fernandes. \textit{Design and Simulation of ISTTOK Real-Time Magnetic Multiple-Input Multiple-Output Control}, IEEE Transactions on Plasma Science vol 46, no.7, pp.2362-2369, 2018.
+\smallskip
+
+\textbullet \, D. Corona, N. Cruz, G. De Tommasi, H. Fernandes, E. Jorin, M. Mattei, A. Mele, Y. Miyata, A. Pironti, H. Urano, T. Suzuki, F. Villone.\textit{ Plasma shape control assessment for JT-60SA using the CREATE tools}, Fusion Engineering and Design, vol. 146, pt. B, pp. 1773-1777, 2019.
+\smallskip
+
+\textbullet D. Corona, A. Torres, E. Aymerich, B.B. Carvalho, H. Alves, H. Fernandes. \textit{Extraction of the plasma current contribution from the numerically integrated magnetic signals in ISTTOK}, Journal of Instrumentation, vol.15, 2020.
+\smallskip
+
+\subsection{Conferences}
+
+\textbullet \, \textit{ISTTOK Real Time Magnetic Multiple input-Multiple output Control}, 16th Latin American Workshop on Plasma Physics (LAWPP), Oral Contribution, September 2017.
+\smallskip
+
+\textbullet \, \textit{Plasma shape control assessment for JT-60SA using the CREATE tools}, 30th edition of the Symposium on Fusion Technology (SOFT 2018), Poster presentation, Italy, September 2018. 
+\smallskip
+
+\textbullet \, \textit{Extraction of the plasma current contribution from the numerically integrated magnetic signals in ISTTOK}, 3rd edition of the European Conference on Plasma Diagnostics (ECPD 2019), Poster presentation, Portugal,May 2019.
+
+\subsection{Meetings}
+
+\textbullet \, \textit{Plasma control development for JT-60SA}, WPSA 5th Project Planning Meeting, Oral presentation, Fusion for Energy, Barcelona, March 2018. 
+\smallskip
+
+\textbullet \, \textit{Simulation of JT-60SA magnetic control and integration of CCS reconstruction	code}, WPSA 6th Project Planning Meeting, Oral presentation, Universidad de Sevilla, Seville, March 2019. 
+
+
+
+\vfill

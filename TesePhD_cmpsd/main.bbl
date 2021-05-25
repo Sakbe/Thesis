@@ -1,0 +1,617 @@
+\begin{thebibliography}{100}
+
+\bibitem{Freidberg2007}
+Jeffrey~P. Freidberg.
+\newblock {\em {Plasma physics and fusion energy}}.
+\newblock Cambridge University Press, 2007.
+
+\bibitem{Song2014}
+Yuntao Song, Weiyue Wu, and Shijun Du.
+\newblock {\em {Tokamak engineering mechanics}}.
+\newblock Springer, Mechanical Engineering Series, 2014.
+
+\bibitem{Wesson2004}
+J.~A. Wesson.
+\newblock {\em {Tokamaks}}.
+\newblock Oxford University Press, Oxford, UK, 3 edition, 2004.
+
+\bibitem{McCracken2005}
+Garry McCracken and Peter Stott.
+\newblock {\em {Fusion. The energy of the universe.}}
+\newblock Elsevier Academic Press, Oxford, UK, 2 edition, 2005.
+
+\bibitem{Miyamoto2011}
+K.~Miyamoto.
+\newblock {\em {Fundamentals of Plasma Physics and Controlled Fusion}}.
+\newblock Group, Taylor and Francis, 3 edition, 2011.
+
+\bibitem{Zohm2015}
+H.~Zohm.
+\newblock {\em {Magnetohydrodynamic Stability of Tokamaks}}.
+\newblock Wiley, 2015.
+
+\bibitem{PirontiBook}
+A.~Pironti and M.~Ariola.
+\newblock {\em {Magnetic Control of Tokamak Plasma}}.
+\newblock Springer, $2^\mathrm{nd}$ edition, 2016.
+
+\bibitem{Lister1999}
+J.~B. Lister, Y.~Martin, Centre~De Researchers, Ecole Polytechnique,
+  F{\'{e}}d{\'{e}}rale~De Lausanne, T.~Fukuda, R.~Yoshino, Jaeri Fusion,
+  V.~Mertens, and Max-planck~Institut Plasmaphysik.
+\newblock {The Control of Modern Tokamaks}.
+\newblock In {\em International Conference on Accelerator and Large
+  Experimental Physics Control Systems}, Trieste, Italy, 1999.
+
+\bibitem{Choi2018}
+W.~Choi, R.~J. {La Haye}, M.~J. Lanctot, K.~E.J. Olofsson, E.~J. Strait,
+  R.~Sweeney, and F.~A. Volpe.
+\newblock {Feedforward and feedback control of locked mode phase and rotation
+  in DIII-D with application to modulated ECCD experiments}.
+\newblock {\em Nuclear Fusion}, 58, 2018.
+
+\bibitem{Felici2014}
+F.~Felici, H.~B. Le, J.~I. Paley, B.~P. Duval, S.~Coda, J.~M. Moret,
+  A.~Bortolon, L.~Federspiel, T.~P. Goodman, G.~Hommen, A.~Karpushov, F.~Piras,
+  A.~Pitzschke, J.~Romero, G.~Sevillano, O.~Sauter, and W.~Vijvers.
+\newblock {Development of real-time plasma analysis and control algorithms for
+  the TCV tokamak using Simulink}.
+\newblock {\em Fusion Engineering and Design}, 89(3):165--176, 2014.
+
+\bibitem{Valcarcel2010}
+D.~F. Valc{\'{a}}rcel, A.~S. Duarte, A.~Neto, I.~S. Carvalho, B.~B. Carvalho,
+  H.~Fernandes, J.~Sousa, F.~Sartori, F.~Janky, P.~Cahyna, M.~Hron, and
+  R.~P{\'{a}}nek.
+\newblock {Real-time software for the COMPASS tokamak plasma control}.
+\newblock {\em Fusion Engineering and Design}, 85(3-4):470--473, 2010.
+
+\bibitem{PCS_2018}
+A.~Kavin { A. Belyakov}.
+\newblock {\em {Fundamentals of Magnetic Thermonuclear Reactor Design}}.
+\newblock Elsevier, 2018.
+
+\bibitem{densityControl}
+F.~Janky, M.~Hron, J.~Havlicek, M.~Varavin, F.~Zacek, J.~Seidl, and R.~Panek.
+\newblock {Plasma density control in real-time on the COMPASS tokamak}.
+\newblock {\em Fusion Engineering and Design}, 96-97:637--640, 2015.
+
+\bibitem{DIIDcontrol}
+J.~R. {Ferron}, A.~{Kellman}, E.~{McKee}, T.~{Osborne}, P.~{Petrach}, T.~S.
+  {Taylor}, J.~{Wight}, and E.~{Lazarus}.
+\newblock An advanced plasma control system for the diii-d tokamak.
+\newblock In {\em [Proceedings] The 14th IEEE/NPSS Symposium Fusion
+  Engineering}, pages 761--764 vol.2, Sep. 1991.
+
+\bibitem{DIIID2013}
+B.~G. Penaflor, J.~R. Ferron, A.~W. Hyatt, M.~L. Walker, R.~D. Johnson, D.~A.
+  Piglowski, E.~Kolemen, A.~S. Welander, and M.~J. Lanctot.
+\newblock {Latest advancements in DIII-D Plasma Control software and hardware}.
+\newblock {\em 2013 IEEE 25th Symposium on Fusion Engineering, SOFE 2013},
+  pages 1--4, 2013.
+
+\bibitem{DIIIDnew}
+M.~Margo, B.~Penaflor, H.~Shen, J.~Ferron, D.~Piglowski, P.~Nguyen, J.~Rauch,
+  M.~Clement, A.~Battey, and C.~Rea.
+\newblock {Current State of DIII-D Plasma Control System}.
+\newblock {\em Fusion Engineering and Design}, 150(October 2019), 2020.
+
+\bibitem{MellanoxTechnologies2003}
+{Mellanox Technologies}.
+\newblock {Introduction to InfiniBand}.
+\newblock Technical report, 2003.
+
+\bibitem{TCVcntrl}
+J.~I. Paley, S.~Coda, B.~Duval, F.~Felici, and J.~M. Moret.
+\newblock {Architecture and commissioning of the TCV distributed feedback
+  control system}.
+\newblock {\em Conference Record - 2010 17th IEEE-NPSS Real Time Conference,
+  RT10}, pages 1--6, 2010.
+
+\bibitem{TCVcntrl1}
+H.~Anand, C.~Galperti, S.~Coda, B.~P. Duval, F.~Felici, T.~Blanken,
+  E.~Maljaars, J.~M. Moret, O.~Sauter, T.~P. Goodman, and D.~Kim.
+\newblock {Distributed digital real-time control system for the TCV tokamak and
+  its applications}.
+\newblock {\em Nuclear Fusion}, 57(5), 2017.
+
+\bibitem{NunoPhD}
+N.~Cruz.
+\newblock {\em {Digital Control System for Vertical Stability of the TCV
+  Plasma}}.
+\newblock PhD thesis, Universidade de Lisboa, 2014.
+
+\bibitem{ASDEX2014}
+W.~Treutterer, R.~Cole, K.~L{\"{u}}ddecke, G.~Neu, C.~Rapson, G.~Raupp,
+  D.~Zasche, and T.~Zehetbauer.
+\newblock {ASDEX upgrade discharge control system - A real-time plasma control
+  framework}.
+\newblock {\em Fusion Engineering and Design}, 89(3):146--154, 2014.
+
+\bibitem{ASDEX2011}
+W.~Treutterer, K.~Behler, A.~Buhler, R.~Cole, L.~Giannone, A.~Kagarmanov,
+  K.~L{\"{u}}ddecke, G.~Neu, G.~Raupp, M.reich, D.~Zasche, and T.~Zehetbauer.
+\newblock {Integrated operation of diagnostic and control systems}.
+\newblock {\em Fusion Engineering and Design}, 86(6-8):465--470, 2011.
+
+\bibitem{Neto2010}
+A.~C. {Neto}, F.~{Sartori}, F.~{Piccolo}, R.~{Vitelli}, G.~{De Tommasi},
+  L.~{Zabeo}, A.~{Barbalace}, H.~{Fernandes}, D.~F. {Valcarcel}, and A.~J.~N.
+  {Batista}.
+\newblock Marte: A multiplatform real-time framework.
+\newblock {\em IEEE Transactions on Nuclear Science}, 57(2):479--486, April
+  2010.
+
+\bibitem{JETRT}
+G.~{De Tommasi}, F.~Piccolo, A.~Pironti, and F.~Sartori.
+\newblock {A flexible software for real-time control in nuclear fusion
+  experiments}.
+\newblock {\em Control Engineering Practice}, 14(11):1387--1393, 2006.
+
+\bibitem{Neto2011}
+Andr{\'{e}}~C. Neto, Diogo Alves, Luca Boncagni, Pedro~J. Carvalho, Daniel~F.
+  Valc{\'{a}}rcel, Antonio Barbalace, Gianmaria {De Tommasi}, Hor{\'{a}}cio
+  Fernandes, Filippo Sartori, Enzo Vitale, Riccardo Vitelli, and Luca Zabeo.
+\newblock {A survey of recent MARTe based systems}.
+\newblock In {\em IEEE Transactions on Nuclear Science}, volume~58, pages
+  1482--1489, 2011.
+
+\bibitem{MARTe2011}
+A.~Neto, D.~Alves, B.~B. Carvalho, P.~J. Carvalho, H.~Fernandes, D.~F. Valc,
+  G.~De Tommasi, Associazione Euratom-enea create, Via Claudio, P.~Mccullen,
+  A.~Stephen, Euratom-ccfe~Fusion Association, Culham~Science Centre, Abingdon
+  Ox, United Kingdom, R~Vitelli, Tor Vergata, Via Politecnico, L~Zabeo, and
+  Iter Organisation.
+\newblock {Marte Framework : a Middleware for Real-Time Applications
+  Development}.
+\newblock In {\em 13th International Conference on Accelerator and Large
+  Experimental Physics Control Systems}, number~11, pages 1277--1280, Grenoble,
+  France, 2011.
+
+\bibitem{ATCA2010}
+B.~Gon{\c{c}}alves, J.~Sousa, A.~Batista, R.~Pereira, M.~Correia, A.~Neto,
+  B.~Carvalho, H.~Fernandes, and C.~A.F. Varandas.
+\newblock {ATCA advanced control and data acquisition systems for fusion
+  experiments}.
+\newblock {\em IEEE Transactions on Nuclear Science}, 57(4 PART 2):2147--2154,
+  2010.
+
+\bibitem{ATCA2006}
+A.~J.N. Batista, J.~Sousa, and C.~A.F. Varandas.
+\newblock {ATCA digital controller hardware for vertical stabilization of
+  plasmas in tokamaks}.
+\newblock {\em Review of Scientific Instruments}, 77(10):1--4, 2006.
+
+\bibitem{ISTTOK_RT}
+I.~S. Carvalho, P.~D., H.~Fernandes, D.~F. Valc{\'{a}}rcel, P.~J. Carvalho,
+  C.~Silva, A.~S. D., A.~Neto, J.~Sousa, A.~J.N. Batista, T.~Hekkert, and B.~B.
+  Carvalho.
+\newblock {ISTTOK real-time architecture}.
+\newblock {\em Fusion Engineering and Design}, 89(3):195--203, 2014.
+
+\bibitem{Ivo_tomo}
+P.~J. Carvalho, B.~B. Carvalho, A.~Neto, R.~Coelho, H.~Fernandes, J.~Sousa,
+  C.~Varandas, E.~Ch{\'{a}}vez-Alarc{\'{o}}n, and J.~J.E.
+  Herrera-Vel{\'{a}}zquez.
+\newblock {Real-time plasma control based on the ISTTOK tomography diagnostic}.
+\newblock {\em Review of Scientific Instruments}, 79(10):1--4, 2008.
+
+\bibitem{SQA}
+C.~Laporte and A.~April.
+\newblock {\em {Software Quality Assurance}}.
+\newblock IEEE PRESS, 2018.
+
+\bibitem{MARTe2}
+A.~C. Neto, F.~Sartori, R.~Vitelli, Llorenc Capella, G.~Ferro, and H.~Herrero,
+  I.and~Novella.
+\newblock {An agile quality assurance framework for the development of fusion
+  real-Time applications}.
+\newblock In {\em 2016 IEEE-NPSS Real Time Conference, RT 2016}, 2016.
+
+\bibitem{MARTe2PMP}
+A.~Neto and I.~Herror.
+\newblock {D4 MARTe Project Managment Plan}.
+\newblock Technical Report July, 2018.
+
+\bibitem{MISRA2008}
+{\em {MISRA C++: 2008 Guidelines for the use of the C ++ language in critical
+  systems}}.
+\newblock MIRA, 2008.
+
+\bibitem{MARTe2Code}
+A.~Neto and I.~Herror.
+\newblock {D4 MARTe Coding Standard}.
+\newblock Technical Report July, 2018.
+
+\bibitem{MARTe2QAP}
+A.~Neto and I.~Herror.
+\newblock {MARTe Quality Assurance Plan}.
+\newblock Technical Report July, 2018.
+
+\bibitem{Shafranov1971}
+V.~D. Shafranov and V.~S. Mukhovatov.
+\newblock {Plasma Equilibrium in a Tokamak}.
+\newblock {\em Nuclear Fusion}, 11(6):605--633, 1971.
+
+\bibitem{EFIT1985}
+L.~L. Lao, H.~St John, R.~D. Stambaugh, A.~G. Kellman, and W.~Pfeiffer.
+\newblock {Reconstruction of current profile parameters and plasma shapes in
+  tokamaks}.
+\newblock {\em Nuclear Fusion}, 25(11):1611--1622, 1985.
+
+\bibitem{EFIT2013}
+M.~Fitzgerald, L.~C. Appel, and M.~J. Hole.
+\newblock {EFIT tokamak equilibria with toroidal flow and anisotropic pressure
+  using the two-temperature guiding-centre plasma}.
+\newblock {\em Nuclear Fusion}, 53(11), 2013.
+
+\bibitem{rtEFIT}
+D.~Mueller, D.~A. Gates, J.~E. Menard, J.~R. Ferron, and S.~A. Sabbagh.
+\newblock {Real-time Equilibrium Reconstruction and Isoflux Control of Plasma
+  Shape and Position in the National Spherical Torus Experiment ( NSTX ) by
+  Princeton Plasma Physics Laboratory}.
+\newblock Technical Report August, 2004.
+
+\bibitem{Raptor}
+C.~Piron, G.~Manduchi, P.~Bettini, F.~Felici, C.~Finotti, P.~Franz,
+  O.~Kudlacek, G.~Marchiori, L.~Marrelli, J.~M. Moret, P.~Piovesan, O.~Sauter,
+  and C.~Taliercio.
+\newblock {Integration of the state observer RAPTOR in the real-time MARTe
+  framework at RFX-mod}.
+\newblock {\em Fusion Engineering and Design}, 123:616--619, 2017.
+
+\bibitem{RAPTOR2011}
+F.~Felici, O.~Sauter, S.~Coda, B.~P. Duval, T.~P. Goodman, J.~M. Moret, and
+  J.~I. Paley.
+\newblock {Real-time physics-model-based simulation of the current density
+  profile in tokamak plasmas}.
+\newblock {\em Nuclear Fusion}, 51(8), 2011.
+
+\bibitem{RAPTOR2014}
+F.~Felici, M.~{De Baar}, and M.~Steinbuch.
+\newblock {A dynamic state observer for real-time reconstruction of the tokamak
+  plasma profile state and disturbances}.
+\newblock {\em Proceedings of the American Control Conference}, pages
+  4816--4823, 2014.
+
+\bibitem{xloc}
+D.~P. O'Brien, J.~J. Ellis, and J.~Lingertat.
+\newblock {Local expansion method for fast plasma boundary identification in
+  JET}.
+\newblock {\em Nuclear Fusion}, 33(3):467--474, 1993.
+
+\bibitem{equinox}
+D.~Mazon, J.~Blum, C.~Boulbe, B.~Faugeras, M.~Baruzzo, A.~Boboc, S.~bremond,
+  M.~Brix, P.~{De Vries}, S.~Sharapov, L.~Zabeo, and {JET-EFDA Contributors}.
+\newblock {Equinox: a Real-Time Equilibrium Code and Its Validation At Jet}.
+\newblock (June):327--332, 2010.
+
+\bibitem{Albanese:CREATEL}
+R.~Albanese and F.~Villone.
+\newblock {The linearized CREATE-L plasma response model for the control of
+  current, position and shape in tokamaks}.
+\newblock {\em Nucl. Fus.}, 38(5):723--738, May 1998.
+
+\bibitem{Albanese:CREATENL}
+R.~Albanese, G.~Calabrograve, M.~Mattei, and F.~Villone.
+\newblock {Plasma response models for current, shape and position control at
+  JET}.
+\newblock {\em Fus. Eng. Des.}, 66--68:715--718, 2003.
+
+\bibitem{Golnaraghi2010}
+F.~Golnaraghi and B.~C. Kuo.
+\newblock {\em {Automatic Control Systems}}.
+\newblock Pearson, $9^\mathrm{nd}$ edition, 2010.
+
+\bibitem{Kailath1980}
+T.~Kailath.
+\newblock {\em {Linear Systems}}.
+\newblock Prentice Hall, Englewood Cliffs, 1980.
+
+\bibitem{Chen1999}
+C.~Chen.
+\newblock {\em {Linear System Theory And Design}}.
+\newblock Oxford University Press, 3 edition, 1999.
+
+\bibitem{Nise}
+Norman Nise.
+\newblock {\em {Control Systems Engineering}}.
+\newblock John Wiley $\&$ Sons, Inc., 6 edition, 2011.
+
+\bibitem{Ogata2009}
+Katsuhiko Ogata.
+\newblock {\em {Modern Control Engineering}}.
+\newblock Prentice Hall, 5 edition, 2009.
+
+\bibitem{Skogestad}
+S.~Skogestad and I.~Postlethwaite.
+\newblock {\em Multivariable Feedback Control—Analysis and Design}.
+\newblock JOHN WILEY and SONS, 2 edition, 2005.
+
+\bibitem{Hippe2009}
+Peter Hippe and Joachim Deutscher.
+\newblock {\em {Design of Observer-based Compensators}}.
+\newblock Springer, 2009.
+
+\bibitem{Ljung1987}
+L.~Ljung.
+\newblock {\em System Identification Theory for User}.
+\newblock PTR Prentice Hall Upper Saddle River NJ, 1987.
+
+\bibitem{McKelvey1995}
+T~McKelvey.
+\newblock {\em {Identification of State-Space Models from Time and Frequency
+  Data}}.
+\newblock PhD thesis, Linkoping University, 1995.
+
+\bibitem{Toolbox}
+L.~Ljung.
+\newblock {\em {System identification toolbox: User's guide}}.
+\newblock MathWorks, 2017.
+
+\bibitem{Spears2014}
+William~R. Spears.
+\newblock {JT-60SA construction status}.
+\newblock {\em IEEE Transactions on Plasma Science}, 2014.
+
+\bibitem{JT60SA:ResearchPlan}
+JT-60SA Team.
+\newblock Research objectives and strategy.
+\newblock Technical report, 2018.
+\newblock http://www.jt60sa.org/.
+
+\bibitem{NCruz}
+N.~Cruz, G.~{De Tommasi}, M.~Mattei, A.~Mele, Y.~Miyata, A.~Pironti, and
+  T.~Suzuki.
+\newblock {Control-oriented tools for the design and validation of the JT-60SA
+  magnetic control system}.
+\newblock {\em Control Engineering Practice}, 63:81--90, 2017.
+
+\bibitem{JT60SA:PID}
+JT-60SA Team.
+\newblock Plant integration document.
+\newblock Technical report, 2017.
+\newblock https://users.jt60sa.org/?uid=222UJY.
+
+\bibitem{Albanese:CREATENLnew}
+R.~Albanese, R.~Ambrosino, and M.~Mattei.
+\newblock {CREATE-NL+: A robust control-oriented free boundary dynamic plasma
+  equilibrium solver}.
+\newblock {\em Fus. Eng. Des.}, 96--97:664--667, Oct. 2015.
+
+\bibitem{DeTommasi2007}
+G.~{De Tommasi}, R.~Albanese, G.~Ambrosino, M.~Ariola, M.~Mattei, A.~Pironti,
+  F.~Sartori, and F.~Villone.
+\newblock {XSC tools: A software suite for tokamak plasma shape control design
+  and validation}.
+\newblock {\em IEEE Transactions on Plasma Science}, 35(3):709--723, 2007.
+
+\bibitem{Albanese2005}
+R.~Albanese, G.~Ambrosino, M.~Ariola, A.~Cenedese, F.~Crisanti, G.~{De
+  Tommasi}, M.~Mattei, F.~Piccolo, A.~Pironti, F.~Sartori, and F.~Villone.
+\newblock {Design, implementation and test of the XSC extreme shape controller
+  in JET}.
+\newblock {\em Fusion Engineering and Design}, 74(1-4):627--632, 2005.
+
+\bibitem{anand2017novel}
+H.~Anand et~al.
+\newblock {A novel plasma position and shape controller for advanced
+  configuration development on the TCV tokamak}.
+\newblock {\em Nucl. Fus.}, 57(12):126026, 2017.
+
+\bibitem{de2016recent}
+E.~{de~la~Luna} et~al.
+\newblock {Recent Results on High-Triangularity H-Mode Studies in JET-ILW}.
+\newblock In {\em 26th IAEA Fusion Energy Conference}, Kyoto, Japan, October
+  2016.
+
+\bibitem{EAST2020}
+R.~Ambrosino, A.~Castaldo, G.~{De Tommasi}, Z.~P. Luo, Y.~Huang, A.~Mele,
+  A.~Pironti, Y.~H. Wang, and B.~J. Xiao.
+\newblock {Model-based MIMO isoflux plasma shape control at the EAST tokamak:
+  Experimental results}.
+\newblock {\em CCTA 2020 - 4th IEEE Conference on Control Technology and
+  Applications}, pages 770--775, 2020.
+
+\bibitem{Ambrosino:TCST2008}
+G.~Ambrosino et~al.
+\newblock {Design and Implementation of an Output Regulation Controller for the
+  JET Tokamak}.
+\newblock {\em IEEE Trans. Control Syst. Tech.}, 16(6):1101--1111, Nov. 2008.
+
+\bibitem{Ariola:XSC}
+M.~Ariola and A.~Pironti.
+\newblock {The design of the eXtreme Shape Controller for the JET tokamak}.
+\newblock {\em IEEE Control Sys. Mag.}, 25(5):65--75, Oct. 2005.
+
+\bibitem{CCS}
+H.~Urano et~al. Y.~Miyata.
+\newblock Documents on inputs and outputs of ccs(cauchy condition surface)
+  method.
+\newblock Technical report, 2018.
+
+\bibitem{FBC}
+H.~Urano et~al. Y.~Miyata.
+\newblock Documents on inputs, outputs and the control scheme of the qst
+  magnetic controller.
+\newblock Technical report, 2018.
+
+\bibitem{de2014shape}
+G.~{De Tommasi} et~al.
+\newblock {Shape Control with the eXtreme Shape Controller During Plasma
+  Current Ramp-Up and Ramp-Down at the JET Tokamak}.
+\newblock {\em J. Fus. Energy}, 33(2):149--157, 2014.
+
+\bibitem{urano2015development}
+H.~Urano et~al.
+\newblock {Development of operation scenarios for plasma breakdown and current
+  ramp-up phases in JT-60SA tokamak}.
+\newblock {\em Fus. Eng. Des.}, 100:345--356, 2015.
+
+\bibitem{Meyer2017}
+H.~Meyer et~al.
+\newblock {Overview of progress in European medium sized tokamaks towards an
+  integrated plasma-edge/wall solution}.
+\newblock {\em Nuclear Fusion}, 57, 2017.
+
+\bibitem{miyata2013study}
+Y.~Miyata et~al.
+\newblock {Study of JT-60SA Operation Scenario using a Plasma Equilibrium
+  Control Simulator}.
+\newblock {\em Plasma and Fus. Res.}, 8:2405109--2405109, 2013.
+
+\bibitem{Miyata:2014}
+Y.~Miyata, T.~Suzuki, S.~Ide, and H.~Urano.
+\newblock {Study of Plasma Equilibrium Control for JT-60SA using MECS}.
+\newblock {\em Plasma and Fus. Res.}, 9:3403045--5, 2014.
+
+\bibitem{Varandas1996}
+C.~A.F. Varandas.
+\newblock {Engineering aspects of the tokamak isttok}.
+\newblock {\em Fusion Technology}, 29(1):105--115, 1996.
+
+\bibitem{Mitarai1996}
+O.~Mitarai, Chijin Xiao, Liyan Zhang, D.~McColl, Wei Zhang, G.~Conway,
+  A.~Hirose, and H.~M. Skarsgard.
+\newblock {Alternating current plasma operation in the STOR-M tokamak}.
+\newblock {\em Nuclear Fusion}, 36(10):1335--1343, 1996.
+
+\bibitem{Tubbing1992}
+B.~J.D. Tubbing, N.~A.C. Gottardi, B.~J. Green, J.~A. How, M.~Huart, R.~Konig,
+  C.~G. Lowry, P.~J. Lomas, P.~Noll, J.~J. O'Rourke, P.~H. Rebut, D.~Stork,
+  A.~Tanga, A.~Taroni, and D.~J. Ward.
+\newblock {AC plasma current operation in the JET tokamak}.
+\newblock {\em Nuclear Fusion}, 32(6):967--972, 1992.
+
+\bibitem{density}
+Guerra T.
+\newblock {Real-Time measurement of the plasma electron density at ISTTOK}.
+\newblock Master's thesis, Universidade Tecnica de Lisboa, Lisbon,Portugal,
+  2008.
+
+\bibitem{Fernandes1998}
+H.~Fernandes, C.~A.~F. Varandas, J.~A.~C. Cabral, H.~Figueiredo, and
+  R.~Galv{\~{a}}o.
+\newblock {Engineering aspects of the ISTTOK operation in a multicycle
+  alternating flat-top plasma current regime}.
+\newblock {\em Fusion Engineering and Design}, 43(1):101--113, 1998.
+
+\bibitem{Carvalho2015}
+I.~S. Carvalho, H.~Fernandes, P.~Duarte, C.~Silva, H.~F.C. Figueiredo, and
+  T.~Hekkert.
+\newblock {ISTTOK real-time control assisted by electric probes}.
+\newblock {\em Journal of Physics: Conference Series}, 591(1):12008, 2015.
+
+\bibitem{IvoPID}
+Ivo~S. Carvalho, Paulo Duarte, Hor{\'{a}}cio Fernandes, Daniel~F.
+  Valc{\'{a}}rcel, Pedro~J. Carvalho, Carlos Silva, Andr{\'{e}}~S. Duarte,
+  Andr{\'{e}} Neto, Jorge Sousa, Ant{\'{o}}nio J~N Batista, Tiago Hekkert, and
+  Bernardo~B. Carvalho.
+\newblock {\em Fusion Engineering and Design}.
+
+\bibitem{Ivo2}
+{I.~S.} Carvalho, P.~Duarte, H.~Fernandes, {D.~F.} Valc{\'a}rcel, {P.~J.}
+  Carvalho, C.~Silva, {A.~S.} Duarte, A.~Neto, J.~Sousa, {A.~J.~N.} Batista,
+  and {B.~B.} Carvalho.
+\newblock {ISTTOK control system upgrade}.
+\newblock {\em Fusion Engineering and Design}, 88(6):1122--1126, 2013.
+
+\bibitem{Batista2010}
+A.~Batista, A., M.~Correia, A.~Fernandes, B.~B. Carvalho, J.~Fortunato, Jorge
+  Sousa, C.~A.F. Varandas, F.~Sartori, and M.~Jennison.
+\newblock {ATCA control system hardware for the plasma vertical stabilization
+  in the JET tokamak}.
+\newblock {\em IEEE Transactions on Nuclear Science}, 57(2 PART 1):583--588,
+  2010.
+
+\bibitem{Spuig2003}
+P.~Spuig, P.~Defrasne, G.~M., M.~Moreau, Ph~Moreau, and F.~Saint-Laurent.
+\newblock {An analog integrator for thousand second long pulses in Tore Supra}.
+\newblock {\em Fusion Engineering and Design}, 66-68:953--957, 2003.
+
+\bibitem{Werner2008}
+M.~Werner, A.and~Endler, J.~Geiger, and R.~Koenig.
+\newblock {W7-X magnetic diagnostics: Rogowski coil performance for very long
+  pulses}.
+\newblock {\em Review of Scientific Instruments}, 79(10):1--5, 2008.
+
+\bibitem{Pironti1995}
+A~Pironti, F~Amato, and Napoli Federico.
+\newblock {On-Line Plasma Shape Identification for use in control systems}.
+\newblock {\em Proceedings of International Conference on Control
+  Applications}, pages 1--2, 1995.
+
+\bibitem{Swain1982}
+D.~W. Swain and G.~H. Neilson.
+\newblock {An efficient technique for magnetic analysis of non-circular
+  high-beta tokamak equilibria}.
+\newblock {\em Nuclear Fusion}, 22(8):1015--1030, 1982.
+
+\bibitem{Hippe2011}
+Peter Hippe.
+\newblock {\em {Windup in Control Its Effects and Their Prevention}}.
+\newblock Springer, 2011.
+
+\bibitem{Vrancic1996}
+Damir Vrancic and Raymond Hanus.
+\newblock {Anti-Windup, Bumpless, and Conditioned Transfer Techniques for PID
+  Controllers}.
+\newblock {\em IEEE Control Systems}, 16(4):48--57, 1996.
+
+\bibitem{Yu2011}
+Hao Yu, Tiantian Xie, and Bogdan Wilamowski.
+\newblock {\em {Practical PID Control}}.
+\newblock 2011.
+
+\bibitem{DataDriven2019}
+Steven~L. Brunton and J.~Nathan Kutz.
+\newblock {\em {Data-Driven Science and Engineering: Machine Learning, Dynamicl
+  Systems, and Control}}.
+\newblock Cambridge University Press, 2019.
+
+\bibitem{Bendtsen2005}
+J.~D. Bendtsen, J.~Stoustrup, and K.~Trangbaek.
+\newblock {Bumpless transfer between observer-based gain scheduled
+  controllers}.
+\newblock {\em International Journal of Control}, 78(7):491--504, 2005.
+
+\bibitem{Mele2018}
+A.~Mele, G.~{De Tommasi}, A.~Pironti, and B.~J. Xiao.
+\newblock {Shape reconstruction and eddy currents estimation via Kalman Filter
+  at the EAST tokamak}.
+\newblock {\em 45th EPS Conference on Plasma Physics, EPS 2018},
+  2018-July:417--420, 2018.
+
+\bibitem{Franklin1998}
+F.~Franklin.
+\newblock {\em {Digital Control of Synamic Systems}}.
+\newblock Ellis-Kagle Press, 3 edition, 1998.
+
+\bibitem{Trimpe2014}
+S.~Trimpe, A.~Millane, Simon Doessegger, and R.~D'Andrea.
+\newblock {A self-tuning LQR approach demonstrated on an inverted pendulum}.
+\newblock In {\em Proceedings of the 19th World Congress The International
+  Federation of Automatic Control}, volume~19, pages 11281--11287, Cape Town,
+  2014. IFAC.
+
+\bibitem{Uren2011}
+Kenny Uren and George Van.
+\newblock {\em {Predictive PID Control of Non-Minimum Phase Systems}}.
+\newblock INTECH, 2011.
+
+\bibitem{Paluszek2020}
+M.~Paluszek and S.~Thomas.
+\newblock {\em {Practical MATLAB Deep Learning: A project-Based Approach}}.
+\newblock Apress, 2020.
+
+\bibitem{MECS}
+Y.~Miyata, T.~Suzuki, Shunsuke Ide, and H.~Urano.
+\newblock {Study of plasma equilibrium control for JT-60SA using MECS}.
+\newblock {\em Plasma and Fusion Research}, 9(SpecialIssue2):1--5, 2014.
+
+\bibitem{Ahn2007}
+Hyo~Sung Ahn, Yang~Quan Chen, and K.~L. Moore.
+\newblock {Iterative learning control: Brief survey and categorization}.
+\newblock {\em IEEE Transactions on Systems, Man and Cybernetics Part C:
+  Applications and Reviews}, 37(6):1099--1121, 2007.
+
+\end{thebibliography}

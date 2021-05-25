@@ -1,0 +1,75 @@
+\input{includes/preamble}
+\input{includes/lstdefines}
+\input{includes/istcoverpage}
+\input{includes/others}
+
+
+\usepackage{enumitem}
+\usepackage{notoccite}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{lipsum}
+\usepackage{xcolor,colortbl}
+\definecolor{LightCyan}{rgb}{0.88,1,1}
+\definecolor{amethyst}{rgb}{0.6, 0.4, 0.8}
+\definecolor{color2}{RGB}{228, 206, 237 }
+\definecolor{color1}{RGB}{202, 170, 229}
+\definecolor{color3}{RGB}{237, 206, 233 }
+\usepackage{mathtools}
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator{\dist}{\mathit{dist}}
+
+\begin{document}
+	\tolerance=1
+	\emergencystretch=\maxdimen
+	\hyphenpenalty=10000
+	\hbadness=10000
+	
+	{\fontsize{12}{12}\selectfont \textbf{ Simulação do Controlo Magnético do Tokamak: Aplicações para o JT-60SA e Operação do ISTTOK}}
+	
+	\bigskip
+		
+		
+\textbf{Nome:	Lilia Doménica Corona Rivera}
+	\smallskip
+	
+\textbf{	Doutoramento em Engenharia Fisica Tecnológica}
+	\smallskip
+
+	
+\textbf{	Orientador: \quad Doutor Horácio João Matos Fernandes}
+	\smallskip
+	
+\textbf{	Co-orientadores: \quad Doutor Nuno Sérgio Castelo  Branco da Cruz e Doutor Alfredo Pironti}
+\smallskip
+
+\setlength{\parskip}{1em}
+
+	
+	\textbf{Resumo}
+	\smallskip
+	
+O  controlo magnético de plasmas de fusão é uma das principais tarefas a ser desenvolvida em dispositivos de confinamento magnético como os tokamaks. O controlo magnético é uma ferramenta que permite controlar a posição e a forma do plasma nos tokamaks, seja para conduzir a posição do plasma a uma referência pré-estabelecida ou para rejeitar perturbações que possam ocorrer e manter a forma do plasma num determinado equilíbrio. Estes objectivos são alcançados variando-se as correntes impostas às bobines de campo poloidal (PF coils em inglês) 2 em função da monitorização de vários diagnósticos, os quais permitem a reconstrução da corrente do plasma, da posição deste e da última superfície fechada de fluxo (LFCS em inglês) num sistema de aquisição de dados em tempo-real e de controlo em malha fechada fechado. \smallskip
+
+Nesta tese é apresentada uma descrição completa dos sistemas de controlo e alguns dos principais conceitos da engenharia de controlo usados nos tokamaks, assim como as melhorias e atualizações realizadas para dois tokamaks: o JT-60SA (Japão) e o ISTTOK (Portugal). Estes dois dispositivos dependem do controlo ativo das bobines de campo poloidal para controlar a forma e posição do plasma. O JT60-SA é um tokamak supercondutor que ainda se encontra em construção e será o maior tokamak existente no mundo ao iniciar a operação em finais de 2020. O ISTTOK é um pequeno tokamak de elevada proporção de aspecto que tem estado em operação  há cerca de 30 anos e é caracterizado pela sua operação em modo de corrente alternada (AC) e pela sua flexibilidade em geral.\smallskip
+
+Em conjunto com a apresentação dos resultados de controlo atingidos para os dois dispositivos nesta tese, um dos principais objectivos é também que o trabalho de simulação feito para o JT60-SA possa ser confirmado experimentalmente no ISTTOK.\smallskip
+
+O trabalho desenvolvido para o JT60-SA nesta tese consiste numa série de simulações usando dois controladores diferentes para a forma do plasma e métodos para obter a última superfície fechada de fluxo na presença de distintas perturbações e de uma mudança na referência da forma do plasma assim como a comparação dos resultados obtidos destes dois controladores e  das medidas  da última superfície fechada de fluxo. A implementação destes controladores é  possível por meio dum equilíbrio teórico dado na forma dum modelo linear em espaço de estados do comportamento magnético do tokamak.\smallskip
+
+O trabalho feito para o JT60-SA nesta tese consiste numa série de simulações usando dois controladores diferentes para a forma do plasma e métodos para obter a última superfície fechada de fluxo na presença de distintas perturbações e mudando a referência da forma do plasma  em conjunto como a comparação dos resultados obtidos através destes dois controladores e  das medidas de fluxo da última superfície fechada de fluxo.  As melhorias destes dois controladores foram atingidas usando modelos lineares  do plasma e das bobinas de campo poloidal.\smallskip
+
+A implementação deste controladores é  possível por meio dum equilíbrio teórico dado na forma dum modelo linear em espaço de estados do comportamento magnético do tokamak. \smallskip
+
+
+O trabalho desenvolvido no ISTTOK consistiu na aplicação de diferentes conceitos físicos e ferramentas computacionais para obter um novo controlador ótimo e uma reconstrução do centróide da corrente do plasma em tempo real. O recentemente atualizado hardware faz integração numérica dos sinais das sondas magnéticas, as quais são adquiridas em tempo-real, constituindo este fato uma peça chave no desenvolvimento desta parte da tese. \smallskip
+
+
+Cada um dos tokamaks é abordado para diferentes objectivos e sob uma luz diferente nesta tese. O trabalho feito para o JT60-SA compara as ferramentas magnéticas de modelização CREATE com as ferramentas oficiais QST, o que abre a possibilidade de se considerar as ferramentas CREATE como ferramentas de segurança para otimizar o controlo na operação do JT60-SA. O trabalho desenvolvido no ISTTOK demonstra que o uso da estrutura informática MARTe e da arquitetura de hardware ATCA, em conjunto com a implementação do novo hardware para integração numérica, proporciona um conjunto de ferramentas adequadas para desenvolver controladores e reconstruir a posição do centróide da corrente do plasma em tempo-real. \smallskip
+
+
+\vfill
+\textbf{ Palavras-chave: Controlo em tempo real, corrente do plasma, posição do centróide da corrente do plasma,   controlo da forma do plasma, sonda magnética, bobina de campo poloidal(PF coil), última superfície fechada de fluxo(LCFS), integração numérica.    } 
+
+\end{document}

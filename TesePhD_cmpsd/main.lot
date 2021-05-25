@@ -1,0 +1,24 @@
+\deactivateaddvspace 
+\babel@toc {english}{}
+\babel@toc {portuguese}{}
+\babel@toc {english}{}
+\babel@toc {italian}{}
+\babel@toc {english}{}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {1.1}{\ignorespaces Main tokamak characteristics summary.\relax }}{5}{table.caption.11}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Steady-state RMSE values for the different choices of number of controlled gaps and for the different disturbances test cases. \relax }}{50}{table.caption.46}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Steady-state flux RMSE values for the different selection of control points for the JT-60SA scenario 2, SOF equilibrium in the presence of Disturbance $\# 1$ at ~$t\sim 20 $~s. \relax }}{54}{table.caption.55}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces X-point position steady state error for JT-60SA scenario 2, SOF equilibrium in the presence of Disturbance $\# 1$ at ~$t\sim 20 $~s. The XSC and QST controller were used in different simulations for the shape control along with two reconstruction methods for the LCFS. \relax }}{55}{table.caption.56}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces Steady-state flux RMSE values for the different selection of control points for the JT-60SA scenario 2, SOF equilibrium in the presence of Disturbance $\# 2$ (Compound ELM) at ~$t\sim 20 $~s. \relax }}{55}{table.caption.57}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces X-point position steady state error for JT-60SA scenario 2, SOF equilibrium in the presence of Disturbance $\# 2$ (Compound ELM) at ~$t\sim 20 $~s. The XSC and QST controller were used in different simulations for the shape control along with two reconstruction methods for the LCFS. \relax }}{55}{table.caption.58}%
+\contentsline {table}{\numberline {3.6}{\ignorespaces Steady-state flux RMSE values for the different selection of control points for the JT-60SA scenario 2, SOF equilibrium in the presence of Disturbance $\# 3$ (Minor disruption) at ~$t\sim 20 $~s. \relax }}{56}{table.caption.59}%
+\contentsline {table}{\numberline {3.7}{\ignorespaces X-point position steady state error for JT-60SA scenario 2, SOF equilibrium in the presence of Disturbance $\# 3$ (Minor disruption) at ~$t\sim 20 $~s. The XSC and QST controller were used in different simulations for the shape control along with two reconstruction methods for the LCFS. \relax }}{56}{table.caption.60}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Centroid position RMSE comparison between PID and MIMO-LQR controlled discharges for different set points and plasma current scenarios.\relax }}{100}{table.5.1}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

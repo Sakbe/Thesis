@@ -1,0 +1,57 @@
+\input{includes/preamble}
+\input{includes/lstdefines}
+\input{includes/istcoverpage}
+\input{includes/others}
+
+
+\usepackage{enumitem}
+\usepackage{notoccite}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{lipsum}
+\usepackage{xcolor,colortbl}
+\definecolor{LightCyan}{rgb}{0.88,1,1}
+\definecolor{amethyst}{rgb}{0.6, 0.4, 0.8}
+\definecolor{color2}{RGB}{228, 206, 237 }
+\definecolor{color1}{RGB}{202, 170, 229}
+\definecolor{color3}{RGB}{237, 206, 233 }
+\usepackage{mathtools}
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator{\dist}{\mathit{dist}}
+
+\begin{document}
+	\tolerance=1
+	\emergencystretch=\maxdimen
+	\hyphenpenalty=10000
+	\hbadness=10000
+	
+	{\fontsize{12}{12}\selectfont \textbf{	Tokamak Magnetic Control Simulation: Applications for JT-60SA and ISTTOK Operation}}
+	\smallskip
+\setlength{\parskip}{1em}
+
+	
+	\textbf{Abstract}
+	\smallskip
+	
+	Magnetic control for fusion plasmas is one of the main engineering tasks to be solved in magnetically  confined devices like tokamaks. Magnetic control is the tool that allows to control the plasma position and shape in a tokamak, whether  for steering the plasma position to a given set point or rejecting disturbances which may occur and maintain the plasma shape in a certain equilibrium. Such goals are achieved by varying the currents that are driven on the Poloidal Field (PF)\footnote{Sometimes the name PF coils is used to refer to  both the equilibrium field coils and the ohmic heating coils for generating plasma current.} coils while monitoring several diagnostics that allow the reconstruction of the plasma current, position and its last closed flux surface (LCFS) in a real-time feeddback acquisition and control system.
+	\smallskip
+	
+	This thesis presents a comprehensive overview of control systems and some of the main control engineering concepts used in tokamaks along with  the assessments and upgrades performed for two tokamaks: JT-60SA (Japan) and ISTTOK (Portugal). These two devices rely in the active control of the PF coils to control the plasma shape and position. JT-60SA is an under construction superconductive tokamak that will become the largest one built so far and will start operating in late 2020. ISTTOK is a large aspect ratio tokamak operating for 30 years and it is characterized by its AC operation mode and flexibility. \smallskip
+	
+	Along with presenting the achieved control assessments for both devices in this thesis, one of the main objectives  is also that the simulation work done for JT-60SA can be confirmed in an experimental sense in ISTTOK. \smallskip
+	
+	
+	The JT-60SA work done in this thesis consists in a series of simulations testing two different shape controllers and  approaches for obtaining the LCFS  in the presence of several disturbances and a change of the reference plasma shape, along with the comparison of results obtained from both controllers and the flux data from the LCFS.   The assessment of these two controllers has been carried out by using control-oriented linear models of the plasma and the surrounding coils.\smallskip
+	
+	The work developed in ISTTOK consisted in the application of several physics concepts and computational tools in order to have a novel optimal controller and a plasma centroid position reconstruction implemented on real-time. Recently upgraded hardware numerically integrates  the magnetic probes signals which are acquired on real-time, being this fact a key point for the development of this part of the thesis .\smallskip
+	
+	
+	
+	
+	Each tokamak is addressed for different aims and under a different scope in this work. The JT-60SA work benchmarks the CREATE magnetic modeling tools against the official QST tools, which opens up the possibility of considering the CREATE tools as a possible backup to support the optimization of the controller for JT-60SA operation. ISTTOK work demonstrates that the used MARTe framework and ATCA hardware architecture, along with the new numerically integration hardware implementation, provide a set of adequate tools for developing the ISTTOK tokamak real-time control and plasma centroid position reconstruction.
+	
+	
+	
+	\textbf{Keywords:Real-time control, plasma current, plasma current centroid position,   shape control, magnetic probe, PF coil, last closed flux surface(LCFS), numerical integration.} 
+\end{document}

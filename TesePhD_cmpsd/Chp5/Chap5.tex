@@ -1,0 +1,389 @@
+\chapter{ISTTOK control implementations and results }
+
+Using the multi-filament centroid position reconstruction currently available in real-time for all the discharges, it is possible to foray into control techniques and its real-time implementation. This chapter describes the latest implementations in ISTTOK's  MARTe framework followed by the presentation of the obtained results for control of the vertical and radial current centroid position through  controllers based on data-driven models.
+
+\section{Implementation of the General Application Modules }
+
+As mentioned in previous sections, ISTTOK operates on top of the MARTe framework which in turn are a collection building blocks composed by a set of General Application Modules (GAM) as described in chapter 2. The control of the plasma current centroid position is achieved by means of several GAMs working altogether.  Figure ~\ref{GAMsDiags} depicts a scheme of how the control loop works. It starts by acquiring  the signals from the magnetic probes and processing them in the "Magnetics" GAM where the radial and vertical centroid position are computed for every MARTe cycle. The "Controller" GAM selects the controller to be used for the centroid position based on the retrieved data from a GUI "Discharge Configurator" the tokamak operator has already configured before the discharge starts. Depending on the controller selection there is a "PID" GAM and a "LQR" GAM, based on the control algorithms studied in Chapter 2.4. After the "PID" GAM or the "LQR" GAM computed the required  inputs of the system these values are sent back to the "Controller" GAM which then sends them as control signals to the power supplies of the PF coils.\smallskip
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1.0\textwidth]{Chp5/GAMsDiagram_1.png}	
+	\caption{ISTTOK MARTe overall control position  scheme. \label{GAMsDiags}}
+\end{figure}
+
+Since ISTTOK is and AC tokamak during the transition from negative to positive, or opposite, plasma current there is no reconstruction of the centroid position, then a pre-programmed configuration of the  PF coils currents acts during this transition of $~\approx~1ms$, which means there is a constant switching from automatic to manual control in between plasma cycles. The switching process between controllers produces jumps at the plant inputs, this is known as the bumpless transfer problem ~\cite[Chapter~8]{Hippe2011}. To remove the jump, the controller output  should be made as close as possible to the output during manual mode. Then the jump at the instant of switching will be minimized~\cite{Vrancic1996}.   
+
+\subsection{PID control implementation}
+
+Early tokamaks used sets of poloidal field coils symmetrically placed with respect to the tokamak equatorial plane to guarantee mutually independent vertical and horizontal movement of the plasma~\cite[Chapter~1]{PirontiBook}. For many years, ISTTOK control strategy was driven by the principle that an external vertical field  generates an horizontal force and an horizontal external field generates a vertical force due to the Lorentz force law, having thus two separate SISO controllers for the vertical and radial centroid position. The "PID" GAM is responsible for this function, it has two PID  controllers, concept deeply addressed in section ~\ref{PID_sec},   with pre-configuration gains, in addition they have a   anti-windup \footnote{The saturation of actuators or major set point changes are some  of the most frequent non-linearities in control applications and they can cause instabilities in the system, the undesired effect of these events is called windup and typically it produces undesired overshoots resulting from an overreaction in the integrator of a PID controller ~\cite[Chapter~1]{Hippe2011}.} and correction for bumpless transfer by adjusting the integral action when the saturation limits are reached and  when the transition from manual to automatic control takes place since these events cause an uncontrolled increment in the integral term  ~\cite[Chapter~3]{Yu2011}, ~\cite{Vrancic1996}. \smallskip  
+
+The PID equations are digitally implemented in the "PID" GAM as ~\cite[Chapter~1]{Yu2011}: 
+\begin{equation}
+	u[k]=K_p~e[k]+ K_i~T_s\sum_{i=1}^{k}e[i]+\frac{K_d}{T_s}(e[k]-e[k-1])
+\end{equation}
+
+\noindent where $u[k]$ is the controlled output signal, for ISTTOK it corresponds to the vertical and horizontal PF coils currents,$K_p,~K_d$ and $K_i$ are the PID gains and $e[k]$ is the error variable which in this case is the difference between the plasma centroid position (vertical or radial) and  a given set point programmed by the operator in the "Discharge configurator".  Since no theoretical decoupled model or SISO dynamics are established in ISTTOK the PID gains were selected empirically based in the performance of the controller with different selection of gains in several ISTTOK discharges.
+
+\subsection{Data-driven state-space model retrieving }
+
+Data-driven dynamical systems is a rapidly evolving field, data are abundant, while physical laws or governing equations remain elusive even in classical fields, such as optics and turbulence, where governing equations do exist, researchers are increasingly turning toward data-driven analysis~\cite[Chapter~7]{DataDriven2019}.\smallskip
+
+Early efforts in finding a theoretical model for ISTTOK magnetic control were performed during  the last years. Since ISTTOK PF coils are not axisymmetric a working theoretical model  was never successfully retrieved. This fact made necessary to find a novel form to implement a model-based magnetic control on ISTTOK real-time MARTe platform.   Through  the \textit{System Identification Toolbox} from \textsc{Matlab}, whose background concepts were explained in chapter~\ref{Disc_SS_ident}, state-space models were retrieved. This models have as inputs the PF vertical and horizontal currents and as outputs the vertical and radial plasma current centroid position, having thus  $2\times 2$ MIMO systems. During this process data from several discharges were used in order to obtain  sufficiently  accurate models.\smallskip
+
+ When joining data sets of signals from  positive and negative plasma current discharges  the models started to loose consistency showing from early stages that the tokamak needed to be modeled separately: one state-space model for discharges where $I_p > 0$ and another for discharges where $I_p<0$. This matter probably originates from the fact that a  tokamak is not completely axisymmetric in reality, and particularly for ISTTOK, it happens to have a very non-axisymmetric PF coils which can translate as a different overall topology of the poloidal magnetic field in the tokamak for $I_p<~0$ and the  $I_p<~-0$ case. Figure ~\ref{SimResp_pos} and figure ~\ref{SimResp_neg} show the comparison between  the data-base centroid position signal and its reconstruction using the estimated state-space models. These are validation plots, which means the signals from the reconstruction of the centroid position were not used as modeling data. Differences in the transients of the signals might be originated from the differences in initial states between systems.\smallskip
+
+
+
+\begin{figure}
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[height=8.0cm]{Chp5/SimResp_559.eps}  
+		\caption{Comparison between the  identified model response and the real-time centroid position reconstruction. Shot $\#48559 $\label{SimResp559} }
+	\end{subfigure}
+	\hspace{0.45cm} %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+	%(or a blank line to force the subfigure onto a new line)
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[height=8.0cm]{Chp5/SimResp_541.eps}        
+		\caption{ Comparison between the  identified model response and the real-time centroid position reconstruction. Shot $\#48541 $ \label{SimResp541}}
+	\end{subfigure}
+	\caption{Model response for two different  $I_p~\approx 4~kA$ discharges. \label{SimResp_pos}}
+\end{figure}
+
+
+\begin{figure}
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[height=8.0cm]{Chp5/SimResp_338.eps}  
+		\caption{Comparison between the  identified model response and the real-time centroid position reconstruction. Shot $\#48338 $ \label{SimResp338} }
+	\end{subfigure}
+\hspace{0.45cm} %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+	%(or a blank line to force the subfigure onto a new line)
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[height=8.0cm]{Chp5/SimResp_345.eps}        
+		\caption{ Comparison between the  identified model response and the real-time centroid position reconstruction. Shot $\#48345 $ \label{SimResp345}}
+	\end{subfigure}
+	\caption{ Model response for two $I_p~\approx -4~kA$ discharges. \label{SimResp_neg}}
+\end{figure}
+
+Since a tokamak is not a linear system, the modeling process was done using data sets where the centroid position  was located in a certain region of values in order to approximate the estimated  model to an equilibrium region where a linear model approximation is valid. The set-points selection was based on the observed behaviour of the tokamak during the years, this means an observed region of the vessel where the plasma maintains without disrupting in the middle of the flat-top. Specifically for the  vertical position set-point it was always placed some millimeters away from the center of the chamber on the negative direction, this makes sense since  in general the vertical center of the 3 sets of PF coils has some negative offset. A local linearized model is typically evaluated in a  set of operating points that capture the key modes of operation. Linear controllers like PID  or LQR  are synthesized for the system in these points ensuring that some relevant performance specifications are met in the vicinity of the operating point in question ~\cite{Bendtsen2005}. The optimal number of states computationally retrieved was  10. The input and output vectors for ISTTOK models are defined as:
+\begin{equation}
+\begin{aligned}
+u^T=[R, z]\qquad, \\
+y^T=[I_{vert},I_{hor}]\qquad .
+\end{aligned} 
+\end{equation}
+
+
+
+\subsection{Kalman filter implementation}
+
+After retrieving the state-space models for the plasma centroid position, the next goal is to implement a MIMO controller based on them. In order to reconstruct the states vector  two Kalman filters were implemented, one for plasma current positive model and another for the negative model. The Kalman filter matrices were obtained  based on noise vectors from ISTTOK real data calculating  the covariance matrices from the signal vectors ~\cite{Mele2018}.  Figure ~\ref{Kalman_neg} and~\ref{Kalman_pos} correspond to the real-time Kalman filter reconstruction of the vertical and radial plasma centroid position and its comparison with the multi-filament reconstructed  position computed at the "Magnetics" GAM.\smallskip
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1.0\textwidth]{Chp5/Kalman_comp_pos.eps}
+	\caption{ Comparison of the real-time Kalman filter retrieved centroid position and the multi-filament reconstruction time trace for $I_p>0$.\label{Kalman_pos}}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1.0\textwidth]{Chp5/Kalman_comp_neg.eps}
+	\caption{ Comparison of the real-time Kalman filter retrieved centroid position and the multi-filament reconstruction time trace for $I_p<0$\label{Kalman_neg}}
+\end{figure}
+
+\subsection{Multiple-Input Multiple-Output control implementation}
+
+
+
+The full-state estimate from the Kalman filter is generally used in conjunction with the
+full-state feedback control law from LQR, resulting in optimal sensor-based feedback. Combining the LQR full-state feedback with the Kalman filter full-state estimator results in the linear-quadratic Gaussian (LQG) controller ~\cite[Chapter~8]{DataDriven2019}. Under this principle the real-time reconstructed states are multiplied by the control LQR gain $K$ in order to take the  vertical and radial plasma centroid position to a certain set point, this process is computed in the "LQR" GAM. The weight matrices for the discrete LQR controller were empirical tuned in order to have a balance between a fast response and a not so energetically demanding input, several algorithms for a non-empirical calculation of the LQR matrices exist some of them propose a tuning based on experimental data with a gain matrix that can be iteratively updated ~\cite[Chapter~9]{Franklin1998}, ~\cite{Trimpe2014}.
+\smallskip
+
+
+
+\subsubsection{Pole-zeros maps}
+
+
+
+Given the transfer function $H(s)=\frac{b(s)}{a(s)}$ the value of $s$ such that $b(s)=0$ are places where $H(s)$ is zero, and the corresponding $s$ locations are called zeros. The  concept of pole  was introduced in section ~\ref{MIMO_sec}.  A pole-zeros map is a representation in the complex plain  of the poles and zeros location of a system, either  in open-loop or in closed-loop. Since the data-driven models and its controllers are discrete the pole stability is given in a different form as in the continues time case,  figure~\ref{PoleZeroMap} shows the stable location of discrete poles($|\lambda|=1$),  the locations of the zeros have no role in determining the system stability.\smallskip
+
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{Chp5/PolesZerosMaps.png}
+	
+	\caption{ The matrix exponential defines a conformal map on the complex plane, mapping stable eigenvalues in the left half plane for continuous systems into eigenvalues inside the unit circle for discrete systems ~\cite[Chapter~8]{DataDriven2019}\label{PoleZeroMap}.}
+\end{figure}
+
+Pole-zero cancellation of stable poles will not cause any serious problem in the overall system except if the canceled pole is unstable. If a system has at least one pole or zero outside the unitary circumference the system is called Non-minimum phase (~\cite[Chapter~6]{Ogata2009},~\cite[Chapter~2]{Golnaraghi2010}). Non-minimum phase systems can show an inverse response or undershoot, which is an initial response in the opposite direction from the steady states. Figure ~\ref{nonmin} shows the time trace of the response to a unit step of a non-minimum phase system. 
+In these plots it is possible to observe several important details which allow to understand more the dynamics of the systems. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Chp5/nonminimum_edit.png}
+	\caption{Response to a unit step input from a non-minimum phase system~\cite{Uren2011}.\label{nonmin}}
+\end{figure} \smallskip
+
+Figures \ref{PoleZeroClosePos} and ~\ref{PoleZeroClosePosZoom} correspond to the pole-zero maps for the state-space model where $I_p\approx 4~kA$ in closed loop and figures ~\ref{PoleZeroOpenPos} and ~\ref{PoleZeroOpenPosZoom} to the same system in open-loop. Figures ~\ref{PoleZeroCloseNeg} and ~\ref{PoleZeroCloseNegZoom} correspond to the pole-zero maps for the state-space model where $I_p\approx -4~kA$ and figures ~\ref{PoleZeroOpenNeg} and ~\ref{PoleZeroOpenNegZoom} to the same system in open-loop. It should be noticed that since the data-driven models are $2\times2$ MIMO systems each case is formed by 4 pole-zero maps.\smallskip
+ 
+
+
+%% Positives
+\begin{figure} 
+	\centering
+	\includegraphics[width=0.85\textwidth]{Chp5/PoleZero/PoleZeroClosePos.eps}
+	\caption{Pole-zero maps in closed loop for the model when $I_p\approx 4 kA$. Superposition  of poles and zeros can be seen in the four transfer functions.\label{PoleZeroClosePos}}
+\end{figure}	
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.85\textwidth]{Chp5/PoleZero/PoleZeroClosePosZoom.eps}
+	\caption{Zoom to the stability border of the pole-zero maps in closed loop for the model when $I_p\approx 4 kA$.\label{PoleZeroClosePosZoom}}
+\end{figure}
+	
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.85\textwidth]{Chp5/PoleZero/PoleZeroOpenPos.eps}
+	\caption{  Pole-zero maps in open loop for the model when $I_p\approx 4 kA$. Superposition  of poles and zeros can be seen in the four transfer functions. \label{PoleZeroOpenPos}}
+\end{figure}	
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.85\textwidth]{Chp5/PoleZero/PoleZeroOpenPosZoom.eps}
+	\caption{Zoom to the stability border of the pole-zero maps in open loop for the model when $I_p\approx 4 kA$. \label{PoleZeroOpenPosZoom}}
+\end{figure}
+
+%% Negatives
+\begin{figure}
+	\centering
+	\includegraphics[width=0.85\textwidth]{Chp5/PoleZero/PoleZeroCloseNeg.eps}
+	\caption{ Pole-zero maps in closed loop for the model when $I_p\approx -4 kA$. Superposition  of poles and zeros can be seen in the four transfer functions. In the transfer function $H_2(z)$ should be noticed the zero far from the unitary circumference. \label{PoleZeroCloseNeg}}
+\end{figure}	
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.85\textwidth]{Chp5/PoleZero/PoleZeroCloseNegZoom.eps}
+\caption{Zoom to the stability border of the pole-zero maps in closed loop for the model when $I_p\approx -4 kA$.	\label{PoleZeroCloseNegZoom}}
+\end{figure}	
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.85\textwidth]{Chp5/PoleZero/PoleZeroOpenNeg.eps}
+	\caption{  Pole-zero maps in open loop for the model when $I_p\approx -4 kA$. Superposition  of poles and zeros can be seen in the four transfer functions. In the transfer function $H_2(z)$ should be noticed the zero far from the unitary circumference. \label{PoleZeroOpenNeg}}
+\end{figure}	
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.85\textwidth]{Chp5/PoleZero/PoleZeroOpenNegZoom.eps}
+\caption{Zoom to the stability border of the pole-zero maps in open loop for the model when $I_p\approx -4 kA$.	\label{PoleZeroOpenNegZoom}}
+\end{figure}
+
+
+
+$\bullet$ Open-loop and closed-loop models for $I_p\approx~-4kA$ have a zero far from the unitary circumference in the transfer function $H_2(z)$ map which links the vertical centroid position $z$ and the vertical PF coils current $I_{vert}$, this might generate an initial inverse response in the vertical centroid position.
+\smallskip
+
+$\bullet$  The open-loop and closed-loop systems for both models, i.e. $I_p\approx~4kA$ and $I_p\approx~-4kA$, have pole-zero cancellation inside the unitary circle.
+\smallskip
+
+$\bullet$  The model for $I_p\approx~4kA$ in open-loop has one unstable pole for the 4 transfer functions, see figure~\ref{PoleZeroOpenNegZoom}, this  shows a significant characteristic that differentiates both models, for negative and positive plasma current.\smallskip
+
+\section{Plasma current centroid position control results}
+
+This section presents the latest results from the real-time implementation of control algorithms in ISTTOK. The position set points  in the plots presented on this section are pre-programmed by the operator in the "Discharge configurator" interface. The discharges are refereed as $Shot \#$ followed by the ISTTOK's database discharge number.\smallskip
+
+In the following plots vertical and horizontal plasma centroid position are compared when they are controlled by a set of 2 PID's and by a LQR MIMO controller for different pre-programmed set points. Also the inputs response, vertical and horizontal PF coils currents, are shown and compared.\smallskip
+
+The discharges with  LQR MIMO control start with PID controllers and then switch to  MIMO LQR control at $t\sim 1~ms$ for positive plasmas and  $t\sim 3.5~s$ for negative ones. Since it is not mathematically possible to determine the initial conditions of the states they must be steered to the MIMO controller region of attraction, this is achieved by controlling the centroid position with the PID's  at the beginning of the discharge while the Kalman filter reconstructs the state vector. Switching between two controllers in parallel yields a control substitution which causes bumps in the response, there is available literature  for applications of the bumpless transfer scheme in order to smooth phasing-in of a new controller to supplement or replace an existing control at the plant as described in~\cite{Bendtsen2005}. \smallskip
+
+
+Figure~\ref{564_559} and  ~\ref{341_342} show the time traces of the vertical and horizontal plasma centroid position for two different scenarios. Figure ~\ref{341_342} shows the plots corresponding to a plasma discharge where $I_p\approx -4~kA$, the green vertical line marks the switching point from PID control to MIMO LQR. The vertical position time trace shows a non-minimum phase system behavior for the MIMO LQR control which is consistent with the pole-zero maps from last section,  but this behavior does not show for the PID case. This might be originated during the data-driven identification procedure as a numerical artifact to model a delay. Figure ~\ref{564_559} corresponds to a plasma discharge where $I_p\approx 4~kA$, since the  PID controlled part of the discharge is very short, the switching point is not signalized. The position set points are black dashed lines in both figures.\smallskip
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1.1\textwidth]{Chp5/PIDvsMIMO_341_324_2.eps}
+	\caption{ Horizontal and vertical plasma centroid position during  $I_p\approx 4kA$  flat-tops, blue time trace corresponds to a PID feedback control and orange time trace to a LQR MIMO feedback control, the dashed black line shows the programmed set point. The green vertical line marks the time  when the  discharge Shot$\# 48324$ switches  from PID to MIMO LQR control.	\label{341_342}}
+\end{figure}
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1.1\textwidth]{Chp5/PIDvsMIMO_564_559_2.eps}
+	\caption{ Horizontal and vertical plasma centroid position during  $I_p\approx 4kA$  flat-tops, blue time trace corresponds to a PID feedback control and orange time trace to a LQR MIMO feedback control, the dashed black line shows the programmed set point. \label{564_559}}
+\end{figure}
+
+
+
+
+
+ Figure ~\ref{564_559curr} and ~\ref{341_342_curr} correspond to the vertical and horizontal PF coil currents plots. For both cases, $I_p\approx 4kA$ and $I_p\approx -4kA$, a noticeable smaller current  request from the vertical and horizontal PF coils power supplies can be appreciate for the discharges controlled with the LQR MIMO algorithm in comparison with the ones controlled via the PID's, which implies  less consume of energy in the system.\smallskip
+
+ \begin{figure}[h]
+ 	\centering
+ 	\includegraphics[width=1.1\textwidth]{Chp5/PIDvsMIMO_341_324_curr_2.eps}
+ 	\caption{ Vertical and Horizontal PF coils currents during  $I_p\approx -4kA$  flat-tops, blue time trace corresponds to a PID feedback control and orange time trace to a LQR MIMO feedback control. The green vertical line marks the time  when the  discharge Shot$\# 48324$ switches the control from PID to MIMO LQR. \label{341_342_curr}}
+ \end{figure}
+ 
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1.1\textwidth]{Chp5/PIDvsMIMO_564_559_curr_2.eps}
+	\caption{Vertical and Horizontal PF coils currents during  $I_p\approx 4kA$  flat-tops, blue time trace corresponds to a PID feedback control and orange time trace to a LQR MIMO feedback control.\label{564_559curr}}
+\end{figure}
+
+
+ Table ~\ref{TableControl} summarizes the root-mean squared error (RMSE) for several plasma discharges for positive and negative plasma current and with different set points. For every plasma position set point a PID controlled and a MIMO LQR controlled discharge was performed. The time traces for all discharges presented in the table can be found in appendix~\ref{Control_Results}, as well as the plots of the corresponding vertical and horizontal PF coils requested currents. All signals discharges are available in the ISTTOK data base and the PID and MIMO LQR controllers are permanently available options for the tokamak operators in the "Discharge configurator" as well as the selection of switching times between controllers separately for positive and negative plasma discharges.\smallskip
+
+\clearpage
+\begin{center}
+	\begin{longtable}{||c| c| c| c|c||} 
+		\hline
+		\rowcolor{color2}
+		\textbf{Control} &  \textbf{Shot \#} &\textbf{RMSE (R,z) mm} & \textbf{ Set point (R,z) mm} &\ $\mathbf{I_p}$ \\ [0.5ex] 
+		\hline\hline
+		PID & 48564 &  (13.73, 4.4102) & \multirow{ 2}{*}{(24, -5)}&  $\approx 4 kA$ \\ 
+		\cline{1-3} \cline{5-5}
+		MIMO LQR & 48559 & (4.2252, 1.4215 ) & &  $\approx 4 kA$	\\
+		\hline
+		PID & 48563 & (13.6717,	4.1652)  & \multirow{ 2}{*}{(24, -4)}& $\approx 4 kA$ \\ 
+		\cline{1-3} \cline{5-5}
+		MIMO LQR & 48561 & (8.1047,	3.2752) & & $\approx 4 kA$ \\
+		\hline
+		PID & 48556 & (12.0315,	3.3217)  & \multirow{ 2}{*}{(32, -5)}& $\approx 4 kA$  \\ 
+		\cline{1-3} \cline{5-5}
+		MIMO LQR & 48555 & (4.2618, 2.4698) &  &  $\approx 4 kA$ \\
+		\hline
+		PID & 48551 & (13.9998,	3.3431)  & \multirow{ 2}{*}{(27, -5)} &  $\approx 4 kA$ \\ 
+		\cline{1-3} \cline{5-5}
+		MIMO LQR & 48554 & (5.9830, 2.0062)  &  &  $\approx 4 kA$ \\
+		\hline
+		PID & 48515 & (6.0178,	2.6123)  & \multirow{ 2}{*}{(30, -5)} & $\approx 4 kA$ \\ 
+		\cline{1-3} \cline{5-5}
+		MIMO LQR & 48541 & (5.8372,	1.7664) &  &  $\approx 4 kA$\\
+		\hline
+		PID & 48544 & (4.8745,	2.5167)  & \multirow{ 2}{*}{(32, -4)}& $\approx 4 kA$ \\ 
+		\cline{1-3} \cline{5-5}
+		MIMO LQR & 48542 & (4.4346,	3.6573) & &  $\approx 4 kA$ \\
+		\hline
+		PID & 48546 & (11.4560, 3.4765)  & \multirow{ 2}{*}{(27, -7)}&   $\approx 4 kA$\\ 
+		\cline{1-3} \cline{5-5}
+		MIMO LQR & 48548 & (7.6745, 4.1569) & &  $\approx 4 kA$ \\
+		\hline
+		PID & 48341 & (12.0959,	5.7652)  & \multirow{ 2}{*}{(11, -5)}& $\approx -4 kA$\\ 
+		\cline{1-3} \cline{5-5}
+		MIMO LQR & 48324 &  (15.4768,	14.3436)& & $\approx -4 kA$ \\
+		\hline
+		PID & 48340 & ( 11.7701, 5.9599) & \multirow{ 2}{*}{(11.2, -5.5)}&  $\approx -4 kA$\\ 
+		\cline{1-3} \cline{5-5}
+		MIMO LQR & 48338 & (11.5260,	12.6226) &  &  $\approx -4 kA$\\
+		\hline
+		PID & 48343 &(15.7675,	5.7453)   & \multirow{ 2}{*}{(12, -5)}&  $\approx -4 kA$  \\ 
+		\cline{1-3} \cline{5-5}
+		MIMO LQR & 48342 & (14.5168,	14.4329) & &  $\approx -4 kA$  \\
+		\hline
+		PID & 48346 & (12.4228,	6.1541)  & \multirow{ 2}{*}{(12.2, -5.3)}& $\approx -4 kA$\\ 
+		\cline{1-3} \cline{5-5}
+		MIMO LQR & 48345 & (9.7513,	13.0338) & & $\approx -4 kA$ \\
+		\hline
+		PID & 48349 & (19.3397,	5.5406)  & \multirow{ 2}{*}{(11.5, -5.6)}&$\approx -4 kA$  \\ 
+		\cline{1-3} \cline{5-5}
+		MIMO LQR & 48348 & (9.1727,	13.1505) & &$\approx -4 kA$  \\
+		\hline
+		PID & 48352 &  (15.2181,	6.5395) & \multirow{ 2}{*}{(10.8, -4.7)} &$\approx -4 kA$ \\ 
+		\cline{1-3} \cline{5-5}
+		MIMO LQR & 48354 & (14.6405,	13.7307) & & $\approx -4 kA$ \\
+		\hline
+		PID & 48351 &  (13.4078, 5.8769) & \multirow{ 2}{*}{(13.2, -5.6)}& $\approx -4 kA$ \\ 
+		\cline{1-3} \cline{5-5} 
+		MIMO LQR & 48350 & (13.9320,	14.4940) & &$\approx -4 kA$  \\
+		\hline 
+		\caption{Centroid position RMSE comparison between PID and MIMO-LQR controlled discharges for different set points and plasma current scenarios.}
+	\end{longtable}
+	\label{TableControl}
+	
+\end{center}
+
+\section{Remarks on ISTTOK experimental work}
+\begin{enumerate}
+	\item With the implementation of the multi-filament model for the real-time reconstruction of the plasma centroid position, apart from  having a reliably measurement, the plasma current inversions are successfully accomplished, something that was barely happening when having the Langmuir probes for the centroid position reconstruction.\smallskip
+	
+	\item The implementation of the LQR optimal controller and Kalman filters were possible thanks to the data-driven state-space model retrieving.\smallskip
+	
+	\item In general the LQR controller steers the centroid position faster to the given set-points and with less overshoot than the case for the PID controllers, while it requests a noticeable smaller current from the PF coils power supplies during the transient and in steady-state also.
+	
+\end{enumerate}
+
+
+%
+%\begin{center}
+%	\begin{longtable}{||c| c| c| c|c||} 
+%		\hline
+%		\rowcolor{color2}
+%		\textbf{Control} &  \textbf{Shot \#} &\textbf{RMSE (R,z) mm} & \textbf{ Set point (R,z) mm} &\ $\mathbf{I_p}$ \\ [0.5ex] 
+%		\hline\hline
+%		PID & 48564 &  (13.73, 4.4102) & (24, -5)&  $\approx 4 kA$ \\ 
+%		\hline
+%		MIMO LQR & 48559 & (4.2252, 1.4215 ) & (24, -5)&  $\approx 4 kA$	\\
+%		\hline
+%		PID & 48563 & (13.6717,	4.1652)  & (24, -4)& $\approx 4 kA$ \\ 
+%		\hline
+%		MIMO LQR & 48561 & (8.1047,	3.2752) & (24, -4)& $\approx 4 kA$ \\
+%		\hline
+%		PID & 48556 & (12.0315,	3.3217)  & (32, -5)& $\approx 4 kA$  \\ 
+%		\hline
+%		MIMO LQR & 48555 & (4.2618, 2.4698) & (32, -5) &  $\approx 4 kA$ \\
+%		\hline
+%		PID & 48551 & (13.9998,	3.3431)  & (27, -5) &  $\approx 4 kA$ \\ 
+%		\hline
+%		MIMO LQR & 48554 & (5.9830, 2.0062)  & (27, -5) &  $\approx 4 kA$ \\
+%		\hline
+%		PID & 48515 & (6.0178,	2.6123)  & (30, -5) & $\approx 4 kA$ \\ 
+%		\hline
+%		MIMO LQR & 48541 & (5.8372,	1.7664) & (30, -5) &  $\approx 4 kA$\\
+%		\hline
+%		PID & 48544 & (4.8745,	2.5167)  & (32, -4)& $\approx 4 kA$ \\ 
+%		\hline
+%		MIMO LQR & 48542 & (4.4346,	3.6573) & (32, -4)&  $\approx 4 kA$ \\
+%		\hline
+%		PID & 48546 & (11.4560, 3.4765)  & (27, -7)&   $\approx 4 kA$\\ 
+%		\hline
+%		MIMO LQR & 48548 & (7.6745, 4.1569) & (27, -7)&  $\approx 4 kA$ \\
+%		\hline
+%		PID & 48341 & (12.0959,	5.7652)  & (11, -5)& $\approx -4 kA$\\ 
+%		\hline
+%		MIMO LQR & 48324 &  (15.4768,	14.3436)& (11, -5)& $\approx -4 kA$ \\
+%		\hline
+%		PID & 48340 & ( 11.7701, 5.9599) & (11.2, -5.5)&  $\approx -4 kA$\\ 
+%		\hline
+%		MIMO LQR & 48338 & (11.5260,	12.6226) & (11.2, -5.5) &  $\approx -4 kA$\\
+%		\hline
+%		PID & 48343 &(15.7675,	5.7453)   & (12, -5)&  $\approx -4 kA$  \\ 
+%		\hline
+%		MIMO LQR & 48342 & (14.5168,	14.4329) & (12, -5)&  $\approx -4 kA$  \\
+%		\hline
+%		PID & 48346 & (12.4228,	6.1541)  & (12.2, -5.3)& $\approx -4 kA$\\ 
+%		\hline
+%		MIMO LQR & 48345 & (9.7513,	13.0338) & (12.2, -5.3)& $\approx -4 kA$ \\
+%		\hline
+%		PID & 48349 & (19.3397,	5.5406)  & (11.5, -5.6)&$\approx -4 kA$  \\ 
+%		\hline
+%		MIMO LQR & 48348 & (9.1727,	13.1505) & (11.5, -5.6)&$\approx -4 kA$  \\
+%		\hline
+%		PID & 48352 &  (15.2181,	6.5395) & (10.8, -4.7) &$\approx -4 kA$ \\ 
+%		\hline
+%		MIMO LQR & 48354 & (14.6405,	13.7307) & (10.8, -4.7)& $\approx -4 kA$ \\
+%		\hline
+%		PID & 48351 &  (13.4078, 5.8769) & (13.2, -5.6)& $\approx -4 kA$ \\ 
+%		\hline
+%		MIMO LQR & 48350 & (13.9320,	14.4940) & (13.2, -5.6)&$\approx -4 kA$  \\[1ex]
+%		\hline
+%		\caption{Centroid position RMSE comparison between PID and MIMO-LQR controlled discharges for different set points and plasma current scenarios.}
+%	\end{longtable}
+%\label{TableControl}
+%
+%\end{center}
